@@ -11,10 +11,9 @@ IMPORTANT SETUP TIPS:
 4. For the Weather widget to work, you must install the multi fanart artwork. For the moment it is needed for the widget to appear.
 
 5. Special music artwork needs to be organised as follows: 
-Artist/logo.png;
-Artist/Album/disc.png OR Artist/Album/cdart.png;
-
-The path you set in the skin settings is the root (pointing to the Artist folders).
+   Artist/logo.png;
+   Artist/Album/disc.png OR Artist/Album/cdart.png;
+   The path you set in the skin settings is the root (pointing to the Artist folders).
 
 6. manfeed's lyrics will only work in the default font set, since arial defeats the purpose of the mod.
 
