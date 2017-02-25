@@ -18,3 +18,5 @@ IMPORTANT SETUP TIPS:
 6. manfeed's lyrics will only work in the default font set, since arial defeats the purpose of the mod.
 
 7. The French language strings are outdated, don't use them.
+
+*Check the [Eminence 2 MOD thread](http://forum.kodi.tv/showthread.php?tid=307568) for more information and support*
