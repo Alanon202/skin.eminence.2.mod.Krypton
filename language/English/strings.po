@@ -1443,7 +1443,7 @@ msgid "Set a text color for each tile of home bar menu via customisation home me
 msgstr ""
 
 msgctxt "#31657"
-msgid "Color and opacity"
+msgid "Background color and opacity"
 msgstr ""
 
 msgctxt "#31658"
