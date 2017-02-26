@@ -487,7 +487,7 @@
                     <onright>noop</onright>
                     <orientation>horizontal</orientation>
                     <onup condition="String.IsEqual(Control.GetLabel(5),$LOCALIZE[207])">51</onup>
-					<onup condition="!StringCompare(Control.GetLabel(5),$LOCALIZE[207])">9601</onup>
+					<onup condition="!String.IsEqual(Control.GetLabel(5),$LOCALIZE[207])">9601</onup>
                     
                     <!-- Play/Browse Button -->
                     <control type="togglebutton" id="8">
