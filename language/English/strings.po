@@ -1535,7 +1535,7 @@ msgid "Reset the colour and opacity of the primary widget tile"
 msgstr ""
 
 msgctxt "#31680"
-msgid "Reset the colour and opacity of secondary widget tile"
+msgid "Reset the colour and opacity of the secondary widget tile"
 msgstr ""
 
 msgctxt "#31681"
