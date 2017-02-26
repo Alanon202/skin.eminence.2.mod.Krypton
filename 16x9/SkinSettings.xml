@@ -144,7 +144,7 @@
 				<include>Animation_FadeSlide_Right</include>
                 <include content="Object_Line">
                     <param name="width" value="1395" />
-                    <param name="label" value="$INFO[ControlGroup(9000).HasFocus]" />
+                    <param name="label" value="Selected: $VAR[Label_Settings_Line]" />
                 </include>
                 <control type="grouplist" id="8009">                
                     <itemgap>0</itemgap>

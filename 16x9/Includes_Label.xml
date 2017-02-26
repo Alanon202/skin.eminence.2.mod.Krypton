@@ -187,6 +187,32 @@
         <value condition="String.IsEqual(ListItem.AudioChannels,1)">1.0</value>
     </variable>
 	
+    <variable name="Label_Settings_Category">
+		<value condition="Container(8000).HasFocus(9)">$LOCALIZE[31536]</value>
+		<value condition="Container(8000).HasFocus(1)">$LOCALIZE[31537]</value>
+		<value condition="Container(8000).HasFocus(2)">$LOCALIZE[31538]</value>
+		<value condition="Container(8000).HasFocus(3)">$LOCALIZE[31539]</value>
+		<value condition="Container(8000).HasFocus(4)">$LOCALIZE[31540]</value>
+		<value condition="Container(8000).HasFocus(10)">$LOCALIZE[31541]</value>
+		<value condition="Container(8000).HasFocus(5)">$LOCALIZE[31542]</value>
+		<value condition="Container(8000).HasFocus(6)">$LOCALIZE[31543]</value>
+		<value condition="Container(8000).HasFocus(8)">$LOCALIZE[31544]</value>
+		<value condition="Container(8000).HasFocus(7)">$LOCALIZE[31608]</value>
+    </variable>
+	
+    <variable name="Label_Settings_Line">
+		<value condition="Container(8000).HasFocus(9)">$LOCALIZE[10000]</value>
+		<value condition="Container(8000).HasFocus(1)">$LOCALIZE[31020]</value>
+		<value condition="Container(8000).HasFocus(2)">$LOCALIZE[31121]</value>
+		<value condition="Container(8000).HasFocus(3)">$LOCALIZE[31005]</value>
+		<value condition="Container(8000).HasFocus(4)">$LOCALIZE[31127]</value>
+		<value condition="Container(8000).HasFocus(10)">$LOCALIZE[31509]</value>
+		<value condition="Container(8000).HasFocus(5)">$LOCALIZE[31126]</value>
+		<value condition="Container(8000).HasFocus(6)">$LOCALIZE[31110]</value>
+		<value condition="Container(8000).HasFocus(8)">$LOCALIZE[31170]</value>
+		<value condition="Container(8000).HasFocus(7)">$LOCALIZE[31607]</value>
+    </variable>	
+	
     <variable name="Label_RSS">  
         <value condition="Player.HasAudio + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[MusicPlayer.Artist][/COLOR]  $INFO[MusicPlayer.Title]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>       
         <value condition="Player.HasVideo + VideoPlayer.Content(LiveTV)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.ChannelName][/COLOR]  $INFO[VideoPlayer.Title]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>           
@@ -197,24 +223,8 @@
 		<value condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(furniture.showflags) + [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Budget.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Revenue.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.BoxOffice)) | !String.IsEmpty(ListItem.Director)]">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31778]: [/COLOR]$INFO[ListItem.Director]$VAR[Label_MovieInfo]</value>
 <!-- Ajout Value -->
          <value condition="Window.IsVisible(AddonBrowser.xml)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31523][/COLOR] $INFO[Window.Property(Updated)]</value>
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8001)">$LOCALIZE[31536]</value>    
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8002)">$LOCALIZE[31537]</value>
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8003)">$LOCALIZE[31538]</value>   
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8004)">$LOCALIZE[31539]</value>     
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8007)">$LOCALIZE[31540]</value>
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8097)">$LOCALIZE[31541]</value>  
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8008)">$LOCALIZE[31542]</value> 
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8009)">$LOCALIZE[31543]</value>  
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8099)">$LOCALIZE[31544]</value>
+<!-- Settings Category Description -->
+         <value condition="Control.HasFocus(8000)">$VAR[Label_Settings_Category]</value>
 <!-- Ajout Value -->
          <value condition="Control.HasFocus(8101)">$LOCALIZE[31545]</value>    
 <!-- Ajout Value -->
@@ -246,7 +256,7 @@
 <!-- Ajout Value -->
          <value condition="Control.HasFocus(8202)">$LOCALIZE[31559]</value>  
 <!-- Ajout Value -->
-         <value condition="Control.HasFocus(8203)">$LOCALIZE[31789]</value>   
+         <value condition="Control.HasFocus(8203)">$LOCALIZE[31560]</value>   
 <!-- Ajout Value -->
          <value condition="Control.HasFocus(8204)">$LOCALIZE[31789]</value>   		 
 <!-- Ajout Value -->
@@ -337,8 +347,6 @@
          <value condition="Control.HasFocus(8998)">$LOCALIZE[31605]</value> 
 <!-- Ajout Value -->
          <value condition="Control.HasFocus(8999)">$LOCALIZE[31606]</value>
-<!-- Ajout Value -->
-         <value condition="Control.HasFocus(8098)">$LOCALIZE[31608]</value>
 <!-- Ajout Value -->
          <value condition="Control.HasFocus(9101)">$LOCALIZE[31611]</value>  
 <!-- Ajout Value -->
