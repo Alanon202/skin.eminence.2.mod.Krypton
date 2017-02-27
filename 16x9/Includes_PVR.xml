@@ -27,6 +27,7 @@
                         <onup>$PARAM[id]</onup>
                         <ondown>$PARAM[id]</ondown>
                         <onright condition="!Skin.HasSetting(KioskMode)">9000</onright>
+						<onback condition="Skin.HasSetting(backoption) + !String.IsEqual(Window(home).Property(HubReturn),Home)">ActivateWindow($INFO[Window(home).Property(HubReturn)])</onback>					
                         <onleft>60</onleft>
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
@@ -250,6 +251,7 @@
                         <onup>$PARAM[id]</onup>
                         <ondown>$PARAM[id]</ondown>
                         <onright condition="!Skin.HasSetting(KioskMode)">9000</onright>
+						<onback condition="Skin.HasSetting(backoption) + !String.IsEqual(Window(home).Property(HubReturn),Home)">ActivateWindow($INFO[Window(home).Property(HubReturn)])</onback>
                         <onleft>60</onleft>
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
@@ -417,7 +419,8 @@
                         <onup>$PARAM[id]</onup>
                         <ondown>$PARAM[id]</ondown>
                         <onright condition="!Skin.HasSetting(KioskMode)">9000</onright>
-                        <onleft>60</onleft>
+                        <onback condition="Skin.HasSetting(backoption) + !String.IsEqual(Window(home).Property(HubReturn),Home)">ActivateWindow($INFO[Window(home).Property(HubReturn)])</onback>
+						<onleft>60</onleft>
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
                         <orientation>vertical</orientation>
@@ -647,7 +650,8 @@
                     <onup>165</onup>
                     <ondown>165</ondown>
                     <onright condition="!Skin.HasSetting(KioskMode)">9000</onright>
-                    <onleft>60</onleft>
+					<onback condition="Skin.HasSetting(backoption) + !String.IsEqual(Window(home).Property(HubReturn),Home)">ActivateWindow($INFO[Window(home).Property(HubReturn)])</onback>
+					<onleft>60</onleft>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
                     <orientation>vertical</orientation>

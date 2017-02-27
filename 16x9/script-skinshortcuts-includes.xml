@@ -137,11 +137,11 @@
 			<property name="labelID">add-ons</property>
 			<property name="defaultID">programs</property>
 			<property name="translatedPath">ActivateWindow(Programs,Addons,return)</property>
-			<property name="widget">plugin://script.extendedinfo/tmdb</property>
-			<property name="widgetName">Top rated TV</property>
-			<property name="widgetType">tvshows</property>
+			<property name="widget">plugin://script.skin.helper.widgets/?action=pvrlisting</property>
+			<property name="widgetName">TV Channels: All channels</property>
+			<property name="widgetType">pvr</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetPath">plugin://script.extendedinfo?info=topratedtvshows</property>
+			<property name="widgetPath">plugin://script.skin.helper.widgets/?action=channels&amp;mediatype=pvr&amp;reload=$INFO[Window(Home).Property(widgetreload2)]&amp;channelgroup=1</property>
 			<property name="PosterWidget">On Up</property>
 			<property name="background">C:\Users\Stefan\OneDrive\Programs\Kodi\Theme\addons\addons.jpg</property>
 			<property name="backgroundName">C:\Users\Stefan\OneDrive\Programs\Kodi\Theme\addons\addons.jpg</property>
@@ -564,6 +564,48 @@
 			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
 			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(Programs,Addons,return)</onclick>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),add-ons)</visible>
+			<property name="group">add-ons</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[19019]</label>
+			<label2>Live TV</label2>
+			<icon>special://skin/extras/icons/tv.png</icon>
+			<thumb />
+			<property name="labelID">19019</property>
+			<property name="defaultID">19019</property>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),add-ons)</visible>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1132)</onclick>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVChannels)</onclick>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">add-ons</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[22020]</label>
+			<label2>Live TV</label2>
+			<icon>special://skin/extras/icons/tv.png</icon>
+			<thumb />
+			<property name="labelID">22020</property>
+			<property name="defaultID">22020</property>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),add-ons)</visible>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1132)</onclick>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVGuide)</onclick>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">add-ons</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -2382,6 +2424,48 @@
 			<property name="group">add-ons</property>
 			<property name="isSubmenu">True</property>
 		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[19019]</label>
+			<label2>Live TV</label2>
+			<icon>special://skin/extras/icons/tv.png</icon>
+			<thumb />
+			<property name="labelID">19019</property>
+			<property name="defaultID">19019</property>
+			<visible>System.HasPVRAddon</visible>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1132)</onclick>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVChannels)</onclick>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">add-ons</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[22020]</label>
+			<label2>Live TV</label2>
+			<icon>special://skin/extras/icons/tv.png</icon>
+			<thumb />
+			<property name="labelID">22020</property>
+			<property name="defaultID">22020</property>
+			<visible>System.HasPVRAddon</visible>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1132)</onclick>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVGuide)</onclick>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">add-ons</property>
+			<property name="isSubmenu">True</property>
+		</item>
 	</include>
 	<include name="skinshortcuts-group-alt-add-ons">
 		<item id="1">
@@ -2444,6 +2528,48 @@
 			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
 			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(Programs,Addons,return)</onclick>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),add-ons)</visible>
+			<property name="group">add-ons</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[19019]</label>
+			<label2>Live TV</label2>
+			<icon>special://skin/extras/icons/tv.png</icon>
+			<thumb />
+			<property name="labelID">19019</property>
+			<property name="defaultID">19019</property>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),add-ons)</visible>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVChannels))</property>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1132)</onclick>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVChannels)</onclick>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">add-ons</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[22020]</label>
+			<label2>Live TV</label2>
+			<icon>special://skin/extras/icons/tv.png</icon>
+			<thumb />
+			<property name="labelID">22020</property>
+			<property name="defaultID">22020</property>
+			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),add-ons)</visible>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</onclick>
+			<property name="path">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<property name="list">Skin.SetString(dialog_action,ActivateWindow(TVGuide))</property>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(1132)</onclick>
+			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
+			<onclick condition="[IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | SubString(Container(9000).ListItem.Property(ParentalControl),no)] | StringCompare(Skin.String(mypassword),Skin.String(passcode))">ActivateWindow(TVGuide)</onclick>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">add-ons</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -5146,7 +5272,7 @@
 			<scrolltime easing="out" tween="sine">240</scrolltime>
 			<itemlayout />
 			<focusedlayout height="1080" width="1920" />
-			<content target="videos">plugin://script.extendedinfo?info=topratedtvshows</content>
+			<content target="videos">plugin://script.skin.helper.widgets/?action=channels&amp;mediatype=pvr&amp;reload=$INFO[Window(Home).Property(widgetreload2)]&amp;channelgroup=1</content>
 		</control>
 		<control id="9001" type="wraplist">
 			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>

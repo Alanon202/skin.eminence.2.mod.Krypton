@@ -10,6 +10,7 @@
         <include>Furniture_Background</include>
         <include>Furniture_RSS</include>
         <include>Furniture_TopBar</include>
+		<include>ClearLogo</include>		
 		<include>QuickNav</include>
         
         <include>PVR_List</include>

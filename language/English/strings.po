@@ -814,6 +814,14 @@ msgctxt "#31217"
 msgid "Enables returning directly to the point of origin when shortcuts are used."
 msgstr ""
 
+msgctxt "#31218"
+msgid "Activate subtitles"
+msgstr ""
+
+msgctxt "#31219"
+msgid "Turn off subtitles"
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

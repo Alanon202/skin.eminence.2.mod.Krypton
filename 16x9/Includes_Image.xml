@@ -61,6 +61,7 @@
         <value condition="String.Contains(Container.FolderPath,video.vstream)">logos/VStream_logo.png</value>
         <value condition="String.Contains(Container.FolderPath,video.freplay)">logos/FReplay_logo.png</value>
         <value condition="String.Contains(Container.FolderPath,video.allocine)">logos/Allocine_logo.png</value>
+		<value condition="Window.IsVisible(tvchannels) | Window.IsVisible(tvguide)">$INFO[ListItem.Icon]</value>
     </variable>
  
     <variable name="MusicCDArt">
@@ -121,8 +122,9 @@
     </variable>
 
     <variable name="Image_PVRThumb">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.PVR.FanArt))">$INFO[Window(Home).Property(SkinHelper.PVR.FanArt)]</value>
-        <value>$INFO[ListItem.Icon]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Art.FanArt))">$INFO[Window(Home).Property(SkinHelper.Art.FanArt)]</value>
+        <value>special://skin/extras/backgrounds/home.jpg</value>
+		<value>$INFO[ListItem.Icon]</value>
     </variable>
 
     <variable name="Image_Icon">   
@@ -147,6 +149,7 @@
         <value condition="!String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !Skin.HasSetting(hidenextairedinfos)">common/nextaired.png</value>
         <value condition="String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos)">common/nextaired.png</value>        
         <value condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(furniture.showflags) + [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Budget.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Revenue.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.BoxOffice)) | !String.IsEmpty(ListItem.Director)]">common/nextaired.png</value>
+		<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(videos) + !String.IsEmpty(ListItem.Premiered)">common/nextaired.png</value>
 		<value condition="Window.IsVisible(AddonBrowser.xml)">common/rss_update.png</value>
     </variable>
 

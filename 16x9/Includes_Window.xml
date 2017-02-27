@@ -227,7 +227,7 @@
     </include>
     <!-- PLAYER CONTROLS -->
     <include name="Window_PlayerControls">
-        <control type="group">
+        <control type="group" id="9969">
             <width>669</width>
             <animation effect="slide" start="-668" end="0" time="150" tween="quadratic">Visible</animation>
             <animation effect="slide" start="-668" end="0" time="150" tween="quadratic">WindowOpen</animation>
@@ -1770,7 +1770,7 @@
 						<width>100%</width>
 						<height>69</height>				
 						<include>Defs_OSDButton</include>
-						<label>31517</label>
+						<label>$LOCALIZE[31517]</label>
 						<onclick>CycleSubtitle</onclick>
 						<onclick>ClearProperty(subtitlespanel)</onclick>
 						<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
@@ -1779,8 +1779,9 @@
                         <width>100%</width>
                         <height>69</height>
                         <include>Defs_OSDButton</include>                       
-                        <label>$LOCALIZE[31518] $INFO[VideoPlayer.SubtitlesLanguage,[UPPERCASE],[/UPPERCASE]] $LOCALIZE[31514]</label>                       
-                        <altlabel>$LOCALIZE[31518] $LOCALIZE[31515]</altlabel>
+                        <!-- <label>$LOCALIZE[31518] $LOCALIZE[31514] $INFO[VideoPlayer.SubtitlesLanguage,[UPPERCASE](,)[/UPPERCASE]]</label>                        -->
+                        <label>$LOCALIZE[31219] $INFO[VideoPlayer.SubtitlesLanguage,[UPPERCASE](,)[/UPPERCASE]]</label>
+						<altlabel>$LOCALIZE[31218]</altlabel>
                         <onclick>NextSubtitle</onclick>
 						<onclick>ClearProperty(subtitlespanel)</onclick>
                         <usealttexture>!VideoPlayer.SubtitlesEnabled</usealttexture>
