@@ -122,7 +122,7 @@
     </variable>
 
     <variable name="Image_PVRThumb">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Art.FanArt))">$INFO[Window(Home).Property(SkinHelper.Art.FanArt)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.FanArt))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt)]</value>
         <value>special://skin/extras/backgrounds/home.jpg</value>
 		<value>$INFO[ListItem.Icon]</value>
     </variable>
