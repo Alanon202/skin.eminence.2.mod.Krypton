@@ -225,6 +225,7 @@
                         <right>pad</right>
                         <height>20</height>
                         <align>right</align>
+						<scroll>yes</scroll>
                         <font>Font-ListInfo-Small-Bold</font>
                         <label>$VAR[Label_ExtraInfo_Icons]</label>
                     </control>
@@ -363,6 +364,7 @@
                     <right>30</right>
                     <height>20</height>
                     <align>right</align>
+					<scroll>yes</scroll>
                     <textcolor>ListLabel</textcolor>
                     <font>Font-ListInfo-Small-Bold</font>
                     <label>$VAR[Label_ExtraInfo_Icons]</label>
@@ -462,6 +464,7 @@
                                     <right>30</right>
                                     <height>20</height>
                                     <align>right</align>
+									<scroll>yes</scroll>
                                     <textcolor>Selected</textcolor>
                                     <font>Font-ListInfo-Small-Bold</font>
                                     <label>$VAR[Label_ExtraInfo_Icons]</label>

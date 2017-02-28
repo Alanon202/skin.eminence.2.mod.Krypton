@@ -911,6 +911,7 @@
             <right>pad</right>
             <height>20</height>
             <align>right</align>
+			<scroll>yes</scroll>
             <font>Font-ListInfo-Small-Bold</font>
             <label>$VAR[Label_ExtraInfo_Icons]</label>
         </control>

@@ -1431,13 +1431,14 @@
     </include>
 	<include name="QuickNav">
 		<control type="group">
-			<animation effect="slide" tween="quadratic" easing="out" time="300" start="0,-200" end="0" delay="1000" condition="!String.IsEmpty(Window(home).Property(quicknavsetup))">Conditional</animation>
-			<animation effect="slide" tween="quadratic" easing="in" time="300" start="0" end="0,-200" delay="300" condition="String.IsEmpty(Window(home).Property(quicknavsetup))">Conditional</animation>   	
+			<animation effect="slide" tween="quadratic" easing="out" time="300" start="0,-200" end="0" delay="1000" condition="!String.IsEmpty(Window(home).Property(quicknavsetup)) + Integer.IsGreater(Container(9987).NumItems,0)">Conditional</animation>
+			<animation effect="slide" tween="quadratic" easing="in" time="300" start="0" end="0,-200" delay="300" condition="String.IsEmpty(Window(home).Property(quicknavsetup)) + Integer.IsGreater(Container(9987).NumItems,0)">Conditional</animation>   	
 			<left>0</left>
 			<right>0</right>
 			<top>0</top>
 			<height>180</height>
 			<include>Dialog_Background</include>
+			<visible>Integer.IsGreater(Container(9987).NumItems,0)</visible>
             <include content="Dialog_Top_IconHeader">
                 <param name="label" value="$LOCALIZE[31794]" />
                 <param name="icon" value="special://skin/extras/icons/settings.png" />
