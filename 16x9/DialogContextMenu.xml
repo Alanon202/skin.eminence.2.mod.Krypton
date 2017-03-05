@@ -7,7 +7,7 @@
     </coordinates>
 
     <controls>
-        <control type="group">
+<!--         <control type="group">
             <include>Dialog_Top</include>
             <include>Dialog_Background</include>
             <include content="Dialog_Top_IconHeader">
@@ -18,21 +18,22 @@
                 <param name="id" value="996" />
             </include>
             
-            <control type="image" id="999" />
+            <control type="image" id="999" /> -->
 
             <!-- Default GroupList -->
-            <control type="grouplist" id="996">
+<!--            <control type="grouplist" id="996">
                 <onup>Close</onup>
                 <ondown>Close</ondown>
                 <include>Dialog_Top_GroupList</include>
-            </control>
+            </control> -->
 
             <!-- Default Button -->
-            <control type="button" id="1000">
+<!--            <control type="button" id="1000">
                 <include>Defs_OptionButton2</include>
             </control>
-        </control>
-<!--         <control type="group">
+        </control> -->
+		<include>GlobalOverlay</include>
+        <control type="group">
             <include>Animation_SlideIn_Bounce</include>
             <include>Animation_FadeOut</include>
             <top>180</top>
@@ -94,7 +95,7 @@
                     <include>Defs_OptionButton</include>
                 </control>
             </control>
-        </control> -->
+        </control>
     </controls>
 
 </window>

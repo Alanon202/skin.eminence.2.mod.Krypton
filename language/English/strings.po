@@ -822,6 +822,66 @@ msgctxt "#31219"
 msgid "Turn off subtitles"
 msgstr ""
 
+msgctxt "#31220"
+msgid "5 seconds"
+msgstr ""
+
+msgctxt "#31221"
+msgid "10 seconds"
+msgstr ""
+
+msgctxt "#31222"
+msgid "15 seconds"
+msgstr ""
+
+msgctxt "#31223"
+msgid "20 seconds"
+msgstr ""
+
+msgctxt "#31224"
+msgid "25 seconds"
+msgstr ""
+
+msgctxt "#31225"
+msgid "30 seconds"
+msgstr ""
+
+msgctxt "#31226"
+msgid "60 seconds"
+msgstr ""
+
+msgctxt "#31227"
+msgid "5 minutes"
+msgstr ""
+
+msgctxt "#31228"
+msgid "10 minutes"
+msgstr ""
+
+msgctxt "#31229"
+msgid "20 minutes"
+msgstr ""
+
+msgctxt "#31230"
+msgid "25 minutes"
+msgstr ""
+
+msgctxt "#31231"
+msgid "30 minutes"
+msgstr ""
+
+msgctxt "#31232"
+msgid "Defines the time spent on a single image when rotating backgrounds are enabled."
+msgstr ""
+
+msgctxt "#31233"
+msgid "Backgrounds rotation time"
+msgstr ""
+
+msgctxt "#31234"
+msgid "Show extrathumbs"
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

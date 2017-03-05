@@ -19,6 +19,19 @@
     <include name="TimeLimit8"><visible>[System.IdleTime(8) + Skin.HasSetting(furniture.overlayinfo)] | Control.HasFocus(9601)</visible></include> 
     <include name="TimeLimit9"><visible>[System.IdleTime(9) + Skin.HasSetting(furniture.overlayinfo)] | Control.HasFocus(9601)</visible></include> 
     <include name="TimeLimit10"><visible>[System.IdleTime(10) + Skin.HasSetting(furniture.overlayinfo)] | Control.HasFocus(9601)</visible></include>
+	<!-- Background Rotation Duration -->
+	<include name="RotationLimit1"><timeperimage>5000</timeperimage></include>
+	<include name="RotationLimit2"><timeperimage>10000</timeperimage></include>
+	<include name="RotationLimit3"><timeperimage>15000</timeperimage></include>
+	<include name="RotationLimit4"><timeperimage>20000</timeperimage></include>
+	<include name="RotationLimit5"><timeperimage>30000</timeperimage></include>
+	<include name="RotationLimit6"><timeperimage>60000</timeperimage></include>
+	<include name="RotationLimit7"><timeperimage>300000</timeperimage></include>
+	<include name="RotationLimit8"><timeperimage>600000</timeperimage></include>
+	<include name="RotationLimit9"><timeperimage>900000</timeperimage></include>
+	<include name="RotationLimit10"><timeperimage>1200000</timeperimage></include>
+	<include name="RotationLimit11"><timeperimage>1500000</timeperimage></include>
+	<include name="RotationLimit12"><timeperimage>1800000</timeperimage></include>
     <!-- Password Protection -->
 	<variable name="passcode">
 		<value condition="[String.IsEmpty(Container(211).ListItem.Property(ParentalControl)) | String.Contains(Container(211).ListItem.Property(ParentalControl),no)]">$LOCALIZE[106]</value>
