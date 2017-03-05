@@ -56,7 +56,7 @@
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.535)">Viewtype_ShowCase</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.525)">Viewtype_MediumIcon</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.515)">Viewtype_Netflix</include>
-        </control>	
+        </control>		
 
         <!-- Menu -->
         <control type="group">
@@ -75,7 +75,7 @@
 				<onup>SetProperty(quicknavsetup,1,home)</onup>
 				<onup>9987</onup>
                 <include>Dialog_Top_GroupList</include>
-                <defaultcontrol always="true">3</defaultcontrol>                
+                <defaultcontrol always="true">3</defaultcontrol>
                 <control type="button" id="9096">
                     <description>Back to fullscreen</description>
                     <include>Defs_OptionButton2</include>
@@ -90,7 +90,7 @@
                     <onclick>fullscreen</onclick>
                     <visible>Player.HasAudio</visible>
                 </control>                       
-                <include>Object_BasicViewList</include>              
+                <include>Object_BasicViewList</include>
                 
                 <!-- Watched toggle -->
                 <control type="radiobutton" id="14">
@@ -153,7 +153,29 @@
                 </control>
             </control>
         </control>
-
+		
+		<control type="fadelabel" id="4410">
+			<top>-1000</top>
+			<width>750</width>
+			<height>0</height>
+			<scrollspeed>60</scrollspeed>
+			<scrollout>false</scrollout>
+			<font>Font-LineLabel</font>
+			<textcolor>white</textcolor>
+			<randomize>true</randomize>
+			<label>$INFO[ListItem.Art(extrathumb1)]</label>
+			<label>$INFO[ListItem.Art(extrathumb2)]</label>
+			<label>$INFO[ListItem.Art(extrathumb3)]</label>
+			<label>$INFO[ListItem.Art(extrathumb4)]</label>
+			<label>$INFO[ListItem.Art(extrathumb5)]</label>
+			<label>$INFO[ListItem.Art(extrathumb6)]</label>
+			<label>$INFO[ListItem.Art(extrathumb7)]</label>
+			<label>$INFO[ListItem.Art(extrathumb8)]</label>
+			<label>$INFO[ListItem.Art(extrathumb9)]</label>
+			<label>$INFO[ListItem.Art(extrathumb10)]</label>
+			<visible>Skin.HasSetting(rotatingthumbs)</visible>
+		</control>
+		
         <include>Furniture_OverlayInfo</include>
     </controls>
 
