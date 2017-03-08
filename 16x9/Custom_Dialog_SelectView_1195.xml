@@ -378,7 +378,7 @@
                         <onclick>Container.SetViewMode(50)</onclick>
                         <onclick>Container.SetViewMode(521)</onclick>
 						<visible>!Skin.HasSetting(SkinHelper.View.Disabled.521)</visible>
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(videos) | Container.Content(addons)</visible>
+						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(videos)</visible>
                     </item>					
                     <!-- BigWide Classic (Big Fanarts) -->
                     <item>

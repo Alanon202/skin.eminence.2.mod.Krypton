@@ -27,7 +27,7 @@
     <view id="Fanarts/Thumbs list" value="506" languageid="31164" type="movies,tvshows,episodes,sets,seasons,artists,albums,songs,setmovies,videos,images,addons"/>
     <view id="Fanart Logo" value="159" languageid="31742" type="movies,tvshows,sets,setmovies"/>  
     <view id="BigWide Classic" value="157" languageid="31729" type="movies,tvshows,sets,seasons,setmovies,episodes,artists,albums,videos"/>
-    <view id="Lovefilm" value="521" languageid="31208" type="movies,tvshows,sets,setmovies,seasons,episodes,videos,albums,artists,addons"/>	
+    <view id="Lovefilm" value="521" languageid="31208" type="movies,tvshows,sets,setmovies,seasons,episodes,videos,albums,artists"/>	
     <view id="ClearArts List" value="161" languageid="31744" type="movies,tvshows,sets"/>
     <view id="Logos List" value="162" languageid="31745" type="movies,tvshows,sets,setmovies"/> 
 	<view id="ShowCase" value="535" languageid="31199" type="movies,tvshows,sets,seasons,setmovies,artists,albums"/>
