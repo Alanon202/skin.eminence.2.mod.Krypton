@@ -1598,6 +1598,22 @@
             <onclick>PlayerControl(Next)</onclick>
 			<hitrect x="0" y="0" w="48" h="48" />
         </control>
+		
+        <control type="togglebutton" id="18">
+            <description>Extra Info</description>
+            <width>48</width>
+            <height>48</height>
+			<label></label>
+            <font>noop</font>
+            <texturefocus colordiffuse="$VAR[HighlightColor]">osd/info1.png</texturefocus>
+            <texturenofocus colordiffuse="LineLabel">osd/info1.png</texturenofocus>
+			<alttexturefocus colordiffuse="$VAR[HighlightColor]">osd/info1.png</alttexturefocus>
+            <alttexturenofocus colordiffuse="LineLabel">osd/info1.png</alttexturenofocus>
+            <onclick>Skin.ToggleSetting(pvr.infoepg)</onclick>
+			<include>Defs_OSDButton</include>
+			<visible>VideoPlayer.Content(LiveTV)</visible>
+			<hitrect x="0" y="0" w="48" h="48" />
+        </control>		
     </include>
     <include name="Window_OSD">
         <!-- <visible>!Window.IsVisible(script-cu-lrclyrics-main.xml) | !Window.IsVisible(MusicVisualisation.xml)</visible> -->
