@@ -127,14 +127,16 @@
     </control> 
 <!-- Clear Art -->            
             <control type="image">
-                    <centerleft>50%</centerleft>
-                    <bottom>16</bottom>
-                    <width>500</width>
-                    <height>281</height>
-                    <texture>$VAR[PlayerClearArt]</texture>
-                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                    <visible>Skin.HasSetting(videoosd.showclearart)</visible>
-                    <visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(visualisation)</visible>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31239])">ClearArtCenter</include>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31240])">ClearArtLeft</include>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31241])">ClearArtRight</include>
+				<bottom>16</bottom>
+                <width>500</width>
+                <height>281</height>
+                <texture>$VAR[PlayerClearArt]</texture>
+                <aspectratio align="center" aligny="bottom">keep</aspectratio>
+                <visible>Skin.HasSetting(videoosd.showclearart)</visible>
+                <visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(visualisation)</visible>
             </control>
             <control type="image">
                 <bottom>-500</bottom>
@@ -235,7 +237,7 @@
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/sdtv.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,tv) + ![String.Contains(Player.FilenameAndPath,sd-tv) | String.Contains(Player.FilenameAndPath,sdtv) | String.Contains(Player.FilenameAndPath,web)]</visible>
+						<visible>String.Contains(Player.FilenameAndPath,tv) + [String.Contains(Player.FilenameAndPath,sd-tv) | String.Contains(Player.FilenameAndPath,sdtv)]</visible>
 					</control>							
 					<control type="image">
 						<width>95</width>
@@ -286,7 +288,7 @@
 						<font>Font-ListInfo-Small</font>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="LineLabel" background="true" fallback="indicator/mpaa/OSD/unrated.png">$VAR[OSDRating,indicator/mpaa/OSD/,.png]</texture>
-						<visible>!Skin.HasSetting(disable.mpaa) + ![String.IsEmpty(VideoPlayer.MPAA) | String.IsEmpty(Window(Home).Property(SkinHelper.Player.MPAA))]</visible>
+						<visible>!Skin.HasSetting(disable.mpaa) + [!String.IsEmpty(VideoPlayer.MPAA) | !String.IsEmpty(Window(Home).Property(SkinHelper.Player.MPAA))]</visible>
 					</control>
 					<control type="image">
 						<width>108</width>
@@ -294,24 +296,24 @@
 						<align>right</align>
 						<font>Font-ListInfo-Small</font>
 						<aspectratio>keep</aspectratio>				
-						<texture colordiffuse="LineLabel" fallback="indicator/playerrating/empty.png">$VAR[PlayerRating,indicator/playerrating/,.png]</texture>
-						<visible>!Skin.HasSetting(disable.rating) + !Player.HasAudio</visible>
+						<texture colordiffuse="LineLabel">$VAR[PlayerRating,indicator/playerrating/,.png]</texture>
+						<visible>!Skin.HasSetting(disable.rating) + !Player.HasAudio + [!String.IsEmpty(VideoPlayer.Rating) | !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Rating))]</visible>
 					</control>
 				</control>
                 <control type="image">
-						<width>168</width>
-                        <height>240</height>
-						<aspectratio>keep</aspectratio>
-                        <texture fallback="DefaultVideoPlayer.png">$VAR[PlayerPoster]</texture>
-                        <visible>!VideoPlayer.Content(LiveTV)</visible>
+					<width>168</width>
+                    <height>240</height>
+					<aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideoPlayer.png">$VAR[PlayerPoster]</texture>
+                    <visible>!VideoPlayer.Content(LiveTV)</visible>
                 </control>                 
                 <control type="image">
-                	     <top>37</top>
-                        <width>168</width>
-                        <height>168</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture fallback="DefaultVideoPlayer.png">$INFO[Player.Art(thumb)]</texture>
-                        <visible>VideoPlayer.Content(LiveTV)</visible>
+                	<top>37</top>
+                    <width>168</width>
+                    <height>168</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="DefaultVideoPlayer.png">$VAR[PVRPlayerPoster]</texture>
+                    <visible>VideoPlayer.Content(LiveTV)</visible>
                 </control> 
  <!-- Plot and other Text -->               
                 <control type="grouplist">
@@ -322,7 +324,7 @@
                     <right>0</right>
                     <!--<top>pad</top>-->
                     <bottom>pad</bottom>  
-					<visible>!Skin.HasSetting(videoosd.moreinfo)</visible>					
+					<visible>!Skin.HasSetting(videoosd.moreinfo) + !VideoPlayer.Content(LiveTV) | !Skin.HasSetting(pvr.infoepg) + VideoPlayer.Content(LiveTV)</visible>				
 					<control type="label">
 						<!--<top>pad</top>-->
 						<left>pad</left>
@@ -373,7 +375,7 @@
                     </control>			
                 </control>
 				<control type="group">
-					<visible>Skin.HasSetting(videoosd.moreinfo)</visible>
+					<visible>Skin.HasSetting(videoosd.moreinfo) + !VideoPlayer.Content(LiveTV)</visible>
 					<left>176</left>
 					<right>0</right>
 					<top>0</top>
@@ -436,7 +438,49 @@
 						<visible>Integer.IsGreater(Container(5556).NumItems,0)</visible>
 					</control>
 				</control>
-            </control>
+            	<control type="grouplist">
+					<visible>Skin.HasSetting(pvr.infoepg) + VideoPlayer.Content(LiveTV)</visible>
+                    <itemgap>pad</itemgap>
+                    <orientation>vertical</orientation> 					
+					<left>196</left>
+					<right>0</right>
+					<top>30</top>
+					<control type="label">
+						<left>pad</left>
+						<right>pad</right>
+                        <height>36</height>
+						<aligny>bottom</aligny>
+                        <font>Font-InfoBox-Title</font>
+                        <label>$LOCALIZE[31235]</label>
+                    </control>
+					<control type="label">
+						<left>pad</left>
+						<right>pad</right>
+                        <height>36</height>
+						<aligny>bottom</aligny>
+						<scroll>yes</scroll>
+                        <font>Font-InfoBox-Title</font>
+                        <label>$INFO[Pvr.TVNowRecordingDateTime] - $INFO[Pvr.TVNowRecordingTitle]</label>
+                    </control>
+					<control type="label">
+						<left>pad</left>
+						<right>pad</right>
+                        <height>36</height>
+						<aligny>bottom</aligny>
+                        <font>Font-InfoBox-Title</font>
+                        <label>$LOCALIZE[31236]</label>
+                    </control>
+					<control type="label">
+						<left>pad</left>
+						<right>pad</right>
+                        <height>36</height>
+						<aligny>bottom</aligny>
+						<scroll>yes</scroll>
+                        <font>Font-InfoBox-Title</font>
+                        <label>$INFO[Pvr.TVNextRecordingDateTime] - $INFO[Pvr.TVNextRecordingTitle]</label>
+                    </control>					
+				</control>	
+			</control>
             <control type="progress" description="cache">
                 <width>100%</width>
                 <bottom>0</bottom>
