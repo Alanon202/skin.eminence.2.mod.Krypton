@@ -539,5 +539,13 @@
 		<focusedcolor>white</focusedcolor>
 		<onclick>noop</onclick>
 	</include>
-	
+	<include name="ClearArtLeft">
+		<left>pad</left>
+	</include>
+	<include name="ClearArtRight">
+		<right>pad</right>
+	</include>
+	<include name="ClearArtCenter">
+		<centerleft>50%</centerleft>
+	</include>
 </includes>
