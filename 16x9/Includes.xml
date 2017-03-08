@@ -65,7 +65,12 @@
         <value condition="String.IsEmpty(Skin.String(BackgroundColor)) + String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)">e2181818</value>
         <value condition="String.IsEmpty(Skin.String(BackgroundColor)) + String.IsEqual(Skin.CurrentColourTheme,Light)">e2ffffff</value>
         <value>$INFO[Skin.String(BackgroundColor)]</value>
-    </variable> 
+    </variable>
+    <variable name="Background_Color_Settings">
+		<value condition="!Skin.HasSetting(darkensettings) + [Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsProfile.xml) | Window.IsVisible(SettingsSystemInfo.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(AddonBrowser.xml)]">$VAR[Background_Color]</value>       
+        <value condition="Skin.HasSetting(darkensettings) + [Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsProfile.xml) | Window.IsVisible(SettingsSystemInfo.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(AddonBrowser.xml)]">FanartFade</value>
+		<value>$VAR[Background_Color]</value>
+    </variable> 	
     <variable name="HomeBar_Color">
         <value condition="String.IsEmpty(Skin.String(HomeBarColor))">HomeBarBG</value>
         <value>$INFO[Skin.String(HomeBarColor)]</value>
