@@ -573,13 +573,13 @@
             <orientation>horizontal</orientation>
             <itemgap>pad</itemgap>  
 			<!-- Music Ratings -->
-			<control type="image">
-				<width>140</width>
-				<height>95</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/musicrating/,.png]</texture>
-				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + ![Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies)]</visible>
-			</control>
+			<!-- <control type="image"> -->
+				<!-- <width>140</width> -->
+				<!-- <height>95</height> -->
+				<!-- <aspectratio>keep</aspectratio> -->
+				<!-- <texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/musicrating/,.png]</texture> -->
+				<!-- <visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + ![Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies)]</visible> -->
+			<!-- </control> -->
 		</control>
 		<!-- Movieset Grouplist -->
         <control type="grouplist">
@@ -789,26 +789,14 @@
         <control type="image" description="Fanart Fade">
             <width>100%</width>
             <height>100%</height>         
-            <texture colordiffuse="$VAR[Background_Color]">common/white.png</texture>
+            <texture colordiffuse="$VAR[Background_Color_Settings]">common/white.png</texture>
             <visible>!Window.IsVisible(home)</visible>
             <visible>!Window.IsVisible(weather)</visible>
             <visible>!Skin.HasSetting(global.backpanelmode)</visible>
-            <visible>!Window.IsVisible(SettingsCategory.xml) + !Window.IsVisible(Settings.xml) + !Window.IsVisible(SettingsProfile.xml) + !Window.IsVisible(SettingsSystemInfo.xml) + !Window.IsVisible(SkinSettings.xml) + !Window.IsVisible(AddonBrowser.xml)</visible>
-        </control>
-        <control type="image" description="Fanart Fade">
-            <width>100%</width>
-            <height>100%</height>            
-            <texture colordiffuse="FanartFade">common/white.png</texture>
-            <visible>!Window.IsVisible(home)</visible>
-            <visible>!Window.IsVisible(weather)</visible>
-            <visible>!Skin.HasSetting(global.backpanelmode)</visible>
-<!-- Ajout Visible -->            
-            <visible>Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsProfile.xml) | Window.IsVisible(SettingsSystemInfo.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(AddonBrowser.xml)</visible>
         </control>
         <control type="image">
             <bottom>0</bottom>
-            <width>100%</width>
-<!-- Modification Height -->            
+            <width>100%</width>            
             <height>100%</height>
             <texture colordiffuse="7f000000" flipy="true">common/gradient.png</texture>
             <visible>Skin.HasSetting(global.backpanelmode)</visible>
@@ -1314,7 +1302,7 @@
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[Furniture_TopBar_SubLabel_Color]">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
-				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies)]</visible>
+				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + ![Control.IsVisible(50) | Control.IsVisible(552) | Control.IsVisible(57)]</visible>
 				<visible>![Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)]</visible>
 			</control>			
         </control>   

@@ -293,6 +293,7 @@
 					<height>500</height>
 					<aspectratio align="right">keep</aspectratio>
 					<texture>osd/cdinside.png</texture>
+					<visible>Skin.HasSetting(osdmusic.showdisccase)</visible>
 				</control>			
 				<control type="image">
 					<left>16</left>
@@ -360,6 +361,7 @@
 					<font>Font-Music2</font>
 					<textcolor>ListLabel</textcolor>
 					<label>[UPPERCASE]$INFO[MusicPlayer.Property(Album_Label)]  [/UPPERCASE]</label>
+					<visible>Skin.HasSetting(osdmusic.showdisccase)</visible>
 				</control>
 				<control type="image">
 					<animation effect="fade" time="300">Visible</animation>
@@ -368,8 +370,20 @@
 					<height>500</height>
 					<aspectratio align="right">stretch</aspectratio>
 					<texture>$INFO[Player.Art(thumb)]</texture>
-					<visible>!String.Contains(Player.Art(thumb),DefaultAlbumCover.png)</visible>
+					<visible>!String.Contains(Player.Art(thumb),DefaultAlbumCover.png) + Skin.HasSetting(osdmusic.showdisccase)</visible>
 				</control>
+				<control type="image">
+					<animation effect="fade" time="300">Visible</animation>
+		            <animation effect="fade" time="300">Hidden</animation>
+					<width>555</width>
+					<height>555</height>
+					<top>-28</top>
+					<aspectratio align="right">stretch</aspectratio>
+					<texture diffuse="osd/cdcover_mask2.png" >$INFO[Player.Art(thumb)]</texture>
+					<bordertexture border="28">osd/cd_shadow2.png</bordertexture>
+					<bordersize>28</bordersize>					
+					<visible>!String.Contains(Player.Art(thumb),DefaultAlbumCover.png) + !Skin.HasSetting(osdmusic.showdisccase)</visible>
+				</control>				
 				<control type="image">
 					<left>-54</left>
 					<top>-10</top>
@@ -377,6 +391,7 @@
 					<height>520</height>
 					<aspectratio align="right">keep</aspectratio>
 					<texture>osd/cdcase.png</texture>
+					<visible>Skin.HasSetting(osdmusic.showdisccase)</visible>
 				</control>
 			</control>
 		</control>		
