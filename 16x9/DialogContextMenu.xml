@@ -1,101 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <!-- contextmenu -->
-    <defaultcontrol always="true">996</defaultcontrol>
+    <defaultcontrol always="true">996</defaultcontrol>	
+	<animation type="WindowOpen">
+		<effect type="slide" start="0,-50" end="0" time="500" tween="back" easing="out" />
+		<effect type="fade" start="0" end="100" time="200" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="fade" start="100" end="0" time="100" delay="200" />
+		<effect type="zoom" start="100" end="130" center="auto" time="200" tween="cubic" easing="in" />
+	</animation>	
+	
     <coordinates>
-        <origin x="0" y="0"/>
+		<top>0</top>
     </coordinates>
 
     <controls>
-<!--         <control type="group">
-            <include>Dialog_Top</include>
-            <include>Dialog_Background</include>
-            <include content="Dialog_Top_IconHeader">
-                <param name="label" value="$LOCALIZE[31069]" />
-                <param name="icon" value="special://skin/extras/icons/settings.png" />
-            </include>
-            <include content="Dialog_Top_Arrows">
-                <param name="id" value="996" />
-            </include>
-            
-            <control type="image" id="999" /> -->
-
-            <!-- Default GroupList -->
-<!--            <control type="grouplist" id="996">
-                <onup>Close</onup>
-                <ondown>Close</ondown>
-                <include>Dialog_Top_GroupList</include>
-            </control> -->
-
-            <!-- Default Button -->
-<!--            <control type="button" id="1000">
-                <include>Defs_OptionButton2</include>
-            </control>
-        </control> -->
-		<include>GlobalOverlay</include>
-        <control type="group">
-            <include>Animation_SlideIn_Bounce</include>
-            <include>Animation_FadeOut</include>
-            <top>180</top>
-            <centerleft>50%</centerleft>
-            <width>600</width>
-			<control type="image">
-			    <posx>0</posx>
-			    <posy>0</posy>
-			    <width>600</width>
-                <height>700</height>
-			    <texture colordiffuse="DialogBG">common/white.png</texture>
-            </control>
-			<control type="group">
-			    <left>25</left>
-			    <right>25</right>
-                <top>90</top>
-				<height>552</height>
-				<include>Object_Background</include>
-			</control>			
-			<control type="label">
-                <centerleft>50%</centerleft>
-                <width>578</width>
-                <align>center</align>
-                <label>Context SubMenu</label>
-                <posy>-830</posy>
-				<posx>30</posx>
-                <font>Font-LineLabel</font>
-            </control>
-			<control type="image">
-				<centerleft>50%</centerleft>
-				<posy>59</posy>
-				<width>16</width>
-				<height>16</height>
-				<texture colordiffuse="LineLabel" flipy="true">common/16-arrow-down.png</texture>
-				<visible>Container(996).HasPrevious</visible>
-			</control>
-			<control type="image">
-				<centerleft>50%</centerleft>
-				<posy>665</posy>
-				<width>16</width>
-				<height>16</height>
-				<texture colordiffuse="LineLabel" flipy="false">common/16-arrow-down.png</texture>
-				<visible>Container(996).HasNext</visible>
-			</control>
-            <control type="grouplist" id="996">
-				<posy>90</posy>
-				<left>25</left>
-				<right>25</right>
-                <align>center</align>
-                <height max="552">auto</height>
-                <itemgap>0</itemgap>
-				<orientation>vertical</orientation>
-				<onup>996</onup>
-                <ondown>996</ondown>
-				<onleft>close</onleft>
-				<onright>close</onright>
-                <control type="button" id="1000">
-					<width>550</width>
-                    <include>Defs_OptionButton</include>
-                </control>
-            </control>
-        </control>
+		<control type="image" id="999">
+			<width>550</width>
+			<height>809</height>
+			<texture border="25,25,25,25" colordiffuse="DialogBG">common/white.png</texture>
+		</control>
+		<control type="grouplist" id="996">
+			<centerleft>50%</centerleft>
+			<posy>25</posy>
+			<left>25</left>
+			<right>25</right>
+			<height min="69" max="759">auto</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>996</onup>
+			<ondown>996</ondown>
+			<onleft>close</onleft>
+			<onright>close</onright>
+			<control type="button" id="1000">
+				<width>500</width>
+				<include>Defs_OptionButton2</include>
+			</control>					
+		</control>
     </controls>
-
 </window>
