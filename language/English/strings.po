@@ -882,6 +882,50 @@ msgctxt "#31234"
 msgid "Show extrathumbs"
 msgstr ""
 
+msgctxt "#31235"
+msgid "Now:"
+msgstr ""
+
+msgctxt "#31236"
+msgid "Next:"
+msgstr ""
+
+msgctxt "#31237"
+msgid "ClearArt position"
+msgstr ""
+
+msgctxt "#31238"
+msgid "Sets the ClearArt position during playback."
+msgstr ""
+
+msgctxt "#31239"
+msgid "Center"
+msgstr ""
+
+msgctxt "#31240"
+msgid "Left"
+msgstr ""
+
+msgctxt "#31241"
+msgid "Right"
+msgstr ""
+
+msgctxt "#31242"
+msgid "Show disc case"
+msgstr ""
+
+msgctxt "#31243"
+msgid "Shows the disc case in the Music OSD."
+msgstr ""
+
+msgctxt "#31244"
+msgid "Dim the settings screen"
+msgstr ""
+
+msgctxt "#31245"
+msgid "Ignores the users background settings and darkens the screens for better visibility."
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

@@ -511,7 +511,13 @@
 		<!--OnBack Command-->
 		<value condition="Control.HasFocus(9971)">$LOCALIZE[31217]</value>	
 		<!--Background Rotation-->
-		<value condition="Control.HasFocus(9970)">$LOCALIZE[31232]</value>		
+		<value condition="Control.HasFocus(9970)">$LOCALIZE[31232]</value>
+		<!--ClearArt Position-->
+		<value condition="Control.HasFocus(9968)">$LOCALIZE[31238]</value>
+		<!--Disc Case-->
+		<value condition="Control.HasFocus(9967)">$LOCALIZE[31243]</value>
+		<!--Darken Settings-->
+		<value condition="Control.HasFocus(9966)">$LOCALIZE[31245]</value>		
     </variable>
 
 	<variable name="Label_PlayerStatus">
@@ -819,5 +825,5 @@
     <variable name="Label_SkinSetting_SubmenuStyle">
         <value condition="String.IsEmpty(Skin.String(SubmenuStyle))">$LOCALIZE[31759]</value>
         <value>$INFO[Skin.String(SubmenuStyle.label)]</value>
-    </variable>
+    </variable>	
 </includes>

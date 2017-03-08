@@ -471,6 +471,15 @@
                         <onclick>RunScript(script.image.resource.select,property=weather.icons&amp;type=resource.images.weathericons)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
+                    <!-- Darken Settings -->
+                    <control type="radiobutton" id="9966">
+                        <width>100%</width>
+                        <label>31244</label>
+                        <radioposx>1350</radioposx>
+                        <selected>Skin.HasSetting(darkensettings)</selected>
+                        <onclick>Skin.ToggleSetting(darkensettings)</onclick>
+                        <include>Defs_OptionButton</include>
+                    </control>					
                     <!-- Background Color -->
                     <control type="button" id="8210">
                         <width>100%</width>
@@ -559,6 +568,14 @@
                         <selected>Skin.HasSetting(osdmusic.showfakedisc)</selected>
                         <include>Defs_OptionButton</include>
                     </control>
+                    <control type="radiobutton" id="9967" description="Show disc case">
+                        <width>100%</width>
+                        <label>$LOCALIZE[31242]</label>
+                        <radioposx>1350</radioposx>
+                        <onclick>Skin.ToggleSetting(osdmusic.showdisccase)</onclick>
+                        <selected>Skin.HasSetting(osdmusic.showdisccase)</selected>
+                        <include>Defs_OptionButton</include>
+                    </control>					
                     <control type="radiobutton" id="9976" description="Manfeed's Lyrics">
                         <width>100%</width>
                         <label>$LOCALIZE[31804]</label>
@@ -605,6 +622,17 @@
                         <label>31525</label>
                         <selected>Skin.HasSetting(videoosd.showclearart)</selected>
                         <onclick>Skin.ToggleSetting(videoosd.showclearart)</onclick>
+                    </control>			
+                    <control type="button" id="9968" description="ClearArt Position">
+                        <width>100%</width>
+                        <label>   $LOCALIZE[31237]</label>
+						<label2>$INFO[Skin.String(ClearArtPos)]</label2>
+						<onclick condition="String.IsEmpty(Skin.String(ClearArtPos))">Skin.SetString(ClearArtPos,$LOCALIZE[31239])</onclick>
+						<onclick condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31239])">Skin.SetString(ClearArtPos,$LOCALIZE[31240])</onclick>
+						<onclick condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31240])">Skin.SetString(ClearArtPos,$LOCALIZE[31241])</onclick>
+						<onclick condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31241])">Skin.SetString(ClearArtPos,$LOCALIZE[31239])</onclick>						
+						<include>Defs_OptionButton</include>
+						<visible>Skin.HasSetting(videoosd.showclearart)</visible>
                     </control>
                     <control type="radiobutton" id="8403" description="Show ClearArt NextUp">
                         <width>100%</width>
@@ -613,8 +641,8 @@
                         <label>$LOCALIZE[31527]</label>
                         <selected>Skin.HasSetting(videoosd.showclearartnextup)</selected>
                         <onclick>Skin.ToggleSetting(videoosd.showclearartnextup)</onclick>
-                    </control>
-                    <!-- OSD Color -->
+                    </control>						
+                    <!-- OSD Opacity -->
                     <control type="button" id="9972">
                         <width>100%</width>
                         <label>31211</label>
