@@ -786,6 +786,15 @@
                             <visible>Integer.IsGreater(ListItem.Rating,0) | !String.IsEmpty(ListItem.Label2)</visible>
                             <visible>Skin.HasSetting(disable.rating)</visible>
                         </control>
+						<control type="image">
+							<centertop>50%</centertop>
+							<width>230</width>
+							<height>140</height>
+							<right>20</right>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
+							<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(songs) | Container.Content(albums)]</visible>
+						</control>						
                     </control>
                 </itemlayout>
 
@@ -866,6 +875,15 @@
                             <visible>Integer.IsGreater(ListItem.Rating,0) | !String.IsEmpty(ListItem.Label2)</visible>                          
                             <visible>Skin.HasSetting(disable.rating)</visible>
                         </control>
+						<control type="image">
+							<centertop>50%</centertop>
+							<width>235</width>
+							<height>140</height>
+							<right>20</right>
+							<aspectratio>keep</aspectratio>
+							<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
+							<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(songs) | Container.Content(albums)]</visible>
+						</control>
                     </control>
                 </focusedlayout>
             </control>
@@ -986,7 +1004,7 @@
 			<height>90</height>
 			<right>0</right>
 			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/musicrating/,.png]</texture>
+			<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(songs) | Container.Content(albums)]</visible>
 		</control>
     </include>
@@ -1115,7 +1133,7 @@
 			<height>90</height>
 			<right>0</right>
 			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/musicrating/,.png]</texture>
+			<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(songs) | Container.Content(albums)]</visible>
 		</control>
     </include>
