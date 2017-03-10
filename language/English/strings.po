@@ -2063,7 +2063,7 @@ msgid "[B]Script Duration (axbmcuser MOD)[/B] add-on is needed to convert the du
 msgstr ""
 
 msgctxt "#31784"
-msgid "Shows user ratings for music and videos."
+msgid "Show user ratings for music and videos"
 msgstr ""
 
 msgctxt "#31785"

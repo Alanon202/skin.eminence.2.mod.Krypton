@@ -95,7 +95,7 @@
 		<control type="group"> <!--OnScreen Info-->
 			<left>0</left>
 			<top>480</top>
-			<visible>!Skin.HasSetting(Hide.PlaybackInfos) + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+			<visible>[!Skin.HasSetting(Hide.PlaybackInfos) + Player.ShowInfo] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<control type="image"> <!--Set Panel-->
 				<top>10</top>
 				<width>1920</width>
@@ -180,17 +180,17 @@
 						<scroll>true</scroll>
 						<wrapmultiline>true</wrapmultiline>
 						<label>[I]$INFO[MusicPlayer.offset(1).Album,][/I]</label>
-					</control>					
-				</control>		
-				<control type="image">
-					<centertop>50%</centertop>
-					<width>200</width>
-					<height>135</height>
-					<left>15</left>
-					<top>315</top>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="ListLabel">$VAR[Player_UserRatingStar,indicator/musicrating/,.png]</texture>
-					<visible>Skin.HasSetting(music.showuserratings)</visible>
+					</control>
+					<!-- <control type="image"> -->
+						<!-- <centertop>50%</centertop> -->
+						<!-- <width>200</width> -->
+						<!-- <height>135</height> -->
+						<!-- <left>15</left> -->
+						<!-- <top>315</top> -->
+						<!-- <aspectratio>keep</aspectratio> -->
+						<!-- <texture colordiffuse="ListLabel">$VAR[Player_UserRatingStar,indicator/musicrating/,.png]</texture> -->
+						<!-- <visible>Skin.HasSetting(showuserratings)</visible> -->
+					<!-- </control> -->
 				</control>				
 			</control>
 			<control type="group"> <!--Song Info Panel--> 
@@ -198,14 +198,23 @@
 				<top>50</top>
 				<width>810</width>
 				<height>410</height>
+				<!-- <control type="image"> -->
+					<!-- <left>70</left> -->
+					<!-- <top>280</top> -->
+					<!-- <width>300</width> -->
+					<!-- <height>117</height> -->
+					<!-- <aspectratio>keep</aspectratio> -->
+					<!-- <texture border="5" background="true">$INFO[Skin.String(artworklocation)]$INFO[MusicPlayer.Artist,,/logo.png]</texture> -->
+				<!-- </control> -->
 				<control type="image">
+					<width>200</width>
+					<height>140</height>
 					<left>70</left>
-					<top>280</top>
-					<width>300</width>
-					<height>117</height>
-					<aspectratio>keep</aspectratio>
-					<texture border="5" background="true">$INFO[Skin.String(artworklocation)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
-				</control>
+					<top>290</top>
+					<aspectratio align="center">keep</aspectratio>
+					<texture colordiffuse="ListLabel">$VAR[Player_UserRatingStar,indicator/musicrating/,.png]</texture>
+					<visible>Skin.HasSetting(showuserratings)</visible>
+				</control>				
 				<control type="image">
 					<left>669</left>
 					<top>335</top>
@@ -222,7 +231,16 @@
 					<scroll>true</scroll>
 					<scrollsuffix>   •   </scrollsuffix>
 					<label>$INFO[MusicPlayer.Artist]</label>
+					<visible>String.EndsWith(Control.GetLabel(9965),blank.png)</visible>
 				</control>	
+				<control type="image" id="9965">
+					<left>500</left>
+					<top>-35</top>
+					<width>300</width>
+					<height>117</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture border="5" background="true" fallback="extras/icons/blank.png">$INFO[Skin.String(artworklocation)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+				</control>				
 				<control type="grouplist">
 					<top>80</top>
 					<width>813</width>

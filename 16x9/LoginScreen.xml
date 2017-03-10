@@ -113,7 +113,7 @@
                         <texture diffuse="common/login_diffuse.png" fallback="common/login_fallback_default.png">$INFO[Listitem.Icon]</texture>
                         <animation effect="slide" start="0,120" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(52).OnPrevious">Focus</animation>
                         <animation effect="slide" start="0,-120" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(52).OnNext">Focus</animation>
-                        <visible>String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)</visible>
+                        <visible>String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT) | !String.IsEqual(Skin.CurrentColourTheme,Light)</visible>
                     </control>
                     
                     <control type="image">                                

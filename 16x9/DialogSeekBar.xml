@@ -260,6 +260,16 @@
 						<visible>VideoPlayer.IsStereoscopic</visible>
 						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/3D.png</texture>
 					</control>
+					<control type="image">
+						<width>95</width>
+						<height>45</height>
+						<align>right</align>
+						<centertop>50%</centertop>
+						<font>Font-ListInfo-Small</font>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="LineLabel" background="true" fallback="indicator/mpaa/OSD/unrated.png">$VAR[OSDRating,indicator/mpaa/OSD/,.png]</texture>
+						<visible>!Skin.HasSetting(disable.mpaa) + [!String.IsEmpty(VideoPlayer.MPAA) | !String.IsEmpty(Window(Home).Property(SkinHelper.Player.MPAA))]</visible>
+					</control>					
 					<control type="group">
 						<width>108</width>
 						<height>45</height>
@@ -279,16 +289,6 @@
 							<font>Font-ListInfo-Small-Bold</font>
 							<label colordiffuse="LineLabel">$INFO[Window(Home).Property(SkinHelper.Player.IMDB.Top250)]</label>
 						</control>
-					</control>
-					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<align>right</align>
-						<centertop>50%</centertop>
-						<font>Font-ListInfo-Small</font>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" background="true" fallback="indicator/mpaa/OSD/unrated.png">$VAR[OSDRating,indicator/mpaa/OSD/,.png]</texture>
-						<visible>!Skin.HasSetting(disable.mpaa) + [!String.IsEmpty(VideoPlayer.MPAA) | !String.IsEmpty(Window(Home).Property(SkinHelper.Player.MPAA))]</visible>
 					</control>
 					<control type="image">
 						<width>108</width>
