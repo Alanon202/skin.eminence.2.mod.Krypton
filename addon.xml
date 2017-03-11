@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.eminence.2.mod.Krypton"
-    version="2.2.8"
+    version="2.3"
     name="Eminence 2.0 MOD"
     provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon">
     <requires>
@@ -35,7 +35,7 @@
 		</assets>	
 		<news> Changelog:
 		
-		[B]2.2.8[/B]
+		[B]2.3[/B]
 		1. Improved extrathumbs handling.
 		2. Improved the new context menu.
 		3. Improved rating icons.
@@ -46,7 +46,9 @@
 		8. Dependencies version bump.
 		9. Updated manfeed's lyrics to V2.
 		10. Show/Hide CD case option.
-		11. Adjusted the background colour effects.
+		11. Artist logo improvements.
+		12. Music OSD bugfix.
+		13. Adjusted the skin background colour effects.
 		
 		[B]2.2.7[/B]
 		1. Added a new context menu (testing!).
