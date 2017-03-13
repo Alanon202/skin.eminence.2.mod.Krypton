@@ -693,9 +693,13 @@
 					<animation effect="fade" start="100" end="0" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
 				</control>
 			</focusedlayout>
-			<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+			<include condition="Skin.HasSetting(AlphabetScrollbar)">AlphabetAction</include>
 		</control>		
     </include>
+	
+	<include name="AlphabetAction">
+		<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+	</include>
 
     <include name="Object_Scrollbar_Horizontal">
         <control type="scrollbar" id="60">
