@@ -158,8 +158,18 @@
                     <fadetime>200</fadetime>
                     <aspectratio>scale</aspectratio>
                     <texture>$VAR[Image_Thumb]</texture>
-                    <visible>!Container.Content(tvshows)</visible>
+                    <visible>!Container.Content(tvshows) + ![Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
+                <control type="image">
+                    <left>pad</left>
+                    <width>305</width>
+                    <top>pad</top>
+                    <bottom>pad</bottom>
+                    <fadetime>200</fadetime>
+                    <aspectratio>scale</aspectratio>
+                    <texture>$VAR[Image_Thumb]</texture>
+                    <visible>!Container.Content(tvshows) + [Container.Content(albums) | Container.Content(songs)]</visible>
+                </control>				
                 <control type="image">
                     <left>pad</left>
                     <width>560</width>
@@ -187,6 +197,52 @@
                     <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                 </control>
                 <control type="grouplist">
+					<visible>Container.Content(albums) | Container.Content(songs)</visible>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <itemgap>pad</itemgap>
+                    <orientation>vertical</orientation>
+                    <left>325</left>
+                    <right>pad</right>
+                    <top>pad</top>
+                    <bottom>pad</bottom>
+                    <control type="label">
+                        <top>pad</top>
+                        <left>pad</left>
+                        <right>pad</right>
+                        <height>36</height>
+                        <font>Font-InfoBox-Title</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>pad</left>
+                        <right>pad</right>
+                        <height>24</height>
+                        <textcolor>$VAR[HighlightColor2]</textcolor>
+                        <font>Font-ListInfo-Small-Bold</font>
+                        <label>$VAR[Label_Genre,[UPPERCASE],[/UPPERCASE]]</label>
+                    </control>
+                    <control type="textbox">
+                        <top>7</top>
+                        <left>pad</left>
+                        <right>pad</right>
+                        <height>154</height>
+                        <font>Font-ListInfo</font>
+                        <align>justify</align>
+                        <label>$VAR[Label_Plot]</label>
+                    </control>
+                    <control type="label">
+                        <top>13</top>
+                        <left>pad</left>
+                        <right>pad</right>
+                        <height>20</height>
+                        <align>right</align>
+						<scroll>yes</scroll>
+                        <font>Font-ListInfo-Small-Bold</font>
+                        <label>$VAR[Label_ExtraInfo_Icons]</label>
+                    </control>
+                </control>
+                <control type="grouplist">
+					<visible>!Container.Content(albums) + !Container.Content(songs)</visible>
                     <usecontrolcoords>true</usecontrolcoords>
                     <itemgap>pad</itemgap>
                     <orientation>vertical</orientation>
@@ -229,8 +285,8 @@
                         <font>Font-ListInfo-Small-Bold</font>
                         <label>$VAR[Label_ExtraInfo_Icons]</label>
                     </control>
-                </control>
-            </control>
+                </control>            
+			</control>
 			<control type="group">
                 <left>0</left>
                 <width>$PARAM[width]</width>
@@ -314,7 +370,7 @@
             <control type="group">
                 <width>622</width>
                 <control type="image">
-                    <texture colordiffuse="FF000000">common/white.png</texture>
+                    <texture colordiffuse="00FFFFFF">common/white.png</texture>
                 </control>
                 <control type="image">
                     <aspectratio>keep</aspectratio>
@@ -415,7 +471,7 @@
                             <control type="group">
                                 <width>622</width>
                                 <control type="image">
-                                    <texture colordiffuse="FF000000">common/white.png</texture>
+                                    <texture colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
                                 </control>
 							<control type="image">
 								<aspectratio>keep</aspectratio>
@@ -785,16 +841,7 @@
                             <label>$VAR[Label_Label3]</label>
                             <visible>Integer.IsGreater(ListItem.Rating,0) | !String.IsEmpty(ListItem.Label2)</visible>
                             <visible>Skin.HasSetting(disable.rating)</visible>
-                        </control>
-						<control type="image">
-							<centertop>50%</centertop>
-							<width>230</width>
-							<height>140</height>
-							<right>20</right>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
-							<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(songs) | Container.Content(albums)]</visible>
-						</control>						
+                        </control>						
                     </control>
                 </itemlayout>
 
@@ -875,15 +922,6 @@
                             <visible>Integer.IsGreater(ListItem.Rating,0) | !String.IsEmpty(ListItem.Label2)</visible>                          
                             <visible>Skin.HasSetting(disable.rating)</visible>
                         </control>
-						<control type="image">
-							<centertop>50%</centertop>
-							<width>235</width>
-							<height>140</height>
-							<right>20</right>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="ListLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
-							<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + [Container.Content(songs) | Container.Content(albums)]</visible>
-						</control>
                     </control>
                 </focusedlayout>
             </control>

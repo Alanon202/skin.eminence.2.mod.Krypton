@@ -86,7 +86,8 @@
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlot)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlots)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlots)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
-        <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>		
+        <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Plot)) + [Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]">$INFO[Window(home).Property(SkinHelper.ListItem.Plot)]</value>
         <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Music.Info))">$INFO[Window(Home).Property(SkinHelper.Music.Info)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Music.Albums))">$INFO[Window(Home).Property(SkinHelper.Music.Albums)]</value>

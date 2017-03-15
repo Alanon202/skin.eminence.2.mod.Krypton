@@ -1302,7 +1302,7 @@
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[Furniture_TopBar_SubLabel_Color]">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
-				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + ![Control.IsVisible(50) | Control.IsVisible(552) | Control.IsVisible(57)]</visible>
+				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + Window.IsVisible(MyVideoNav.xml) | !String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings) + Window.IsVisible(MyMusicNav.xml) + ![Control.IsVisible(50) | Control.IsVisible(552) | Control.IsVisible(509) | Control.IsVisible(54) | Control.IsVisible(508) | Control.IsVisible(502)]</visible>
 				<visible>![Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)]</visible>
 			</control>			
         </control>   

@@ -547,5 +547,5 @@
 	</include>
 	<include name="ClearArtCenter">
 		<centerleft>50%</centerleft>
-	</include>
+	</include>		
 </includes>

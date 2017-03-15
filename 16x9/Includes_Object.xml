@@ -851,12 +851,21 @@
                     <control type="image">
                         <left>0</left>
                         <width>270</width>
-                        <height>405</height>
-<!-- Modification Aspectratio -->                        
+                        <height>405</height>                        
                         <aspectratio>stretch</aspectratio>
                         <fadetime>200</fadetime>
                         <texture background="true">$VAR[Image_Poster]</texture>
+						<visible>![Container.Content(albums) | Container.Content(songs)]</visible>
                     </control>
+                    <control type="image">
+                        <left>0</left>
+                        <width>405</width>
+                        <height>405</height>                        
+                        <aspectratio>stretch</aspectratio>
+                        <fadetime>200</fadetime>
+                        <texture background="true">$VAR[Image_Poster]</texture>
+						<visible>Container.Content(albums) | Container.Content(songs)</visible>
+                    </control>					
                     <control type="image">
                         <top>-415</top>
                         <right>0</right>
@@ -865,8 +874,18 @@
                         <aspectratio>scale</aspectratio>
                         <fadetime>200</fadetime>
                         <texture background="true">$VAR[Image_Thumb]</texture>
-                        <visible>!Container.Content(tvshows)</visible>
+                        <visible>!Container.Content(tvshows) + ![Container.Content(albums) | Container.Content(songs)]</visible>
                     </control>
+                    <control type="image">
+                        <top>-415</top>
+                        <right>0</right>
+                        <width>405</width>
+                        <height>405</height>
+                        <aspectratio>scale</aspectratio>
+                        <fadetime>200</fadetime>
+                        <texture background="true">$VAR[Image_Thumb]</texture>
+                        <visible>!Container.Content(tvshows) + [Container.Content(albums) | Container.Content(songs)]</visible>
+                    </control>					
                     <control type="image">
                         <top>-415</top>
                         <right>0</right>
