@@ -1296,7 +1296,8 @@
             </control>
 <!-- Video Ratings -->
 			<control type="image">
-			    <posx>140</posx>
+				<animation effect="slide" start="0" end="92" condition="!Skin.HasSetting(disable.weatherheader)">Conditional</animation>
+			    <posx>350r</posx>
                 <posy>170</posy>
 				<width>230</width>
 				<height>50</height>
