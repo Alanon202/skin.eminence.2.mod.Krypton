@@ -1,14 +1,14 @@
 # XBMC Media Center language file
-# Addon Name: Eminence 2
-# Addon id: skin.eminence.2
-# Addon Provider: jurialmunkey
+# Addon Name: Eminence 2 MOD
+# Addon id: skin.eminence.2.mod.Krypton
+# Addon Provider: Alanon
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Main\n"
 "Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"Last-Translator: Alanon\n"
 "Language-Team: English (http://www.transifex.com/projects/p/xbmc-main/language/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -355,7 +355,7 @@ msgid "Watch Random"
 msgstr ""
 
 msgctxt "#31103"
-msgid "Delete Setstings Shortcut"
+msgid "Delete Settings Shortcut"
 msgstr ""
 
 msgctxt "#31104"
@@ -705,7 +705,7 @@ msgstr ""
 msgctxt "#31189"
 msgid "None"
 msgstr ""
- 
+
 msgctxt "#31190"
 msgid "Next Episode"
 msgstr ""
@@ -923,7 +923,7 @@ msgid "Dim the settings screen"
 msgstr ""
 
 msgctxt "#31245"
-msgid "Ignores the users background settings and darkens the screens for better visibility."
+msgid "Ignores the user's background settings and darkens the screens for better visibility."
 msgstr ""
 
 msgctxt "#31500"
@@ -1119,7 +1119,7 @@ msgid "Shows widget tile and infos on home menu."
 msgstr ""
 
 msgctxt "#31548"
-msgid "Choose how posters are displayed with widgets. [[B]Never[/B]] No poster is displayed with widgets. [[B]Always[/B]] Posters are always displayed with widgets. [[B]On Up[/B]] Posters are displayed only when pressing the Up button. [B]Individually set in customisation dialog[/B]] Choose to display or not posters individually for each widget via customise home menu."  
+msgid "Choose how posters are displayed with widgets. [[B]Never[/B]] No poster is displayed with widgets. [[B]Always[/B]] Posters are always displayed with widgets. [[B]On Up[/B]] Posters are displayed only when pressing the Up button. [B]Individually set in customisation dialog[/B]] Choose to display or not posters individually for each widget via customise home menu."
 msgstr ""
 
 msgctxt "#31549"
@@ -1147,15 +1147,15 @@ msgid "Let's make the home bar menu transparent."
 msgstr ""
 
 msgctxt "#31555"
-msgid "Sets home bar style."
+msgid "Sets the home bar style."
 msgstr ""
 
 msgctxt "#31556"
-msgid "Sets header tile style."
+msgid "Sets the header tile style."
 msgstr ""
 
 msgctxt "#31557"
-msgid "Sets widget tiles style."
+msgid "Sets the widget tiles style."
 msgstr ""
 
 msgctxt "#31558"
@@ -1171,7 +1171,7 @@ msgid "Gives a displacement effect to Fanart."
 msgstr ""
 
 msgctxt "#31561"
-msgid "Select a background to replace default."
+msgid "Select a background to replace the default."
 msgstr ""
 
 msgctxt "#31562"
@@ -1199,15 +1199,15 @@ msgid "Gives a displacement effect to artist Fanart."
 msgstr ""
 
 msgctxt "#31568"
-msgid "Disables header tile on music visualisation."
+msgid "Disables the header tile on music visualisation."
 msgstr ""
 
 msgctxt "#31569"
-msgid "Shows clock on music visualisation."
+msgid "Shows the clock on music visualisation."
 msgstr ""
 
 msgctxt "#31570"
-msgid "Shows weather on music visualisation."
+msgid "Shows the weather on music visualisation."
 msgstr ""
 
 msgctxt "#31571"
@@ -1223,19 +1223,19 @@ msgid "Shows TV Shows ClearArt with the [B]NextUp Notification[/B] add-on."
 msgstr ""
 
 msgctxt "#31574"
-msgid "Shows clock on header."
+msgid "Shows the clock on header."
 msgstr ""
 
 msgctxt "#31575"
-msgid "Shows clock with weather on header."
+msgid "Shows the clock with weather on header."
 msgstr ""
 
 msgctxt "#31576"
-msgid "Shows text header."
+msgid "Shows the text header."
 msgstr ""
 
 msgctxt "#31577"
-msgid "Shows the number of unwatched media rather than total number of media."
+msgid "Shows the number of unwatched media rather than the total number of media."
 msgstr ""
 
 msgctxt "#31578"
@@ -1247,7 +1247,7 @@ msgid "Shows media info icons such as ratio, resolution, video codec, audio code
 msgstr ""
 
 msgctxt "#31580"
-msgid "Shows a synopsis of videos in the forefront after few seconds."
+msgid "Shows a synopsis of videos in the forefront after a few seconds."
 msgstr ""
 
 msgctxt "#31581"
@@ -1259,7 +1259,7 @@ msgid "Hides the display of votes and notes in the entire skin."
 msgstr ""
 
 msgctxt "#31583"
-msgid "Hides the display of MPAA on the entire skin."
+msgid "Hides the display of MPAA in the entire skin."
 msgstr ""
 
 msgctxt "#31584"
@@ -1319,7 +1319,7 @@ msgid "Configure various functions of the power menu."
 msgstr ""
 
 msgctxt "#31598"
-msgid "Sets icon to be displayed when loading."
+msgid "Sets the icon to be displayed when loading."
 msgstr ""
 
 msgctxt "#31599"
@@ -1419,7 +1419,7 @@ msgid "[B]YouTube[/B] add-on is needed to watch movies trailers."
 msgstr ""
 
 msgctxt "#31623"
-msgid "Shows plot on Hub Fanart."
+msgid "Shows the plot on Hub Fanart."
 msgstr ""
 
 msgctxt "#31624"
@@ -1451,7 +1451,7 @@ msgid "Shows media info icons on Hub widgets such as ratio, resolution, video co
 msgstr ""
 
 msgctxt "#31631"
-msgid "Show ClearLogos on Hub widget"
+msgid "Show ClearLogos on Hub widgets"
 msgstr ""
 
 msgctxt "#31632"
@@ -1527,7 +1527,7 @@ msgid "Debug grid"
 msgstr ""
 
 msgctxt "#31650"
-msgid "Shows a debug grid on interface."
+msgid "Shows a debug grid on the interface."
 msgstr ""
 
 msgctxt "#31651"
@@ -1611,7 +1611,7 @@ msgid "Select the studio icons resource add-on."
 msgstr ""
 
 msgctxt "#31671"
-msgid "Show studio icons on videos infos"
+msgid "Show studio icons on video info screens"
 msgstr ""
 
 msgctxt "#31672"
@@ -1891,7 +1891,7 @@ msgid "Pixelated"
 msgstr ""
 
 msgctxt "#31741"
-msgid "[B]colourbox Script[/B] add-on is needed to display pixelated fanart on music visualisation background."
+msgid "[B]colorbox Script[/B] add-on is needed to display pixelated fanart on music visualisation background."
 msgstr ""
 
 msgctxt "#31742"
@@ -2007,7 +2007,7 @@ msgid "Use the alphabet scrollbar"
 msgstr ""
 
 msgctxt "#31770"
-msgid "Enables the alphabet scrollbar for quicker navigation in the library."
+msgid "Enables the alphabet scrollbar for quicker navigation in the library. [B]Disable this setting if you experience performance issues.[/B]"
 msgstr ""
 
 msgctxt "#31771"
@@ -2067,7 +2067,7 @@ msgid "Show user ratings for music and videos"
 msgstr ""
 
 msgctxt "#31785"
-msgid "Enables the 10-star user rating display wherever possible, including the Music OSD."
+msgid "Enables the user rating display wherever possible, including the Music OSD."
 msgstr ""
 
 msgctxt "#31786"
