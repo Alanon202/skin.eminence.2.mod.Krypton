@@ -518,7 +518,9 @@
 		<!--Disc Case-->
 		<value condition="Control.HasFocus(9967)">$LOCALIZE[31243]</value>
 		<!--Darken Settings-->
-		<value condition="Control.HasFocus(9966)">$LOCALIZE[31245]</value>		
+		<value condition="Control.HasFocus(9966)">$LOCALIZE[31245]</value>
+		<!--Fullscreen playback start-->
+		<value condition="Control.HasFocus(9964)">$LOCALIZE[31247]</value>			
     </variable>
 
 	<variable name="Label_PlayerStatus">

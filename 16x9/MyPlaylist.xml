@@ -8,7 +8,8 @@
     <onunload>SetProperty(NodeReturn,music,home)</onunload>
     <onunload>SetProperty(HubReturn,$INFO[Container.FolderPath],home)</onunload>
 	<onload>ClearProperty(quicknavsetup,home)</onload>
-	<onunload>ClearProperty(quicknavsetup,home)</onunload>	
+	<onunload>ClearProperty(quicknavsetup,home)</onunload>
+	<onload condition="!String.IsEmpty(Window(home).Property(Music.WasFullscreen)) + Skin.HasSetting(OSDAutoPlayback) + !Window.IsActive(visualisation)">AlarmClock(FullscreenMusic,ActivateWindow(visualisation),00:00,silent)</onload>	
     <controls>
         <!-- Background -->
         <include>Furniture_Background</include>

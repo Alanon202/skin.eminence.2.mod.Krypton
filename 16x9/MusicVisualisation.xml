@@ -4,7 +4,9 @@
 	<defaultcontrol>-</defaultcontrol>
 	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,info=firstrun)</onload>
-        <onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True,pixels=10,bits=1,radius=30)</onload> 
+    <onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True,pixels=10,bits=1,radius=30)</onload> 
+	<onload>SetProperty(Music.WasFullscreen,True,home)</onload>
+	<onunload>ClearProperty(Music.WasFullscreen,home)</onunload>	
 	<controls>
 
 	<control type="visualisation" id="2">

@@ -926,6 +926,14 @@ msgctxt "#31245"
 msgid "Ignores the user's background settings and darkens the screens for better visibility."
 msgstr ""
 
+msgctxt "#31246"
+msgid "Go to fullscreen on playback"
+msgstr ""
+
+msgctxt "#31247"
+msgid "Goes to the Music OSD immediately upon clicking a track."
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

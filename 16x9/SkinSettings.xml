@@ -533,6 +533,14 @@
                         <selected>Skin.HasSetting(Hide.PlaybackInfos)</selected>
                         <onclick>Skin.ToggleSetting(Hide.PlaybackInfos)</onclick>
                     </control>
+                    <control type="radiobutton" id="9964" description="Fulscreen Playback">
+                        <width>100%</width>
+                        <radioposx>1350</radioposx>
+                        <include>Defs_OptionButton</include>
+                        <label>31246</label>
+                        <selected>Skin.HasSetting(OSDAutoPlayback)</selected>
+                        <onclick>Skin.ToggleSetting(OSDAutoPlayback)</onclick>
+                    </control>					
                     <control type="radiobutton" id="8307" description="Disable Tile">
                         <width>100%</width>
                         <label>31531</label>

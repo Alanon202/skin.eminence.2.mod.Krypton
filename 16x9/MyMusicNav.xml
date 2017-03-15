@@ -8,7 +8,7 @@
     <onunload>SetProperty(NodeReturn,music,home)</onunload>
     <onunload>SetProperty(HubReturn,$INFO[Container.FolderPath],home)</onunload>
 	<onload>ClearProperty(quicknavsetup,home)</onload>
-	<onunload>ClearProperty(quicknavsetup,home)</onunload>	
+	<onunload>ClearProperty(quicknavsetup,home)</onunload>
     <controls>
         <!-- Background -->
         <include>Furniture_Background</include>
