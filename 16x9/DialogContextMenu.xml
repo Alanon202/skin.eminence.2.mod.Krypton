@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <!-- contextmenu -->
-    <defaultcontrol always="true">996</defaultcontrol>	
-	<animation type="WindowOpen">
-		<effect type="slide" start="0,-50" end="0" time="500" tween="back" easing="out" />
-		<effect type="fade" start="0" end="100" time="200" />
-	</animation>
-	<animation type="WindowClose" reversible="false">
-		<effect type="fade" start="100" end="0" time="100" delay="200" />
-		<effect type="zoom" start="100" end="130" center="auto" time="200" tween="cubic" easing="in" />
-	</animation>	
-	
-    <coordinates>
-		<top>0</top>
-    </coordinates>
-
-    <controls>
-		<control type="image" id="999">
-			<width>550</width>
-			<height>809</height>
-			<texture border="25,25,25,25" colordiffuse="DialogBG">common/white.png</texture>
-		</control>
-		<control type="grouplist" id="996">
-			<centerleft>50%</centerleft>
-			<posy>25</posy>
-			<left>25</left>
-			<right>25</right>
-			<height min="69" max="759">auto</height>
-			<itemgap>0</itemgap>
-			<orientation>vertical</orientation>
-			<onup>996</onup>
-			<ondown>996</ondown>
-			<onleft>close</onleft>
-			<onright>close</onright>
-			<control type="button" id="1000">
-				<width>500</width>
-				<include>Defs_OptionButton2</include>
-			</control>					
-		</control>
-    </controls>
+	<include condition="Skin.HasSetting(verticalcontext)">Dialog_VerticalContext</include>
+	<include condition="!Skin.HasSetting(verticalcontext)">Dialog_HorizontalContext</include>
 </window>

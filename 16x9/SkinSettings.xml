@@ -737,10 +737,20 @@
                         <visible>!Skin.HasSetting(disable.headertile)</visible>
                     </control>
 				</control>
+				<!-- DISPLAY ITEMS SETTINGS -->
 				<control type="grouplist" id="8010">                
                     <itemgap>0</itemgap>
                     <onleft>8000</onleft>
-					<visible>Container(8000).HasFocus(10)</visible>				
+					<visible>Container(8000).HasFocus(10)</visible>	
+					<!-- Vertical Context Menu -->
+                    <control type="radiobutton" id="9963">
+                        <radioposx>1350</radioposx>
+                        <width>100%</width>
+                        <label>31248</label>
+                        <selected>Skin.HasSetting(verticalcontext)</selected>
+                        <onclick>Skin.ToggleSetting(verticalcontext)</onclick>
+                        <include>Defs_OptionButton</include>
+                    </control>					
 					<!-- Media Flags -->
                     <control type="radiobutton" id="9019">
                         <radioposx>1350</radioposx>

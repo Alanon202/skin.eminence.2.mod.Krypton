@@ -520,7 +520,9 @@
 		<!--Darken Settings-->
 		<value condition="Control.HasFocus(9966)">$LOCALIZE[31245]</value>
 		<!--Fullscreen playback start-->
-		<value condition="Control.HasFocus(9964)">$LOCALIZE[31247]</value>			
+		<value condition="Control.HasFocus(9964)">$LOCALIZE[31247]</value>
+		<!--Vertical Context Menu-->
+		<value condition="Control.HasFocus(9963)">$LOCALIZE[31249]</value>		
     </variable>
 
 	<variable name="Label_PlayerStatus">
@@ -666,7 +668,8 @@
 	<variable name="PlayerPlot">
 		<value condition="!String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Plot))">$INFO[Window(Home).Property(SkinHelper.Player.Plot)]</value>
-    </variable>		
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.ExtendedPlot))">$INFO[Window(Home).Property(SkinHelper.Player.ExtendedPlot)]</value>    
+	</variable>		
 
 	<variable name="PlayerRating">	
 		<value condition="!String.IsEmpty(VideoPlayer.Rating)">$INFO[VideoPlayer.Rating]</value>
