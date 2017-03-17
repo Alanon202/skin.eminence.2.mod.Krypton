@@ -872,7 +872,7 @@ msgstr "30 minutes"
 
 msgctxt "#31232"
 msgid "Defines the time spent on a single image when rotating backgrounds are enabled."
-msgstr "Définir le temps passé sur une seule image lorsque la rotation des arrière-plan est activée."
+msgstr "Définir le temps passé sur une seule image lorsque la rotation des arrière-plans est activée."
 
 msgctxt "#31233"
 msgid "Backgrounds rotation time"
@@ -932,6 +932,13 @@ msgstr "Passer en mode plein écran lors de la lecture"
 msgctxt "#31247"
 msgid "Goes to the Music OSD immediately upon clicking a track."
 msgstr "Afficher immédiatement l'OSD Musique après avoir lancer une piste audio."
+msgctxt "#31248"
+msgid "Use vertical context menu"
+msgstr "Utiliser le menu contextuel vertical"
+
+msgctxt "#31249"
+msgid "Uses the vertical context menu instead of the default horizontal one."
+msgstr "Utiliser le menu contextuel vertical à la place du menu horizontal par défaut."
 
 msgctxt "#31500"
 msgid "None"
@@ -1043,7 +1050,7 @@ msgstr "Retour à la vidéo"
 
 msgctxt "#31527"
 msgid "Show ClearArt with the NextUp Notification add-on"
-msgstr "Afficher le logo transparent avec l'extension [b]NextUp Notification[/b]"
+msgstr "Afficher le logo transparent avec l'extension [B]NextUp Notification[/B]"
 
 msgctxt "#31528"
 msgid "Channels"

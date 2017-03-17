@@ -934,6 +934,14 @@ msgctxt "#31247"
 msgid "Goes to the Music OSD immediately upon clicking a track."
 msgstr ""
 
+msgctxt "#31248"
+msgid "Use vertical context menu"
+msgstr ""
+
+msgctxt "#31249"
+msgid "Uses the vertical context menu instead of the default horizontal one."
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""
@@ -2181,4 +2189,3 @@ msgstr ""
 msgctxt "#31811"
 msgid "Budget"
 msgstr ""
-
