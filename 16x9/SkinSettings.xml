@@ -1420,14 +1420,14 @@
 					<control type="radiobutton" id="9984">
 						<width>100%</width>
 						<radioposx>1350</radioposx>
-						<label>resource.images.busyspinners.titan $INFO[System.AddonVersion(resource.images.busyspinners.titan),(,)]</label>
+						<label>resource.images.busyspinners.basic $INFO[System.AddonVersion(resource.images.busyspinners.basic),(,)]</label>
 						<textureradioonfocus colordiffuse="ff00991f">common/radio-on.png</textureradioonfocus>
 						<textureradioonnofocus colordiffuse="ff00991f">common/radio-on.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="fff02222">common/status_off.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="fff02222">common/status_off.png</textureradiooffnofocus>
-						<onclick condition="!System.HasAddon(resource.images.busyspinners.titan)">RunPlugin(plugin://resource.images.busyspinners.titan)</onclick>
-						<onclick condition="System.HasAddon(resource.images.busyspinners.titan)">Addon.OpenSettings(resource.images.busyspinners.titan)</onclick>
-						<selected>System.HasAddon(resource.images.busyspinners.titan)</selected>
+						<onclick condition="!System.HasAddon(resource.images.busyspinners.basic)">RunPlugin(plugin://resource.images.busyspinners.basic)</onclick>
+						<onclick condition="System.HasAddon(resource.images.busyspinners.basic)">Addon.OpenSettings(resource.images.busyspinners.basic)</onclick>
+						<selected>System.HasAddon(resource.images.busyspinners.basic)</selected>
 						<include>Defs_OptionButton</include>
 					</control>
 
