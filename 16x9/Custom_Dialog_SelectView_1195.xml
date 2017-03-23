@@ -293,7 +293,7 @@
 					<!-- RightList -->
                     <item>
                         <label>31251</label>
-                        <icon>noop</icon>
+                        <icon>special://skin/extras/viewthumbs/516.jpg</icon>
                         <onclick>Close</onclick>
                         <onclick>Container.SetViewMode(50)</onclick>
                         <onclick>Container.SetViewMode(516)</onclick>
@@ -513,9 +513,9 @@
                     <onclick condition="[Container.Content(countries) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.countries))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=countries)</onclick>
                     <onclick condition="[Container.Content(studios) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.studios))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=studios)</onclick>
                     <onclick condition="[Container.Content(playlists) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.playlists))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=playlists)</onclick>
-                    <onclick condition="[Container.Content(movies) + !ListItem.IsCollection + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.movies))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=movies)</onclick>
+                    <onclick condition="[Container.Content(movies) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.movies))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=movies)</onclick>
                     <onclick condition="[Container.Content(sets) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.sets))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=sets)</onclick>
-					<!-- <onclick condition="[Container.Content(movies) + ListItem.IsCollection + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.setmovies))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=setmovies)</onclick>			 -->
+					<!-- <onclick condition="[ListItem.IsCollection + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.setmovies))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=setmovies)</onclick>			  -->
                     <onclick condition="[Container.Content(tvshows) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tvshows))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=tvshows)</onclick>
                     <onclick condition="[Container.Content(seasons) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.seasons))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=seasons)</onclick>
                     <onclick condition="[Container.Content(episodes) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.episodes))]">RunScript(script.skin.helper.service,action=setforcedview,contenttype=episodes)</onclick>

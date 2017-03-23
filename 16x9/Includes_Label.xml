@@ -128,14 +128,13 @@
 	</variable>		
 			
     <variable name="Label_ExtraInfo_Icons">
-        <value condition="Container.Content(seasons)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Episode,, $LOCALIZE[20360]]</value>   
-        <value condition="!ListItem.IsCollection + Container.Content(movies) + !Skin.HasSetting(disable.rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Year,  •  ,]$INFO[ListItem.Rating,  •  ,]</value>        
-        <value condition="!ListItem.IsCollection + Container.Content(movies) | Skin.HasSetting(disable.rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Year,  •  ,]</value>
-        <value condition="!ListItem.IsCollection + !Container.Content(movies) + !Skin.HasSetting(disable.rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]$INFO[ListItem.Rating,  •  ,]</value>  
-        <value condition="!ListItem.IsCollection + !Container.Content(movies) | Skin.HasSetting(disable.rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]</value>
-        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[20342]  •  ]$INFO[Window(Home).Property(SkinHelper.ListItem.Years)]</value>
 		<value condition="Container.Content(albums) + Control.IsVisible(516)">$INFO[ListItem.Year,, / ]$INFO[ListItem.Artist]</value>
-		<value condition="Container.Content(songs) + Control.IsVisible(516)">$INFO[ListItem.Artist]$INFO[ListItem.Duration, / ,]</value>
+		<value condition="Container.Content(songs) + Control.IsVisible(516)">$INFO[ListItem.Artist]$INFO[ListItem.Duration, / ,]</value>	
+        <value condition="Container.Content(seasons)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Episode,, $LOCALIZE[20360]]</value>   
+        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[20342]  •  ]$INFO[Window(Home).Property(SkinHelper.ListItem.Years)]</value>        
+        <value condition="!ListItem.IsCollection + Container.Content(movies) + [Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]">$VAR[Label_ExtraInfo]$INFO[ListItem.Year,  •  ,]</value>
+        <value condition="!ListItem.IsCollection + !Container.Content(movies) + !Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]$INFO[ListItem.Rating,  •  ,]</value>  
+        <value condition="!ListItem.IsCollection + !Container.Content(movies) + [Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]</value>
 	</variable>
 
     <variable name="Label_ExtendedInfo_InfoLine">

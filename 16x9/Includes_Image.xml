@@ -39,10 +39,11 @@
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>		
 		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
-		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearart)]</value>
-		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</value>	
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearart))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearart)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</value>	
 		<value>$INFO[Player.Art(clearart)]</value>
 		<value>$INFO[Player.Art(clearlogo)]</value>
+		<value>http://localhost:52307/getartwork&amp;title=$INFO[Window(Home).Property(SkinHelper.Player.Title)]&amp;type=clearart</value>
     </variable>
 
 	<variable name="MusicClearLogo">

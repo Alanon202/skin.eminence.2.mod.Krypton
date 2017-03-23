@@ -31,7 +31,7 @@
 				</control>
 				<control type="image">
 					<aspectratio align="right">keep</aspectratio>
-					<texture background="true">$INFO[Window(home).Property(Set.Movie.1.Art(discart))]</texture>
+					<texture background="true">$INFO[Window(home).Property(SkinHelper.ListItem.1.Art.DiscArt)]</texture>
 					<fadetime>400</fadetime>
 					<visible>ListItem.IsCollection</visible>
 				</control>
@@ -380,7 +380,7 @@
 							<font>Font-ListInfo-Small-Bold</font>
 							<textcolor>$VAR[HighlightColor]</textcolor>
 							<label>$VAR[Label_ExtraInfo_Icons]</label>
-							<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
+							<visible>ListItem.IsCollection | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
 						</control>	
 						<!-- <control type="label"> -->
 							<!-- <left>30</left> -->
