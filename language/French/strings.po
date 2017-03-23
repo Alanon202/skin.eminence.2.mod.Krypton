@@ -648,15 +648,15 @@ msgstr "Personnaliser le menu Alimentation"
 
 msgctxt "#31176"
 msgid "Genre icons"
-msgstr "Icônes des genres"
+msgstr "Icônes des genres cinématographiques"
 
 msgctxt "#31177"
 msgid "Music genre icons"
-msgstr "Icônes de genre musicale"
+msgstr "Icônes de genres musicaux"
 
 msgctxt "#31178"
 msgid "Record label icons"
-msgstr "Icônes de la maison de disques"
+msgstr "Icônes des maisons de disques"
 
 msgctxt "#31179"
 msgid "Select the record label icons resource add-on."
@@ -925,6 +925,7 @@ msgstr "Diminuer la luminosité"
 msgctxt "#31245"
 msgid "Ignores the user's background settings and darkens the screens for better visibility."
 msgstr "Ignorer les propriétés de l'arrière-plan et assombrir l'écran pour une meilleure visibilité."
+
 msgctxt "#31246"
 msgid "Go to fullscreen on playback"
 msgstr "Passer en mode plein écran lors de la lecture"
@@ -932,6 +933,7 @@ msgstr "Passer en mode plein écran lors de la lecture"
 msgctxt "#31247"
 msgid "Goes to the Music OSD immediately upon clicking a track."
 msgstr "Afficher immédiatement l'OSD Musique après avoir lancer une piste audio."
+
 msgctxt "#31248"
 msgid "Use vertical context menu"
 msgstr "Utiliser le menu contextuel vertical"
@@ -939,6 +941,22 @@ msgstr "Utiliser le menu contextuel vertical"
 msgctxt "#31249"
 msgid "Uses the vertical context menu instead of the default horizontal one."
 msgstr "Utiliser le menu contextuel vertical à la place du menu horizontal par défaut."
+
+msgctxt "#31250"
+msgid "Show DiscArt"
+msgstr "Afficher les DiscArts."
+
+msgctxt "#31251"
+msgid "RightList"
+msgstr "Liste à droite."
+
+msgctxt "#31252"
+msgid "Show Info"
+msgstr "Afficher les informations."
+
+msgctxt "#31253"
+msgid "Alternate layout"
+msgstr "Afficher la disposition alternative"
 
 msgctxt "#31500"
 msgid "None"
@@ -2129,8 +2147,8 @@ msgid "[B]Skin Helper Colourpicker[/B] add-on is needed to adjust the skin colou
 msgstr "L'extension [B]Skin Helper Colourpicker[/B] est nécessaire pour modifier les couleurs du thème."
 
 msgctxt "#31797"
-msgid "[B]Skin Helper Busy Spinners Titan[/B] add-on is needed to add extra spinner textures to the skin."
-msgstr "L'extension [B]Skin Helper Busy Spinners Titan[/B] est nécessaire pour ajouter des textures au pointeur du thème."
+msgid "[B]Animated Busy Spinners Pack[/B] add-on is needed to add extra spinner textures to the skin."
+msgstr "L'extension [B]Animated Busy Spinners Pack[/B] est nécessaire pour ajouter des textures au pointeur du thème."
 
 msgctxt "#31798"
 msgid "Backup fake disc"
