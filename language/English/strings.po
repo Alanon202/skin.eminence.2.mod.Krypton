@@ -942,6 +942,22 @@ msgctxt "#31249"
 msgid "Uses the vertical context menu instead of the default horizontal one."
 msgstr ""
 
+msgctxt "#31250"
+msgid "Show DiscArt"
+msgstr ""
+
+msgctxt "#31251"
+msgid "RightList"
+msgstr ""
+
+msgctxt "#31252"
+msgid "Show Info"
+msgstr ""
+
+msgctxt "#31253"
+msgid "Alternate layout"
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""
@@ -2131,7 +2147,7 @@ msgid "[B]Skin Helper Colourpicker[/B] add-on is needed to adjust the skin colou
 msgstr ""
 
 msgctxt "#31797"
-msgid "[B]Skin Helper Busy Spinners Titan[/B] add-on is needed to add extra spinner textures to the skin."
+msgid "[B]Animated Busy Spinners Pack[/B] add-on is needed to add extra spinner textures to the skin."
 msgstr ""
 
 msgctxt "#31798"

@@ -134,7 +134,9 @@
         <value condition="!ListItem.IsCollection + !Container.Content(movies) + !Skin.HasSetting(disable.rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]$INFO[ListItem.Rating,  •  ,]</value>  
         <value condition="!ListItem.IsCollection + !Container.Content(movies) | Skin.HasSetting(disable.rating)">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]</value>
         <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[20342]  •  ]$INFO[Window(Home).Property(SkinHelper.ListItem.Years)]</value>
-    </variable>
+		<value condition="Container.Content(albums) + Control.IsVisible(516)">$INFO[ListItem.Year,, / ]$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(songs) + Control.IsVisible(516)">$INFO[ListItem.Artist]$INFO[ListItem.Duration, / ,]</value>
+	</variable>
 
     <variable name="Label_ExtendedInfo_InfoLine">
         <value condition="String.IsEqual(Window.Property(content),150) + Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">$ADDON[script.extendedinfo 32010]</value>
@@ -831,5 +833,5 @@
     <variable name="Label_SkinSetting_SubmenuStyle">
         <value condition="String.IsEmpty(Skin.String(SubmenuStyle))">$LOCALIZE[31759]</value>
         <value>$INFO[Skin.String(SubmenuStyle.label)]</value>
-    </variable>	
+    </variable>
 </includes>

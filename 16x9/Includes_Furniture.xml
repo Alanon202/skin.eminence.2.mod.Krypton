@@ -116,7 +116,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture colordiffuse="LineLabel" background="true">$VAR[RatingFlagVar,,.png]</texture>
-			<visible>!String.IsEmpty(Container(9500).ListItem.MPAA) + ![Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(535) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
+			<visible>!String.IsEmpty(Container(9500).ListItem.MPAA) + ![Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(535) | Control.IsVisible(516) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
 		</control>					
 	</control>
 	</include>    
@@ -1404,7 +1404,7 @@
                 <width>100%</width>
 <!-- Modification Height -->                 
                 <height>100%</height>
-                <texture colordiffuse="7f000000">common/gradient.png</texture>
+                <texture colordiffuse="3f000000">common/gradient.png</texture>
                 <visible>Skin.HasSetting(global.backpanelmode) | Window.IsVisible(weather) | Window.IsVisible(home) | VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)</visible>
             </control>
             <control type="group">

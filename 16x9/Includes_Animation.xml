@@ -345,4 +345,14 @@
             <effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
         </animation>
     </include>
+	<include name="Animation_SpinningDisc">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="slide" tween="cubic" easing="inout" time="1500" delay="100" start="-800" end="0" />
+			<effect type="rotate" end="-360" center="auto" time="2000" delay="0" loop="false" tween="cubic" easing="inout" />
+		</animation>
+		<animation type="Conditional" reversible="false" condition="!Container.OnNext + !Container.OnPrevious">
+			<effect type="rotate" end="-360" center="auto" time="6400" delay="1200" loop="false" tween="cubic" easing="inout" />
+		</animation>
+	</include>
+
 </includes>
