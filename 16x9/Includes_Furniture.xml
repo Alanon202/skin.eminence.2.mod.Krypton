@@ -52,7 +52,7 @@
 		<control type="group">
 			<width>140</width>                 
 			<height>50</height>
-			<visible>Skin.HasSetting(furniture.showhubflags) + !String.IsEmpty(Container(9500).ListItem.Top250)</visible>
+			<visible>!Skin.HasSetting(disable.mpaa) + !String.IsEmpty(Container(9500).ListItem.Top250)</visible>
 			<control type="image">              
 				<width>140</width>                 
 				<height>50</height>
@@ -472,7 +472,7 @@
 			<control type="group">
 				<width>140</width>                 
 				<height>50</height>
-				<visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)) + ![Container.Content(episodes) | Container.Content(seasons)]</visible>
+				<visible>!Skin.HasSetting(disable.mpaa) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)) + ![Container.Content(episodes) | Container.Content(seasons)]</visible>
 				<control type="image">              
 					<width>140</width>                 
 					<height>50</height>
@@ -918,7 +918,7 @@
         <value condition="Window.IsVisible(script-NextAired-TVGuide.xml) | Window.IsVisible(script-NextAired-TVGuide2.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[Window(home).Property(NextAired.Total)][/COLOR] $LOCALIZE[31084]  •  [COLOR=$VAR[HighlightColor2]]$INFO[Window(home).Property(NextAired.TodayTotal)][/COLOR] $LOCALIZE[31085]</value>
         <value condition="Window.IsVisible(LoginScreen.xml)">$LOCALIZE[20115]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[Window.Property(TotalItems)][/COLOR] $LOCALIZE[31001]  •  $LOCALIZE[31067] [COLOR=$VAR[HighlightColor2]]$INFO[Window.Property(CurrentPage)][/COLOR] $LOCALIZE[20163] [COLOR=$VAR[HighlightColor2]]$INFO[Window.Property(TotalPages)][/COLOR]</value>        
-        <value condition="!String.IsEmpty(Container.NumItems)">[COLOR=$VAR[HighlightColor2]]$INFO[Container.NumItems][/COLOR] $LOCALIZE[31001]  •  $LOCALIZE[31067] [COLOR=$VAR[HighlightColor2]]$INFO[Container.CurrentPage][/COLOR] $LOCALIZE[20163] [COLOR=$VAR[HighlightColor2]]$INFO[Container.NumPages][/COLOR]</value>
+        <value condition="!String.IsEmpty(Container.NumItems) + !Control.IsVisible(516)">[COLOR=$VAR[HighlightColor2]]$INFO[Container.NumItems][/COLOR] $LOCALIZE[31001]  •  $LOCALIZE[31067] [COLOR=$VAR[HighlightColor2]]$INFO[Container.CurrentPage][/COLOR] $LOCALIZE[20163] [COLOR=$VAR[HighlightColor2]]$INFO[Container.NumPages][/COLOR]</value>
         <value condition="!String.IsEmpty(Skin.String(home.subheadertext))">$INFO[Skin.String(home.subheadertext)]</value>
         <value condition="Pvr.IsRecording">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[19158]...[/COLOR]$INFO[Pvr.NowRecordingTitle,  ,]$INFO[Pvr.NowRecordingChannel,  ,]</value>
         <value condition="Pvr.HasTimer">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[19157]...[/COLOR]$INFO[Pvr.NextRecordingTitle,  ,]$INFO[Pvr.NextRecordingDateTime,  ,]$INFO[Pvr.NextRecordingChannel,  ,]</value>
@@ -1404,9 +1404,10 @@
                 <width>100%</width>
 <!-- Modification Height -->                 
                 <height>100%</height>
-                <texture colordiffuse="3f000000">common/gradient.png</texture>
+                <texture colordiffuse="4f000000">common/gradient.png</texture>
                 <visible>Skin.HasSetting(global.backpanelmode) | Window.IsVisible(weather) | Window.IsVisible(home) | VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)</visible>
-            </control>
+				<visible>Skin.HasSetting(DimHome)</visible>
+			</control>
             <control type="group">
                 <include>Furniture_TopBar_Header</include>
 <!-- Ajout Visible -->                
