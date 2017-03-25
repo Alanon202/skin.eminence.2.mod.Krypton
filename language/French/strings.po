@@ -604,7 +604,7 @@ msgstr "Liste avec Fanarts/Vignettes"
 
 msgctxt "#31165"
 msgid "Show sorting and info-line headers"
-msgstr "Afficher le tri et les lignes d’informations"
+msgstr "Afficher les en-têtes des catégories d'informations"
 
 msgctxt "#31166"
 msgid "Individually set in customisation dialog"
@@ -944,19 +944,27 @@ msgstr "Utiliser le menu contextuel vertical à la place du menu horizontal par 
 
 msgctxt "#31250"
 msgid "Show DiscArt"
-msgstr "Afficher les DiscArts."
+msgstr "Afficher les DiscArts"
 
 msgctxt "#31251"
 msgid "RightList"
-msgstr "Liste à droite."
+msgstr "Liste à droite"
 
 msgctxt "#31252"
 msgid "Show Info"
-msgstr "Afficher les informations."
+msgstr "Afficher les informations"
 
 msgctxt "#31253"
 msgid "Alternate layout"
 msgstr "Afficher la disposition alternative"
+
+msgctxt "#31254"
+msgid "Dim Home"
+msgstr "Assombrir l'Accueil"
+
+msgctxt "#31255"
+msgid "Applies a gradient effect on the Home screen backgrounds."
+msgstr "Appliquer un effet de calque gris sur la/les images d’arrière-plan de l'écran d'accueil"
 
 msgctxt "#31500"
 msgid "None"
@@ -1284,7 +1292,7 @@ msgstr "Permet d'afficher le synopsis des vidéos au premier plan après quelque
 
 msgctxt "#31581"
 msgid "Shows sorting info and header lines."
-msgstr "Permet d'afficher les informations de tri et les lignes des en-têtes."
+msgstr "Permet d'afficher les en-têtes (catégorie, artwork, trier par...) visibles dans les différentes vues et menus."
 
 msgctxt "#31582"
 msgid "Hides the display of votes and notes in the entire skin."

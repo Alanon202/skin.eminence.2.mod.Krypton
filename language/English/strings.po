@@ -451,7 +451,7 @@ msgid "Colours"
 msgstr ""
 
 msgctxt "#31127"
-msgid "Header"
+msgid "Header & Hubs"
 msgstr ""
 
 msgctxt "#31128"
@@ -958,6 +958,26 @@ msgctxt "#31253"
 msgid "Alternate layout"
 msgstr ""
 
+msgctxt "#31254"
+msgid "Dim Home"
+msgstr ""
+
+msgctxt "#31255"
+msgid "Applies a gradient effect on the Home screen backgrounds."
+msgstr ""
+
+msgctxt "#31256"
+msgid "Widgets"
+msgstr ""
+
+msgctxt "#31257"
+msgid "Resources"
+msgstr ""
+
+msgctxt "#31258"
+msgid "This category contains the settings for managing skin widgets."
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""
@@ -995,7 +1015,7 @@ msgid "Power Menu Shortcut"
 msgstr ""
 
 msgctxt "#31509"
-msgid "Display items settings"
+msgid "Library options"
 msgstr ""
 
 msgctxt "#31510"
@@ -1119,11 +1139,11 @@ msgid "This category contains the settings for the Video OSD."
 msgstr ""
 
 msgctxt "#31540"
-msgid "This category contains the settings for the header."
+msgid "This category contains the settings for the header and a few settings for the hubs."
 msgstr ""
 
 msgctxt "#31541"
-msgid "This category contains the settings for displaying various items."
+msgid "This category contains the settings for displaying various items in the library."
 msgstr ""
 
 msgctxt "#31542"
@@ -1135,7 +1155,7 @@ msgid "This category contains extra settings."
 msgstr ""
 
 msgctxt "#31544"
-msgid "This category contains the settings for backing up and restoring skin settings."
+msgid "This category contains the settings for managing various skin resources."
 msgstr ""
 
 msgctxt "#31545"
@@ -1355,7 +1375,7 @@ msgid "Sets the icon to be displayed when loading."
 msgstr ""
 
 msgctxt "#31599"
-msgid "Shows an opaque background on header."
+msgid "Shows an opaque background on skin menus and windows."
 msgstr ""
 
 msgctxt "#31600"
