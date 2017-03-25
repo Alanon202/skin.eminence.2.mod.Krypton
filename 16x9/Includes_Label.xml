@@ -199,8 +199,9 @@
 		<value condition="Container(8000).HasFocus(10)">$LOCALIZE[31541]</value>
 		<value condition="Container(8000).HasFocus(5)">$LOCALIZE[31542]</value>
 		<value condition="Container(8000).HasFocus(6)">$LOCALIZE[31543]</value>
-		<value condition="Container(8000).HasFocus(8)">$LOCALIZE[31544]</value>
+		<value condition="Container(8000).HasFocus(8)">$LOCALIZE[31258]</value>
 		<value condition="Container(8000).HasFocus(7)">$LOCALIZE[31608]</value>
+		<value condition="Container(8000).HasFocus(11)">$LOCALIZE[31544]</value>
     </variable>
 	
     <variable name="Label_Settings_Line">
@@ -212,8 +213,9 @@
 		<value condition="Container(8000).HasFocus(10)">$LOCALIZE[31509]</value>
 		<value condition="Container(8000).HasFocus(5)">$LOCALIZE[31126]</value>
 		<value condition="Container(8000).HasFocus(6)">$LOCALIZE[31110]</value>
-		<value condition="Container(8000).HasFocus(8)">$LOCALIZE[31170]</value>
+		<value condition="Container(8000).HasFocus(8)">$LOCALIZE[31256]</value>
 		<value condition="Container(8000).HasFocus(7)">$LOCALIZE[31607]</value>
+		<value condition="Container(8000).HasFocus(11)">$LOCALIZE[31257]</value>
     </variable>	
 	
     <variable name="Label_RSS">  
@@ -221,8 +223,8 @@
         <value condition="Player.HasVideo + VideoPlayer.Content(LiveTV)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.ChannelName][/COLOR]  $INFO[VideoPlayer.Title]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>           
         <value condition="Player.HasVideo + !VideoPlayer.Content(LiveTV) + String.IsEmpty(VideoPlayer.TvShowTitle)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.Title][/COLOR]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>            
         <value condition="Player.HasVideo + !VideoPlayer.Content(LiveTV) + !String.IsEmpty(VideoPlayer.TvShowTitle)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.TvShowTitle][/COLOR]$INFO[VideoPlayer.Season,  •  ,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.Title]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !Skin.HasSetting(hidenextairedinfos)">[COLOR=$VAR[HighlightColor2]]Next Episode: [/COLOR]$INFO[Window(Home).Property(NextAired.NextTitle),, • ]$INFO[Window(Home).Property(NextAired.AirTime),, • ]$INFO[Window(Home).Property(NextAired.NextDate)]</value>
-        <value condition="String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31191]: [/COLOR]$INFO[Window(Home).Property(NextAired.LatestTitle),, • ]$INFO[Window(Home).Property(NextAired.LatestDate),, • ]$INFO[Window(Home).Property(NextAired.Status)]</value>
+        <value condition="!Control.IsVisible(516) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !Skin.HasSetting(hidenextairedinfos)">[COLOR=$VAR[HighlightColor2]]Next Episode: [/COLOR]$INFO[Window(Home).Property(NextAired.NextTitle),, • ]$INFO[Window(Home).Property(NextAired.AirTime),, • ]$INFO[Window(Home).Property(NextAired.NextDate)]</value>
+        <value condition="!Control.IsVisible(516) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31191]: [/COLOR]$INFO[Window(Home).Property(NextAired.LatestTitle),, • ]$INFO[Window(Home).Property(NextAired.LatestDate),, • ]$INFO[Window(Home).Property(NextAired.Status)]</value>
 		<value condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(furniture.showflags) + [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Budget.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Revenue.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.BoxOffice)) | !String.IsEmpty(ListItem.Director)]">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31778]: [/COLOR]$INFO[ListItem.Director]$VAR[Label_MovieInfo]</value>
 		<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(videos) + !String.IsEmpty(ListItem.Premiered)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31777]: [/COLOR]$INFO[ListItem.Premiered]</value>
         <value condition="Window.IsVisible(AddonBrowser.xml)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31523][/COLOR] $INFO[Window.Property(Updated)]</value>
@@ -524,7 +526,9 @@
 		<!--Fullscreen playback start-->
 		<value condition="Control.HasFocus(9964)">$LOCALIZE[31247]</value>
 		<!--Vertical Context Menu-->
-		<value condition="Control.HasFocus(9963)">$LOCALIZE[31249]</value>		
+		<value condition="Control.HasFocus(9963)">$LOCALIZE[31249]</value>
+		<!--Dim Home-->
+		<value condition="Control.HasFocus(9962)">$LOCALIZE[31255]</value>		
     </variable>
 
 	<variable name="Label_PlayerStatus">
