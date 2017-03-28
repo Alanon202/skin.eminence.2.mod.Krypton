@@ -441,19 +441,19 @@
                 <width>73</width>               
                 <height>50</height>
                 <texture colordiffuse="LineLabel" fallback="indicator/fallback_others.png">indicator/hdtv.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,hdtv) + String.Contains(Container(9500).ListItem.FilenameAndPath,HDTV)</visible>
+                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,hdtv)</visible>
             </control>
             <control type="image">               
                 <width>73</width>               
                 <height>50</height>
                 <texture colordiffuse="LineLabel" fallback="indicator/fallback_others.png">indicator/sdtv.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,sdtv) + String.Contains(Container(9500).ListItem.FilenameAndPath,sd)</visible>
+                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,sdtv)</visible>
             </control>				
             <control type="image">               
                 <width>130</width>               
                 <height>50</height>
                 <texture colordiffuse="LineLabel" fallback="indicator/fallback_others.png">indicator/web-dl.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,web)</visible>
+                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,web)</visible>
             </control>				
             <control type="image">              
                 <width>73</width>                 
