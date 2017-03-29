@@ -978,6 +978,14 @@ msgctxt "#31258"
 msgid "This category contains the settings for managing skin widgets."
 msgstr "Cette catégorie permet de gérer les différents réglages des widgets."
 
+msgctxt "#31259"
+msgid "Show the widget item duration"
+msgstr "Afficher le widget indiquant la durée des médias"
+
+msgctxt "#31260"
+msgid "Enables the duration display of the focused item within the widgets."
+msgstr "Activer l'affichage de la durée de l'élément sélectionné dans le widget."
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Aucune"

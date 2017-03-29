@@ -978,6 +978,14 @@ msgctxt "#31258"
 msgid "This category contains the settings for managing skin widgets."
 msgstr "Esta categoría contiene la configuración para administrar widgets de piel."
 
+msgctxt "#31259"
+msgid "Show the widget item duration"
+msgstr "Mostrar la duración del elemento del widget"
+
+msgctxt "#31260"
+msgid "Enables the duration display of the focused item within the widgets."
+msgstr "Permite la visualización de la duración del elemento enfocado dentro de los widgets."
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Ninguno"
@@ -1015,8 +1023,8 @@ msgid "Power Menu Shortcut"
 msgstr "Acceso directo al menú de apagado"
 
 msgctxt "#31509"
-msgid "Display items settings"
-msgstr "Ajustes de pantalla"
+msgid "Library options"
+msgstr "Opciones de la biblioteca"
 
 msgctxt "#31510"
 msgid "Disable rating and votes display"
@@ -1143,8 +1151,8 @@ msgid "This category contains the settings for the header."
 msgstr "Esta categoría contiene los ajustes de la cabecera."
 
 msgctxt "#31541"
-msgid "This category contains the settings for displaying various items."
-msgstr "Esta categoría contiene los ajustes de la pantalla."
+msgid "This category contains the settings for displaying various items in the library."
+msgstr "Esta categoría contiene la configuración para mostrar varios elementos de la biblioteca."
 
 msgctxt "#31542"
 msgid "This category contains the settings for highlight colours."
@@ -1155,8 +1163,8 @@ msgid "This category contains extra settings."
 msgstr "Esta categoría contiene ajustes adicionales."
 
 msgctxt "#31544"
-msgid "This category contains the settings for backing up and restoring skin settings."
-msgstr "Esta categoría contiene la configuración para realizar copias de seguridad y restaurar la configuración de la piel."
+msgid "This category contains the settings for managing various skin resources."
+msgstr "Esta categoría contiene la configuración para administrar varios recursos de skin."
 
 msgctxt "#31545"
 msgid "Configure home menu and widgets."
@@ -1375,8 +1383,8 @@ msgid "Sets the icon to be displayed when loading."
 msgstr "Establecer icono que se mostrará al cargar."
 
 msgctxt "#31599"
-msgid "Shows an opaque background on header."
-msgstr "Mostrar fondo opaco en la cabecera."
+msgid "Shows an opaque background on skin menus and windows."
+msgstr "Muestra un fondo opaco en los menús y ventanas del skin."
 
 msgctxt "#31600"
 msgid "Select the genre icons resource add-on."
@@ -1883,8 +1891,8 @@ msgid "Watched"
 msgstr "Vistos"
 
 msgctxt "#31726"
-msgid "Sets the info displayed on TV shows and seasons. [B]Total Episodes[/B] will show the total number of episodes for a TV shows or a season,[B]Unwatched Episodes[/B]will show the number of episodes not viewed for a TV shows or a season, [B]Watched Episodes[/B]will show the number of episodes already viewed for a TV shows or a season."
-msgstr "Establecer información que aparece en Series y temporadas.[B]Total[/B] mostrará el número total de episodios de una Serie o una temporada,[B]No Vistos[/B]mostrará el número de episodios no vistos de una Serie o una temporada ,[B]Vistos[/B]mostrará el número de episodios ya vistos de una Serie o una temporada."
+msgid "Sets the info displayed on TV shows and seasons. [[B]Total Episodes[/B]] will show the total number of episodes for a TV shows or a season, [[B]Unwatched Episodes[/B]] will show the number of episodes not viewed for a TV shows or a season, [[B]Watched Episodes[/B]] will show the number of episodes already viewed for a TV shows or a season."
+msgstr "Establece la información que se muestra en los programas de televisión y las estaciones. [[B] Episodios Totales [/ B]] mostrará el número total de episodios de un programa de TV o una temporada, [[B] Episodios no vistos [/ B]] mostrará el número de episodios no vistos para programas de TV o Una temporada, [[B] episodios mirados [/ B]] mostrará el número de episodios ya vistos para una serie de televisión o una temporada."
 
 msgctxt "#31727"
 msgid "[B]AutoCompletion for virtual keyboard[/B] add-on is needed to show autocompletion of keyboard."
@@ -2167,8 +2175,8 @@ msgid "[B]Skin Helper Colourpicker[/B] add-on is needed to adjust the skin colou
 msgstr "[B] El complemento del selector de color [/B] de Skin Helper es necesario para ajustar la configuración del color de la piel."
 
 msgctxt "#31797"
-msgid "[B]Skin Helper Busy Spinners Titan[/B] add-on is needed to add extra spinner textures to the skin."
-msgstr "[B] Skin Helper Busy Spinners El complemento Titan [/B] es necesario para añadir texturas de hilatura adicionales a la piel."
+msgid "[B]Animated Busy Spinners Pack[/B] add-on is needed to add extra spinner textures to the skin."
+msgstr "[B] Animated Busy Spinners Pack [/ B] add-on es necesario agregar texturas spinner extra a la skin."
 
 msgctxt "#31798"
 msgid "Backup fake disc"
@@ -2192,7 +2200,7 @@ msgstr "LibreELEC"
 
 msgctxt "#31803"
 msgid "[B]Skin Helper Skin Backup[/B] add-on is needed to enable skin backup and restore features."
-msgstr "[B] Skin Helper Skin Backup [/B] se necesita para habilitar las funciones de copia de seguridad y restauración de la piel."
+msgstr "[B] Skin Helper Skin Backup[/B] se necesita para habilitar las funciones de copia de seguridad y restauración de la piel."
 
 msgctxt "#31804"
 msgid "Use manfeed's lyrics"
