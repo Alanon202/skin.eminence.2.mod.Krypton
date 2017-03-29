@@ -479,7 +479,19 @@
         <value condition="Window.IsVisible(1102)">special://skin/extras/playlists/RandomEpisodes.xsp</value>
         <value>special://skin/extras/playlists/RandomMovies.xsp</value>
     </variable>
-    <variable name="Defs_HomeTileColor">
+    <variable name="Defs_Hub_Widget_Target">
+        <value condition="Window.IsVisible(1101) + !String.IsEmpty(Skin.String(Widget.1101.Type))">$INFO[Skin.String(Widget.1101.Type)]</value>
+        <value condition="Window.IsVisible(1102) + !String.IsEmpty(Skin.String(Widget.1102.Type))">$INFO[Skin.String(Widget.1102.Type)]</value>
+        <value condition="Window.IsVisible(1103) + !String.IsEmpty(Skin.String(Widget.1103.Type))">$INFO[Skin.String(Widget.1103.Type)]</value>
+        <value condition="Window.IsVisible(1104) + !String.IsEmpty(Skin.String(Widget.1104.Type))">$INFO[Skin.String(Widget.1104.Type)]</value>
+        <value condition="Window.IsVisible(1105) + !String.IsEmpty(Skin.String(Widget.1105.Type))">$INFO[Skin.String(Widget.1105.Type)]</value>
+        <value condition="Window.IsVisible(1106) + !String.IsEmpty(Skin.String(Widget.1106.Type))">$INFO[Skin.String(Widget.1106.Type)]</value>
+        <value condition="Window.IsVisible(1107) + !String.IsEmpty(Skin.String(Widget.1107.Type))">$INFO[Skin.String(Widget.1107.Type)]</value>
+        <value condition="Window.IsVisible(1108) + !String.IsEmpty(Skin.String(Widget.1108.Type))">$INFO[Skin.String(Widget.1108.Type)]</value>
+        <value condition="Window.IsVisible(1109) + !String.IsEmpty(Skin.String(Widget.1109.Type))">$INFO[Skin.String(Widget.1109.Type)]</value>
+        <value>videos</value>
+    </variable>    
+	<variable name="Defs_HomeTileColor">
         <value condition="Skin.HasSetting(home.tilecolor) + !String.IsEmpty(Container(9000).ListItem.Property(tilecolor))">$INFO[Container(9000).ListItem.Property(tilecolor)]</value>
         <value condition="Skin.HasSetting(home.tilecolor) + !String.IsEmpty(Container(211).ListItem.Property(tilecolor))">$INFO[Container(211).ListItem.Property(tilecolor)]</value>
         <value>$VAR[HighlightColor]</value>
