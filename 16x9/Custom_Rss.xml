@@ -34,14 +34,15 @@
             <animation effect="slide" end="0" start="0,266" time="150" reversible="false" condition="String.IsEmpty(Window(home).Property(FO9001)) + !String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
             <animation effect="slide" end="0,160" start="0" time="0" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
             <animation effect="slide" end="0,160" start="0" time="0" reversible="true" condition="String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
-			<animation effect="slide" tween="quadratic" easing="in" time="150" end="0,106" start="0" reversible="false" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),2) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
-            <animation effect="slide" start="0" end="0,106" time="500" tween="back" reversible="false" easing="out" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),1) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>			
+			<animation effect="slide" end="0,106" start="0" time="150" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),2) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
+            <animation effect="slide" end="0,106" start="0" time="150" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),1) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>			
 			<control type="image">
                 <posx>16</posx>
                 <posy>314r</posy>
                 <width>32</width>
                 <height>32</height>
                 <texture colordiffuse="LineLabel">common/rss.png</texture>
+				<animation effect="slide" start="0,6400" end="0" time="5">VisibleChange</animation>
             </control>
             <control type="rss">
                 <posx>48</posx>
@@ -53,6 +54,7 @@
                 <textcolor>SideArrow</textcolor>
                 <headlinecolor>SideArrow</headlinecolor>
                 <titlecolor>LineLabel</titlecolor>
+				<animation effect="slide" start="0,6400" end="0" time="5">VisibleChange</animation>
             </control>
         </control>
 
