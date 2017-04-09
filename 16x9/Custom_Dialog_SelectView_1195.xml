@@ -297,7 +297,7 @@
                         <onclick>Close</onclick>
                         <onclick>Container.SetViewMode(50)</onclick>
                         <onclick>Container.SetViewMode(516)</onclick>
-                        <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
+                        <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(videos)</visible>
                     </item>					
                     <!-- Media Info 1 -->
                     <item>
