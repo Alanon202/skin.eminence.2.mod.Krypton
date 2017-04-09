@@ -92,28 +92,28 @@
                     <width>76</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.VideoAspect,indicator/aspectratio/,.png]</texture>
+					<texture colordiffuse="LineLabel" fallback="indicator/fallback_ratio.png">$INFO[VideoPlayer.VideoAspect,indicator/aspectratio/,.png]</texture>
                     <visible>!String.IsEmpty(VideoPlayer.VideoAspect)</visible>
                 </control>
                 <control type="image">
 					<width>91</width>
                     <height>35</height>
 					<aspectratio>keep</aspectratio>
-                    <texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
+                    <texture colordiffuse="LineLabel" fallback="indicator/fallback_resolution.png">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
                      <visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
                 </control>               
                 <control type="image">
                     <width>91</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
-              	    <texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
+              	    <texture colordiffuse="LineLabel" fallback="indicator/fallback_video.png">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
                      <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
                 </control>                      
                 <control type="image">
                     <width>91</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
+					<texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
                     <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                     </control>                                  
                 <control type="image">
@@ -121,7 +121,7 @@
                     <height>35</height>
 					<aspectratio>keep</aspectratio>
                     <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
-                    <texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
+                    <texture colordiffuse="LineLabel" fallback="indicator/fallback_channels.png">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
                 </control>  
         </control>          
     </control> 
@@ -166,28 +166,28 @@
 						<width>91</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.VideoAspect,indicator/aspectratio/,.png]</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_ratio.png">$INFO[VideoPlayer.VideoAspect,indicator/aspectratio/,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.VideoAspect) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>						
 					<control type="image">
 						<width>108</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/resolution/480.png">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_resolution.png">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.VideoResolution) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>
 					<control type="image">
 						<width>108</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_video.png">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.VideoCodec) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>   
 					<control type="image">
 						<width>108</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.AudioCodec) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>						
 					<control type="image">
@@ -195,62 +195,62 @@
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
 						<visible>!String.IsEmpty(VideoPlayer.AudioChannels) + Skin.HasSetting(videoosd.showcompact)</visible>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_channels.png">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
 					</control>
 					<control type="image">
 						<width>95</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/bluray.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/bluray.png</texture>
 						<visible>[String.Contains(Player.FilenameAndPath,bluray) | String.Contains(Player.FilenameAndPath,bdrip) | String.Contains(Player.FilenameAndPath,brrip) | String.Contains(Player.FilenameAndPath,bd25) | String.Contains(Player.FilenameAndPath,bd50)]</visible>
 					</control>
 					<control type="image">
 						<width>95</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/hddvd.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hddvd.png</texture>
 						<visible>String.Contains(Player.FilenameAndPath,dvd) + String.Contains(Player.FilenameAndPath,hddvd)</visible>
 					</control>
 					<control type="image">
 						<width>95</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/dvd.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/dvd.png</texture>
 						<visible>String.Contains(Player.FilenameAndPath,dvd) + !String.Contains(Player.FilenameAndPath,hddvd)</visible>
 					</control>
 					<control type="image">
 						<width>70</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/strm.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/strm.png</texture>
 						<visible>String.Contains(Player.FilenameAndPath,strm)</visible>
 					</control>	
 					<control type="image">
 						<width>95</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/hdtv.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hdtv.png</texture>
 						<visible>String.Contains(Player.FilenameAndPath,tv) + [String.Contains(Player.FilenameAndPath,hdtv) | String.Contains(Player.FilenameAndPath,hd tv) | String.Contains(Player.FilenameAndPath,hd-tv)]</visible>
 					</control>
 					<control type="image">
 						<width>95</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/sdtv.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/sdtv.png</texture>
 						<visible>String.Contains(Player.FilenameAndPath,tv) + [String.Contains(Player.FilenameAndPath,sd-tv) | String.Contains(Player.FilenameAndPath,sdtv)]</visible>
 					</control>							
 					<control type="image">
 						<width>95</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/web-dl.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/web-dl.png</texture>
 						<visible>String.Contains(Player.FilenameAndPath,web) | String.Contains(Player.FilenameAndPath,webdl) | String.Contains(Player.FilenameAndPath,web-dl) | String.Contains(Player.FilenameAndPath,webrip)</visible>
 					</control>			
 				   <control type="image">
 						<width>70</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/strm.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/strm.png</texture>
 						<visible>!Player.HasAudio + !String.Contains(Player.FilenameAndPath,web) + !String.Contains(Player.FilenameAndPath,dvd) + !String.Contains(Player.FilenameAndPath,hd) + !String.Contains(Player.FilenameAndPath,bluray) + !String.Contains(Player.FilenameAndPath,br) + !String.Contains(Player.FilenameAndPath,bd) + !String.Contains(Player.FilenameAndPath,tv)</visible>
 					</control>
 					<control type="image">
@@ -258,7 +258,7 @@
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
 						<visible>VideoPlayer.IsStereoscopic</visible>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">indicator/3D.png</texture>
+						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/3D.png</texture>
 					</control>
 					<control type="image">
 						<width>95</width>

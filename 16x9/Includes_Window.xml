@@ -614,13 +614,13 @@
                         <control type="image">
                                 <width>91</width>
                                 <height>35</height>
-                                <texture fallback="indicator/fallback.png" colordiffuse="ListLabel">$INFO[MusicPlayer.Channels,indicator/channels/,.png]</texture>
+                                <texture fallback="indicator/fallback_channels.png" colordiffuse="ListLabel">$INFO[MusicPlayer.Channels,indicator/channels/,.png]</texture>
                                 <visible>!String.IsEmpty(MusicPlayer.Channels)</visible>
                             </control>
                             <control type="image">
                                 <width>91</width>
                                 <height>35</height>
-                                <texture fallback="indicator/fallback.png" colordiffuse="ListLabel">$INFO[MusicPlayer.Codec,indicator/audio/,.png]</texture>
+                                <texture fallback="indicator/fallback_audio.png" colordiffuse="ListLabel">$INFO[MusicPlayer.Codec,indicator/audio/,.png]</texture>
                                 <visible>!String.IsEmpty(MusicPlayer.Codec)</visible>
                             </control>
 	                  <control type="group">
@@ -711,25 +711,25 @@
                         <control type="image">
                                 <width>51</width>
                                 <height>35</height>
-                                <texture fallback="indicator/fallback.png" colordiffuse="ListLabel">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
+                                <texture fallback="indicator/fallback_resolution.png" colordiffuse="ListLabel">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
                                 <visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
                             </control> 
                             <control type="image">
                                 <width>91</width>
                                 <height>35</height>
-                                <texture fallback="indicator/fallback.png" colordiffuse="ListLabel">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
+                                <texture fallback="indicator/fallback_video.png" colordiffuse="ListLabel">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
                                 <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
                             </control>  
                             <control type="image">
                                 <width>91</width>
                                 <height>35</height>
-                                <texture fallback="indicator/fallback.png" colordiffuse="ListLabel">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
+                                <texture fallback="indicator/fallback_audio.png" colordiffuse="ListLabel">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
                                 <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                             </control>      
                             <control type="image">
                                 <width>91</width>
                                 <height>35</height>
-                                <texture fallback="indicator/fallback.png" colordiffuse="ListLabel">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
+                                <texture fallback="indicator/fallback_channels.png" colordiffuse="ListLabel">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
                                 <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
                             </control>                                    
                     </control>
@@ -1892,7 +1892,7 @@
                 <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>
                 <align>right</align>
-                <onleft>17</onleft>
+                <onleft>18</onleft>
                 <onright>1</onright>
                 <onup>SetProperty(osdinfo,1,home)</onup>
                 <ondown condition="String.IsEmpty(Window(home).Property(osdinfo))">Close</ondown>
