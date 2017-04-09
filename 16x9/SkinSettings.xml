@@ -589,12 +589,21 @@
                         <visible>!Skin.HasSetting(osdmusic.disableclock)</visible>
                         <include>Defs_OptionButton</include>
                     </control>
+                    <control type="radiobutton" id="9960" description="Use animated disc">
+                        <width>100%</width>
+                        <label>$LOCALIZE[31261]</label>
+                        <radioposx>1350</radioposx>
+                        <onclick>Skin.ToggleSetting(osdmusic.showdisc)</onclick>
+                        <selected>Skin.HasSetting(osdmusic.showdisc)</selected>
+                        <include>Defs_OptionButton</include>
+                    </control>					
                     <control type="radiobutton" id="9983" description="Use fake disc">
                         <width>100%</width>
                         <label>$LOCALIZE[31798]</label>
                         <radioposx>1350</radioposx>
                         <onclick>Skin.ToggleSetting(osdmusic.showfakedisc)</onclick>
                         <selected>Skin.HasSetting(osdmusic.showfakedisc)</selected>
+						<visible>Skin.HasSetting(osdmusic.showdisc)</visible>
                         <include>Defs_OptionButton</include>
                     </control>
                     <control type="radiobutton" id="9967" description="Show disc case">
@@ -863,6 +872,15 @@
                         <selected>Skin.HasSetting(backoption)</selected>
                         <onclick>Skin.ToggleSetting(backoption)</onclick>
                         <include>Defs_OptionButton</include>
+                    </control>
+                    <!-- Plot Outline -->
+                    <control type="radiobutton" id="9959">
+                        <radioposx>1350</radioposx>
+                        <width>100%</width>
+                        <label>31263</label>
+                        <selected>Skin.HasSetting(plotoutline)</selected>
+                        <onclick>Skin.ToggleSetting(plotoutline)</onclick>
+                        <include>Defs_OptionButton</include>
                     </control>					
                     <!-- Overlay Plot -->
                     <control type="radiobutton" id="9003">
@@ -872,8 +890,9 @@
                         <selected>Skin.HasSetting(furniture.overlayinfo)</selected>
                         <onclick>Skin.ToggleSetting(furniture.overlayinfo)</onclick>
                         <include>Defs_OptionButton</include>
-                    </control>
-                    <control type="button" id="9020">
+                    </control>					
+                    <!-- Time Limit -->
+					<control type="button" id="9020">
                         <width>100%</width>
                         <label>$LOCALIZE[31713]</label>
                         <label2>$VAR[Label_SkinSetting_TimeLimit] $LOCALIZE[31712]</label2>
@@ -899,7 +918,8 @@
                         <selected>Skin.HasSetting(SkinHelperAnimations)</selected>
                         <onclick>Skin.ToggleSetting(SkinHelperAnimations)</onclick>
                         <include>Defs_OptionButton</include>
-                    </control>		
+                    </control>
+					<!--Alphabet Scrollbar -->
                     <control type="radiobutton" id="9996">
                         <radioposx>1350</radioposx>
                         <width>100%</width>
@@ -907,7 +927,8 @@
                         <selected>Skin.HasSetting(AlphabetScrollbar)</selected>
                         <onclick>Skin.ToggleSetting(AlphabetScrollbar)</onclick>
                         <include>Defs_OptionButton</include>
-                    </control>		
+                    </control>
+					<!--Scrollbars -->
                     <control type="radiobutton" id="9995">
                         <radioposx>1350</radioposx>
                         <width>100%</width>
@@ -925,7 +946,7 @@
                         <onclick>Skin.ToggleSetting(furniture.hidesortinfo)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
-                   <!-- Show ClearLogo Video -->
+					<!-- Show ClearLogo Video -->
                     <control type="radiobutton" id="9009">
                         <width>100%</width>
                         <label>31513</label>

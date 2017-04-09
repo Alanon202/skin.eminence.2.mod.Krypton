@@ -222,7 +222,7 @@
 					<top>335</top>
 					<width>130</width>
 					<aspectratio align="left">keep</aspectratio>
-					<texture colordiffuse="LineLabel" fallback="indicator/fallback.png">$INFO[MusicPlayer.Codec,indicator/audio/,.png]</texture>
+					<texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[MusicPlayer.Codec,indicator/audio/,.png]</texture>
 				</control>
 				<control type="label"> <!--Song Info Text-->
 					<height>80</height>
@@ -328,7 +328,7 @@
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 					<texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath]cdart.png</texture>
 					<!--<texture background="true" fallback="osd/cd.png">$INFO[Skin.String(musiccdart.location)]$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,/,.png]</texture>-->
-					<visible>!Skin.HasSetting(osdmusic.showfakedisc)</visible>
+					<visible>!Skin.HasSetting(osdmusic.showfakedisc) + Skin.HasSetting(osdmusic.showdisc)</visible>
 				</control>
 				<control type="image" id="88888">
 					<left>16</left>
@@ -343,7 +343,7 @@
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 					<texture background="true" fallback="osd/blank.png">$INFO[Player.FolderPath]cdart.png</texture>
 					<!--<texture background="true" fallback="osd/cd.png">$INFO[Skin.String(musiccdart.location)]$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,/,.png]</texture>-->
-					<visible>Skin.HasSetting(osdmusic.showfakedisc)</visible>
+					<visible>Skin.HasSetting(osdmusic.showfakedisc) + Skin.HasSetting(osdmusic.showdisc)</visible>
 				</control>		
 				<control type="label">
 					<left>360</left>
@@ -352,7 +352,7 @@
 					<height>89</height>
 					<align>center</align>
 					<font>CDArtist</font>
-					<visible>String.IsEqual(Control.GetLabel(88888),osd/blank.png) + Skin.HasSetting(osdmusic.showfakedisc)</visible>
+					<visible>String.IsEqual(Control.GetLabel(88888),osd/blank.png) + Skin.HasSetting(osdmusic.showfakedisc) + Skin.HasSetting(osdmusic.showdisc)</visible>
 					<label>$INFO[MusicPlayer.Artist, ,]</label>
 					<animation effect="rotate" end="-360" center="495,252" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 					<textcolor>black</textcolor>
@@ -365,7 +365,7 @@
 					<height>99</height>
 					<align>center</align>
 					<font>CDAlbum</font>
-					<visible>String.IsEqual(Control.GetLabel(88888),osd/blank.png) + Skin.HasSetting(osdmusic.showfakedisc)</visible>
+					<visible>String.IsEqual(Control.GetLabel(88888),osd/blank.png) + Skin.HasSetting(osdmusic.showfakedisc) + Skin.HasSetting(osdmusic.showdisc)</visible>
 					<label>$INFO[MusicPlayer.Album, ,]</label>
 					<animation effect="rotate" end="-360" center="495,252" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 					<textcolor>black</textcolor>

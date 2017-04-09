@@ -82,7 +82,8 @@
     </variable>
 
     <variable name="Label_Plot">
-        <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Plot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.Plot)]</value>
+        <value condition="!String.IsEmpty(ListItem.PlotOutline) + !ListItem.IsCollection + Skin.HasSetting(plotoutline)">$INFO[ListItem.PlotOutline]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Plot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.Plot)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlot)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlots)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlots)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
@@ -530,7 +531,11 @@
 		<!--Dim Home-->
 		<value condition="Control.HasFocus(9962)">$LOCALIZE[31255]</value>		
 		<!--Show Duration on Widgets-->
-		<value condition="Control.HasFocus(9961)">$LOCALIZE[31260]</value>	   
+		<value condition="Control.HasFocus(9961)">$LOCALIZE[31260]</value>
+		<!--Show Animated Disc-->
+		<value condition="Control.HasFocus(9960)">$LOCALIZE[31262]</value>
+		<!--Use Plot Outline-->
+		<value condition="Control.HasFocus(9959)">$LOCALIZE[31264]</value>		
    </variable>
 
 	<variable name="Label_PlayerStatus">
