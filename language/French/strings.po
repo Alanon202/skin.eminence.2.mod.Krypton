@@ -986,6 +986,22 @@ msgctxt "#31260"
 msgid "Enables the duration display of the focused item within the widgets."
 msgstr "Activer l'affichage de la durée de l'élément sélectionné dans le widget."
 
+msgctxt "#31261"
+msgid "Use animated discs"
+msgstr "Utiliser les disques animés"
+
+msgctxt "#31262"
+msgid "Enables the spinning disc (DiscArt or fake disc) in the Music OSD."
+msgstr "Activer l'affichage d'un disque rotatif (DiscArt ou CD Gravé) dans l'OSD Musique."
+
+msgctxt "#31263"
+msgid "Use plot outline"
+msgstr "Afficher un court résumé"
+
+msgctxt "#31264"
+msgid "Displays a shortened plot type for video media in the entire skin."
+msgstr "Affiche un synopsis raccourci pour toutes les vidéos dans le thème."
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Aucune"

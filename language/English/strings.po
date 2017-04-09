@@ -986,6 +986,22 @@ msgctxt "#31260"
 msgid "Enables the duration display of the focused item within the widgets."
 msgstr ""
 
+msgctxt "#31261"
+msgid "Use animated discs"
+msgstr ""
+
+msgctxt "#31262"
+msgid "Enables the spinning disc (DiscArt or fake disc) in the Music OSD."
+msgstr ""
+
+msgctxt "#31263"
+msgid "Use plot outline"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Displays a shortened plot type for video media in the entire skin."
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

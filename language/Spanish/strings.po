@@ -986,6 +986,22 @@ msgctxt "#31260"
 msgid "Enables the duration display of the focused item within the widgets."
 msgstr "Permite la visualización de la duración del elemento enfocado dentro de los widgets."
 
+msgctxt "#31261"
+msgid "Use animated discs"
+msgstr "Utilizar discos animados"
+
+msgctxt "#31262"
+msgid "Enables the spinning disc (DiscArt or fake disc) in the Music OSD."
+msgstr "Habilita el disco giratorio (DiscArt o disco falso) en el OSD de música."
+
+msgctxt "#31263"
+msgid "Use plot outline"
+msgstr "Usar esquema de trazado"
+
+msgctxt "#31264"
+msgid "Displays a shortened plot type for video media in the entire skin."
+msgstr "Muestra un tipo de trazado acortado para los medios de vídeo en toda la piel."
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Ninguno"
@@ -1147,12 +1163,12 @@ msgid "This category contains the settings for the Video OSD."
 msgstr "Esta categoría contiene los ajustes del OSD de video."
 
 msgctxt "#31540"
-msgid "This category contains the settings for the header."
-msgstr "Esta categoría contiene los ajustes de la cabecera."
+msgid "This category contains the settings for the header and a few settings for the hubs."
+msgstr "Esta categoría contiene los ajustes para el encabezado y algunos ajustes para los concentradores."
 
-msgctxt "#31541"
-msgid "This category contains the settings for displaying various items in the library."
-msgstr "Esta categoría contiene la configuración para mostrar varios elementos de la biblioteca."
+msgctxt "#31540"
+msgid "This category contains the settings for the header and a few settings for the hubs."
+msgstr "Esta categoría contiene los ajustes para el encabezado y algunos ajustes para los concentradores."
 
 msgctxt "#31542"
 msgid "This category contains the settings for highlight colours."
