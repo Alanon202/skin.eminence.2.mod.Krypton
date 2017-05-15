@@ -1037,6 +1037,18 @@
 					<onup>Close</onup>
 					<ondown>Close</ondown>
 					<include>Dialog_Top_GroupList</include>
+					<control type="button" id="2001">
+						<include>Defs_OptionButton2</include>
+						<label>SimplePlaylists</label>
+						<onclick>RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)</onclick>
+						<visible>System.HasAddon(script.simpleplaylists)</visible>
+					</control>
+					<control type="button" id="2002">
+						<include>Defs_OptionButton2</include>
+						<label>Library Editor</label>
+						<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+						<visible>System.HasAddon(script.libraryeditor) + !String.IsEmpty(ListItem.DBID)</visible>
+					</control>
 				</control>
 				<control type="button" id="1000">
 					<include>Defs_OptionButton2</include>
@@ -1075,11 +1087,25 @@
 				<onup>996</onup>
 				<ondown>996</ondown>
 				<onleft>close</onleft>
-				<onright>close</onright>
+				<onright>close</onright>				
 				<control type="button" id="1000">
 					<width>500</width>
 					<include>Defs_OptionButton2</include>
-				</control>					
+				</control>	
+				<control type="button" id="2001">
+					<width>500</width>
+					<include>Defs_OptionButton2</include>
+					<label>SimplePlaylists</label>
+					<onclick>RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)</onclick>
+					<visible>System.HasAddon(script.simpleplaylists)</visible>
+				</control>
+				<control type="button" id="2002">
+					<width>500</width>
+					<include>Defs_OptionButton2</include>
+					<label>Library Editor</label>
+					<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
+					<visible>System.HasAddon(script.libraryeditor) + !String.IsEmpty(ListItem.DBID)</visible>
+				</control>				
 			</control>
 		</controls>
 	</include>
