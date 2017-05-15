@@ -49,6 +49,8 @@
 			</include>	
             <control type="group">
                 <width>1880</width>
+				<include>Object_Scrollbar</include>
+				<include>Object_Scrollbar_Alphabet</include>
                 <include>Object_Arrows_Vertical</include>
             </control>			
         </control>
@@ -1210,8 +1212,6 @@
                     <include>Object_Background</include>
 					<visible>!Control.IsVisible(50) + !Skin.HasSetting(darkoverlay) + !Window.IsVisible(AddonBrowser.xml)</visible>
                 </control>
-                <include>Object_Scrollbar</include>
-				<include>Object_Scrollbar_Alphabet</include>
 				<include>Animation_FadeSlide_Left</include>
                 <control type="panel" id="$PARAM[id]">
                     <top>0</top>
