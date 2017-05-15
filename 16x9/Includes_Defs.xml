@@ -531,7 +531,8 @@
     </variable>
     <variable name="Defs_HomeWidget_Target">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget))">$INFO[Container(9000).ListItem.Property(widgetTarget)]</value>
-        <value>videos</value>
+        <value condition="!String.IsEmpty(Skin.String(home.fallbackwidget))">$INFO[Skin.String(home.fallbackwidget)]</value>
+		<value>videos</value>
     </variable>	
     <variable name="Defs_Widget_Label">
         <value condition="String.IsEqual(Window.Property(groupname),mainmenu)">Widget</value>
@@ -553,11 +554,22 @@
 	</include>
 	<include name="ClearArtLeft">
 		<left>pad</left>
+		<bottom>66</bottom>
 	</include>
 	<include name="ClearArtRight">
 		<right>pad</right>
+		<bottom>66</bottom>
 	</include>
+	<include name="ClearArtLeft2">
+		<left>pad</left>
+		<bottom>16</bottom>
+	</include>
+	<include name="ClearArtRight2">
+		<right>pad</right>
+		<bottom>16</bottom>
+	</include>	
 	<include name="ClearArtCenter">
 		<centerleft>50%</centerleft>
-	</include>		
+		<bottom>16</bottom>
+	</include>
 </includes>
