@@ -280,7 +280,6 @@
 				<width>580</width>
 				<height>580</height>
 				<visible>!Container.Content(artists) + Skin.HasSetting(ShowRightListDisc) + Skin.HasSetting(RightListAltMusic)</visible>
-				<animation effect="slide" end="0,30" time="0" tween="cubic" easing="inout">VisibleOnChange</animation>
 				<include>Animation_SpinningDisc</include>
 				<control type="image">
 					<aspectratio align="right">keep</aspectratio>
