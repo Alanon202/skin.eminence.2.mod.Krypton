@@ -1404,7 +1404,7 @@
                 <width>100%</width>
 <!-- Modification Height -->                 
                 <height>100%</height>
-                <texture colordiffuse="4f000000">common/gradient.png</texture>
+                <texture colordiffuse="6f000000">common/gradient.png</texture>
                 <visible>Skin.HasSetting(global.backpanelmode) | Window.IsVisible(weather) | Window.IsVisible(home) | VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)</visible>
 				<visible>Skin.HasSetting(DimHome)</visible>
 			</control>
