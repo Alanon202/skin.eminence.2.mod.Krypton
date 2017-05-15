@@ -11,7 +11,7 @@
             <textcolor>SideArrow</textcolor>
             <headlinecolor>SideArrow</headlinecolor>
             <titlecolor>LineLabel</titlecolor>
-            <visible>Window.IsVisible(home)</visible>         
+            <visible>Window.IsVisible(Home.xml)</visible>         
             <visible>Skin.String(HomeStyle, textintile)</visible>
             <animation effect="slide" start="-1200" end="0" time="250">WindowOpen</animation>
             <animation effect="slide" end="-1200" start="0" time="250">WindowClose</animation>
@@ -21,8 +21,7 @@
         </control>
         <control type="group">
             <include>Animation_FadeIn</include>
-            <include>Animation_FadeOut</include>
-            <visible>Window.IsVisible(home)</visible>
+            <visible>Window.IsVisible(Home.xml)</visible>
             <visible>!Window.IsActive(DialogNotification.xml)</visible>
             <visible>!Window.IsActive(DialogExtendedProgressBar.xml)</visible>
             <visible>!Player.HasMedia</visible>           
@@ -32,8 +31,8 @@
             <animation effect="slide" tween="quadratic" easing="in" time="150" end="0,266" start="0" reversible="false" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),2) + !String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
             <animation effect="slide" start="0" end="0,266" time="500" tween="back" reversible="false" easing="out" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),1) + !String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
             <animation effect="slide" end="0" start="0,266" time="150" reversible="false" condition="String.IsEmpty(Window(home).Property(FO9001)) + !String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
-            <animation effect="slide" end="0,160" start="0" time="0" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
-            <animation effect="slide" end="0,160" start="0" time="0" reversible="true" condition="String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
+            <animation effect="slide" end="0,160" start="0" time="100" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
+            <animation effect="slide" end="0,160" start="0" time="100" reversible="true" condition="String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
 			<animation effect="slide" end="0,106" start="0" time="150" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),2) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>
             <animation effect="slide" end="0,106" start="0" time="150" reversible="true" condition="!String.IsEmpty(Window(home).Property(FO9001)) + String.IsEqual(Window(home).Property(FO9001),1) + String.IsEqual(Skin.String(HomeStyle),textonly)">Conditional</animation>			
 			<control type="image">
@@ -43,7 +42,7 @@
                 <height>32</height>
                 <texture colordiffuse="LineLabel">common/rss.png</texture>
 				<animation effect="slide" start="0,6400" end="0" time="5">VisibleChange</animation>
-            </control>
+			</control>
             <control type="rss">
                 <posx>48</posx>
                 <posy>314r</posy>
