@@ -17,6 +17,7 @@
 	
 	<variable name="PVRPlayerPoster">
 		<value condition="!Skin.HasSetting(pvr.infoepg) + !String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
+		<value condition="Skin.HasSetting(pvr.infoepg) + String.IsEmpty(Pvr.TVNowRecordingChannelIcon)">$INFO[VideoPlayer.Cover]</value>		
 		<value condition="Skin.HasSetting(pvr.infoepg) + !String.IsEmpty(Pvr.TVNowRecordingChannelIcon)">$INFO[Pvr.TVNowRecordingChannelIcon]</value>
     </variable>
 	

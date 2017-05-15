@@ -128,9 +128,10 @@
 <!-- Clear Art -->            
             <control type="image">
 				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31239])">ClearArtCenter</include>
-				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31240])">ClearArtLeft</include>
-				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31241])">ClearArtRight</include>
-				<bottom>16</bottom>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31240]) + !Skin.HasSetting(videoosd.showcompact)">ClearArtLeft</include>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31241]) + !Skin.HasSetting(videoosd.showcompact)">ClearArtRight</include>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31240]) + Skin.HasSetting(videoosd.showcompact)">ClearArtLeft2</include>
+				<include condition="String.IsEqual(Skin.String(ClearArtPos),$LOCALIZE[31241]) + Skin.HasSetting(videoosd.showcompact)">ClearArtRight2</include>
                 <width>500</width>
                 <height>281</height>
                 <texture>$VAR[PlayerClearArt]</texture>
@@ -460,7 +461,7 @@
 						<aligny>bottom</aligny>
 						<scroll>yes</scroll>
                         <font>Font-InfoBox-Title</font>
-                        <label>$INFO[Pvr.TVNowRecordingDateTime] - $INFO[Pvr.TVNowRecordingTitle]</label>
+                        <label>$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]: $INFO[VideoPlayer.Title]</label>
                     </control>
 					<control type="label">
 						<left>pad</left>
@@ -477,7 +478,7 @@
 						<aligny>bottom</aligny>
 						<scroll>yes</scroll>
                         <font>Font-InfoBox-Title</font>
-                        <label>$INFO[Pvr.TVNextRecordingDateTime] - $INFO[Pvr.TVNextRecordingTitle]</label>
+                        <label>$INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime]: $INFO[VideoPlayer.NextTitle]</label>
                     </control>					
 				</control>	
 			</control>
@@ -635,7 +636,7 @@
                     <align>center</align>
                     <font>Font-ListInfo-Small-Bold</font>
                 </control>
-                <visible>Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding</visible>
+                <visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + !Player.Paused + Skin.HasSetting(videoosd.showcompact)</visible>
                 <include>Animation_FadeIn</include>
                 <animation effect="fade" start="100" end="0" time="200" delay="0">Hidden</animation>
 			</control>
