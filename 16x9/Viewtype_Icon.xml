@@ -20,7 +20,7 @@
                 <param name="width" value="2375" /> 
                 <param name="id" value="51" />
                 <!--<param name="condition" value="Container.Content(episodes) | Container.Content(albums) | Container.Content(artists) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies)" />-->
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),51) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Container.Content(actors) | Container.Content(images) | Container.Content(videos)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),51) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
 			</include>
         </control>
     </include>
@@ -480,7 +480,7 @@
                 <param name="id" value="59" />
                 <param name="name" value="31141" />
                 <param name="width" value="1215" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),59) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),59) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
         <!--    <param name="condition" value="Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies)" /> -->
                 <param name="posx" value="0" />
                 <param name="posy" value="-5" />
@@ -598,7 +598,7 @@
                 <param name="id" value="52" />              
                 <param name="name" value="Posters" />
                 <param name="width" value="1888" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),52) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),52) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
          <!--   <param name="condition" value="Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies)" /> -->
             </include>
             <control type="group">
@@ -889,7 +889,7 @@
             <include content="View_Thumbs">
                 <param name="id" value="500" />
                 <param name="width" value="1890" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),500) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(tags) | Container.Content(years) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(actors) | Container.Content(directors) | Container.Content(files) | Container.Content(mixed) | Container.Content(images) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),500) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
                 <param name="name" value="21371" />
             </include>
             <include>Object_Arrows_Vertical</include>
@@ -1003,7 +1003,7 @@
                 <param name="id" value="504" />
                 <param name="width" value="2300" />
                 <param name="name" value="31685" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),504) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),504) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>
         </control>
     </include>
@@ -1208,7 +1208,7 @@
                 <param name="id" value="507" />
                 <param name="width" value="2300" />
                 <param name="name" value="31685" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),507) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(files)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),507) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>
         </control>
     </include>
@@ -1362,7 +1362,7 @@
                 <param name="id" value="156" />              
                 <param name="name" value="$LOCALIZE[31728]" />
                 <param name="width" value="1888" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),156) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),156) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
          <!--   <param name="condition" value="Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies)" /> -->
             </include>
             <control type="group">
@@ -1696,7 +1696,7 @@
             <include content="View_Banner">
                 <param name="id" value="158" />            
                 <param name="name" value="$LOCALIZE[31730]" />
-				<param name="condition" value="String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),158) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))" />
+				<param name="condition" value="[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(videos)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),158) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>       
             <include>Object_Arrows_Vertical</include>
 			<include>Object_Scrollbar</include>

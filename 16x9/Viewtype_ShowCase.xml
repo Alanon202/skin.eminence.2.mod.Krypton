@@ -357,7 +357,7 @@
 						<ondown condition="!Skin.HasSetting(showscrollbars) + Skin.HasSetting(AlphabetScrollbar)">6015</ondown>
 						<onleft>535</onleft>
 						<onright>535</onright>
-						<visible>String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),535) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))</visible>
+						<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),535) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]</visible>
 				<!--	<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons) | Container.Content(sets)</visible> -->
 						<viewtype label="31199">bigwrap</viewtype>
 						<pagecontrol>61</pagecontrol>
