@@ -97,7 +97,7 @@
 					<onclick condition="[Container.Content(unknown) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.unknown))]">ActivateWindow(1196)</onclick>
 					<onclick condition="[Container.Content(videos) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.videos))]">ActivateWindow(1196)</onclick>
 
-					<onclick condition="[Container.Content() + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.))]">ActivateWindow(1195)</onclick>
+					<!-- <onclick condition="[Container.Content() + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.))]">ActivateWindow(1195)</onclick> -->
 					<onclick condition="[Container.Content(tags) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tags))]">ActivateWindow(1195)</onclick>
 					<onclick condition="[Container.Content(years) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.years))]">ActivateWindow(1195)</onclick>
 					<onclick condition="[Container.Content(genres) + String.IsEmpty(Skin.String(SkinHelper.ForcedViews.genres))]">ActivateWindow(1195)</onclick>
