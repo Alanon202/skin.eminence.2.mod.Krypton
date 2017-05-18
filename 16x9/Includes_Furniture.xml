@@ -373,7 +373,8 @@
         </control>
         <control type="grouplist">
             <visible>![Container.Content(sets) | Container.Content(albums) | Container.Content(songs)]</visible>
-            <visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
+            <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons) | Container.Content(videos)</visible>
+			<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
 			<visible>!Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 			<include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
