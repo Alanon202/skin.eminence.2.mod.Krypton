@@ -1215,7 +1215,7 @@ msgid "Sets home tile text."
 msgstr ""
 
 msgctxt "#31553"
-msgid "Sets home header text."
+msgid "Sets the home header text. To hide it, input [B]N/A[/B] as your text!"
 msgstr ""
 
 msgctxt "#31554"

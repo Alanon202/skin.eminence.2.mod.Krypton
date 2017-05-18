@@ -126,7 +126,7 @@
 			<include>Animation_FadeIn</include>
 			<include>Animation_FadeOut</include>             
 			<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
-			<visible>Skin.HasSetting(show.clearlogo)</visible> 
+			<visible>Skin.HasSetting(show.clearlogo) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible> 
 			<visible>!Control.IsVisible(159) + !Control.IsVisible(162) + !Control.IsVisible(515)</visible>
 			<centertop>115</centertop>
 			<centerleft>50%</centerleft>
@@ -880,6 +880,7 @@
         <value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.TvShowTitle) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/)">[CAPITALIZE]$INFO[ListItem.TvShowTitle][/CAPITALIZE]</value>
         <value condition="!String.IsEmpty(Container.FolderName)">[CAPITALIZE]$INFO[Container.FolderName][/CAPITALIZE]</value>
         <value condition="Window.IsVisible(home) + String.IsEmpty(Skin.String(home.mainheadertext))">$LOCALIZE[31158]</value>
+		<value condition="Window.IsVisible(home) + String.IsEqual(Skin.String(home.mainheadertext),N/A)">  </value>
         <value condition="Window.IsVisible(home) + !String.IsEmpty(Skin.String(home.mainheadertext))">$INFO[Skin.String(home.mainheadertext)]</value>
         <value condition="Window.IsActive(systeminfo) | Window.IsActive(profiles) | Window.IsVisible(SettingsCategory.xml) | Window.IsActive(addonbrowser) | Window.IsVisible(SkinSettings.xml)">$VAR[Label_SettingsHeader]</value>
         <value condition="Window.IsVisible(settings)">$LOCALIZE[5]</value>
