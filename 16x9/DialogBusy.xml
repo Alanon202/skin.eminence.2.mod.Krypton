@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<controls>
+	<controls>	
+		<control type="image">
+			<texture border="1" colordiffuse="AAFFFFFF">common/black.png</texture>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>		
         <control type="multiimage">
             <posy>42</posy>
             <posx>62</posx>
