@@ -541,7 +541,7 @@
                     <left>30</left>
                     <width>182</width>
                     <height>260</height>
-                    <texture fallback="DefaultVideo.png">$INFO[Player.Art(thumb)]</texture>
+                    <texture fallback="DefaultVideo.png">$VAR[PlayerPoster]</texture>
                     <aspectratio aligny="center" align="center">stretch</aspectratio>
                     <visible>Player.HasVideo</visible>
                 </control>                
