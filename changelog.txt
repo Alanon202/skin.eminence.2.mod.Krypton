@@ -1,3 +1,11 @@
+[B]2.3.9[/B]
+1. Busy Dialog tweak.
+2. Tweaked viewtypes conditions.
+3. Fixed add-on loading artefacts.
+4. Small log error fixes (syntax).
+5. Home menu header is now hideable.
+6. Fixed logo and flags bugs.
+
 [B]2.3.8[/B]
 1. Context menu support for Library Editor Script.
 2. Context menu support for SimplePlaylists.
