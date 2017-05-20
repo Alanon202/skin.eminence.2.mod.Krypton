@@ -5,6 +5,8 @@
 4. Small log error fixes (syntax).
 5. Home menu header is now hideable.
 6. Fixed logo and flags bugs.
+7. Video Info ratings tweak.
+8. Video Info darken effect.
 
 [B]2.3.8[/B]
 1. Context menu support for Library Editor Script.

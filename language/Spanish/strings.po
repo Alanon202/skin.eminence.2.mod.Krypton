@@ -1215,8 +1215,8 @@ msgid "Sets home tile text."
 msgstr "Establecer el texto del recuadro inicio."
 
 msgctxt "#31553"
-msgid "Sets home header text."
-msgstr "Establecer el texto de la cabecera inicio."
+msgid "Sets the home header text. To hide it, input [B]N/A[/B] as your text!"
+msgstr "Establece el texto del encabezado de inicio. Para ocultarlo, ingrese N/A como texto!"
 
 msgctxt "#31554"
 msgid "Let's make the home bar menu transparent."
