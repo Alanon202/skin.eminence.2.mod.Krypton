@@ -1784,6 +1784,7 @@
     <include name="Window_OSD">
         <!-- <visible>!Window.IsVisible(script-cu-lrclyrics-main.xml) | !Window.IsVisible(MusicVisualisation.xml)</visible> -->
         <control type="group">
+			<visible>!Window.IsVisible(DialogSlider.xml)</visible> 
             <animation type="WindowOpen">
                 <effect type="slide" start="0,64" end="0" time="175" />
                 <effect type="fade" start="0" end="100" time="200" />
