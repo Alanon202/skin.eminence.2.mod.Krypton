@@ -1454,7 +1454,7 @@
 				<visible>Integer.IsGreater(Container(9987).NumItems,0)</visible>
 				<top>80</top>
 				<left>30</left>
-				<right>30</right>
+				<right>20</right>
 				<height>69</height>
 				<orientation>horizontal</orientation>
 				<ondown>ClearProperty(quicknavsetup,home)</ondown>
