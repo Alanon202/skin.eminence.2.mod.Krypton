@@ -126,7 +126,7 @@
 			<include>Animation_FadeIn</include>
 			<include>Animation_FadeOut</include>             
 			<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
-			<visible>Skin.HasSetting(show.clearlogo) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible> 
+			<visible>Skin.HasSetting(show.clearlogo) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Window.IsVisible(tvguide) | Window.IsVisible(tvchannels)]</visible> 
 			<visible>!Control.IsVisible(159) + !Control.IsVisible(162) + !Control.IsVisible(515)</visible>
 			<centertop>115</centertop>
 			<centerleft>50%</centerleft>
