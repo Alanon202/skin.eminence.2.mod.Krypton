@@ -7,6 +7,9 @@
 6. Fixed logo and flags bugs.
 7. Video Info ratings tweak.
 8. Video Info darken effect.
+9. QuickNav tweak.
+10. Subtitle Sync tweak.
+11. Added Hebrew translation (scofield272)!
 
 [B]2.3.8[/B]
 1. Context menu support for Library Editor Script.
