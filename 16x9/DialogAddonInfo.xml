@@ -24,18 +24,18 @@
                 <left>730</left>
                 <right>side</right>
 				<include>Animation_FadeSlide_Right</include>
-                <control type="image">
-                    <width>100%</width>
-                    <height>height</height>
-					<visible>!Skin.HasSetting(darkoverlay)</visible>
-                    <texture colordiffuse="PosterBorder">common/black.png</texture>
-                </control>
                 <control type="group">
                     <width>100%</width>
                     <height>height</height>
-                    <visible>Skin.HasSetting(darkoverlay)</visible>
-					<include>Object_Background</include>
-                </control>					
+					<!-- <visible>!Skin.HasSetting(darkoverlay)</visible> -->
+                    <include>Object_Background</include>
+                </control>
+                <!-- <control type="group"> -->
+                    <!-- <width>100%</width> -->
+                    <!-- <height>height</height> -->
+                    <!-- <visible>Skin.HasSetting(darkoverlay)</visible> -->
+					<!-- <include>Object_Background2</include> -->
+                <!-- </control>					 -->
                 <control type="group">
                     <include content="Object_Line">
                         <param name="width" value="1180" />
