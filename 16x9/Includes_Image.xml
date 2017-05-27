@@ -46,11 +46,6 @@
 		<value>$INFO[Player.Art(clearlogo)]</value>
 		<value>http://localhost:52307/getartwork&amp;title=$INFO[Window(Home).Property(SkinHelper.Player.Title)]&amp;type=clearart</value>
     </variable>
-
-	<variable name="MusicClearLogo">
-		<value condition="!String.IsEmpty(ListItem.AlbumArtist)">$INFO[Skin.String(artworklocation)]$INFO[ListItem.AlbumArtist]/logo.png</value>
-		<value>$INFO[Skin.String(artworklocation)]$INFO[ListItem.Artist]/logo.png</value>
-	</variable>
 	
     <variable name="ClearLogoTop">
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
@@ -71,11 +66,11 @@
 		<value condition="Window.IsVisible(tvchannels) | Window.IsVisible(tvguide)">$INFO[ListItem.Icon]</value>
     </variable>
  
-    <variable name="MusicCDArt">
-		<value>$INFO[Skin.String(musiccdart.location)]$INFO[ListItem.Artist]$INFO[ListItem.Album]/disc.png</value>		
-		<value>$INFO[Skin.String(musiccdart.location)]$INFO[ListItem.Artist]$INFO[ListItem.Album]/cdart.png</value>
-    </variable>	
-
+    <!-- <variable name="MusicCDArt"> -->
+		<!-- <value>$INFO[Skin.String(musiccdart.location)]$INFO[ListItem.Artist]$INFO[ListItem.Album]/disc.png</value>		 -->
+		<!-- <value>$INFO[Skin.String(musiccdart.location)]$INFO[ListItem.Artist]$INFO[ListItem.Album]/cdart.png</value> -->
+    <!-- </variable>	 -->
+	
     <variable name="Image_Poster">
         <value condition="[Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)] + Control.IsVisible(150) + !String.IsEmpty(Container(150).ListItem.Icon)">$INFO[Container(150).ListItem.Icon]</value>
         <value condition="[Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)] + Control.IsVisible(250) + !String.IsEmpty(Container(250).ListItem.Icon)">$INFO[Container(250).ListItem.Icon]</value>
@@ -159,7 +154,7 @@
         <value condition="Player.HasMedia + Player.Paused">common/pause.png</value>
         <value condition="Player.HasMedia + !Player.Paused">common/play.png</value>
         <value condition="!Control.IsVisible(516) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !Skin.HasSetting(hidenextairedinfos)">common/nextaired.png</value>
-        <value condition="!Control.IsVisible(516) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos)">common/nextaired.png</value>        
+        <value condition="!Control.IsVisible(516) + String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos)">common/nextaired.png</value>        
         <value condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(furniture.showflags) + [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Budget.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Revenue.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.BoxOffice)) | !String.IsEmpty(ListItem.Director)]">common/nextaired.png</value>
 		<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(videos) + !String.IsEmpty(ListItem.Premiered)">common/nextaired.png</value>
 		<value condition="Window.IsVisible(AddonBrowser.xml)">common/rss_update.png</value>

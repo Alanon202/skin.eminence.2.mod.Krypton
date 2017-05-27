@@ -47,7 +47,7 @@
 					<right>20</right>
 					<width>290</width>
 					<height>290</height>
-					<texture>$VAR[MusicCDArt]</texture>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.DiscArt)]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
 					<animation type="WindowOpen" reversible="false">				
 					<effect type="rotate" end="-720000" center="auto" time="9000000" loop="true"  />

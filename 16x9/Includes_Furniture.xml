@@ -163,7 +163,7 @@
 			<width>400</width>             
 			<height>180</height>
 			<aspectratio align="center">keep</aspectratio>
-			<texture background="true">$VAR[MusicClearLogo]</texture>
+			<texture background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</texture>
 		</control>
 	</include>            
 

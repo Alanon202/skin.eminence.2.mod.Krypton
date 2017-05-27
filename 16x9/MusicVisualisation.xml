@@ -241,7 +241,7 @@
 					<width>300</width>
 					<height>117</height>
 					<aspectratio align="center">keep</aspectratio>
-					<texture border="5" background="true" fallback="extras/icons/blank.png">$INFO[Skin.String(artworklocation)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+					<texture border="5" background="true" fallback="extras/icons/blank.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</texture>
 				</control>				
 				<control type="grouplist">
 					<top>80</top>
@@ -326,8 +326,7 @@
 					<animation effect="slide" end="240,0" time="1500" reverisble="true" condition="!String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
 					<animation effect="slide" end="0,0" reverisble="true" time="1500" condition="String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-					<texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath]cdart.png</texture>
-					<!--<texture background="true" fallback="osd/cd.png">$INFO[Skin.String(musiccdart.location)]$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,/,.png]</texture>-->
+					<texture background="true" fallback="osd/cd.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
 					<visible>!Skin.HasSetting(osdmusic.showfakedisc) + Skin.HasSetting(osdmusic.showdisc)</visible>
 				</control>
 				<control type="image" id="88888">
@@ -341,8 +340,7 @@
 					<animation effect="slide" end="240,0" time="1500" reverisble="true" condition="!String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
 					<animation effect="slide" end="0,0" reverisble="true" time="1500" condition="String.IsEqual(MusicPlayer.Cover,DefaultAlbumCover.png)">Conditional</animation>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-					<texture background="true" fallback="osd/blank.png">$INFO[Player.FolderPath]cdart.png</texture>
-					<!--<texture background="true" fallback="osd/cd.png">$INFO[Skin.String(musiccdart.location)]$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,/,.png]</texture>-->
+					<texture background="true" fallback="osd/blank.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
 					<visible>Skin.HasSetting(osdmusic.showfakedisc) + Skin.HasSetting(osdmusic.showdisc)</visible>
 				</control>		
 				<control type="label">

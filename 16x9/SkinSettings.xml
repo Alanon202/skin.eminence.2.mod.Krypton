@@ -1345,15 +1345,15 @@
                         <include>Defs_OptionButton</include>
                     </control>
                     <!-- Set Clearlogo Music Directory -->                    
-                     <control type="button" id="9011">
-						<width>100%</width>
-						<label>$LOCALIZE[31522]</label>
-						<label2>$INFO[Skin.String(artworklocation)]</label2>
-						<onclick>Skin.SetPath(artworklocation)</onclick>
-						<enable>Skin.HasSetting(show.clearlogomusic)</enable>
-						<include>Defs_OptionButton</include>
-						<visible>Skin.HasSetting(show.clearlogomusic)</visible>
-					</control>
+                     <!-- <control type="button" id="9011"> -->
+						<!-- <width>100%</width> -->
+						<!-- <label>$LOCALIZE[31522]</label> -->
+						<!-- <label2>$INFO[Skin.String(artworklocation)]</label2> -->
+						<!-- <onclick>Skin.SetPath(artworklocation)</onclick> -->
+						<!-- <enable>Skin.HasSetting(show.clearlogomusic)</enable> -->
+						<!-- <include>Defs_OptionButton</include> -->
+						<!-- <visible>Skin.HasSetting(show.clearlogomusic)</visible> -->
+					<!-- </control> -->
 					<!-- Show CDArt Music -->
                     <control type="radiobutton" id="9012">
                         <width>100%</width>
@@ -1364,15 +1364,15 @@
                         <include>Defs_OptionButton</include>
                     </control>
                     <!-- Set CDArt Music Directory -->                    
-                     <control type="button" id="9013">
-						<width>100%</width>
-						<label>$LOCALIZE[31522]</label>
-						<label2>$INFO[Skin.String(musiccdart.location)]</label2>
-						<onclick>Skin.SetPath(musiccdart.location)</onclick>
-						<enable>Skin.HasSetting(show.cdartmusic)</enable>
-						<include>Defs_OptionButton</include>
-						<visible>Skin.HasSetting(show.cdartmusic)</visible>
-					</control>						
+                     <!-- <control type="button" id="9013"> -->
+						<!-- <width>100%</width> -->
+						<!-- <label>$LOCALIZE[31522]</label> -->
+						<!-- <label2>$INFO[Skin.String(musiccdart.location)]</label2> -->
+						<!-- <onclick>Skin.SetPath(musiccdart.location)</onclick> -->
+						<!-- <enable>Skin.HasSetting(show.cdartmusic)</enable> -->
+						<!-- <include>Defs_OptionButton</include> -->
+						<!-- <visible>Skin.HasSetting(show.cdartmusic)</visible> -->
+					<!-- </control>						 -->
 				</control>
                 <!-- ADDONS -->
 				<control type="grouplist" id="8007">                
