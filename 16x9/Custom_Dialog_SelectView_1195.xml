@@ -279,8 +279,17 @@
                         <onclick>Close</onclick>
                         <onclick>Container.SetViewMode(50)</onclick>
                         <onclick>Container.SetViewMode(50)</onclick>
-                        <visible>!Window.IsVisible(MyPVRChannels.xml)</visible>
+                        <visible>Container.Content(countries) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)</visible>
                     </item>
+                    <!-- Square List -->
+                    <item>
+                        <label>535</label>
+                        <icon>special://skin/extras/viewthumbs/550.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(550)</onclick>
+                        <visible>Container.Content(genres) | Container.Content(studios) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos) | Container.Content(years) | Container.Content(images)</visible>
+                    </item>					
 					<!-- Plain List -->
                     <item>
                         <label>31205</label>

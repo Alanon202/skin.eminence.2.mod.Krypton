@@ -51,15 +51,10 @@
                 <itemlayout height="670" width="475" condition="!Container.Content(artists) + !Container.Content(albums) + !Container.Content(episodes)">
 					<control type="group">
 					    <include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
-                        <left>0</left>
+                        <include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
+						<left>0</left>
 						<top>4</top>
                         <right>side</right>
-                        <control type="image">
-                            <width>100%</width>
-                            <height>100%</height>
-							<include>Object_Background</include>
-							<visible>!Skin.HasSetting(darkoverlay)</visible>
-                        </control>
                         <control type="image">
                             <left>pad</left>
                             <right>pad</right>
