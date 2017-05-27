@@ -8,6 +8,7 @@
 			<texture border="1" colordiffuse="AAFFFFFF">common/black.png</texture>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
+			<visible>String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)</visible>
 		</control>	
         <control type="group">
             <top>210</top>
