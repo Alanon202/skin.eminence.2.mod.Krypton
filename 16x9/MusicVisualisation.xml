@@ -9,7 +9,7 @@
 	<onunload>ClearProperty(Music.WasFullscreen,home)</onunload>	
 	<controls>
 
-	<control type="visualisation" id="2">
+		<control type="visualisation" id="2">
             <visible>Skin.HasSetting(OSDVisualisation.ShowFanart) | [!Skin.HasSetting(musicvis.fanartfallback) + [!System.HasAddon(script.artistslideshow) | !Skin.String(MusicVisualisation, artistslideshow)]] | [Skin.String(MusicVisualisation, fanart) + [!System.HasAddon(script.artistslideshow) | !Skin.String(MusicVisualisation, artistslideshow)] + String.IsEmpty(Player.Art(fanart))]</visible>
             <description>visualisation</description>
 			<include>FullscreenDimensions</include>

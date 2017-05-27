@@ -572,4 +572,8 @@
 		<centerleft>50%</centerleft>
 		<bottom>16</bottom>
 	</include>
+	<include name="FullscreenDimensions">
+		<width>100%</width>
+		<height>1080</height>
+	</include>	
 </includes>
