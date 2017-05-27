@@ -5,6 +5,13 @@
 			<texture border="1" colordiffuse="AAFFFFFF">common/black.png</texture>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
+			<visible>String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)</visible>
+		</control>
+		<control type="image">
+			<texture border="1" colordiffuse="AAFFFFFF">common/white.png</texture>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<visible>String.IsEqual(Skin.CurrentColourTheme,Light)</visible>
 		</control>		
         <control type="multiimage">
             <posy>42</posy>
