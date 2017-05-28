@@ -15,7 +15,6 @@
             </include>
 <!--Custom scrollbars-->			
 			<include>Object_Scrollbar_Alphabet</include>
-			<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 			<control type="scrollbar" id="61">   
 				<visible>Skin.HasSetting(showscrollbars)</visible>
                 <onup>50</onup>
@@ -30,12 +29,31 @@
             <control type="group">
 				<centerleft>50%</centerleft>
 				<width>1879</width>
+				<animation effect="slide" end="0,230" time="500" tween="cubic" easing="inout" condition="Skin.HasSetting(showcase.hideplot)">Conditional</animation>
 				<control type="group">
 					<width>100%</width>
 					<height>100%</height>
-					<visible>!Skin.HasSetting(darkoverlay)</visible>
+					<visible>!Skin.HasSetting(darkoverlay) + !Skin.HasSetting(showcase.hideplot)</visible>
 					<include>Object_Background</include>
 				</control>
+				<control type="group">
+					<width>100%</width>
+					<height>100%</height>
+					<visible>Skin.HasSetting(darkoverlay) + !Skin.HasSetting(showcase.hideplot)</visible>
+					<include>Object_Background2</include>
+				</control>
+				<control type="group">
+					<width>100%</width>
+					<height>64%</height>
+					<visible>!Skin.HasSetting(darkoverlay) + Skin.HasSetting(showcase.hideplot)</visible>
+					<include>Object_Background</include>
+				</control>
+				<control type="group">
+					<width>100%</width>
+					<height>64%</height>
+					<visible>Skin.HasSetting(darkoverlay) + Skin.HasSetting(showcase.hideplot)</visible>
+					<include>Object_Background2</include>
+				</control>				
 				<control type="group">
 					<visible>Control.IsVisible(535) + Integer.IsGreater(Container.NumItems,1)</visible>
 					<top>-545</top>
@@ -146,7 +164,7 @@
 									</control>
 									<control type="image">
 										<include>WatchedOverlayShowCase</include>
-										<texture>$VAR[IconOverlay-1Var]</texture>
+										<texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay-1Var]</texture>
 									</control>
 								</control>
 							</control>
@@ -255,7 +273,7 @@
 									</control>
 									<control type="image">
 										<include>WatchedOverlayShowCase</include>
-										<texture>$VAR[IconOverlay1Var]</texture>
+										<texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay1Var]</texture>
 									</control>
 								</control>
 							</control>
@@ -376,6 +394,8 @@
                 <left>5</left>
                 <top>425</top>
                 <bottom>5</bottom>
+				<visible>!Skin.HasSetting(showcase.hideplot)</visible>
+				<animation effect="fade" start="100" end="0" time="600" condition="Skin.HasSetting(showcase.hideplot)">Conditional</animation>
                 <control type="grouplist">
                     <usecontrolcoords>true</usecontrolcoords>
                     <itemgap>5</itemgap>
@@ -494,7 +514,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay-1Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay-1Var]</texture>
         </control>
     </include>
     <include name="MovieShowCaseItem0">
@@ -505,7 +525,12 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay0Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">indicator/back.png</texture>
+            <visible>Integer.IsGreater(Container.NumItems,0)</visible>
+        </control>		
+        <control type="image">
+            <include>WatchedOverlayShowCase</include>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay0Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -517,7 +542,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay1Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay1Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -529,7 +554,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay2Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay2Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -541,7 +566,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay3Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay3Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -553,7 +578,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay4Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay4Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -565,7 +590,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay5Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay5Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -577,7 +602,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay6Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay6Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -589,7 +614,7 @@
         </control>
         <control type="image">
             <include>WatchedOverlayShowCase</include>
-            <texture>$VAR[IconOverlay7Var]</texture>
+            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[IconOverlay7Var]</texture>
             <visible>Integer.IsGreater(Container.NumItems,0)</visible>
         </control>
     </include>
@@ -682,45 +707,56 @@
     <variable name="IconOverlay-1Var">
         <value condition="ListItem(-1).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(-1).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay0Var">
         <value condition="ListItem.IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay1Var">
         <value condition="ListItem(1).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(1).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(1).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay2Var">
         <value condition="ListItem(2).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(2).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(2).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay3Var">
         <value condition="ListItem(3).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(3).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(3).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay4Var">
         <value condition="ListItem(4).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(4).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(4).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay5Var">
         <value condition="ListItem(5).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(5).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(5).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay6Var">
         <value condition="ListItem(6).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(6).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(6).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay7Var">
         <value condition="ListItem(7).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(7).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(7).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay8Var">
         <value condition="ListItem(8).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(8).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(8).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
     <variable name="IconOverlay9Var">
         <value condition="ListItem(9).IsResumable + String.IsEmpty(Window(Home).Property(Overlay.Resumable))">indicator/inprogress.png</value>
         <value condition="String.IsEqual(ListItem(9).Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
+		<value condition="String.IsEqual(ListItem(9).Overlay,OverlayUnwatched.png)">indicator/unwatched.png</value>
     </variable>
 </includes>
