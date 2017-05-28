@@ -89,7 +89,7 @@
                         <fadetime>400</fadetime>
                     </control>
                 </focusedlayout>
-                <content>special://skin/extras/playlist/AlbumWall.xsp</content>
+                <content>special://skin/extras/playlists/AlbumWall.xsp</content>
             </control>
         </control>
 
