@@ -2,6 +2,6 @@
 <smartplaylist type="movies">
     <name>In Progress Movies</name>
     <match>all</match>
-    <rule field="inprogress" operator="true"/>
+    <rule field="inprogress" operator="true"></rule>
     <order direction="descending">lastplayed</order>
 </smartplaylist>
