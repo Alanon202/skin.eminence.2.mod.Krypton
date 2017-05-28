@@ -289,7 +289,16 @@
                         <onclick>Container.SetViewMode(50)</onclick>
                         <onclick>Container.SetViewMode(550)</onclick>
                         <visible>Container.Content(genres) | Container.Content(studios) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos) | Container.Content(years) | Container.Content(images)</visible>
-                    </item>					
+                    </item>	
+                    <!-- Low List -->
+                    <item>
+                        <label>31267</label>
+                        <icon>special://skin/extras/viewthumbs/551.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(551)</onclick>
+                        <visible>Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
+                    </item>						
 					<!-- Plain List -->
                     <item>
                         <label>31205</label>
@@ -506,8 +515,8 @@
                     <height>100%</height>
                     <align>right</align>
                     <label>[CAPITALIZE]$LOCALIZE[31197] $INFO[Container.Content,(,)][/CAPITALIZE]</label>
-                    <texturenofocus>noop</texturenofocus>
-                    <texturefocus>noop</texturefocus>
+                    <texturenofocus></texturenofocus>
+                    <texturefocus></texturefocus>
                     <focusedcolor>$VAR[HighlightColor]</focusedcolor>
                     <include>Defs_OptionButton</include>
                     <onclick>SetFocus(9000)</onclick>
@@ -548,8 +557,8 @@
                     <height>100%</height>
                     <align>right</align>
                     <label>[CAPITALIZE]$LOCALIZE[31198][/CAPITALIZE]</label>
-                    <texturenofocus>noop</texturenofocus>
-                    <texturefocus>noop</texturefocus>
+                    <texturenofocus></texturenofocus>
+                    <texturefocus></texturefocus>
                     <focusedcolor>$VAR[HighlightColor]</focusedcolor>
                     <include>Defs_OptionButton</include>
                     <onclick>RunScript(script.skin.helper.service,action=enableviews,richlayout=true)</onclick>
@@ -561,8 +570,8 @@
                     <height>100%</height>
                     <align>right</align>
                     <label>222</label>
-                    <texturenofocus>noop</texturenofocus>
-                    <texturefocus>noop</texturefocus>
+                    <texturenofocus></texturenofocus>
+                    <texturefocus></texturefocus>
                     <focusedcolor>$VAR[HighlightColor]</focusedcolor>
                     <include>Defs_OptionButton</include>
                     <onclick>Close</onclick>

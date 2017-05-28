@@ -16,9 +16,10 @@
     <view id="Big list info" value="501" languageid="31142" type="movies,tvshows,episodes,seasons,sets,setmovies"/>
     <view id="Panel list" value="58" languageid="31137" type="all,!tvchannels" excludefromdisable="true"/>
     <view id="Thumbs" value="500" languageid="31647" type="all,!tvchannels" excludefromdisable="true"/>
-    <view id="List" value="50" languageid="535" type="movies,tvshows,episodes,sets,seasons,setmovies,countries,directors,actors,files" excludefromdisable="true"/>
-	<view id="List" value="550" languageid="535" type="artists,albums,songs,videos,images,addons,studios,genres,years,playlists" excludefromdisable="true"/>
+    <view id="List" value="550" languageid="535" type="movies,tvshows,episodes,sets,seasons,setmovies,countries,directors,actors,files" excludefromdisable="true"/>
+	<view id="List" value="50" languageid="535" type="artists,albums,songs,videos,images,addons,studios,genres,years,playlists" excludefromdisable="true"/>
     <view id="Plain List" value="552" languageid="31205" type="all,!tvchannels" excludefromdisable="true"/>
+	<view id="Low List" value="551" languageid="31267" type="movies,tvshows,episodes,sets,seasons,setmovies,artists,albums,songs,videos"/>
 	<view id="RightList" value="516" languageid="31251" type="movies,tvshows,episodes,sets,seasons,setmovies,artists,albums,songs,videos"/>
 	<view id="Media Info 1" value="54" languageid="31645" type="movies,tvshows,episodes,sets,seasons,setmovies,artists,albums,songs"/>
     <view id="Media Info 2" value="502" languageid="31143" type="movies,tvshows,episodes,sets,seasons,setmovies,artists,albums,songs"/>

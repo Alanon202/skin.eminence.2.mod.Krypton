@@ -498,6 +498,22 @@
             <onclick>Skin.ToggleSetting(rotatingthumbs)</onclick>
             <visible>Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(506) | Control.IsVisible(59) | Control.IsVisible(159) | Control.IsVisible(161) | Control.IsVisible(162)</visible>
             <visible>Container.Content(movies) | Container.Content(sets)</visible>
+        </control>
+        <!-- Hide Showcase Info -->
+        <control type="radiobutton" id="90979">
+            <include>Defs_OptionButton2</include>
+            <label>31648</label>
+            <selected>Skin.HasSetting(showcase.hideplot)</selected>
+            <onclick>Skin.ToggleSetting(showcase.hideplot)</onclick>
+            <visible>Control.IsVisible(535)</visible>
+        </control>	
+        <!-- Hide Low List Info -->
+        <control type="radiobutton" id="90978">
+            <include>Defs_OptionButton2</include>
+            <label>31648</label>
+            <selected>Skin.HasSetting(lowlist.hideplot)</selected>
+            <onclick>Skin.ToggleSetting(lowlist.hideplot)</onclick>
+            <visible>Control.IsVisible(551)</visible>
         </control>		
         <!-- Movies Fanarts/Thumbs Setting -->
         <control type="radiobutton" id="90980">
@@ -515,8 +531,35 @@
             <selected>Skin.HasSetting(ShowRightListDisc)</selected>
             <onclick>Skin.ToggleSetting(ShowRightListDisc)</onclick>
             <visible>Control.IsVisible(516)</visible>
-            <visible>Container.Content(movies) | Container.Content(albums) | Container.Content(songs)</visible>
+            <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
         </control>
+        <!-- Show Right List Music Disc -->
+        <control type="radiobutton" id="90974">
+            <include>Defs_OptionButton2</include>
+            <label>31250</label>
+            <selected>Skin.HasSetting(ShowRightListMusicDisc)</selected>
+            <onclick>Skin.ToggleSetting(ShowRightListMusicDisc)</onclick>
+            <visible>Control.IsVisible(516)</visible>
+            <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
+        </control>		
+        <!-- Show Low List Disc -->
+        <control type="radiobutton" id="90976">
+            <include>Defs_OptionButton2</include>
+            <label>31250</label>
+            <selected>Skin.HasSetting(ShowLowListDisc)</selected>
+            <onclick>Skin.ToggleSetting(ShowLowListDisc)</onclick>
+            <visible>Control.IsVisible(551)</visible>
+            <visible>Container.Content(movies) | Container.Content(sets)</visible>
+        </control>	
+        <!-- Show Low List Music Disc -->
+        <control type="radiobutton" id="90975">
+            <include>Defs_OptionButton2</include>
+            <label>31250</label>
+            <selected>Skin.HasSetting(ShowLowListMusicDisc)</selected>
+            <onclick>Skin.ToggleSetting(ShowLowListMusicDisc)</onclick>
+            <visible>Control.IsVisible(551)</visible>
+            <visible>Container.Content(albums) | Container.Content(songs)</visible>
+        </control>		
         <!-- RightList Info Text -->
         <control type="radiobutton" id="90987">
             <include>Defs_OptionButton2</include>
@@ -543,8 +586,7 @@
             <onclick>Skin.ToggleSetting(RightListAltMusic)</onclick>
             <visible>Control.IsVisible(516) + Skin.HasSetting(RightListInfo)</visible>
 			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
-		</control>		
-			
+		</control>
         <!-- Movies Hide Plots -->
         <control type="radiobutton" id="90990">
             <include>Defs_OptionButton2</include>
