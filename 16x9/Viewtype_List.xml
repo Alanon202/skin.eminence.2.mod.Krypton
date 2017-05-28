@@ -2,7 +2,7 @@
 <includes>
     <include name="Viewtype_List">
         <control type="group">
-            <visible>Control.IsVisible(50)</visible>
+            <visible>Control.IsVisible(550)</visible>
             <include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
             <left>side</left>
@@ -17,8 +17,8 @@
                 <param name="viewlabel" value="535" />
                 <param name="posx" value="0" />
                 <param name="width" value="listw" />
-                <param name="id" value="50" />
-				<param name="condition" value="[Container.Content(countries) | Container.Content(playlists) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),50) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
+                <param name="id" value="550" />
+				<param name="condition" value="[Container.Content(countries) | Container.Content(playlists) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),550) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>
             <control type="group">
                 <width>listw</width>
@@ -58,7 +58,7 @@
 
     <include name="Viewtype_SquareList">
         <control type="group">
-            <visible>Control.IsVisible(550)</visible>
+            <visible>Control.IsVisible(50)</visible>
             <include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
             <left>side</left>
@@ -73,8 +73,8 @@
                 <param name="viewlabel" value="535" />
                 <param name="posx" value="0" />
                 <param name="width" value="1170" />
-                <param name="id" value="550" />
-				<param name="condition" value="[Container.Content(genres) | Container.Content(studios) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos) | Container.Content(years) | Container.Content(images) | Container.Content()] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),550) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
+                <param name="id" value="50" />
+				<param name="condition" value="[Container.Content(genres) | Container.Content(studios) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos) | Container.Content(years) | Container.Content(images) | Container.Content()] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),50) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>
             <control type="group">
                 <width>1180</width>

@@ -30,7 +30,7 @@
                 <animation effect="fade" condition="!Control.HasFocus(61) + !Container.Scrolling" time="200" start="100" end="0">Conditional</animation>
             </control>
             <control type="fixedlist" id="525">
-                <top>10</top>
+                <top>10</top>		
                 <centerleft>50%</centerleft>
                 <width>1722</width>
 				<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),525) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]</visible>
@@ -62,7 +62,15 @@
                             <top>15</top>
                             <height>32</height>
                             <width>32</width>
-                            <texture colordiffuse="ListLabel">$VAR[Image_Indicator]</texture>
+                            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>						
+                        <control type="image">
+                            <right>15</right>
+                            <top>15</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
                             <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </control>
@@ -83,7 +91,15 @@
                             <top>15</top>
                             <height>32</height>
                             <width>32</width>
-                            <texture colordiffuse="ListLabel">$VAR[Image_Indicator]</texture>
+                            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>								
+                        <control type="image">
+                            <right>15</right>
+                            <top>15</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
                             <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                         <control type="image">
