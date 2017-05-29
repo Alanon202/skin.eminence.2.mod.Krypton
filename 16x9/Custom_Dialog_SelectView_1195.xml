@@ -292,7 +292,7 @@
                     </item>	
                     <!-- Low List -->
                     <item>
-                        <label>31267</label>
+                        <label>31265</label>
                         <icon>special://skin/extras/viewthumbs/551.jpg</icon>
                         <onclick>Close</onclick>
                         <onclick>Container.SetViewMode(50)</onclick>

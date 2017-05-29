@@ -719,7 +719,7 @@
                 </control>
             </control>
             <include content="View_LowList">
-                <param name="viewlabel" value="551" />
+                <param name="viewlabel" value="31265" />
                 <param name="posx" value="500" />
                 <param name="width" value="800" />
                 <param name="id" value="551" />
@@ -854,7 +854,7 @@
                 </control>
             </control>
             <include content="View_LowList">
-                <param name="viewlabel" value="551" />
+                <param name="viewlabel" value="31265" />
                 <param name="posx" value="500" />
                 <param name="width" value="800" />
                 <param name="id" value="551" />

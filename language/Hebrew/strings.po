@@ -1013,6 +1013,10 @@ msgctxt "#31264"
 msgid "Displays a shortened plot type for video media in the entire skin."
 msgstr "הצג עלילה מקוצרת לכל פריטי הוידאו בכל המעטפת."
 
+msgctxt "#31265"
+msgid "Low List"
+msgstr "רשימה נמוכה"
+
 msgctxt "#31500"
 msgid "None"
 msgstr "ללא"

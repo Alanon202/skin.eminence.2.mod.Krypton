@@ -1002,7 +1002,7 @@ msgctxt "#31264"
 msgid "Displays a shortened plot type for video media in the entire skin."
 msgstr ""
 
-msgctxt "#31267"
+msgctxt "#31265"
 msgid "Low List"
 msgstr ""
 

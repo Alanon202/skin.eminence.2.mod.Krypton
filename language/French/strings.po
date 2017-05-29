@@ -1002,6 +1002,10 @@ msgctxt "#31264"
 msgid "Displays a shortened plot type for video media in the entire skin."
 msgstr "Affiche un synopsis raccourci pour toutes les vidéos dans le thème."
 
+msgctxt "#31265"
+msgid "Low List"
+msgstr "Courte Liste"
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Aucune"
