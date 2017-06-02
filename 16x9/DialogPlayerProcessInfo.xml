@@ -14,7 +14,13 @@
             <!-- Background -->
             <control type="image">
                 <texture colordiffuse="df000000">common/white.png</texture>
+				<visible>String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)</visible>
             </control>
+			
+            <control type="image">
+                <texture colordiffuse="6ff0f0f0">common/white.png</texture>
+				<visible>String.IsEqual(Skin.CurrentColourTheme,Light)</visible>
+            </control>			
 
             <control type="grouplist">
                 <left>52</left>
