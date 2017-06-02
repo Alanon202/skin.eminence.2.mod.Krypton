@@ -1002,6 +1002,10 @@ msgctxt "#31264"
 msgid "Displays a shortened plot type for video media in the entire skin."
 msgstr "Muestra un tipo de trazado acortado para los medios de vídeo en toda la piel."
 
+msgctxt "#31265"
+msgid "Low List"
+msgstr "Lista baja"
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Ninguno"
