@@ -32,6 +32,19 @@
 	<include name="RotationLimit10"><timeperimage>1200000</timeperimage></include>
 	<include name="RotationLimit11"><timeperimage>1500000</timeperimage></include>
 	<include name="RotationLimit12"><timeperimage>1800000</timeperimage></include>
+	<!-- Fadelabel Rotation Duration -->
+	<include name="FadeLimit1"><pauseatend>5000</pauseatend></include>
+	<include name="FadeLimit2"><pauseatend>10000</pauseatend></include>
+	<include name="FadeLimit3"><pauseatend>15000</pauseatend></include>
+	<include name="FadeLimit4"><pauseatend>20000</pauseatend></include>
+	<include name="FadeLimit5"><pauseatend>30000</pauseatend></include>
+	<include name="FadeLimit6"><pauseatend>60000</pauseatend></include>
+	<include name="FadeLimit7"><pauseatend>300000</pauseatend></include>
+	<include name="FadeLimit8"><pauseatend>600000</pauseatend></include>
+	<include name="FadeLimit9"><pauseatend>900000</pauseatend></include>
+	<include name="FadeLimit10"><pauseatend>1200000</pauseatend></include>
+	<include name="FadeLimit11"><pauseatend>1500000</pauseatend></include>
+	<include name="FadeLimit12"><pauseatend>1800000</pauseatend></include>	
     <!-- Password Protection -->
 	<variable name="passcode">
 		<value condition="[String.IsEmpty(Container(211).ListItem.Property(ParentalControl)) | String.Contains(Container(211).ListItem.Property(ParentalControl),no)]">$LOCALIZE[106]</value>
