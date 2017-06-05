@@ -812,7 +812,7 @@
         <value condition="String.IsEmpty(Skin.String(timelimit))">4</value>
     </variable>
     <variable name="Label_SkinSetting_RotationLimit">
-        <value condition="String.IsEmpty(Skin.String(timelimit))">$LOCALIZE[31220]</value>
+        <value condition="String.IsEmpty(Skin.String(rotationlimit))">N/A</value>
 		<value condition="String.IsEqual(Skin.String(rotationlimit),1)">$LOCALIZE[31220]</value>
 		<value condition="String.IsEqual(Skin.String(rotationlimit),2)">$LOCALIZE[31221]</value>
 		<value condition="String.IsEqual(Skin.String(rotationlimit),3)">$LOCALIZE[31222]</value>
