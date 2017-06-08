@@ -587,8 +587,8 @@ msgid "Busy spinner"
 msgstr "Icône de chargement"
 
 msgctxt "#31161"
-msgid "Backup skin settings"
-msgstr "Sauvegarder les paramètres du thème"
+msgid "Backup / Restore skin settings"
+msgstr " Sauvegarde / Restaurations des réglages du thème"
 
 msgctxt "#31162"
 msgid "Restore skin settings from file"
@@ -1423,8 +1423,8 @@ msgid "Debug infos"
 msgstr "Informations de déboggage"
 
 msgctxt "#31604"
-msgid "Saves all skin settings."
-msgstr "Permet de sauvegarder les paramètres du thème."
+msgid "Opens a window to backup or restore skin settings."
+msgstr "Ouvre une fenêtre afin de sauvegarder ou restaurer les réglages du thème"
 
 msgctxt "#31605"
 msgid "Restores all skin settings with the backup."

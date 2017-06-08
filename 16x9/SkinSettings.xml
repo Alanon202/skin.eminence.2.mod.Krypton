@@ -1242,16 +1242,17 @@
                     <control type="button" id="8997">
                         <width>100%</width>
                         <label>31161</label>
-                        <onclick>RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
+                        <onclick>RunScript(script.skin.helper.skinbackup)</onclick>
                         <include>Defs_OptionButton</include>
+						<visible>System.HasAddon(script.skin.helper.skinbackup)</visible>
                     </control>
-                    <!-- Restore -->
-                    <control type="button" id="8998">
-                        <width>100%</width>
-                        <label>31162</label>
-                        <onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
-                        <include>Defs_OptionButton</include>
-                    </control>
+                    <!-- <!-- Restore --> -->
+                    <!-- <control type="button" id="8998"> -->
+                        <!-- <width>100%</width> -->
+                        <!-- <label>31162</label> -->
+                        <!-- <onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick> -->
+                        <!-- <include>Defs_OptionButton</include> -->
+                    <!-- </control> -->
                     <!-- Reset Skin to Defaults -->
                     <control type="button" id="8999">
                         <width>100%</width>

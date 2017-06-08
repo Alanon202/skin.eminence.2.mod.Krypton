@@ -587,7 +587,7 @@ msgid "Busy spinner"
 msgstr ""
 
 msgctxt "#31161"
-msgid "Backup skin settings"
+msgid "Backup / Restore skin settings"
 msgstr ""
 
 msgctxt "#31162"
@@ -1423,7 +1423,7 @@ msgid "Debug infos"
 msgstr ""
 
 msgctxt "#31604"
-msgid "Saves all skin settings."
+msgid "Opens a window to backup or restore skin settings."
 msgstr ""
 
 msgctxt "#31605"
