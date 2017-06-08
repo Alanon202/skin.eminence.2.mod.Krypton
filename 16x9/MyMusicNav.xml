@@ -21,7 +21,6 @@
         <control type="group">
             <include>Animation_Common</include>
             <include>Viewtype_SquareList</include>
-			<include>Viewtype_LowList</include>
             <include>Viewtype_BigList</include>
             <include>Viewtype_PanelList</include>			
 			<include>Viewtype_PlainList</include>
