@@ -588,7 +588,7 @@ msgstr "Icône de chargement"
 
 msgctxt "#31161"
 msgid "Backup / Restore skin settings"
-msgstr " Sauvegarde / Restauration des réglages du thème"
+msgstr "Sauvegarde / Restauration des réglages du thème"
 
 msgctxt "#31162"
 msgid "Restore skin settings from file"
