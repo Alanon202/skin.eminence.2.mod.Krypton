@@ -124,7 +124,7 @@ msgstr "Films recommandés"
 
 msgctxt "#31034"
 msgid "Enable Artist Slideshow"
-msgstr "Activer Artist Slideshow"
+msgstr "Activer le diaporama des Artistes"
 
 msgctxt "#31035"
 msgid "Recent episodes"
@@ -2064,7 +2064,7 @@ msgstr "Utiliser des artwork animés"
 
 msgctxt "#31764"
 msgid "Uses animations instead of static posters and fanart, if available."
-msgstr "Utiliser des posters et fanart animés plutôt que statiques (si disponible)."
+msgstr "Utiliser des posters et fanarts animés plutôt que statiques (si disponible)."
 
 msgctxt "#31765"
 msgid "Compacts the flags into the info popup."
@@ -2092,7 +2092,7 @@ msgstr "Activer la barre de défilement alphabétique pour une navigation plus r
 
 msgctxt "#31771"
 msgid "Use regular scrollbars"
-msgstr "Utiliser les barre de défilements standard"
+msgstr "Utiliser les barres de défilements standards"
 
 msgctxt "#31772"
 msgid "Enables regular vertical and horizontal scrollbars for quicker navigation in the library."
