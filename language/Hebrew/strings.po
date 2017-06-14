@@ -593,8 +593,8 @@ msgid "Busy spinner"
 msgstr "שינוי צלמית - עסוק"
 
 msgctxt "#31161"
-msgid "Backup skin settings"
-msgstr "גבה הגדרות מעטפת"
+msgid "Backup / Restore skin settings"
+msgstr " בקאפ / שחזור הגדרות סקין"
 
 msgctxt "#31162"
 msgid "Restore skin settings from file"
@@ -1466,8 +1466,8 @@ msgid "Debug infos"
 msgstr "מידע ניפוי שגיאות"
 
 msgctxt "#31604"
-msgid "Saves all skin settings."
-msgstr "שמור את כל נתוני המעטפת."
+msgid "Opens a window to backup or restore skin settings."
+msgstr "פותח חלון לבקאפ או שחזור הגדרות הסקין"
 
 msgctxt "#31605"
 msgid "Restores all skin settings with the backup."
