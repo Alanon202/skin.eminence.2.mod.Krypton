@@ -1235,7 +1235,7 @@
     <include name="Object_Background2">
         <control type="image">
             <include>Object_Background_Shadows2</include>
-            <texture colordiffuse="ObjectBackground">common/white.png</texture>
+            <texture colordiffuse="$VAR[ColourThemeBack]">common/white.png</texture>
         </control>
     </include>
 

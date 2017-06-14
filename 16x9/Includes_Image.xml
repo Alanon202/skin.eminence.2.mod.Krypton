@@ -437,4 +437,9 @@
 	<variable name="Col_lyr4">
 		<value>fffffaf0</value>
 	</variable>
+	
+	<variable name="ColourThemeBack">
+		<value condition="String.IsEqual(Skin.CurrentColourTheme, Light)">66ffffff</value>
+		<value>ObjectBackground</value>
+	</variable>	
 </includes>
