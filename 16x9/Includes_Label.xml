@@ -62,8 +62,8 @@
     </variable>
 
     <variable name="Label_OverlayPlot">
-	    <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlots)) + [Container.Content(Sets) | ListItem.IsCollection | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlots)]</value>
-	    <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlot)]</value>
+	    <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlots)) + [Container.Content(Sets) | ListItem.IsCollection | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlots)]$INFO[Window(home).Property(SkinHelper.ListItem.Awards)]</value>
+	    <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.ExtendedPlot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.ExtendedPlot)]$INFO[Window(home).Property(SkinHelper.ListItem.Awards)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(Set.Movies.ExtendedPlot)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(Set.Movies.ExtendedPlot)]</value>        
 		<value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Plots)) + [Container.Content(Sets) | ListItem.IsCollection | String.StartsWith(ListItem.Path,videodb://movies/sets)]">$INFO[Window(home).Property(SkinHelper.ListItem.Plots)]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)">$INFO[Window.Property(Plot)]</value>
@@ -109,14 +109,16 @@
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Director))">$INFO[Window(Home).Property(SkinHelper.Player.Director)]</value>
     </variable>
 
-    <variable name="Label_ExtraInfo">    
-        <value condition="!String.IsEmpty(ListItem.MPAA) + !Skin.HasSetting(disable.mpaa) + !Control.IsVisible(51)">$INFO[ListItem.MPAA]$VAR[Label_Duration,  •  ,]</value>       
-		<value condition="String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA)) + !Skin.HasSetting(disable.mpaa) + !Control.IsVisible(51)">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]$VAR[Label_Duration,  •  ,]</value>
-        <value condition="Skin.HasSetting(disable.mpaa)">$VAR[Label_Duration]</value>
-        <value condition="!String.IsEmpty(ListItem.MPAA) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration)) + !Skin.HasSetting(disable.mpaa) + !Control.IsVisible(51)">$INFO[ListItem.MPAA]</value>
-        <value condition="String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA)) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration)) + !Skin.HasSetting(disable.mpaa) + !Control.IsVisible(51)">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>
-        <value condition="!String.IsEmpty(ListItem.MPAA) + !Skin.HasSetting(disable.mpaa) + Control.IsVisible(51)">$INFO[ListItem.MPAA]</value>	
-		<value condition="String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA)) + !Skin.HasSetting(disable.mpaa) + Control.IsVisible(51)">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>
+    <variable name="Label_ExtraInfo">      
+		<value condition="!Skin.HasSetting(furniture.showtime) + !Skin.HasSetting(disable.mpaa)">$VAR[Label_ExtraRating,,  •  ]$VAR[Label_Duration]</value>
+		<value condition="Skin.HasSetting(furniture.showtime) + !Skin.HasSetting(disable.mpaa)">$VAR[Label_ExtraRating]</value>
+        <value condition="[!Skin.HasSetting(furniture.showtime) + Skin.HasSetting(disable.mpaa)] | [String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA))]">$VAR[Label_Duration]</value>
+        <value condition="String.IsEmpty(ListItem.Duration) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration))">$VAR[Label_ExtraRating]</value>
+    </variable>
+	
+	<variable name="Label_ExtraRating">
+        <value condition="!Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.MPAA) + !Skin.HasSetting(disable.mpaa)">$INFO[ListItem.MPAA]</value>       
+		<value condition="!Skin.HasSetting(furniture.showflags) + String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA)) + !Skin.HasSetting(disable.mpaa)">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>
     </variable>
 	
 	<variable name="Label_Duration">
@@ -133,12 +135,17 @@
 		<value condition="Container.Content(songs) + Control.IsVisible(516)">$INFO[ListItem.Artist]$INFO[ListItem.Duration, / ,]</value>	
         <value condition="Container.Content(seasons)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Episode,, $LOCALIZE[20360]]</value>   
         <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[20342]  •  ]$INFO[Window(Home).Property(SkinHelper.ListItem.Years)]</value>        
-		<value condition="!ListItem.IsCollection + Container.Content(movies) + !Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating)">$VAR[Label_ExtraInfo,,  •  ]$INFO[ListItem.Year]$INFO[ListItem.Rating,  •  ,]</value>        
-        <value condition="!ListItem.IsCollection + Container.Content(movies) + [Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]">$VAR[Label_ExtraInfo]$INFO[ListItem.Year,  •  ,]</value>
+		<value condition="!ListItem.IsCollection + Container.Content(movies)">$VAR[Label_ExtraInfo]$VAR[Label_ExtendedYear,  •  ,]</value>        
         <value condition="!ListItem.IsCollection + !Container.Content(movies) + !Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating)">$VAR[Label_ExtraInfo,,  •  ]$INFO[ListItem.Premiered]$INFO[ListItem.Rating,  •  ,]</value>  
-        <value condition="!ListItem.IsCollection + !Container.Content(movies) + [Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]">$VAR[Label_ExtraInfo]$INFO[ListItem.Premiered,  •  ,]</value>
+        <value condition="!ListItem.IsCollection + !Container.Content(movies) + [Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]">$VAR[Label_ExtraInfo,,  •  ]$INFO[ListItem.Premiered]</value>
 	</variable>
 
+	<variable name="Label_ExtendedYear">
+		<value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Year]$INFO[ListItem.Rating,  •  ,]</value>        
+		<value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Rating]</value>    
+		<value condition="[Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)] + !String.IsEmpty(ListItem.Year) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Year]</value> 
+	</variable>
+	
     <variable name="Label_ExtendedInfo_InfoLine">
         <value condition="String.IsEqual(Window.Property(content),150) + Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">$ADDON[script.extendedinfo 32010]</value>
         <value condition="String.IsEqual(Window.Property(content),150) + Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)">$LOCALIZE[31107]</value>

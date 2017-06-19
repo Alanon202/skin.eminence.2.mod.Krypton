@@ -116,7 +116,7 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<texture colordiffuse="LineLabel" background="true">$VAR[RatingFlagVar,,.png]</texture>
-			<visible>!String.IsEmpty(Container(9500).ListItem.MPAA) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(535) | Control.IsVisible(516) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
+			<visible>!String.IsEmpty(Container(9500).ListItem.MPAA) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(535) | Control.IsVisible(516)]</visible>
 		</control>					
 	</control>
 	</include>    
