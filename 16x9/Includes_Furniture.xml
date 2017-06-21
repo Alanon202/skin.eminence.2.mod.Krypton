@@ -468,7 +468,7 @@
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="LineLabel" background="true" fallback="">$VAR[RatingFlagVar,,.png]</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(516) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
+                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
             </control>
 			<control type="group">
 				<width>140</width>                 
@@ -700,7 +700,7 @@
         <control type="multiimage">
             <width>100%</width>
             <height>100%</height>
-            <fadetime>600</fadetime>
+            <fadetime>400</fadetime>
             <randomize>true</randomize>
 			<include condition="String.IsEmpty(Skin.String(RotationLimit))">RotationLimit1</include>
 			<include condition="String.IsEqual(Skin.String(RotationLimit),1)">RotationLimit1</include>
@@ -1394,7 +1394,7 @@
         </control>	
 
         <control type="group">
-            <visible>[Window.IsVisible(home) + ![Control.HasFocus(9001) | Control.HasFocus(9101)]] | [Window.IsVisible(DialogSeekBar.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(musicosd) | Window.IsVisible(videoosd)]] | Window.IsVisible(DialogBusy.xml) | ![Window.IsVisible(home) | Window.IsVisible(DialogSeekBar.xml)] | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>            
+            <visible>[Window.IsVisible(home) + ![Control.HasFocus(9001) | Control.HasFocus(9101)]] | [Window.IsVisible(DialogSeekBar.xml) + [Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(musicosd) | Window.IsVisible(videoosd)]] | Window.IsVisible(DialogBusy.xml) | ![Window.IsVisible(home) | Window.IsVisible(DialogSeekBar.xml)] | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>            
             <animation type="Visible">
                 <effect type="slide" start="0,-32" end="0" time="200" tween="quadratic" />
                 <effect type="fade" start="0" end="100" time="200" />
@@ -1418,7 +1418,7 @@
             <include>Furniture_TopBar_Clock</include>
         </control>
         <control type="group">
-            <visible>[Window.IsVisible(home) + ![Control.HasFocus(9001) | Control.HasFocus(9101)]] | [Window.IsVisible(DialogSeekBar.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(musicosd) | Window.IsVisible(videoosd)]] | Window.IsVisible(DialogBusy.xml) | Window.IsActive(DialogVolumeBar.xml) | Window.IsActive(DialogVolumeBar.xml) | ![Window.IsVisible(home) | Window.IsVisible(DialogSeekBar.xml)] | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
+            <visible>[Window.IsVisible(home) + ![Control.HasFocus(9001) | Control.HasFocus(9101)]] | [Window.IsVisible(DialogSeekBar.xml) + [Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsVisible(DialogFullScreenInfo.xml) | Window.IsVisible(musicosd) | Window.IsVisible(videoosd)]] | Window.IsVisible(DialogBusy.xml) | Window.IsActive(DialogVolumeBar.xml) | Window.IsActive(DialogVolumeBar.xml) | ![Window.IsVisible(home) | Window.IsVisible(DialogSeekBar.xml)] | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
             <animation type="Visible">
                 <effect type="slide" start="0,-32" end="0" time="200" tween="quadratic" />
                 <effect type="fade" start="0" end="100" time="200" />

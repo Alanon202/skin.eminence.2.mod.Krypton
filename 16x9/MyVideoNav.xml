@@ -189,6 +189,50 @@
 			<visible>Skin.HasSetting(rotatingthumbs)</visible>
 		</control>
 		
+		<control type="fadelabel" id="4430">
+			<top>-1000</top>
+			<width>2560</width>
+			<height>0</height>
+			<scrollspeed>20</scrollspeed>
+			<scrollout>false</scrollout>
+			<font>Font-LineLabel</font>
+			<textcolor>white</textcolor>
+			<randomize>true</randomize>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),1)">FadeLimit1</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),2)">FadeLimit2</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),3)">FadeLimit3</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),4)">FadeLimit4</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),5)">FadeLimit5</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),6)">FadeLimit6</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),7)">FadeLimit7</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),8)">FadeLimit8</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),9)">FadeLimit9</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),10)">FadeLimit10</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),11)">FadeLimit11</include>
+			<include condition="String.IsEqual(Skin.String(rotationlimit),12)">FadeLimit12</include>
+			<include condition="String.IsEmpty(Skin.String(rotationlimit))">FadeLimit1</include>		
+			<label>$INFO[ListItem.Art(extrafanart1)]</label>
+			<label>$INFO[ListItem.Art(extrafanart2)]</label>
+			<label>$INFO[ListItem.Art(extrafanart3)]</label>
+			<label>$INFO[ListItem.Art(extrafanart4)]</label>
+			<label>$INFO[ListItem.Art(extrafanart5)]</label>
+			<label>$INFO[ListItem.Art(extrafanart6)]</label>
+			<label>$INFO[ListItem.Art(extrafanart7)]</label>
+			<label>$INFO[ListItem.Art(extrafanart8)]</label>
+			<label>$INFO[ListItem.Art(extrafanart9)]</label>
+			<label>$INFO[ListItem.Art(extrafanart10)]</label>
+			<label>$INFO[ListItem.Art(extrafanart11)]</label>
+			<label>$INFO[ListItem.Art(extrafanart12)]</label>
+			<label>$INFO[ListItem.Art(extrafanart13)]</label>
+			<label>$INFO[ListItem.Art(extrafanart14)]</label>
+			<label>$INFO[ListItem.Art(extrafanart15)]</label>
+			<label>$INFO[ListItem.Art(extrafanart16)]</label>
+			<label>$INFO[ListItem.Art(extrafanart17)]</label>
+			<label>$INFO[ListItem.Art(extrafanart18)]</label>
+			<label>$INFO[ListItem.Art(extrafanart19)]</label>
+			<label>$INFO[ListItem.Art(extrafanart20)]</label>
+		</control>
+
 		<control type="fadelabel" id="4420">
 			<top>-1000</top>
 			<width>2560</width>
@@ -211,6 +255,7 @@
 			<include condition="String.IsEqual(Skin.String(rotationlimit),11)">FadeLimit11</include>
 			<include condition="String.IsEqual(Skin.String(rotationlimit),12)">FadeLimit12</include>
 			<include condition="String.IsEmpty(Skin.String(rotationlimit))">FadeLimit1</include>			
+			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
 			<label>$INFO[ListItem.Art(fanart2)]</label>
 			<label>$INFO[ListItem.Art(fanart3)]</label>
@@ -230,9 +275,8 @@
 			<label>$INFO[ListItem.Art(fanart17)]</label>
 			<label>$INFO[ListItem.Art(fanart18)]</label>
 			<label>$INFO[ListItem.Art(fanart19)]</label>
-			<label>$INFO[ListItem.Art(fanart20)]</label>			
-			<visible>System.HasAddon(script.artwork.beef)</visible>
-		</control>		
+			<label>$INFO[ListItem.Art(fanart20)]</label>
+		</control>			
 		
         <include>Furniture_OverlayInfo</include>
     </controls>

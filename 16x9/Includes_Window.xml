@@ -1801,7 +1801,7 @@
                 <action>seek</action>
 				<info>Player.Progress</info>
 				<orientation>horizontal</orientation>
-				<visible>[Player.Paused + !Skin.HasSetting(videoosd.showinfoonpause)] | [!Player.Paused | Player.Seeking | Player.Forwarding | Player.Rewinding]</visible>
+				<visible>[Player.Paused + !Skin.HasSetting(videoosd.showinfoonpause)] | [Player.Caching | !Player.Paused | Player.Seeking | Player.Forwarding | Player.Rewinding]</visible>
             </control>
 
 			<control type="slider" id="747">
