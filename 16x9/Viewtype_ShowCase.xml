@@ -55,7 +55,7 @@
 					<include>Object_Background2</include>
 				</control>				
 				<control type="group">
-					<visible>Control.IsVisible(535) + Integer.IsGreater(Container.NumItems,1)</visible>
+					<visible>Control.IsVisible(535) + Integer.IsGreater(Container.NumItems,0)</visible>
 					<top>-545</top>
 					<left>-28.5</left>
 					<control type="group">
@@ -281,7 +281,7 @@
 						<control type="group" id="6000">
 							<left>55</left>
 							<top>570</top>
-							<visible>Control.IsVisible(535) + Integer.IsGreater(Container.NumItems,1)</visible>
+							<visible>Control.IsVisible(535) + Integer.IsGreater(Container.NumItems,0)</visible>
 							<visible>!Control.IsVisible(6001) + !Control.IsVisible(6002)</visible>
 							<control type="group">
 								<left>15</left>
@@ -375,7 +375,7 @@
 						<ondown condition="!Skin.HasSetting(showscrollbars) + Skin.HasSetting(AlphabetScrollbar)">6015</ondown>
 						<onleft>535</onleft>
 						<onright>535</onright>
-						<visible>[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),535) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]</visible>
+						<visible>[Container.Content(movies) + [String.IsEqual(Skin.String(Skin.ForcedView.movies),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.movies)) ]] | [Container.Content(sets) + [String.IsEqual(Skin.String(Skin.ForcedView.sets),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.sets)) ]] | [Container.Content(tvshows) + [String.IsEqual(Skin.String(Skin.ForcedView.tvshows),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.tvshows)) ]] | [Container.Content(seasons) + [String.IsEqual(Skin.String(Skin.ForcedView.seasons),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.seasons)) ]] | [Container.Content(episodes) + [String.IsEqual(Skin.String(Skin.ForcedView.episodes),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.episodes)) ]] | [Container.Content(videos) + [String.IsEqual(Skin.String(Skin.ForcedView.videos),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.videos)) ]] | [Container.Content(artists) + [String.IsEqual(Skin.String(Skin.ForcedView.artists),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.artists)) ]] | [Container.Content(albums) + [String.IsEqual(Skin.String(Skin.ForcedView.albums),$LOCALIZE[31199]) | String.IsEmpty(Skin.String(Skin.ForcedView.albums)) ]]</visible>
 				<!--	<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons) | Container.Content(sets)</visible> -->
 						<viewtype label="31199">bigwrap</viewtype>
 						<pagecontrol>61</pagecontrol>

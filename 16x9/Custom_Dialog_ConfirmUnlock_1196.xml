@@ -40,34 +40,33 @@
                     <onleft>9001</onleft>
                     <onright>9001</onright>
                     <onclick>Close</onclick>
-                    <onclick condition="[Container.Content() + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews))]">Skin.Reset(SkinHelper.ForcedViews.)</onclick>
-                    <onclick condition="[Container.Content(tags) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tags))]">Skin.Reset(SkinHelper.ForcedViews.tags)</onclick>
-                    <onclick condition="[Container.Content(years) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.years))]">Skin.Reset(SkinHelper.ForcedViews.years)</onclick>
-                    <onclick condition="[Container.Content(genres) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.genres))]">Skin.Reset(SkinHelper.ForcedViews.genres)</onclick>
-                    <onclick condition="[Container.Content(countries) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.countries))]">Skin.Reset(SkinHelper.ForcedViews.countries)</onclick>
-                    <onclick condition="[Container.Content(studios) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.studios))]">Skin.Reset(SkinHelper.ForcedViews.studios)</onclick>
-                    <onclick condition="[Container.Content(playlists) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.playlists))]">Skin.Reset(SkinHelper.ForcedViews.playlists)</onclick>
-                    <onclick condition="[Container.Content(movies) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.movies))]">Skin.Reset(SkinHelper.ForcedViews.movies)</onclick>
-                    <!-- <onclick condition="[Container.Content(movies) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.setmovies))]">Skin.Reset(SkinHelper.ForcedViews.setmovies)</onclick> -->
-					<onclick condition="[Container.Content(sets) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.sets))]">Skin.Reset(SkinHelper.ForcedViews.sets)</onclick>
-                    <onclick condition="[Container.Content(tvshows) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tvshows))]">Skin.Reset(SkinHelper.ForcedViews.tvshows)</onclick>
-                    <onclick condition="[Container.Content(seasons) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.seasons))]">Skin.Reset(SkinHelper.ForcedViews.seasons)</onclick>
-                    <onclick condition="[Container.Content(episodes) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.episodes))]">Skin.Reset(SkinHelper.ForcedViews.episodes)</onclick>
-                    <onclick condition="[Container.Content(artists) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.artists))]">Skin.Reset(SkinHelper.ForcedViews.artists)</onclick>
-                    <onclick condition="[Container.Content(albums) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.albums))]">Skin.Reset(SkinHelper.ForcedViews.albums)</onclick>
-                    <onclick condition="[Container.Content(songs) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.songs))]">Skin.Reset(SkinHelper.ForcedViews.songs)</onclick>
-                    <onclick condition="[Container.Content(musicvideos) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.musicvideos))]">Skin.Reset(SkinHelper.ForcedViews.musicvideos)</onclick>
-                    <onclick condition="[Container.Content(addons) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.addons))]">Skin.Reset(SkinHelper.ForcedViews.addons)</onclick>
-                    <onclick condition="[Container.Content(actors) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.actors))]">Skin.Reset(SkinHelper.ForcedViews.actors)</onclick>
-                    <onclick condition="[Container.Content(directors) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.directors))]">Skin.Reset(SkinHelper.ForcedViews.directors)</onclick>
-                    <onclick condition="[Container.Content(files) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.files))]">Skin.Reset(SkinHelper.ForcedViews.files)</onclick>
-                    <onclick condition="[Container.Content(mixed) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.mixed))]">Skin.Reset(SkinHelper.ForcedViews.mixed)</onclick>
-                    <onclick condition="[Container.Content(images) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.images))]">Skin.Reset(SkinHelper.ForcedViews.images)</onclick>
-                    <onclick condition="[Container.Content(games) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.games))]">Skin.Reset(SkinHelper.ForcedViews.games)</onclick>
-                    <onclick condition="[Container.Content(unknown) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.unknown))]">Skin.Reset(SkinHelper.ForcedViews.unknown)</onclick>
-                    <onclick condition="[Container.Content(videos) + !String.IsEmpty(Skin.String(SkinHelper.ForcedViews.videos))]">Skin.Reset(SkinHelper.ForcedViews.videos)</onclick>
-                    <onclick>ActivateWindow(1195)</onclick>
-                </control>
+                    <onclick condition="[Container.Content() + !String.IsEmpty(Skin.String(Skin.ForcedView.))]">Skin.Reset(Skin.ForcedView.)</onclick>
+                    <onclick condition="[Container.Content(tags) + !String.IsEmpty(Skin.String(Skin.ForcedView.tags))]">Skin.Reset(Skin.ForcedView.tags)</onclick>
+                    <onclick condition="[Container.Content(years) + !String.IsEmpty(Skin.String(Skin.ForcedView.years))]">Skin.Reset(Skin.ForcedView.years)</onclick>
+                    <onclick condition="[Container.Content(genres) + !String.IsEmpty(Skin.String(Skin.ForcedView.genres))]">Skin.Reset(Skin.ForcedView.genres)</onclick>
+                    <onclick condition="[Container.Content(countries) + !String.IsEmpty(Skin.String(Skin.ForcedView.countries))]">Skin.Reset(Skin.ForcedView.countries)</onclick>
+                    <onclick condition="[Container.Content(studios) + !String.IsEmpty(Skin.String(Skin.ForcedView.studios))]">Skin.Reset(Skin.ForcedView.studios)</onclick>
+                    <onclick condition="[Container.Content(playlists) + !String.IsEmpty(Skin.String(Skin.ForcedView.playlists))]">Skin.Reset(Skin.ForcedView.playlists)</onclick>
+                    <onclick condition="[Container.Content(movies) + !String.IsEmpty(Skin.String(Skin.ForcedView.movies))]">Skin.Reset(Skin.ForcedView.movies)</onclick>
+                    <onclick condition="[Container.Content(sets) + !String.IsEmpty(Skin.String(Skin.ForcedView.sets))]">Skin.Reset(Skin.ForcedView.sets)</onclick>
+                    <onclick condition="[Container.Content(tvshows) + !String.IsEmpty(Skin.String(Skin.ForcedView.tvshows))]">Skin.Reset(Skin.ForcedView.tvshows)</onclick>
+                    <onclick condition="[Container.Content(seasons) + !String.IsEmpty(Skin.String(Skin.ForcedView.seasons))]">Skin.Reset(Skin.ForcedView.seasons)</onclick>
+                    <onclick condition="[Container.Content(episodes) + !String.IsEmpty(Skin.String(Skin.ForcedView.episodes))]">Skin.Reset(Skin.ForcedView.episodes)</onclick>
+                    <onclick condition="[Container.Content(artists) + !String.IsEmpty(Skin.String(Skin.ForcedView.artists))]">Skin.Reset(Skin.ForcedView.artists)</onclick>
+                    <onclick condition="[Container.Content(albums) + !String.IsEmpty(Skin.String(Skin.ForcedView.albums))]">Skin.Reset(Skin.ForcedView.albums)</onclick>
+                    <onclick condition="[Container.Content(songs) + !String.IsEmpty(Skin.String(Skin.ForcedView.songs))]">Skin.Reset(Skin.ForcedView.songs)</onclick>
+                    <onclick condition="[Container.Content(musicvideos) + !String.IsEmpty(Skin.String(Skin.ForcedView.musicvideos))]">Skin.Reset(Skin.ForcedView.musicvideos)</onclick>
+                    <onclick condition="[Container.Content(addons) + !String.IsEmpty(Skin.String(Skin.ForcedView.addons))]">Skin.Reset(Skin.ForcedView.addons)</onclick>
+                    <onclick condition="[Container.Content(actors) + !String.IsEmpty(Skin.String(Skin.ForcedView.actors))]">Skin.Reset(Skin.ForcedView.actors)</onclick>
+                    <onclick condition="[Container.Content(directors) + !String.IsEmpty(Skin.String(Skin.ForcedView.directors))]">Skin.Reset(Skin.ForcedView.directors)</onclick>
+                    <onclick condition="[Container.Content(files) + !String.IsEmpty(Skin.String(Skin.ForcedView.files))]">Skin.Reset(Skin.ForcedView.files)</onclick>
+                    <onclick condition="[Container.Content(mixed) + !String.IsEmpty(Skin.String(Skin.ForcedView.mixed))]">Skin.Reset(Skin.ForcedView.mixed)</onclick>
+                    <onclick condition="[Container.Content(images) + !String.IsEmpty(Skin.String(Skin.ForcedView.images))]">Skin.Reset(Skin.ForcedView.images)</onclick>
+                    <onclick condition="[Container.Content(games) + !String.IsEmpty(Skin.String(Skin.ForcedView.games))]">Skin.Reset(Skin.ForcedView.games)</onclick>
+                    <onclick condition="[Container.Content(unknown) + !String.IsEmpty(Skin.String(Skin.ForcedView.unknown))]">Skin.Reset(Skin.ForcedView.unknown)</onclick>
+                    <onclick condition="[Container.Content(videos) + !String.IsEmpty(Skin.String(Skin.ForcedView.videos))]">Skin.Reset(Skin.ForcedView.videos)</onclick>
+					<onclick>ActivateWindow(1195)</onclick>
+				</control>
                 <control type="button" id="9001">
                     <align>center</align>
                     <width>300</width>
@@ -78,6 +77,6 @@
                     <onclick>Close</onclick>
                 </control>
             </control>
-        </control>
+        </control>		
     </controls>
 </window>
