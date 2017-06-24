@@ -18,7 +18,7 @@
                 <param name="posx" value="0" />
                 <param name="width" value="listw" />
                 <param name="id" value="550" />
-				<param name="condition" value="[Container.Content(countries) | Container.Content(playlists) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),550) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
+				<param name="condition" value="[Container.Content(countries) | Container.Content(playlists) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),550) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>
             <control type="group">
                 <width>listw</width>
