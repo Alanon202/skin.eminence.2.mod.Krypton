@@ -74,7 +74,7 @@
                 <param name="posx" value="0" />
                 <param name="width" value="1170" />
                 <param name="id" value="50" />
-				<param name="condition" value="[Container.Content(genres) | Container.Content(studios) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos) | Container.Content(years) | Container.Content(images) | Container.Content()] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),50) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
+				<param name="condition" value="[Container.Content(genres) | Container.Content(studios) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(addons) | Container.Content(games) | Container.Content(unknown) | Container.Content(videos) | Container.Content(years) | Container.Content(images) | Container.Content()] + [String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),50) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))]" />
             </include>
             <control type="group">
                 <width>1180</width>

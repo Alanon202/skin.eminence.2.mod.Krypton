@@ -14,6 +14,7 @@
     <onload>SetProperty(HubReturn,Home)</onload>
     <onload>SetProperty(SkinHelper.WidgetContainer,9001)</onload>  
     <onload condition="String.IsEmpty(Skin.String(HomeStyle))">Skin.SetString(HomeStyle, beveled)</onload>
+	<onload condition="String.IsEmpty(Skin.String(WidgetStyle))">Skin.SetString(WidgetStyle, beveledwidget)</onload>
     <onload condition="!String.IsEmpty(Skin.String(home.headericon))">SetProperty(Header.Icon,$INFO[Skin.String(home.headericon)])</onload>
     <onload condition="!String.IsEmpty(Skin.String(home.headertext))">SetProperty(Header.Label,$INFO[Skin.String(home.headertext)])</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
