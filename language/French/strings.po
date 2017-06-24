@@ -591,8 +591,8 @@ msgid "Backup / Restore skin settings"
 msgstr "Sauvegarde / Restauration des réglages du thème"
 
 msgctxt "#31162"
-msgid "Restore skin settings from file"
-msgstr "Restaurer les paramètres du thème"
+msgid "Posters list"
+msgstr "Liste de posters"
 
 msgctxt "#31163"
 msgid "Gallery"
@@ -1427,8 +1427,8 @@ msgid "Opens a window to backup or restore skin settings."
 msgstr "Ouvre une fenêtre afin de sauvegarder ou restaurer les réglages du thème."
 
 msgctxt "#31605"
-msgid "Restores all skin settings with the backup."
-msgstr "Restaurer les paramètres du thème avec une sauvegarde précédemment effectuée."
+msgid "List"
+msgstr "Liste"
 
 msgctxt "#31606"
 msgid "Resets all default skin settings. [B]CAUTION![/B] This will replace all the current settings."

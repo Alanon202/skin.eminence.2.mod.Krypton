@@ -591,7 +591,7 @@ msgid "Backup / Restore skin settings"
 msgstr ""
 
 msgctxt "#31162"
-msgid "Restore skin settings from file"
+msgid "Posters List"
 msgstr ""
 
 msgctxt "#31163"
@@ -662,10 +662,6 @@ msgctxt "#31179"
 msgid "Select the record label icons resource add-on."
 msgstr ""
 
-msgctxt "#31196"
-msgid "Select the music genre icons resource add-on."
-msgstr ""
-
 msgctxt "#31180"
 msgid "Default"
 msgstr ""
@@ -728,6 +724,10 @@ msgstr ""
 
 msgctxt "#31195"
 msgid "Allow widget reloading"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Select the music genre icons resource add-on."
 msgstr ""
 
 msgctxt "#31197"
@@ -1427,7 +1427,7 @@ msgid "Opens a window to backup or restore skin settings."
 msgstr ""
 
 msgctxt "#31605"
-msgid "Restores all skin settings with the backup."
+msgid "List"
 msgstr ""
 
 msgctxt "#31606"

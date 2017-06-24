@@ -597,8 +597,8 @@ msgid "Backup / Restore skin settings"
 msgstr " בקאפ / שחזור הגדרות סקין"
 
 msgctxt "#31162"
-msgid "Restore skin settings from file"
-msgstr "שחזר הגדרות מעטפת מקובץ"
+msgid "Posters list"
+msgstr "רשימת פוסטרים"
 
 msgctxt "#31163"
 msgid "Gallery"
@@ -1470,8 +1470,8 @@ msgid "Opens a window to backup or restore skin settings."
 msgstr "פותח חלון לבקאפ או שחזור הגדרות הסקין"
 
 msgctxt "#31605"
-msgid "Restores all skin settings with the backup."
-msgstr "טען את כל הגדרות המעטפת מהגיבוי."
+msgid "List"
+msgstr " מידע"
 
 msgctxt "#31606"
 msgid ""

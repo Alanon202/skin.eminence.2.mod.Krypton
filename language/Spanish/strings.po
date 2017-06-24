@@ -587,12 +587,12 @@ msgid "Busy spinner"
 msgstr "Busy spinner"
 
 msgctxt "#31161"
-msgid "Backup skin settings"
-msgstr "Copia de configuración del skin"
+msgid "Backup / Restore skin settings"
+msgstr "Copiar / Restaurar la configuración del skin"
 
 msgctxt "#31162"
-msgid "Restore skin settings from file"
-msgstr "Restaurar la configuración del skin desde un archivo"
+msgid "Posters list"
+msgstr "Lista de Posters"
 
 msgctxt "#31163"
 msgid "Gallery"
@@ -1423,12 +1423,12 @@ msgid "Debug infos"
 msgstr "Información de depuración"
 
 msgctxt "#31604"
-msgid "Saves all skin settings."
-msgstr "Guardar la configuración del skin."
+msgid "Opens a window to backup or restore skin settings."
+msgstr "Abre una ventana para copiar a restaurar la configuración del skin."
 
 msgctxt "#31605"
-msgid "Restores all skin settings with the backup."
-msgstr "Restaurar la configuración del skin con la copia de seguridad."
+msgid "List"
+msgstr "Lista"
 
 msgctxt "#31606"
 msgid "Resets all default skin settings. [B]CAUTION![/B] This will replace all the current settings."
