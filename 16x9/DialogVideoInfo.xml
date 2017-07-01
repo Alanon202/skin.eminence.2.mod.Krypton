@@ -289,14 +289,14 @@
 							<width>32</width>
 							<height>32</height>
 							<texture>indicator/rtrotten.png</texture>
-							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter))</visible>
+							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
 							<visible>!Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Meter),59)</visible>
 						</control>
 						<control type="image">
 							<width>32</width>
 							<height>32</height>
 							<texture>indicator/rtfresh.png</texture>
-							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter))</visible>
+							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
 							<visible>Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Meter),59)</visible>
 						</control>
 						<control type="label">
@@ -305,7 +305,7 @@
 							<height>28</height>
 							<align>right</align>
 							<font>Font-ListInfo-Small-Bold</font>
-							<label>$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter), ,%   ]</label>
+							<label>$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating), ,%   ]</label>
 							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter))</visible>
 						</control>
 						<control type="image">
@@ -322,7 +322,7 @@
 							<align>right</align>
 							<font>Font-ListInfo-Small-Bold</font>
 							<label>$INFO[Window(home).Property(SkinHelper.ListItem.Rating.IMDB), ,]$INFO[Window(home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[205])]</label>
-							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB))</visible>
+							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(ListItem.RatingAndVotes)</visible>
 						</control>
 						<control type="label">
 							<top>2</top>
@@ -333,6 +333,23 @@
 							<label>$INFO[ListItem.RatingAndVotes, ,]</label>
 							<visible>String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.IsEmpty(ListItem.RatingAndVotes)</visible>
 						</control>
+						<control type="image">
+							<top>2</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>indicator/tmdb.png</texture>
+							<aspectratio>keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.RatingAndVotes) + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.TMDB))</visible>
+						</control>						
+						<control type="label">
+							<top>2</top>
+							<width>auto</width>
+							<height>28</height>
+							<align>right</align>
+							<font>Font-ListInfo-Small-Bold</font>
+							<label>$INFO[Window(home).Property(SkinHelper.ListItem.Rating.TMDB), ,]$INFO[Window(home).Property(SkinHelper.ListItem.Votes.TMDB), (, $LOCALIZE[205])]</label>
+							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.TMDB))</visible>
+						</control>						
 					</control>					
                 <!--    <control type="label">
                         <top>-40</top>
