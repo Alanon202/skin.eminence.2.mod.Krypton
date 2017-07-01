@@ -1046,6 +1046,10 @@ msgctxt "#31275"
 msgid "Event logs"
 msgstr ""
 
+msgctxt "#31276"
+msgid "Customise showcase widgets"
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

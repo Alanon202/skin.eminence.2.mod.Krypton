@@ -1006,6 +1006,50 @@ msgctxt "#31265"
 msgid "Low List"
 msgstr "Courte Liste"
 
+msgctxt "#31266"
+msgid "Showcase Widgets"
+msgstr "Widget Showcase"
+
+msgctxt "#31267"
+msgid "Landscape"
+msgstr "Paysage"
+
+msgctxt "#31268"
+msgid "Show showcase widget on down"
+msgstr "Afficher le widget Showcase en bas"
+
+msgctxt "#31269"
+msgid "Miscellaneous"
+msgstr "Divers"
+
+msgctxt "#31270"
+msgid "Install from repository or zip file"
+msgstr "Installer depuis un dépôt ou depuis un fichier zip"
+
+msgctxt "#31271"
+msgid "PVR"
+msgstr "PVR"
+
+msgctxt "#31272"
+msgid "Displays a window to setup the Showcase widgets type and layout."
+msgstr "Afficher une fenêtre pour configurer le genre et la disposition du widget Showcase."
+
+msgctxt "#31273"
+msgid "Displays the showcase widget when pressing down on menu items without submenus."
+msgstr "Afficher le widget Showcase lorsque vous appuyez vers le bas dans un menu dépourvu de sous-menus."
+
+msgctxt "#31274"
+msgid "View system events"
+msgstr "Voir les événements systèmes"
+
+msgctxt "#31275"
+msgid "Event logs"
+msgstr "Logs d'événements"
+
+msgctxt "#31276"
+msgid "Customise showcase widgets"
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Aucun(e)"
