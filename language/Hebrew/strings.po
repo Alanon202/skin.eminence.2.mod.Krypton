@@ -745,7 +745,7 @@ msgid "Enable / disable views"
 msgstr "אפשר \\ נטרל תצוגות"
 
 msgctxt "#31199"
-msgid "Showscase"
+msgid "Showcase"
 msgstr "תצוגת עטיפות"
 
 msgctxt "#31200"

@@ -739,8 +739,8 @@ msgid "Enable / disable views"
 msgstr "Habilitar / deshabilitar vistas"
 
 msgctxt "#31199"
-msgid "Showscase"
-msgstr "Showscase"
+msgid "Showcase"
+msgstr "Showcase"
 
 msgctxt "#31200"
 msgid "Netflix"
