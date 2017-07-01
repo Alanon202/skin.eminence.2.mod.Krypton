@@ -108,6 +108,7 @@
     </variable>
 
     <variable name="Image_Thumb2">
+		<value condition="!String.IsEmpty(ListItem.Thumb) + Window.IsVisible(1131)">$INFO[ListItem.Thumb]</value>
         <value condition="!String.IsEmpty(ListItem.Thumb) + Container.Content(videos)">$INFO[ListItem.Thumb]</value>		
         <value condition="!String.IsEmpty(ListItem.Art(landscape)) + Skin.HasSetting(show.tvshowsthumbs)">$INFO[ListItem.Art(landscape)]</value>
         <value condition="Skin.HasSetting(SkinHelperAnimations) + !String.IsEmpty(ListItem.Art(animatedfanart)) + !Container.Content(episodes)">$INFO[ListItem.Art(animatedfanart)]</value>		
@@ -127,6 +128,11 @@
         <value condition="!String.IsEmpty(ListItem.Thumb) + Window.IsVisible(MyPics.xml) + Container.Content(episodes)">$INFO[ListItem.Thumb]</value>        
 		<value>$INFO[ListItem.Icon]</value>
     </variable>
+	
+    <variable name="Image_Poster_Genres">
+        <value condition="System.HasAddon(resource.images.moviegenreicons.transparent)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
+        <value>$VAR[Image_Poster]</value>
+	</variable>	
 
     <variable name="Image_PVRThumb">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.FanArt))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.FanArt)]</value>
@@ -180,12 +186,20 @@
         <value condition="Skin.HasSetting(background.hidefanart) + String.IsEmpty(Skin.String(background.fallback))">common/black.png</value>
         <value condition="Skin.HasSetting(background.hidefanart) + !String.IsEmpty(Skin.String(background.fallback))">$INFO[Skin.String(background.fallback)]</value>
         <value condition="!String.IsEmpty(Container(9500).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart)">$INFO[Container(9500).ListItem.Art(fanart)]</value>
-		<value condition="System.HasAddon(script.artwork.beef) + Skin.HasSetting(SkinHelperExtrafanart) + !String.IsEmpty(ListItem.Art(fanart1)) + !Skin.HasSetting(global.fanart)">$INFO[Control.Getlabel(4420)]</value>        
+        <value condition="String.IsEqual(Container(9502).ListItem.Property(background),playlistBackground)">$INFO[Container(9988).ListItem.Art(fanart)]</value>        
+		<value condition="!String.IsEmpty(Container(9501).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9501)">$INFO[Container(9501).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(9502).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9502)">$INFO[Container(9502).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(9503).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9503)">$INFO[Container(9503).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(9504).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9504)">$INFO[Container(9504).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(9505).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9505)">$INFO[Container(9505).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(9506).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9506)">$INFO[Container(9506).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(9507).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9507)">$INFO[Container(9507).ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container(9508).ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart) + Control.HasFocus(9508)">$INFO[Container(9508).ListItem.Art(fanart)]</value>		<value condition="System.HasAddon(script.artwork.beef) + Skin.HasSetting(SkinHelperExtrafanart) + !String.IsEmpty(ListItem.Art(fanart1)) + !Skin.HasSetting(global.fanart)">$INFO[Control.Getlabel(4420)]</value>        
 		<value condition="!System.HasAddon(script.artwork.beef) + Skin.HasSetting(SkinHelperExtrafanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !Skin.HasSetting(global.fanart)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
 		<!-- <value condition="System.HasAddon(script.artwork.downloader) + Skin.HasSetting(SkinHelperExtrafanart) + !String.IsEmpty(ListItem.Art(extrafanart1)) + !Skin.HasSetting(global.fanart)">$INFO[Control.Getlabel(4430)]</value>		 -->
 		<value condition="[String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) | String.IsEmpty(ListItem.Art(fanart1))] + !String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart)">$INFO[ListItem.Art(fanart)]</value>		
 		<value condition="!Skin.HasSetting(SkinHelperExtrafanart) + !String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(global.fanart)">$INFO[ListItem.Art(fanart)]</value>
-        <value condition="!String.IsEmpty(Skin.String(background.fallback))">$INFO[Skin.String(background.fallback)]</value>
+		<value condition="!String.IsEmpty(Skin.String(background.fallback))">$INFO[Skin.String(background.fallback)]</value>
         <value condition="[Window.IsVisible(script-NextAired-TVGuide.xml) | Window.IsVisible(script-NextAired-TVGuide2.xml)]+ Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
         <value condition="[Window.IsVisible(script-NextAired-TVGuide.xml) | Window.IsVisible(script-NextAired-TVGuide2.xml)] + Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Fanart)]</value>
         <value condition="[Window.IsVisible(script-NextAired-TVGuide.xml) | Window.IsVisible(script-NextAired-TVGuide2.xml)] + Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Fanart)]</value>

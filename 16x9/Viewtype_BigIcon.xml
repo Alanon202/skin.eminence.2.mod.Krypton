@@ -284,5 +284,430 @@
             </control>
         </control>
     </include>
+	
+    <include name="View_IconFanart">
+        <param name="updownid" default="true" />
+        <param name="width" default="1880" />
+        <param name="posx" default="31" />
+        <param name="height" default="690" />
+        <param name="orientation" default="vertical" />
+        <definition>
+            <control type="group">
+                <width>$PARAM[width]</width>
+                <control type="panel" id="$PARAM[id]">
+                    <top>15</top>
+                    <left>$PARAM[posx]</left>
+                    <width>$PARAM[width]</width>
+                    <height>$PARAM[height]</height>
+                    <onfocus condition="Window.IsVisible(1131)">SetProperty(list_focus,$PARAM[id],Home)</onfocus>
+                    <onup condition="$PARAM[updownid]">$PARAM[id]</onup>
+                    <ondown condition="$PARAM[updownid]">$PARAM[id]</ondown>
+                    <onup condition="!$PARAM[updownid]">$PARAM[onup]</onup>
+                    <ondown condition="!$PARAM[updownid]">$PARAM[ondown]</ondown>
+                    <onright condition="!Skin.HasSetting(KioskMode)">SetFocus(9000)</onright>
+                    <onleft>60</onleft>
+                    <onback condition="!String.IsEmpty(Window(home).Property(HubReturn)) + String.IsEqual(Container.FolderPath,Window(home).Property(WindowBaseReturn))">AlarmClock(returnhack,ActivateWindow($INFO[Window(home).Property(HubReturn)]),00:00,silent)</onback>
+                    <pagecontrol>60</pagecontrol>
+                    <preloaditems>2</preloaditems>
+                    <orientation>$PARAM[orientation]</orientation>
+                    <viewtype label="$PARAM[name]">wide</viewtype>
+                    <scrolltime tween="quadratic">400</scrolltime>
+                    <visible>$PARAM[condition]</visible>
+                    <itemlayout height="345" width="606">
+                        <control type="group">
+                            <left>21</left>
+                            <right>21</right>
+                            <bottom>5</bottom>
+                            <top>5</top>
+                            <control type="group">
+                                <left>pad</left>
+                                <right>pad</right>
+                                <top>pad</top>
+                                <bottom>pad</bottom>
+                                <include>Object_Background</include>
+                                <control type="image">
+                                    <aspectratio>scale</aspectratio>
+                                    <texture background="true">$VAR[Image_Thumb2]</texture>
+                                </control>
+								<control type="image">
+									<right>15</right>
+									<top>15</top>
+									<height>32</height>
+									<width>32</width>
+									<texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+									<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+								</control>						
+								<control type="image">
+									<right>15</right>
+									<top>15</top>
+									<height>32</height>
+									<width>32</width>
+									<texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
+									<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+								</control>
+                            </control>
+                            <control type="image">
+                                <left>pad</left>
+                                <right>pad</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <texture flipy="true" colordiffuse="LineLabel">common/white.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>25</left>
+                                <right>25</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <font>Font-ListInfo-Small-Bold</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>25</left>
+                                <right>25</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <visible>!Window.IsVisible(1131)</visible>
+                            </control>
+                            <control type="label">
+                                <left>25</left>
+                                <right>25</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$INFO[ListItem.TvShowTitle]</label>
+                                <visible>Window.IsVisible(1131) + !String.IsEqual(ListItem.TvShowTitle,ListItem.Label)</visible>
+                            </control>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="345" width="606">
+                        <control type="group">
+                            <left>21</left>
+                            <right>21</right>
+                            <bottom>5</bottom>
+                            <top>5</top>
+                            <control type="image">
+                                <texture colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+                            </control>
+                            <control type="group">
+                                <left>pad</left>
+                                <right>pad</right>
+                                <top>pad</top>
+                                <bottom>pad</bottom>
+                                <control type="image">
+                                    <aspectratio>scale</aspectratio>
+                                    <texture background="true">$VAR[Image_Thumb2]</texture>
+                                </control>
+								<control type="image">
+									<right>15</right>
+									<top>15</top>
+									<height>32</height>
+									<width>32</width>
+									<texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+									<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+								</control>						
+								<control type="image">
+									<right>15</right>
+									<top>15</top>
+									<height>32</height>
+									<width>32</width>
+									<texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
+									<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+								</control>								
+                            </control>
+                            <control type="image">
+                                <left>pad</left>
+                                <right>pad</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <texture flipy="true" colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+                            </control>
+                            <control type="label">
+                                <left>25</left>
+                                <right>25</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <textcolor>Selected</textcolor>
+                                <font>Font-ListInfo-Small-Bold</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>25</left>
+                                <right>25</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>Selected</textcolor>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <visible>!Window.IsVisible(1131)</visible>
+                            </control>
+                            <control type="label">
+                                <left>25</left>
+                                <right>25</right>
+                                <bottom>pad</bottom>
+                                <height>48</height>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>Selected</textcolor>
+                                <label>$INFO[ListItem.TvShowTitle]</label>
+                                <visible>Window.IsVisible(1131) + !String.IsEqual(ListItem.TvShowTitle,ListItem.Label)</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                    <include content="$PARAM[include_name]">
+                        <param name="include_target" value="$PARAM[include_target]" />
+                        <param name="include_content" value="$PARAM[include_content]" />
+                    </include>
+                </control>
+            </control>
+        </definition>
+    </include>
+	
+    <include name="View_ShowcaseIcon">
+        <param name="updownid" default="true" />
+        <param name="width" default="1880" />
+        <param name="iconitemw" default="262" />
+        <param name="icongenreitemw" default="458.5" />
+        <param name="iconpadw" default="13" />
+        <param name="iconpanelpadw" default="21" />
+        <param name="height" default="690" />
+        <param name="orientation" default="vertical" />
+        <param name="genres" default="false" />
+        <definition>
+            <control type="panel" id="$PARAM[id]">
+                <top>15</top>
+                <left>$PARAM[iconpanelpadw]</left>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <onfocus condition="Window.IsVisible(1131)">SetProperty(list_focus,$PARAM[id],Home)</onfocus>
+                <onup condition="$PARAM[updownid]">$PARAM[id]</onup>
+                <ondown condition="$PARAM[updownid]">$PARAM[id]</ondown>
+                <onup condition="!$PARAM[updownid]">$PARAM[onup]</onup>
+                <ondown condition="!$PARAM[updownid]">$PARAM[ondown]</ondown>
+                <onright condition="!Skin.HasSetting(KioskMode)">SetFocus(9000)</onright>
+                <onleft>60</onleft>
+                <onback condition="!String.IsEmpty(Window(home).Property(HubReturn)) + String.IsEqual(Container.FolderPath,Window(home).Property(WindowBaseReturn))">AlarmClock(returnhack,ActivateWindow($INFO[Window(home).Property(HubReturn)]),00:00,silent)</onback>
+                <pagecontrol>60</pagecontrol>
+                <preloaditems>2</preloaditems>
+                <orientation>$PARAM[orientation]</orientation>
+                <viewtype label="$PARAM[name]">icons</viewtype>
+                <scrolltime tween="quadratic">400</scrolltime>
+                <visible>$PARAM[condition]</visible>
+                <itemlayout height="345" width="$PARAM[iconitemw]" condition="![Container.Content(genres) | Container.Content(years) | Container.Content(tags) | Container.Content(studios) | Container.Content(countries) | Container.Content(directors)]">
+                    <control type="group">
+                        <left>$PARAM[iconpadw]</left>
+                        <right>$PARAM[iconpadw]</right>
+                        <bottom>5</bottom>
+                        <top>5</top>
+                        <control type="group">
+                            <left>pad</left>
+                            <right>pad</right>
+                            <top>pad</top>
+                            <bottom>100</bottom>
+                            <control type="textbox">
+                                <label>$INFO[ListItem.Label]</label>
+                                <font>Font-OSD</font>
+                                <align>center</align>
+                                <height>64</height>
+                                <bottom>-80</bottom>
+                                <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                            </control>
+                            <control type="image">
+                                <include condition="!Skin.HasSetting(global.hideobjectshadows) + !String.IsEqual(Skin.CurrentColourTheme,Light)">Object_Background_Shadows</include>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture background="true" fallback="DefaultFile.png">$VAR[Image_Poster]</texture>
+                                <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                                <visible>!$PARAM[genres]</visible>
+                            </control>
+                            <control type="image">
+                                <include condition="!Skin.HasSetting(global.hideobjectshadows) + !String.IsEqual(Skin.CurrentColourTheme,Light)">Object_Background_Shadows</include>
+                                <aspectratio aligny="center">scale</aspectratio>
+                                <width>260</width>
+                                <height>260</height>
+                                <texture background="true" colordiffuse="00ffffff">common/white.png</texture>
+                                <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                                <visible>$PARAM[genres]</visible>
+                            </control>
+                            <control type="image">
+                                <top>50</top>
+                                <left>50</left>
+                                <width>110</width>
+                                <height>110</height>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture background="true" fallback="DefaultFile.png">$VAR[Image_Poster_Genres]</texture>
+                                <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                                <visible>$PARAM[genres]</visible>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <left>pad</left>
+                            <right>pad</right>
+                            <top>pad</top>
+                            <bottom>pad</bottom>
+                            <control type="image">
+                                <include condition="!String.IsEqual(Skin.CurrentColourTheme,Light)">Object_Background</include>
+                                <aspectratio>scale</aspectratio>
+                                <texture background="true">$VAR[Image_Poster]</texture>
+                                <visible>![String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))]</visible>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <right>15</right>
+                            <top>15</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>						
+                        <control type="image">
+                            <right>15</right>
+                            <top>15</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>
+                    </control>
+                </itemlayout>
+                <itemlayout height="115" width="$PARAM[icongenreitemw]" condition="[Container.Content(genres) | Container.Content(years) | Container.Content(tags) | Container.Content(studios) | Container.Content(countries) | Container.Content(directors)]">
+                    <control type="group">
+                        <left>$PARAM[iconpadw]</left>
+                        <right>$PARAM[iconpadw]</right>
+                        <bottom>5</bottom>
+                        <top>5</top>
+                        <control type="group">
+                            <left>pad</left>
+                            <right>pad</right>
+                            <top>pad</top>
+                            <bottom>pad</bottom>
+                            <control type="image">
+                                <!-- <include condition="!Skin.HasSetting(global.hideobjectshadows) + !String.IsEqual(Skin.CurrentColourTheme,Light)">Object_Background_Shadows</include> -->
+                                <aspectratio aligny="center">scale</aspectratio>
+                                <texture background="true" colordiffuse="PosterBorder">common/white.png</texture>
+                            </control>
+                            <control type="label">
+                                <label>$INFO[ListItem.Label]</label>
+                                <align>center</align>
+                                <left>pad</left>
+                                <right>pad</right>
+                            </control>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="345" width="$PARAM[iconitemw]" condition="![Container.Content(genres) | Container.Content(years) | Container.Content(tags) | Container.Content(studios) | Container.Content(countries) | Container.Content(directors)]">
+                    <control type="group">
+                        <left>$PARAM[iconpadw]</left>
+                        <right>$PARAM[iconpadw]</right>
+                        <bottom>5</bottom>
+                        <top>5</top>
+                        <control type="group">
+                            <left>pad</left>
+                            <right>pad</right>
+                            <top>pad</top>
+                            <bottom>100</bottom>
+                            <control type="textbox">
+                                <label>$INFO[ListItem.Label]</label>
+                                <font>Font-OSD</font>
+                                <align>center</align>
+                                <height>64</height>
+                                <bottom>-80</bottom>
+                                <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                            </control>
+                            <control type="image">
+                                <left>-10</left>
+                                <right>-10</right>
+                                <top>-10</top>
+                                <bottom>-10</bottom>
+                                <bordersize>10</bordersize>
+                                <bordertexture colordiffuse="$VAR[HighlightColor]" border="10">common/border.png</bordertexture>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture background="true" fallback="DefaultFile.png">$VAR[Image_Poster]</texture>
+                                <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                                <visible>!$PARAM[genres]</visible>
+                                </control>
+                                <control type="image">
+                                    <left>-10</left>
+                                    <right>-10</right>
+                                    <top>-20</top>
+                                    <bottom>-10</bottom>
+                                    <bordersize>10</bordersize>
+                                    <bordertexture colordiffuse="$VAR[HighlightColor]" border="10">common/border.png</bordertexture>
+                                    <aspectratio aligny="center">keep</aspectratio>
+                                    <texture background="true" colordiffuse="00ffffff" fallback="DefaultFile.png">common/white.png</texture>
+                                    <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                                    <visible>$PARAM[genres]</visible>
+                                </control>
+                                <control type="image">
+                                    <top>50</top>
+                                    <left>50</left>
+                                    <width>110</width>
+                                    <height>110</height>
+                                    <aspectratio aligny="center">keep</aspectratio>
+                                    <texture background="true" fallback="DefaultFile.png">$VAR[Image_Poster_Genres]</texture>
+                                    <visible>String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))</visible>
+                                    <visible>$PARAM[genres]</visible>
+                                </control>
+
+                        </control>
+                        <control type="image">
+                            <bordersize>10</bordersize>
+                            <bordertexture colordiffuse="$VAR[HighlightColor]" border="10">common/border.png</bordertexture>
+                            <aspectratio>scale</aspectratio>
+                            <texture background="true">$VAR[Image_Poster]</texture>
+                            <visible>![String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(poster))]</visible>
+                        </control>
+                        <control type="image">
+                            <right>15</right>
+                            <top>15</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>						
+                        <control type="image">
+                            <right>15</right>
+                            <top>15</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <focusedlayout height="115" width="$PARAM[icongenreitemw]" condition="[Container.Content(genres) | Container.Content(years) | Container.Content(tags) | Container.Content(studios) | Container.Content(countries) | Container.Content(directors)]">
+                    <control type="group">
+                        <left>$PARAM[iconpadw]</left>
+                        <right>$PARAM[iconpadw]</right>
+                        <bottom>5</bottom>
+                        <top>5</top>
+                        <control type="group">
+                            <left>pad</left>
+                            <right>pad</right>
+                            <top>pad</top>
+                            <bottom>pad</bottom>
+                            <control type="image">
+                                <texture background="true" colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+                            </control>
+                            <control type="label">
+                                <label>$INFO[ListItem.Label]</label>
+                                <align>center</align>
+                                <left>pad</left>
+                                <right>pad</right>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <include content="$PARAM[include_name]">
+                    <param name="include_target" value="$PARAM[include_target]" />
+                    <param name="include_content" value="$PARAM[include_content]" />
+                </include>
+            </control>
+        </definition>
+    </include>	
 </includes>
 

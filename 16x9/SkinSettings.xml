@@ -9,7 +9,8 @@
 	<onload condition="String.IsEmpty(Skin.String(rotationlimit))">Skin.SetString(rotationlimit,1)</onload>
 	<onload condition="String.IsEmpty(Skin.String(timelimit))">Skin.SetString(timelimit,4)</onload>
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|x1101|x1102|x1103|x1104|x1105|x1106|x1107|x1108|x1109|x1110|x1111|x1112|x1113|x1114|x1115|powermenu|quicknav)</onunload>
-    <controls>
+    <include condition="!Skin.HasSetting(store_init)">Defs_Store_Init</include>
+	<controls>
         <include>Furniture_Background</include>
         <include>Furniture_TopBar</include>
         <include>Furniture_RSS</include>
@@ -265,6 +266,21 @@
                     <itemgap>0</itemgap>
                     <onleft>8000</onleft>
 					<visible>Container(8000).HasFocus(8)</visible>
+					<!-- SHOWCASE -->
+					<control type="button" id="9958">
+						<width>100%</width>
+						<label>Customise showcase widgets</label>
+						<onclick>ActivateWindow(1130)</onclick>
+						<include>Defs_OptionButton</include>
+					</control>					
+					<control type="radiobutton" id="9957">
+						<width>100%</width>
+						<label>$LOCALIZE[31268]</label>
+						<radioposx>1350</radioposx>
+						<selected>!Skin.HasSetting(DisableShowcase)</selected>
+						<onclick>Skin.ToggleSetting(DisableShowcase)</onclick>
+						<include>Defs_OptionButton</include>
+					</control>					
                     <!-- Fallback Widget -->
                     <control type="button" id="8102">
                         <width>100%</width>

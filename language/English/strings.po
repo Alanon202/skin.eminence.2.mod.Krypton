@@ -739,7 +739,7 @@ msgid "Enable / disable views"
 msgstr ""
 
 msgctxt "#31199"
-msgid "Showscase"
+msgid "Showcase"
 msgstr ""
 
 msgctxt "#31200"
@@ -1004,6 +1004,46 @@ msgstr ""
 
 msgctxt "#31265"
 msgid "Low List"
+msgstr ""
+
+msgctxt "#31266"
+msgid "Showcase Widgets"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Landscape"
+msgstr ""
+
+msgctxt "#31268"
+msgid "Show showcase widget on down"
+msgstr ""
+
+msgctxt "#31269"
+msgid "Miscellaneous"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Install from repository or zip file"
+msgstr ""
+
+msgctxt "#31271"
+msgid "PVR"
+msgstr ""
+
+msgctxt "#31272"
+msgid "Displays a window to setup the Showcase widgets type and layout."
+msgstr ""
+
+msgctxt "#31273"
+msgid "Displays the showcase widget when pressing down on menu items without submenus."
+msgstr ""
+
+msgctxt "#31274"
+msgid "View system events"
+msgstr ""
+
+msgctxt "#31275"
+msgid "Event logs"
 msgstr ""
 
 msgctxt "#31500"

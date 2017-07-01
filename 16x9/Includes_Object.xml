@@ -1,5 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="Object_StoreWidget">
+        <param name="height" default="675" />
+        <param name="landscape" default="false" />
+        <param name="include_name" default="Defs_Store_Content" />
+        <definition>
+            <control type="group" id="99$PARAM[list_id]">
+                <top>258</top>
+                <height>$PARAM[height]</height>
+                <include content="Object_Line">
+                    <param name="label" value="$PARAM[title]" />
+					<param name="width" value="1880" />
+                </include>
+                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+                <control type="group">
+                    <left>5</left>
+                    <top>side</top>
+                    <right>5</right>
+                    <height>375</height>
+					<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
+                    <include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
+                    <control type="group">
+                        <right>30</right>
+                        <include content="View_ShowcaseIcon" condition="!$PARAM[landscape]">
+                            <param name="id" value="$PARAM[list_id]" />
+                            <param name="name" value="536" />
+                            <param name="height" value="345" />
+                            <param name="width" value="100%" />
+                            <param name="orientation" value="horizontal" />
+                            <param name="condition" value="true" />
+                            <param name="updownid" value="false" />
+                            <param name="onup" value="$PARAM[onup_id]" />
+                            <param name="ondown" value="$PARAM[ondown_id]" />
+                            <param name="include_name" value="$PARAM[include_name]" />
+                            <param name="include_target" value="$PARAM[include_target]" />
+                            <param name="include_content" value="$PARAM[include_content]" />
+                            <param name="genres" value="$PARAM[genres]" />
+                        </include>
+                        <include content="View_IconFanart" condition="$PARAM[landscape]">
+                            <param name="id" value="$PARAM[list_id]" />
+                            <param name="name" value="536" />
+                            <param name="height" value="345" />
+                            <param name="width" value="100%" />
+                            <param name="orientation" value="horizontal" />
+                            <param name="condition" value="true" />
+                            <param name="updownid" value="false" />
+                            <param name="onup" value="$PARAM[onup_id]" />
+                            <param name="ondown" value="$PARAM[ondown_id]" />
+                            <param name="include_name" value="$PARAM[include_name]" />
+                            <param name="include_target" value="$PARAM[include_target]" />
+                            <param name="include_content" value="$PARAM[include_content]" />
+                            <param name="genres" value="$PARAM[genres]" />
+                        </include>
+                    </control>
+                </control>
+            </control>
+            <control type="button" id="$PARAM[list_id]">
+                <height>450</height>
+                <width>100%</width>
+                <onfocus condition="!Integer.IsGreater(Window(Home).Property(list_focus),$PARAM[list_id])">$PARAM[ondown_id]</onfocus>
+                <onfocus condition="Integer.IsGreater(Window(Home).Property(list_focus),$PARAM[list_id])">$PARAM[onup_id]</onfocus>
+                <onfocus>SetProperty(list_focus,$PARAM[list_id])</onfocus>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <animation effect="fade" start="0" end="0" condition="true">Conditional</animation>
+                <visible>!Control.IsVisible(99$PARAM[list_id])</visible>
+            </control>
+        </definition>
+    </include>
+
+    <include name="Object_StoreWidgets">
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget1_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget8_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget2_id],0)" />
+            <param name="title" value="$PARAM[widget1_title]" />
+            <param name="genres" value="$PARAM[widget1_genres]" />
+            <param name="include_name" value="$PARAM[widget1_includename]" />
+            <param name="include_target" value="$PARAM[widget1_target]" />
+            <param name="include_content" value="$PARAM[widget1_content]" />
+            <param name="landscape" value="$PARAM[widget1_landscape]" />
+            <param name="height" value="$PARAM[widget1_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget2_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget1_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget3_id],0)" />
+            <param name="title" value="$PARAM[widget2_title]" />
+            <param name="genres" value="$PARAM[widget2_genres]" />
+            <param name="include_name" value="$PARAM[widget2_includename]" />
+            <param name="include_target" value="$PARAM[widget2_target]" />
+            <param name="include_content" value="$PARAM[widget2_content]" />
+            <param name="landscape" value="$PARAM[widget2_landscape]" />
+            <param name="height" value="$PARAM[widget2_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget3_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget2_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget4_id],0)" />
+            <param name="title" value="$PARAM[widget3_title]" />
+            <param name="genres" value="$PARAM[widget3_genres]" />
+            <param name="include_name" value="$PARAM[widget3_includename]" />
+            <param name="include_target" value="$PARAM[widget3_target]" />
+            <param name="include_content" value="$PARAM[widget3_content]" />
+            <param name="landscape" value="$PARAM[widget3_landscape]" />
+            <param name="height" value="$PARAM[widget3_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget4_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget3_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget5_id],0)" />
+            <param name="title" value="$PARAM[widget4_title]" />
+            <param name="genres" value="$PARAM[widget4_genres]" />
+            <param name="include_name" value="$PARAM[widget4_includename]" />
+            <param name="include_target" value="$PARAM[widget4_target]" />
+            <param name="include_content" value="$PARAM[widget4_content]" />
+            <param name="landscape" value="$PARAM[widget4_landscape]" />
+            <param name="height" value="$PARAM[widget4_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget5_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget4_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget6_id],0)" />
+            <param name="title" value="$PARAM[widget5_title]" />
+            <param name="genres" value="$PARAM[widget5_genres]" />
+            <param name="include_name" value="$PARAM[widget5_includename]" />
+            <param name="include_target" value="$PARAM[widget5_target]" />
+            <param name="include_content" value="$PARAM[widget5_content]" />
+            <param name="landscape" value="$PARAM[widget5_landscape]" />
+            <param name="height" value="$PARAM[widget5_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget6_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget5_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget7_id],0)" />
+            <param name="title" value="$PARAM[widget6_title]" />
+            <param name="genres" value="$PARAM[widget6_genres]" />
+            <param name="include_name" value="$PARAM[widget6_includename]" />
+            <param name="include_target" value="$PARAM[widget6_target]" />
+            <param name="include_content" value="$PARAM[widget6_content]" />
+            <param name="landscape" value="$PARAM[widget6_landscape]" />
+            <param name="height" value="$PARAM[widget6_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget7_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget6_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget8_id],0)" />
+            <param name="title" value="$PARAM[widget7_title]" />
+            <param name="genres" value="$PARAM[widget7_genres]" />
+            <param name="include_name" value="$PARAM[widget7_includename]" />
+            <param name="include_target" value="$PARAM[widget7_target]" />
+            <param name="include_content" value="$PARAM[widget7_content]" />
+            <param name="landscape" value="$PARAM[widget7_landscape]" />
+            <param name="height" value="$PARAM[widget7_height]" />
+        </include>
+        <include content="Object_StoreWidget">
+            <param name="list_id" value="$PARAM[widget8_id]" />
+            <param name="onup_id" value="SetFocus($PARAM[widget7_id],0)" />
+            <param name="ondown_id" value="SetFocus($PARAM[widget1_id],0)" />
+            <param name="title" value="$PARAM[widget8_title]" />
+            <param name="genres" value="$PARAM[widget8_genres]" />
+            <param name="include_name" value="$PARAM[widget8_includename]" />
+            <param name="include_target" value="$PARAM[widget8_target]" />
+            <param name="include_content" value="$PARAM[widget8_content]" />
+            <param name="landscape" value="$PARAM[widget8_landscape]" />
+            <param name="height" value="$PARAM[widget8_height]" />
+        </include>
+    </include>
 
     <include name="Object_HomeWidgetPosterFocus">
         <control type="group">
