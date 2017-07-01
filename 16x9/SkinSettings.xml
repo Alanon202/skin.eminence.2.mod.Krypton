@@ -267,12 +267,6 @@
                     <onleft>8000</onleft>
 					<visible>Container(8000).HasFocus(8)</visible>
 					<!-- SHOWCASE -->
-					<control type="button" id="9958">
-						<width>100%</width>
-						<label>Customise showcase widgets</label>
-						<onclick>ActivateWindow(1130)</onclick>
-						<include>Defs_OptionButton</include>
-					</control>					
 					<control type="radiobutton" id="9957">
 						<width>100%</width>
 						<label>$LOCALIZE[31268]</label>
@@ -281,6 +275,13 @@
 						<onclick>Skin.ToggleSetting(DisableShowcase)</onclick>
 						<include>Defs_OptionButton</include>
 					</control>					
+					<control type="button" id="9958">
+						<width>100%</width>
+						<label>	-	$LOCALIZE[31276]</label>
+						<onclick>ActivateWindow(1130)</onclick>
+						<include>Defs_OptionButton</include>
+						<visible>!Skin.HasSetting(DisableShowcase)</visible>
+					</control>
                     <!-- Fallback Widget -->
                     <control type="button" id="8102">
                         <width>100%</width>
