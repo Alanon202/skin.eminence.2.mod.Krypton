@@ -1048,7 +1048,7 @@ msgstr "Logs d'événements"
 
 msgctxt "#31276"
 msgid "Customise showcase widgets"
-msgstr ""
+msgstr "Personnaliser le widget Showcase"
 
 msgctxt "#31500"
 msgid "None"
