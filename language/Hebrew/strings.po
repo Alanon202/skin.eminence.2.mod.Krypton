@@ -1017,6 +1017,50 @@ msgctxt "#31265"
 msgid "Low List"
 msgstr "רשימה נמוכה"
 
+msgctxt "#31266"
+msgid "Showcase Widgets"
+msgstr "ווידג'טים של תצוגת עטיפות"
+
+msgctxt "#31267"
+msgid "Landscape"
+msgstr "תצוגה רוחבית"
+
+msgctxt "#31268"
+msgid "Show showcase widget on down"
+msgstr "הראה ווידג'ט עטיפות בלחיצה 'למטה'"
+
+msgctxt "#31269"
+msgid "Miscellaneous"
+msgstr "מעורב"
+
+msgctxt "#31270"
+msgid "Install from repository or zip file"
+msgstr "התקן ממאגר הרחבות או מקובץ זיפ"
+
+msgctxt "#31271"
+msgid "PVR"
+msgstr "מקליט וידאו אישי"
+
+msgctxt "#31272"
+msgid "Displays a window to setup the Showcase widgets type and layout."
+msgstr "הצגת חלון להגדרת סוג ווידג'טים תצוגת העטיפות וצורתם"
+
+msgctxt "#31273"
+msgid "Displays the showcase widget when pressing down on menu items without submenus."
+msgstr "הצגת ווידג'טים תצוגת העטיפות בעת לחיצת 'ךמטה' כאשר אין תפריטי משנה"
+
+msgctxt "#31274"
+msgid "View system events"
+msgstr "הצג אירועי מערכת"
+
+msgctxt "#31275"
+msgid "Event logs"
+msgstr "יומני אירועים"
+
+msgctxt "#31276"
+msgid "Customise showcase widgets"
+msgstr "עריכת ווידג'ט של תצוגת עטיפות"
+
 msgctxt "#31500"
 msgid "None"
 msgstr "ללא"
