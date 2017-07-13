@@ -118,6 +118,8 @@
     <icon image="DefaultAddonVideo.png">special://skin/extras/icons/video-addons.png</icon>
     <icon image="DefaultAddonMusic.png">special://skin/extras/icons/songs.png</icon>
     <icon image="DefaultAddonProgram.png">special://skin/extras/icons/addons.png</icon>
+	
+	<shortcut label="Showcase" grouping="common" thumbnail="special://skin/extras/icons/playlist.png" icon="special://skin/extras/icons/playlist.png">ActivateWindow(1131)</shortcut>
 
     <!-- GROUPINGS -->
     <!-- Main Grouping -->
