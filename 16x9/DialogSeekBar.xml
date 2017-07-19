@@ -637,7 +637,7 @@
                     <align>center</align>
                     <font>Font-ListInfo-Small-Bold</font>
                 </control>
-                <visible>[Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + !Player.Paused + Skin.HasSetting(videoosd.showcompact)</visible>
+                <visible>[Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + !Player.Paused</visible>
                 <include>Animation_FadeIn</include>
                 <animation effect="fade" start="100" end="0" time="200" delay="0">Hidden</animation>
 			</control>
