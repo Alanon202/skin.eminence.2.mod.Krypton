@@ -131,7 +131,7 @@
                         <onleft>9500</onleft>
                         <onup>9501</onup>
                         <ondown>9501</ondown>
-                        <height>690</height>
+                        <height>700</height>
                         <onright condition="!String.IsEqual(Window(home).Property(HubReturn),Home) + !String.IsEmpty(Window(home).Property(NodeReturn))">ActivateWindow($INFO[Window(home).Property(NodeReturn)],$INFO[Window(home).Property(HubReturn)],return)</onright>
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
