@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true" condition="!Skin.HasSetting(dialog.icons)">9000</defaultcontrol>
-	<onload condition="System.HasAddon(script.duration_axbmcuser)">RunScript(script.duration_axbmcuser,backend=True)</onload>
     <onload>ClearProperty(extinfo,home)</onload>
     <controls>
+		<control type="image">
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<visible>Window.IsVisible(Home.xml)</visible>
+		</control>
 		<control type="image">
 			<texture border="1" colordiffuse="AAFFFFFF">common/black.png</texture>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<visible>Window.IsVisible(Home.xml) + String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)</visible>
-		</control>	
+		</control>		
         <control type="group">
             <top>210</top>
             <height>780</height>
