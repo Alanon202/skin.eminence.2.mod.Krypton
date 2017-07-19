@@ -1045,14 +1045,14 @@
                             <width>408</width>
                             <height>590</height>
                             <fadetime>100</fadetime>
-                            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+                            <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
                             <texture diffuse="common/white.png" background="true">$VAR[Image_Poster]</texture>
                         </control>
                         </control>
                         <control type="group">
                             <control type="image">
                                 <left>379</left>
-                                <centertop>32</centertop>
+                                <centertop>38</centertop>
                                 <width>32</width>
                                 <height>32</height>
                                 <aspectratio aligny="top">keep</aspectratio>        
@@ -1061,7 +1061,7 @@
                             </control>                           
                             <control type="image">
                                 <left>379</left>
-                                <centertop>32</centertop>
+                                <centertop>38</centertop>
                                 <width>32</width>
                                 <height>32</height>
                                 <aspectratio aligny="top">keep</aspectratio>  
@@ -1093,7 +1093,7 @@
                             <width>408</width>
                             <height>590</height>
                             <fadetime>100</fadetime>
-                            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+                            <aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
                             <texture diffuse="common/white.png" background="true">$VAR[Image_Poster]</texture>
                         </control>
                         </control>
