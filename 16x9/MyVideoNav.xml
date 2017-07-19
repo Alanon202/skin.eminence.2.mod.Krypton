@@ -6,7 +6,6 @@
     <defaultcontrol always="true">50</defaultcontrol>   
     <views>50,550,58,552,505,55,56,57,500,51,52,59,53,600,506,508,509,553,54,502,503,501,504,156,157,158,159,521,160,161,162,535,525,515,516,551</views>
     <onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-	<onload condition="System.HasAddon(script.duration_axbmcuser)">RunScript(script.duration_axbmcuser,backend=True)</onload>
     <onunload>SetProperty(NodeReturn,videos,home)</onunload>
     <onunload>SetProperty(HubReturn,$INFO[Container.FolderPath],home)</onunload>
 	<onload>ClearProperty(quicknavsetup,home)</onload>

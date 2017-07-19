@@ -163,7 +163,7 @@
     </variable>
 	
 	<variable name="Label_Duration">
-		<value condition="Skin.HasSetting(helperduration) + System.HasAddon(script.duration_axbmcuser) + !String.IsEmpty(ListItem.Duration)">$INFO[Window.Property(ScriptDurationAxbmcuserHours),,:]$INFO[Window.Property(ScriptDurationAxbmcuserMinutes)]</value>
+		<value condition="Skin.HasSetting(helperduration) + System.HasAddon(script.duration_axbmcuser) + !String.IsEmpty(ListItem.Duration)">$INFO[Window(Home).Property(DurationAxbmcuser.Duration)]</value>
 		<value condition="!Skin.HasSetting(helperduration) + System.HasAddon(script.duration_axbmcuser) + !String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration,,m]</value>
 		<value condition="Skin.HasSetting(helperduration) + !System.HasAddon(script.duration_axbmcuser) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,h ]$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),,m]</value>
 		<value condition="Skin.HasSetting(helperduration) + !System.HasAddon(script.duration_axbmcuser) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration)) + !String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration,,m]</value>
