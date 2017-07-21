@@ -1,5 +1,5 @@
 <!--based on PMIII DialogMediaSource.xml by Jezz_X & chokemaniac-->
-<window id="129">
+<window>
     <defaultcontrol always="true">10</defaultcontrol>
     <coordinates>
         <origin x="0" y="0" />
@@ -9,24 +9,24 @@
         <control type="group">
             <include>Animation_SlideIn</include>
             <include>Animation_FadeOut</include>
-            <width>800</width>
+            <width>1000</width>
             <height>500</height>
             <centerleft>50%</centerleft>
             <centertop>50%</centertop>
         <control type="group">
             <description>background image</description>
-            <width>800</width>
+            <width>1000</width>
             <height>500</height>
-            <include>Object_Background</include>
+            <include>Dialog_Background</include>
         </control>
         <control type="label" id="2">
             <description>Heading Label</description>
             <posy>-400</posy>
-            <width>800</width>
+            <width>1000</width>
             <align>center</align>
             <textcolor>ListLabel</textcolor>
         </control>
-        <control type="label" id="3">
+        <control type="label" id="4">
             <top>-290</top>
             <width>760</width>
             <left>40</left>
@@ -36,8 +36,8 @@
         <control type="list" id="10">
             <left>40</left>
             <top>140</top>
-            <width>490</width>
-            <height>300</height>
+            <width>690</width>
+            <height>240</height>
             <onup>9001</onup>
             <onleft>13</onleft>
             <onright>11</onright>
@@ -46,14 +46,14 @@
             <scrolltime>200</scrolltime>
             <itemlayout height="80">
                 <control type="image">
-                    <width>490</width>
+                    <width>690</width>
                     <height>69</height>
                     <texture colordiffuse="PosterBorder">common/rsseditor-nofocus.png</texture>
                 </control>
                 <control type="label">
                     <posx>5</posx>
                     <posy>0</posy>
-                    <width>490</width>
+                    <width>690</width>
                     <height>69</height>
                     <aligny>center</aligny>
                     <align>left</align>
@@ -65,7 +65,7 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>490</width>
+                    <width>690</width>
                     <height>69</height>
                     <texture colordiffuse="PosterBorder">common/rsseditor-nofocus.png</texture>
                     <visible>!Control.hasfocus(10)</visible>
@@ -73,7 +73,7 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>490</width>
+                    <width>690</width>
                     <height>69</height>
                     <texture colordiffuse="PosterBorder">common/rsseditor-focus.png</texture>
                     <visible>Control.hasfocus(14)|Control.hasfocus(10)</visible>
@@ -81,10 +81,11 @@
                 <control type="label">
                     <posx>5</posx>
                     <posy>0</posy>
-                    <width>490</width>
+                    <width>690</width>
                     <height>69</height>
                     <aligny>center</aligny>
                     <align>left</align>
+					<scroll>yes</scroll>
                     <font>Font-ListInfo-Small</font>
                     <info>ListItem.Label</info>
                 </control>
@@ -102,7 +103,7 @@
                 <onleft>10</onleft>
                 <onright>10</onright>
                 <ondown>13</ondown>
-                <include>Defs_OptionButton</include>
+                <include>Defs_OptionButton2</include>
             </control>
             <control type="button" id="13">
                 <description>Add Button</description>
@@ -116,7 +117,7 @@
                 <onleft>10</onleft>
                 <onright>10</onright>
                 <ondown>14</ondown>
-                <include>Defs_OptionButton</include>
+                <include>Defs_OptionButton2</include>
             </control>
             <control type="button" id="14">
                 <description>Remove Button</description>
@@ -130,7 +131,7 @@
                 <onleft>10</onleft>
                 <onright>10</onright>
                 <ondown>9001</ondown>
-                <include>Defs_OptionButton</include>
+                <include>Defs_OptionButton2</include>
             </control>
         </control>
         <control type="group" id="9001">
@@ -146,7 +147,7 @@
                 <onleft>10</onleft>
                 <onright>19</onright>
                 <ondown>10</ondown>
-                <include>Defs_OptionButton</include>
+                <include>Defs_OptionButton2</include>
             </control>
             <control type="button" id="19">
                 <description>Cancel Button</description>
@@ -160,7 +161,7 @@
                 <onleft>18</onleft>
                 <onright>11</onright>
                 <ondown>10</ondown>
-                <include>Defs_OptionButton</include>
+                <include>Defs_OptionButton2</include>
             </control>
         </control>
        </control> 
