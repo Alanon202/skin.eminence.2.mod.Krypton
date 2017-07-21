@@ -280,7 +280,6 @@
 						<label>	-	$LOCALIZE[31276]</label>
 						<onclick>ActivateWindow(1130)</onclick>
 						<include>Defs_OptionButton</include>
-						<visible>!Skin.HasSetting(DisableShowcase)</visible>
 					</control>
                     <!-- Fallback Widget -->
                     <control type="button" id="8102">
