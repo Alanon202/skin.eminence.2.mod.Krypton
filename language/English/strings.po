@@ -1050,6 +1050,14 @@ msgctxt "#31276"
 msgid "Customise showcase widgets"
 msgstr ""
 
+msgctxt "#31277"
+msgid "Show widget backgrounds on focus"
+msgstr ""
+
+msgctxt "#31278"
+msgid "The widget backgrounds will be shown only when the widget is focused (on up)."
+msgstr ""
+
 msgctxt "#31500"
 msgid "None"
 msgstr ""

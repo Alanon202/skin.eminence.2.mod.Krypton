@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.eminence.2.mod.Krypton"
-    version="2.4.2"
+    version="2.4.3"
     name="Eminence 2.0 MOD"
     provider-name="jurialmunkey - Mod by Guilouz - Mod by Alanon">
     <requires>
@@ -34,6 +34,14 @@
  			<screenshot>extras/viewthumbs/159.jpg</screenshot>
 		</assets>	
 		<news> Changelog:
+		
+		[B]2.4.3[/B]
+		1. Showcase tweak.
+		2. RSS Editor dialogue.
+		3. Flags tweak.
+		4. Artwork Beef tweak.
+		5. Skin Helper fix.
+		6. Widget background setting.
 		
 		[B]2.4.2[/B]
 		1. Huge viewtype overhaul.

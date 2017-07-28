@@ -464,6 +464,16 @@
                         <onclick>Skin.ToggleSetting(replace.widgetbackground)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
+                    <!-- Show widget fanart on up -->
+                    <control type="radiobutton" id="9956">
+                        <width>100%</width>
+                        <label> - $LOCALIZE[31277]</label>
+                        <radioposx>1350</radioposx>
+                        <selected>Skin.HasSetting(home.widback)</selected>
+                        <onclick>Skin.ToggleSetting(home.widback)</onclick>
+                        <include>Defs_OptionButton</include>
+						<visible>Skin.HasSetting(replace.widgetbackground)</visible>
+                    </control>					
                     <!-- Show background video -->
                     <control type="radiobutton" id="8202">
                         <width>100%</width>

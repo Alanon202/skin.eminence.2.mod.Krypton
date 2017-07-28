@@ -592,7 +592,9 @@
 		<!--Showcase Widgets-->
 		<value condition="Control.HasFocus(9958)">$LOCALIZE[31272]</value>
 		<!--Showcase Widgets Setting-->
-		<value condition="Control.HasFocus(9957)">$LOCALIZE[31273]</value>		
+		<value condition="Control.HasFocus(9957)">$LOCALIZE[31273]</value>
+		<!--Widget backgrounds on up-->
+		<value condition="Control.HasFocus(9956)">$LOCALIZE[31278]</value>			
    </variable>
 
 	<variable name="Label_PlayerStatus">

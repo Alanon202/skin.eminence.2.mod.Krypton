@@ -1061,6 +1061,14 @@ msgctxt "#31276"
 msgid "Customise showcase widgets"
 msgstr "עריכת ווידג'ט של תצוגת עטיפות"
 
+msgctxt "#31277"
+msgid "Show widget backgrounds on focus"
+msgstr "הצג רקע הווידגט כאשר הוא מסומן"
+
+msgctxt "#31278"
+msgid "The widget backgrounds will be shown only when the widget is focused (on up)."
+msgstr "רקעי הויידג'ט יוצגו רק כאשר הווידג'ט מסומן"
+
 msgctxt "#31500"
 msgid "None"
 msgstr "ללא"
