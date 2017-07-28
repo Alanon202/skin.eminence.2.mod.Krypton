@@ -116,5 +116,6 @@
         <!-- Top Bar -->
         <include>Furniture_RSS</include>
         <include>Furniture_TopBar</include>
+		<include>QuickNav</include>
     </controls>
 </window>
