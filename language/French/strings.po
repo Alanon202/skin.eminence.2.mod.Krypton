@@ -1050,6 +1050,14 @@ msgctxt "#31276"
 msgid "Customise showcase widgets"
 msgstr "Personnaliser le widget Showcase"
 
+msgctxt "#31277"
+msgid "Show widget backgrounds on focus"
+msgstr "Afficher l'arrière-plan du widget lorsque celui-ci est en premier plan"
+
+msgctxt "#31278"
+msgid "The widget backgrounds will be shown only when the widget is focused (on up)."
+msgstr "L'arrière-plan du widget sera affiché seulement si le widget est au premier plan (vers le haut)."
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Aucun(e)"
