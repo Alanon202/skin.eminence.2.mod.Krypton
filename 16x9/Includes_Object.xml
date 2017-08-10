@@ -1383,7 +1383,7 @@
     <include name="Object_Background">
         <control type="image">
             <include condition="Skin.HasSetting(lightshadows)">Object_Background_Shadows</include>
-            <texture colordiffuse="ObjectBackground">common/white.png</texture>
+            <texture colordiffuse="$VAR[PanelColour]">common/white.png</texture>
         </control>
     </include>
 	
@@ -1399,7 +1399,7 @@
     <include name="Object_Background2">
         <control type="image">
             <include>Object_Background_Shadows2</include>
-            <texture colordiffuse="$VAR[ColourThemeBack]">common/white.png</texture>
+            <texture colordiffuse="$VAR[PanelColour]">common/white.png</texture>
         </control>
     </include>
 

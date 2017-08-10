@@ -277,8 +277,8 @@
         <value condition="Player.HasVideo + VideoPlayer.Content(LiveTV)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.ChannelName][/COLOR]  $INFO[VideoPlayer.Title]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>           
         <value condition="Player.HasVideo + !VideoPlayer.Content(LiveTV) + String.IsEmpty(VideoPlayer.TvShowTitle)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.Title][/COLOR]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>            
         <value condition="Player.HasVideo + !VideoPlayer.Content(LiveTV) + !String.IsEmpty(VideoPlayer.TvShowTitle)  + !Window.IsVisible(SkinSettings.xml)">[COLOR=$VAR[HighlightColor2]]$INFO[VideoPlayer.TvShowTitle][/COLOR]$INFO[VideoPlayer.Season,  •  ,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.Title]  •  $INFO[Player.Time] / $INFO[Player.Duration]</value>
-        <value condition="!Control.IsVisible(516) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !Skin.HasSetting(hidenextairedinfos)">[COLOR=$VAR[HighlightColor2]]Next Episode: [/COLOR]$INFO[Window(Home).Property(NextAired.NextTitle),, • ]$INFO[Window(Home).Property(NextAired.AirTime),, • ]$INFO[Window(Home).Property(NextAired.NextDate)]</value>
-        <value condition="!Control.IsVisible(516) + String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31191]: [/COLOR]$INFO[Window(Home).Property(NextAired.LatestTitle),, • ]$INFO[Window(Home).Property(NextAired.LatestDate),, • ]$INFO[Window(Home).Property(NextAired.Status)]</value>
+        <value condition="!Control.IsVisible(516) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !Skin.HasSetting(hidenextairedinfos) + Window.IsVisible(MyVideoNav.xml)">[COLOR=$VAR[HighlightColor2]]Next Episode: [/COLOR]$INFO[Window(Home).Property(NextAired.NextTitle),, • ]$INFO[Window(Home).Property(NextAired.AirTime),, • ]$INFO[Window(Home).Property(NextAired.NextDate)]</value>
+        <value condition="!Control.IsVisible(516) + String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestTitle)) + !Skin.HasSetting(hidenextairedinfos) + Window.IsVisible(MyVideoNav.xml)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31191]: [/COLOR]$INFO[Window(Home).Property(NextAired.LatestTitle),, • ]$INFO[Window(Home).Property(NextAired.LatestDate),, • ]$INFO[Window(Home).Property(NextAired.Status)]</value>
 		<value condition="Window.IsVisible(MyVideoNav.xml) + !Skin.HasSetting(furniture.showflags) + [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Budget.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Revenue.formatted)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.BoxOffice)) | !String.IsEmpty(ListItem.Director)]">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31778]: [/COLOR]$INFO[ListItem.Director]$VAR[Label_MovieInfo]</value>
 		<value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(videos) + !String.IsEmpty(ListItem.Premiered)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31777]: [/COLOR]$INFO[ListItem.Premiered]</value>
         <value condition="Window.IsVisible(AddonBrowser.xml)">[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31523][/COLOR] $INFO[Window.Property(Updated)]</value>
@@ -594,7 +594,11 @@
 		<!--Showcase Widgets Setting-->
 		<value condition="Control.HasFocus(9957)">$LOCALIZE[31273]</value>
 		<!--Widget backgrounds on up-->
-		<value condition="Control.HasFocus(9956)">$LOCALIZE[31278]</value>			
+		<value condition="Control.HasFocus(9956)">$LOCALIZE[31278]</value>
+		<!--Panel Colour-->
+		<value condition="Control.HasFocus(9955)">$LOCALIZE[31281]</value>
+		<!--Reset Panel Colour-->
+		<value condition="Control.HasFocus(9954)">$LOCALIZE[31282]</value>			
    </variable>
 
 	<variable name="Label_PlayerStatus">
@@ -802,6 +806,10 @@
         <value condition="!String.IsEmpty(Skin.String(HighlightColor2))">$INFO[Skin.String(HighlightColor2)]</value>
         <value>$LOCALIZE[31180]</value>
     </variable>
+    <variable name="Label_SkinSetting_PanelColour">
+        <value condition="!String.IsEmpty(Skin.String(PanelColour))">$INFO[Skin.String(PanelColour)]</value>
+        <value>$LOCALIZE[31180]</value>
+    </variable>	
 	<variable name="Label_SkinSetting_HomeBarColor">
 		<value condition="!String.IsEmpty(Skin.String(HomeBarColor))">$INFO[Skin.String(HomeBarColor)]</value>
 		<value>$LOCALIZE[31180]</value>

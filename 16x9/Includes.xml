@@ -62,6 +62,11 @@
         <value condition="!String.IsEmpty(Skin.String(HighlightColor2))">$INFO[Skin.String(HighlightColor2)]</value>
         <value>Highlight2</value>
     </variable>
+    <variable name="PanelColour">
+		<value condition="Skin.HasSetting(darkoverlay) + String.IsEqual(Skin.CurrentColourTheme, Light)">66ffffff</value>
+        <value condition="!Skin.HasSetting(darkoverlay) + !String.IsEmpty(Skin.String(PanelColour))">$INFO[Skin.String(PanelColour)]</value>
+        <value>ObjectBackground</value>
+    </variable>	
     <variable name="Background_Color">
         <value condition="String.IsEmpty(Skin.String(BackgroundColor)) + String.IsEqual(Skin.CurrentColourTheme,SKINDEFAULT)">e2181818</value>
         <value condition="String.IsEmpty(Skin.String(BackgroundColor)) + String.IsEqual(Skin.CurrentColourTheme,Light)">e2ffffff</value>

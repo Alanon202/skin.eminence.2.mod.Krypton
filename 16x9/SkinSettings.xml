@@ -1065,6 +1065,21 @@
                         <onclick>Skin.Reset(HighlightColor2)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
+                     <!-- Panel Color -->
+                    <control type="button" id="9955">
+                        <width>100%</width>
+                        <label>$LOCALIZE[31279]</label>
+                        <label2>$VAR[Label_SkinSetting_PanelColour]</label2>
+                        <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelColour)</onclick>
+                        <include>Defs_OptionButton</include>
+                    </control>
+                     <!-- Reset Panel Color -->
+                    <control type="button" id="9954">
+                        <width>100%</width>
+                        <label> - $LOCALIZE[31280]</label>
+                        <onclick>Skin.Reset(PanelColour)</onclick>
+                        <include>Defs_OptionButton</include>
+                    </control>					
                     <!-- Text Color -->
                     <control type="button" id="8807">
                         <width>100%</width>
