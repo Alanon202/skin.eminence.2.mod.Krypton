@@ -1060,19 +1060,19 @@ msgstr "L'arrière-plan du widget sera affiché seulement si le widget est au pr
 
 msgctxt "#31279"
 msgid "Set main panel colour"
-msgstr ""
+msgstr "Modifier la couleur du panneau principal"
 
 msgctxt "#31280"
 msgid "Reset panel colour to default"
-msgstr ""
+msgstr "Restaurer la couleur du panneau principal par défaut"
 
 msgctxt "#31281"
 msgid "Sets the colour of the light back panels used across the skin view-types. [B]Not available with the Dark interface.[/B]"
-msgstr ""
+msgstr "Sélectionner la couleur de la lumière illuminant les panneaux en arrière-plan à travers l'ensemble des différentes vues du thème. [B]Non disponible avec la version Dark.[/B]"
 
 msgctxt "#31282"
 msgid "Resets the panel colours back to the skin default (near transparent)."
-msgstr ""
+msgstr "Restaurer la couleur du panneau à sa valeur par défaut (quasi transparente)."
 
 msgctxt "#31500"
 msgid "None"
