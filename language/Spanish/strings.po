@@ -1058,6 +1058,22 @@ msgctxt "#31278"
 msgid "The widget backgrounds will be shown only when the widget is focused (on up)."
 msgstr "Los fondos del widget se mostrarán sólo cuando el widget esté enfocado (arriba)."
 
+msgctxt "#31279"
+msgid "Set main panel colour"
+msgstr "Configurar el color del panel principal"
+
+msgctxt "#31280"
+msgid "Reset panel colour to default"
+msgstr "Restablecer el color del panel al valor predeterminado"
+
+msgctxt "#31281"
+msgid "Sets the colour of the light back panels used across the skin view-types. [B]Not available with the Dark interface.[/B]"
+msgstr "Establece el color de los paneles traseros de luz utilizados en los tipos de vista de la piel. [B] No disponible con la interfaz Dark.[/B]"
+
+msgctxt "#31282"
+msgid "Resets the panel colours back to the skin default (near transparent)."
+msgstr "Restablece los colores del panel de nuevo a la piel por defecto (cerca transparente)." 
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Ninguno"

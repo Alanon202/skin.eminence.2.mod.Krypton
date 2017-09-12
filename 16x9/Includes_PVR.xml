@@ -915,7 +915,7 @@
                 </control>
                 <control type="videowindow">
                     <!-- <top>-415</top> -->
-                    <width>100%</width>
+                    <width>720</width>
                     <height>405</height>
                     <visible>Player.HasVideo + !Skin.HasSetting(background.showvideo)</visible>
                 </control>

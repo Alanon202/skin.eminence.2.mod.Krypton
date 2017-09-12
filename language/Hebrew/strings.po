@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: XBMC Main\n"
 "Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-08-27 10:30+0300\n"
+"PO-Revision-Date: 2017-09-06 12:23+0300\n"
 "Last-Translator: Alanon\n"
 "Language-Team: English (http://www.transifex.com/projects/p/xbmc-main/language/en/)\n"
 "MIME-Version: 1.0\n"
@@ -52,7 +52,7 @@ msgstr "הצג דגלי מידע על הסרט"
 
 msgctxt "#31008"
 msgid "Show plot overlay in video library after delay"
-msgstr "‎הצג שכבת [B]עלילה[/B] בספריית הווידאו השהייה של מספר שניות"
+msgstr "‎הצג שכבת [B]עלילה[/B] בספריית הווידאו לאחר השהייה."
 
 msgctxt "#31009"
 msgid "Open playlist"
@@ -316,11 +316,11 @@ msgstr "אין מידע זמין"
 
 msgctxt "#31093"
 msgid "Movie Hub"
-msgstr "‎Hub סרטים"
+msgstr "רכזת סרטים"
 
 msgctxt "#31094"
 msgid "TV Hub"
-msgstr "‎‎Hub סדרות"
+msgstr "רכזת סדרות"
 
 msgctxt "#31095"
 msgid "Spotlight"
@@ -328,11 +328,11 @@ msgstr "באור הזרקור"
 
 msgctxt "#31096"
 msgid "Hub items"
-msgstr "תפריט Hub"
+msgstr "תפריט רכזת"
 
 msgctxt "#31097"
 msgid "Hub widget"
-msgstr "יישומון Hub"
+msgstr "יישומון רכזת"
 
 msgctxt "#31098"
 msgid "Artwork"
@@ -440,7 +440,7 @@ msgstr "התאם כותרת אריח עם צבע הסמן"
 
 msgctxt "#31123"
 msgid "Hub"
-msgstr "Hub מותאם אישית"
+msgstr "רכזת מותאמת אישית"
 
 msgctxt "#31124"
 msgid "Similar movies"
@@ -456,7 +456,7 @@ msgstr "צבעים"
 
 msgctxt "#31127"
 msgid "Header & Hubs"
-msgstr "כותרת ו-Hubs"
+msgstr "כותרת ורכזות"
 
 msgctxt "#31128"
 msgid "Colour"
@@ -504,7 +504,7 @@ msgstr "‎הצג שעון"
 
 msgctxt "#31139"
 msgid "Hubs"
-msgstr "רכזת Hubs"
+msgstr "רכזת (Hubs)"
 
 msgctxt "#31140"
 msgid "Show tile colour on unfocused tiles"
@@ -728,7 +728,7 @@ msgstr "קוּפָּה"
 
 msgctxt "#31194"
 msgid "Show plot for Hub widgets"
-msgstr "הראה עלילה עבור יישומוני Hub"
+msgstr "הראה עלילה עבור יישומוני רכזת"
 
 msgctxt "#31195"
 msgid "Allow widget reloading"
@@ -1226,7 +1226,7 @@ msgstr "קבוצה זו מכילה את ההגדרות עבור תצוגת מס�
 msgctxt "#31540"
 msgid ""
 "This category contains the settings for the header and a few settings for the hubs."
-msgstr "קבוצה זו מכילה את ההגדרות עבור הכותרת וכמה הגדרות עבור ה-Hubs."
+msgstr "קבוצה זו מכילה את ההגדרות עבור הכותרת וכמה הגדרות עבור הרכזת."
 
 msgctxt "#31541"
 msgid ""
@@ -1610,7 +1610,7 @@ msgstr "[B]YouTube[/B] - ההרחבה נחוצה על מנת לצפות בקדי
 
 msgctxt "#31623"
 msgid "Shows the plot on Hub Fanart."
-msgstr "הצג את העלילה על הפאנארט של ה-Hub."
+msgstr "הצג את העלילה על הפאנארט של הרכזת."
 
 msgctxt "#31624"
 msgid "Recently Played Episodes"
@@ -1634,7 +1634,7 @@ msgstr "קבע שקיפות וצבע הפאנארט."
 
 msgctxt "#31629"
 msgid "Show media flags on Hub widgets"
-msgstr "הצג דגלי מדיה על יישומון ה-Hub"
+msgstr "הצג דגלי מדיה על יישומון הרכזת"
 
 msgctxt "#31630"
 msgid ""
@@ -1646,11 +1646,11 @@ msgstr ""
 
 msgctxt "#31631"
 msgid "Show ClearLogos on Hub widgets"
-msgstr "הראה גרפיקת 'סמלים שקופים' ביישומוני Hub"
+msgstr "הראה גרפיקת 'סמלים שקופים' ביישומוני רכזת"
 
 msgctxt "#31632"
 msgid "Show movies/tv shows ClearLogos on Hub widget"
-msgstr "הראה גרפיקת 'סמלים שקופים' של סרטים וסדרות ביישומוני Hub"
+msgstr "הראה גרפיקת 'סמלים שקופים' של סרטים וסדרות ביישומוני רכזת"
 
 msgctxt "#31633"
 msgid "Weather icons"
@@ -2089,7 +2089,7 @@ msgstr "הסתר מחוונים של [B]'לא נצפו'[/B]"
 
 msgctxt "#31737"
 msgid "Hub Image"
-msgstr "תמונת Hub"
+msgstr "תמונת רכזת"
 
 msgctxt "#31738"
 msgid "Unwatched Movies"
@@ -2403,12 +2403,12 @@ msgstr "אפשר מילות שיר בצבעים ובתנועה במקום הרג
 
 msgctxt "#31806"
 msgid "Use bars in Hub menus"
-msgstr "השתמש בסרגלים בתפריטי Hub"
+msgstr "השתמש בסרגלים בתפריטי הרכזת"
 
 msgctxt "#31807"
 msgid ""
 "Enables the white bars in hub menus instead of the dark and light themed panels."
-msgstr "מאפשר את הסרגלים הלבנים בתפריטי Hub במקום לוחות חשוכים או מוארים."
+msgstr "מאפשר את הסרגלים הלבנים בתפריטי הרכזת במקום לוחות חשוכים או מוארים."
 
 msgctxt "#31808"
 msgid "Show duration flags"
@@ -2575,7 +2575,7 @@ msgstr "תצוגת cd מזוייף"
 
 msgctxt "#31202"
 msgid "Show plot for hub widgets"
-msgstr "הראה עלילה עבור יישומוני Hub"
+msgstr "הראה עלילה עבור יישומוני הרכזת"
 
 msgctxt "#31203"
 msgid "Necessary Addons"
@@ -2615,7 +2615,7 @@ msgstr "שקיפות רקע פאנארט"
 
 msgctxt "#31212"
 msgid "Show media flags on Hub widget"
-msgstr "הצג דגלוני מדיה ביישומון ה-Hub"
+msgstr "הצג דגלוני מדיה ביישומון הרכזת"
 
 msgctxt "#31213"
 msgid "Download subtitles"
@@ -2820,27 +2820,27 @@ msgstr "יישומון רקע אחורי - מרובע"
 
 msgctxt "#31261"
 msgid "Hub-2"
-msgstr "מותאם אישית Hub 2"
+msgstr "רכזת מותאמת אישית 2"
 
 msgctxt "#31262"
 msgid "Hub-3"
-msgstr "מותאם אישית Hub 3"
+msgstr "רכזת מותאמת אישית 3"
 
 msgctxt "#31263"
 msgid "Hub-4"
-msgstr "מותאם אישית Hub 4"
+msgstr "רכזת מותאמת אישית 4"
 
 msgctxt "#31264"
 msgid "Hub-5"
-msgstr "מותאם אישית Hub 5"
+msgstr "רכזת מותאמת אישית 5"
 
 msgctxt "#31265"
 msgid "Hub-6"
-msgstr "מותאם אישית Hub 6"
+msgstr "רכזת מותאמת אישית 6"
 
 msgctxt "#31266"
 msgid "Hub-7"
-msgstr "מותאם אישית Hub 7"
+msgstr "רכזת מותאמת אישית 7"
 
 msgctxt "#31267"
 msgid "Show background video"
@@ -2944,47 +2944,47 @@ msgstr "הסיסמה נכונה! תפריט זה זמין כעת במשך כ-"
 
 msgctxt "#31292"
 msgid "Hub-8"
-msgstr "מותאם אישית Hub 8"
+msgstr "רכזת מותאמת אישית 8"
 
 msgctxt "#31293"
 msgid "Hub-9"
-msgstr "מותאם אישית Hub 9"
+msgstr "רכזת מותאמת אישית 9"
 
 msgctxt "#31294"
 msgid "Hub-10"
-msgstr "מותאם אישית Hub 10"
+msgstr "רכזת מותאמת אישית 10"
 
 msgctxt "#31295"
 msgid "Hub-11"
-msgstr "מותאם אישית Hub 11"
+msgstr "רכזת מותאמת אישית 11"
 
 msgctxt "#31296"
 msgid "Hub-12"
-msgstr "מותאם אישית Hub 12"
+msgstr "רכזת מותאמת אישית 12"
 
 msgctxt "#31297"
 msgid "Hub-13"
-msgstr "מותאם אישית Hub 13"
+msgstr "רכזת מותאמת אישית 13"
 
 msgctxt "#31298"
 msgid "Hub-14"
-msgstr "מותאם אישית Hub 14"
+msgstr "רכזת מותאמת אישית 14"
 
 msgctxt "#31299"
 msgid "Hub-15"
-msgstr "מותאם אישית Hub 15"
+msgstr "רכזת מותאמת אישית 15"
 
 msgctxt "#31300"
 msgid "Hub-16"
-msgstr "מותאם אישית Hub 16"
+msgstr "רכזת מותאמת אישית 16"
 
 msgctxt "#31301"
 msgid "Hub-17"
-msgstr "מותאם אישית Hub 17"
+msgstr "רכזת מותאמת אישית 17"
 
 msgctxt "#31302"
 msgid "Hub-18"
-msgstr "מותאם אישית Hub 18"
+msgstr "רכזת מותאמת אישית 18"
 
 msgctxt "#31553"
 msgid "Sets the home header text. To hide it, input [B]N/A[/B] as your text!"
