@@ -1281,8 +1281,8 @@
                             <right>pad</right>
                             <top>pad</top>
                             <bottom>pad</bottom>
-                            <aspectratio>scale</aspectratio>
-                            <texture background="true">$VAR[Image_Thumb]</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
                         </control>
                         <control type="image">
                             <left>pad</left>
@@ -1330,8 +1330,8 @@
                             <right>pad</right>
                             <top>pad</top>
                             <bottom>pad</bottom>
-                            <aspectratio>scale</aspectratio>
-                            <texture background="true">$VAR[Image_Thumb]</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
                         </control>
                         <control type="image">
                             <left>pad</left>
