@@ -918,6 +918,7 @@
                     <width>720</width>
                     <height>405</height>
                     <visible>Player.HasVideo + !Skin.HasSetting(background.showvideo)</visible>
+					<animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
                 </control>
                 <control type="label">
                     <top>pad</top>
