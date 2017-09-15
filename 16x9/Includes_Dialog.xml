@@ -782,12 +782,12 @@
                             <font>Font-ListInfo-Small-Bold</font>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
-                            <visible>String.IsEmpty(ListItem.Property(Addon.Summary))</visible>
+							<visible>String.IsEmpty(ListItem.Label2)</visible>
                             <visible>String.IsEmpty(ListItem.Property(character))</visible>
                             <visible>String.IsEmpty(ListItem.Property(job))</visible>
                         </control>
                         <control type="group">
-                            <visible>!String.IsEmpty(ListItem.Property(Addon.Summary)) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
+                            <visible>!String.IsEmpty(ListItem.Label2) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
                             <left>148</left>
                             <right>30</right>
                             <control type="label">
@@ -868,12 +868,12 @@
                             <font>Font-ListInfo-Small-Bold</font>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
-                            <visible>String.IsEmpty(ListItem.Property(Addon.Summary))</visible>
+							<visible>String.IsEmpty(ListItem.Label2)</visible>
                             <visible>String.IsEmpty(ListItem.Property(character))</visible>
                             <visible>String.IsEmpty(ListItem.Property(job))</visible>
                         </control>
                         <control type="group">
-                            <visible>!String.IsEmpty(ListItem.Property(Addon.Summary)) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
+                            <visible>!String.IsEmpty(ListItem.Label2) | !String.IsEmpty(ListItem.Property(character)) | !String.IsEmpty(ListItem.Property(job))</visible>
                             <left>148</left>
                             <right>30</right>
                             <control type="label">
