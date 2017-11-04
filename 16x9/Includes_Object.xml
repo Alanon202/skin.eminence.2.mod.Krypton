@@ -663,6 +663,14 @@
             <visible>Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(506) | Control.IsVisible(59) | Control.IsVisible(159) | Control.IsVisible(161) | Control.IsVisible(162)</visible>
             <visible>Container.Content(movies) | Container.Content(sets)</visible>
         </control>
+		<!-- Fanart Info Blur -->
+        <control type="radiobutton" id="90994">
+            <include>Defs_OptionButton2</include>
+            <label>31283</label>
+            <selected>Skin.HasSetting(UseBlur)</selected>
+            <onclick>Skin.ToggleSetting(UseBlur)</onclick>
+            <visible>Control.IsVisible(514) + System.HasAddon(script.toolbox)</visible>
+        </control>	
         <!-- Hide Showcase Info -->
         <control type="radiobutton" id="90979">
             <include>Defs_OptionButton2</include>
@@ -1402,5 +1410,13 @@
             <texture colordiffuse="$VAR[PanelColour]">common/white.png</texture>
         </control>
     </include>
+	
+	<include name="Background_Blur">
+		<control type="button">
+			<visible>false</visible>
+			<onfocus>RunScript(script.toolbox,info=blur,id=$INFO[ListItem.Art(poster)],radius=30)</onfocus>
+			<onunfocus>ClearProperty(ImageFilter,Home)</onunfocus>
+		</control>
+	</include>	
 
 </includes>

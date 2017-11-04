@@ -4,12 +4,12 @@
     <backgroundcolor>Background</backgroundcolor>
     <menucontrol>9000</menucontrol>
     <defaultcontrol always="true">50</defaultcontrol>   
-    <views>50,550,58,552,505,55,56,57,500,51,52,59,53,600,506,508,509,553,54,502,503,501,504,156,157,158,159,521,160,161,162,535,525,515,516,551</views>
+    <views>50,550,58,552,505,55,56,57,500,51,52,59,53,600,506,508,509,553,54,502,503,501,504,156,157,158,159,521,160,161,162,535,525,514,513,515,516,551</views>
     <onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <onunload>SetProperty(NodeReturn,videos,home)</onunload>
     <onunload>SetProperty(HubReturn,$INFO[Container.FolderPath],home)</onunload>
 	<onload>ClearProperty(quicknavsetup,home)</onload>
-	<onunload>ClearProperty(quicknavsetup,home)</onunload>	
+	<onunload>ClearProperty(quicknavsetup,home)</onunload>
     <controls>
 
         <!-- Background -->
@@ -55,6 +55,8 @@
             <include condition="!Skin.HasSetting(SkinHelper.View.Disabled.162)">Viewtype_Logos_List</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.535)">Viewtype_ShowCase</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.525)">Viewtype_MediumIcon</include>
+			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.514)">Viewtype_FanArtIcons</include>
+			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.513)">Viewtype_FanArtIconsEp</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.515)">Viewtype_Netflix</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.516)">Video_RightList</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.551)">Video_LowList</include>
@@ -187,6 +189,18 @@
 			<label>$INFO[ListItem.Art(thumb10)]</label>			
 			<visible>Skin.HasSetting(rotatingthumbs)</visible>
 		</control>
+
+		<control type="multiimage" id="4440">
+			<top>-2000</top>
+			<left>0</left>
+			<width>1351</width>
+			<height>760</height>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+			<aspectratio>scale</aspectratio>
+			<fadetime>300</fadetime>
+		</control>
 		
 		<control type="fadelabel" id="4430">
 			<top>-1000</top>
@@ -230,6 +244,86 @@
 			<label>$INFO[ListItem.Art(extrafanart18)]</label>
 			<label>$INFO[ListItem.Art(extrafanart19)]</label>
 			<label>$INFO[ListItem.Art(extrafanart20)]</label>
+			<label>$INFO[ListItem.Art(extrafanart21)]</label>
+			<label>$INFO[ListItem.Art(extrafanart22)]</label>
+			<label>$INFO[ListItem.Art(extrafanart23)]</label>
+			<label>$INFO[ListItem.Art(extrafanart24)]</label>
+			<label>$INFO[ListItem.Art(extrafanart25)]</label>
+			<label>$INFO[ListItem.Art(extrafanart26)]</label>
+			<label>$INFO[ListItem.Art(extrafanart27)]</label>
+			<label>$INFO[ListItem.Art(extrafanart28)]</label>
+			<label>$INFO[ListItem.Art(extrafanart29)]</label>
+			<label>$INFO[ListItem.Art(extrafanart30)]</label>
+			<label>$INFO[ListItem.Art(extrafanart31)]</label>
+			<label>$INFO[ListItem.Art(extrafanart32)]</label>
+			<label>$INFO[ListItem.Art(extrafanart33)]</label>
+			<label>$INFO[ListItem.Art(extrafanart34)]</label>
+			<label>$INFO[ListItem.Art(extrafanart35)]</label>
+			<label>$INFO[ListItem.Art(extrafanart36)]</label>
+			<label>$INFO[ListItem.Art(extrafanart37)]</label>
+			<label>$INFO[ListItem.Art(extrafanart38)]</label>
+			<label>$INFO[ListItem.Art(extrafanart39)]</label>
+			<label>$INFO[ListItem.Art(extrafanart40)]</label>
+			<label>$INFO[ListItem.Art(extrafanart41)]</label>
+			<label>$INFO[ListItem.Art(extrafanart42)]</label>
+			<label>$INFO[ListItem.Art(extrafanart43)]</label>
+			<label>$INFO[ListItem.Art(extrafanart44)]</label>
+			<label>$INFO[ListItem.Art(extrafanart45)]</label>
+			<label>$INFO[ListItem.Art(extrafanart46)]</label>
+			<label>$INFO[ListItem.Art(extrafanart47)]</label>
+			<label>$INFO[ListItem.Art(extrafanart48)]</label>
+			<label>$INFO[ListItem.Art(extrafanart49)]</label>
+			<label>$INFO[ListItem.Art(extrafanart50)]</label>
+			<label>$INFO[ListItem.Art(extrafanart51)]</label>
+			<label>$INFO[ListItem.Art(extrafanart52)]</label>
+			<label>$INFO[ListItem.Art(extrafanart53)]</label>
+			<label>$INFO[ListItem.Art(extrafanart54)]</label>
+			<label>$INFO[ListItem.Art(extrafanart55)]</label>
+			<label>$INFO[ListItem.Art(extrafanart56)]</label>
+			<label>$INFO[ListItem.Art(extrafanart57)]</label>
+			<label>$INFO[ListItem.Art(extrafanart58)]</label>
+			<label>$INFO[ListItem.Art(extrafanart59)]</label>
+			<label>$INFO[ListItem.Art(extrafanart60)]</label>
+			<label>$INFO[ListItem.Art(extrafanart61)]</label>
+			<label>$INFO[ListItem.Art(extrafanart62)]</label>
+			<label>$INFO[ListItem.Art(extrafanart63)]</label>
+			<label>$INFO[ListItem.Art(extrafanart64)]</label>
+			<label>$INFO[ListItem.Art(extrafanart65)]</label>
+			<label>$INFO[ListItem.Art(extrafanart66)]</label>
+			<label>$INFO[ListItem.Art(extrafanart67)]</label>
+			<label>$INFO[ListItem.Art(extrafanart68)]</label>
+			<label>$INFO[ListItem.Art(extrafanart69)]</label>
+			<label>$INFO[ListItem.Art(extrafanart70)]</label>
+			<label>$INFO[ListItem.Art(extrafanart71)]</label>
+			<label>$INFO[ListItem.Art(extrafanart72)]</label>
+			<label>$INFO[ListItem.Art(extrafanart73)]</label>
+			<label>$INFO[ListItem.Art(extrafanart74)]</label>
+			<label>$INFO[ListItem.Art(extrafanart75)]</label>
+			<label>$INFO[ListItem.Art(extrafanart76)]</label>
+			<label>$INFO[ListItem.Art(extrafanart77)]</label>
+			<label>$INFO[ListItem.Art(extrafanart78)]</label>
+			<label>$INFO[ListItem.Art(extrafanart79)]</label>
+			<label>$INFO[ListItem.Art(extrafanart80)]</label>
+			<label>$INFO[ListItem.Art(extrafanart81)]</label>
+			<label>$INFO[ListItem.Art(extrafanart82)]</label>
+			<label>$INFO[ListItem.Art(extrafanart83)]</label>
+			<label>$INFO[ListItem.Art(extrafanart84)]</label>
+			<label>$INFO[ListItem.Art(extrafanart85)]</label>
+			<label>$INFO[ListItem.Art(extrafanart86)]</label>
+			<label>$INFO[ListItem.Art(extrafanart87)]</label>
+			<label>$INFO[ListItem.Art(extrafanart88)]</label>
+			<label>$INFO[ListItem.Art(extrafanart89)]</label>
+			<label>$INFO[ListItem.Art(extrafanart90)]</label>
+			<label>$INFO[ListItem.Art(extrafanart91)]</label>
+			<label>$INFO[ListItem.Art(extrafanart92)]</label>
+			<label>$INFO[ListItem.Art(extrafanart93)]</label>
+			<label>$INFO[ListItem.Art(extrafanart94)]</label>
+			<label>$INFO[ListItem.Art(extrafanart95)]</label>
+			<label>$INFO[ListItem.Art(extrafanart96)]</label>
+			<label>$INFO[ListItem.Art(extrafanart97)]</label>
+			<label>$INFO[ListItem.Art(extrafanart98)]</label>
+			<label>$INFO[ListItem.Art(extrafanart99)]</label>
+			<label>$INFO[ListItem.Art(extrafanart100)]</label>			
 		</control>
 
 		<control type="fadelabel" id="4420">

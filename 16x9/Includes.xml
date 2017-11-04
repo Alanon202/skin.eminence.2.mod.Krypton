@@ -20,6 +20,7 @@
     <include file="Viewtype_Icon.xml" />
     <include file="Viewtype_Wide.xml" />
     <include file="Viewtype_ShowCase.xml" />
+	<include file="Viewtype_FanArtIcons.xml" />
 	<include file="Viewtype_Netflix.xml" />
 	<include file="Viewtype_RightList.xml" />
 	

@@ -456,7 +456,28 @@
                         <onclick>Container.SetViewMode(525)</onclick>
                         <visible>!Skin.HasSetting(SkinHelper.View.Disabled.525)</visible>
                         <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums)</visible>
-                    </item>					
+                    </item>		
+					<!-- Fanart Icons -->
+                    <item>
+                        <label>31284</label>
+                        <icon>special://skin/extras/viewthumbs/514.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(514)</onclick>
+                        <visible>!Skin.HasSetting(SkinHelper.View.Disabled.514)</visible>
+                        <visible>Container.Content(seasons) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows)</visible>
+                    </item>		
+					<!-- Fanart Icons Ep.-->
+                    <item>
+                        <label>31285</label>
+                        <icon>special://skin/extras/viewthumbs/513.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(513)</onclick>
+                        <visible>!Skin.HasSetting(SkinHelper.View.Disabled.513)</visible>
+						<visible>!Skin.HasSetting(SkinHelper.View.Disabled.513)</visible>
+                        <visible>Container.Content(episodes) | Container.Content(videos)</visible>
+                    </item>						
                     <!-- Netflix -->
                     <item>
                         <label>31200</label>

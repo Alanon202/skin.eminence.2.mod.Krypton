@@ -468,7 +468,7 @@
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="LineLabel" background="true" fallback="">$VAR[RatingFlagVar,,.png]</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
+                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
             </control>
 			<control type="group">
 				<width>140</width>                 
