@@ -32,7 +32,9 @@
 	<view id="BigWide Classic" value="157" languageid="31729" type="movies,tvshows,sets,seasons,setmovies,episodes,artists,albums,videos"/>
 	<view id="Lovefilm" value="521" languageid="31208" type="movies,tvshows,sets,setmovies,seasons,episodes,videos,albums,artists"/>	
 	<view id="ClearArts List" value="161" languageid="31744" type="movies,tvshows,sets"/>
-	<view id="Logos List" value="162" languageid="31745" type="movies,tvshows,sets,setmovies"/> 
+	<view id="Logos List" value="162" languageid="31745" type="movies,tvshows,sets,setmovies,seasons"/>
+	<view id="Fanart Icons Ep." value="513" languageid="31285" type="episodes,videos"/>
+	<view id="Fanart Icons" value="514" languageid="31284" type="movies,tvshows,sets,setmovies"/> 	
 	<view id="ShowCase" value="535" languageid="31199" type="movies,tvshows,sets,seasons,setmovies,artists,albums"/>
 	<view id="Medium Icon" value="525" languageid="31207" type="movies,tvshows,sets,seasons,setmovies,artists,albums"/>
 	<view id="Netflix" value="515" languageid="31200" type="movies,tvshows,sets,seasons,setmovies,episodes"/>
