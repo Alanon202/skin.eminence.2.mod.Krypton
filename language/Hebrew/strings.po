@@ -4,12 +4,12 @@
 # Addon Provider: Alanon
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Main\n"
+"Project-Id-Version: skin.eminence.2.mod.Krypton-master\n"
 "Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-09-06 12:23+0300\n"
-"Last-Translator: Alanon\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-main/language/en/)\n"
+"PO-Revision-Date: 2017-09-19 13:25+0300\n"
+"Last-Translator: A/ Dembledore\n"
+"Language-Team: Eng2Heb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -104,7 +104,7 @@ msgstr "‎תמונת רקע"
 
 msgctxt "#31021"
 msgid "Show fanart"
-msgstr "‎תצוגת פאנארט"
+msgstr "הצג  פאנארט"
 
 msgctxt "#31027"
 msgid "Show background video"
@@ -160,7 +160,7 @@ msgstr "‎כרגע"
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr "‎הגדרות חזותיות לתצוגה"
+msgstr "‎הגדרות הדמייה לתצוגה"
 
 msgctxt "#31048"
 msgid "Playlist Options"
@@ -172,7 +172,7 @@ msgstr "‎התאמה אישית של תפריט הבית"
 
 msgctxt "#31052"
 msgid "Rated"
-msgstr "‎דירוג"
+msgstr "מדורג"
 
 msgctxt "#31054"
 msgid "Random movies"
@@ -204,7 +204,7 @@ msgstr "‎תמונת רקע מותאמת אישית"
 
 msgctxt "#31065"
 msgid "Hide 'Mouse' warning"
-msgstr "הסתר אזהרת 'עכבר'"
+msgstr "הסתר אזהרת עכבר"
 
 msgctxt "#31066"
 msgid "Cinema Exp."
@@ -216,11 +216,11 @@ msgstr "דף"
 
 msgctxt "#31068"
 msgid "View Options"
-msgstr "‎אפשרויות תצוגה"
+msgstr "‎הצג אפשרויות"
 
 msgctxt "#31069"
 msgid "Context Menu"
-msgstr "‎תפריט תוכן"
+msgstr "‎תפריט קישור"
 
 msgctxt "#31070"
 msgid "Infos"
@@ -240,7 +240,7 @@ msgstr "‎קבוצות"
 
 msgctxt "#31074"
 msgid "Submenu"
-msgstr "תפריט משנה"
+msgstr "תת תפריט"
 
 msgctxt "#31075"
 msgid "Icon"
@@ -272,15 +272,15 @@ msgstr "‎סרטים בדירוג גבוה"
 
 msgctxt "#31082"
 msgid "Popular Shows"
-msgstr "תוכניות פופולריות"
+msgstr "סדרות פופולריות"
 
 msgctxt "#31083"
 msgid "Top Rated Shows"
-msgstr "תוכניות בדירוג גבוה"
+msgstr "סדרות בדירוג גבוה"
 
 msgctxt "#31084"
 msgid "On Air Shows"
-msgstr "תוכניות משודרות עכשיו"
+msgstr "סדרות שמשודרות כעת"
 
 msgctxt "#31085"
 msgid "Airing Today"
@@ -308,7 +308,7 @@ msgstr "‎תוכן נטען"
 
 msgctxt "#31091"
 msgid "Trending Shows"
-msgstr "תוכניות טרנדיות"
+msgstr "סדרות טרנדיות"
 
 msgctxt "#31092"
 msgid "No info available"
@@ -316,11 +316,11 @@ msgstr "אין מידע זמין"
 
 msgctxt "#31093"
 msgid "Movie Hub"
-msgstr "רכזת סרטים"
+msgstr "רכזת סרטים (Hub)"
 
 msgctxt "#31094"
 msgid "TV Hub"
-msgstr "רכזת סדרות"
+msgstr "רכזת סדרות (Hub)"
 
 msgctxt "#31095"
 msgid "Spotlight"
@@ -328,11 +328,11 @@ msgstr "באור הזרקור"
 
 msgctxt "#31096"
 msgid "Hub items"
-msgstr "תפריט רכזת"
+msgstr "תפריט רכזת (Hub)"
 
 msgctxt "#31097"
 msgid "Hub widget"
-msgstr "יישומון רכזת"
+msgstr "יישומון רכזת  (Hub)"
 
 msgctxt "#31098"
 msgid "Artwork"
@@ -348,7 +348,7 @@ msgstr "‎נוספו לאחרונה"
 
 msgctxt "#31101"
 msgid "Recently Played"
-msgstr "‎נוגן לאחרונה"
+msgstr "‎נוגנו לאחרונה"
 
 msgctxt "#31102"
 msgid "Watch Random"
@@ -363,8 +363,8 @@ msgid ""
 "Are you sure you want to remove the settings shortcut?[CR]Please ensure that you "
 "have an alternative method of accessing settings before you remove this shortcut."
 msgstr ""
-"‎האם אתה בטוח שברצונך להסיר את קיצור הדרך להגדרות? [CR] אנא ודא שיש לך שיטה חלופית "
-"לגישה להגדרות לפני שאתה מסיר את קיצור הדרך זה."
+"‎האם אתה בטוח שברצונך להסיר את קיצור הדרך להגדרות?[CR]אנא ודא שיש לך שיטה חלופית "
+"לגישה להגדרות לפני שאתה מסיר את קיצור הדרך הזה."
 
 msgctxt "#31105"
 msgid "Extra Infos"
@@ -400,7 +400,7 @@ msgstr "צבע סמן מישני"
 
 msgctxt "#31113"
 msgid "Reset main colour to default"
-msgstr "אתחל את הצבע העיקרי - לברירת המחדל"
+msgstr "אתחל את הצבע העיקרי לברירת המחדל"
 
 msgctxt "#31114"
 msgid "Weather fanart"
@@ -412,7 +412,7 @@ msgstr "‎הצג מזג אוויר עם השעון"
 
 msgctxt "#31116"
 msgid "Animate fanarts"
-msgstr "פאנארט מונפש"
+msgstr "פאנארטים מונפשים"
 
 msgctxt "#31117"
 msgid "mins"
@@ -420,11 +420,11 @@ msgstr "‎דקות"
 
 msgctxt "#31118"
 msgid "Animate artist fanarts"
-msgstr "פאנארט אמנים מונפש"
+msgstr "פאנארטים מונפשים של אמנים"
 
 msgctxt "#31119"
 msgid "Show visualisation effects"
-msgstr "הצג אפקטים חזותיים"
+msgstr "הצג אפקטים של הדמיות"
 
 msgctxt "#31120"
 msgid "Hide playback infos"
@@ -436,11 +436,11 @@ msgstr "תצוגת מסך מוזיקה"
 
 msgctxt "#31122"
 msgid "Match header tile with highlight colour"
-msgstr "התאם כותרת אריח עם צבע הסמן"
+msgstr "התאם כותרת אריח לצבע הסמן"
 
 msgctxt "#31123"
 msgid "Hub"
-msgstr "רכזת מותאמת אישית"
+msgstr "רכזת מותאמת אישית  (Hub)"
 
 msgctxt "#31124"
 msgid "Similar movies"
@@ -532,11 +532,11 @@ msgstr "מידע מורחב"
 
 msgctxt "#31146"
 msgid "Fanart fallback image"
-msgstr "פאנארט יישומון גיבוי"
+msgstr "תמונת פאנארט ליישומון שיחזור"
 
 msgctxt "#31147"
 msgid "Fallback widget"
-msgstr "יישומון גיבוי"
+msgstr "יישומון שיחזור"
 
 msgctxt "#31148"
 msgid "Media Info 3"
@@ -552,7 +552,7 @@ msgstr "‎הצג יישומון פוסטרים"
 
 msgctxt "#31151"
 msgid "Home tile icon"
-msgstr "סמל אריח הבית"
+msgstr "סמלילי אריח הבית"
 
 msgctxt "#31152"
 msgid "Home tile text"
@@ -584,7 +584,7 @@ msgstr "מרכז המדיה"
 
 msgctxt "#31159"
 msgid "Background overlay image"
-msgstr "תמונת רקע כללית למעטפת"
+msgstr "תמונת שכבת רקע כללית למעטפת"
 
 msgctxt "#31160"
 msgid "Busy spinner"
@@ -616,7 +616,7 @@ msgstr "מוגדר ידנית בחלון דיאלוג התאמה אישית"
 
 msgctxt "#31167"
 msgid "Show unwatched count in header"
-msgstr "הצג כמות תוכן שלא נצפה בכותרת"
+msgstr "הצג ספירת תוכן שלא נצפה בכותרת"
 
 msgctxt "#31168"
 msgid "Now / Next"
@@ -724,11 +724,11 @@ msgstr "רשימת מידע"
 
 msgctxt "#31193"
 msgid "Box Office"
-msgstr "קוּפָּה"
+msgstr "בקוּפָות"
 
 msgctxt "#31194"
 msgid "Show plot for Hub widgets"
-msgstr "הראה עלילה עבור יישומוני רכזת"
+msgstr "הראה עלילה עבור יישומוני רכזת (Hub)"
 
 msgctxt "#31195"
 msgid "Allow widget reloading"
@@ -756,7 +756,7 @@ msgstr "בחר מצב תצוגה"
 
 msgctxt "#31202"
 msgid "Unlock View"
-msgstr "לבטל נעילת תצוגה"
+msgstr "בטל נעילת תצוגה"
 
 msgctxt "#31203"
 msgid "This view mode is currently locked to the content type"
@@ -764,7 +764,7 @@ msgstr "מצב תצוגה זה נעול כעת לסוג התוכן"
 
 msgctxt "#31204"
 msgid "Do you wish to unlock it and set a new view mode?"
-msgstr "האם ברצונך לפתוח אותו ולהגדיר מצב תצוגה חדש?"
+msgstr "האם ברצונך לפתוח את הנעילה ולהגדיר מצב תצוגה חדש?"
 
 msgctxt "#31205"
 msgid "Plain List"
@@ -776,7 +776,7 @@ msgstr "רשימת מידע 3"
 
 msgctxt "#31207"
 msgid "Medium Icon"
-msgstr "סמלים בינונים"
+msgstr "סמלילים בינונים"
 
 msgctxt "#31208"
 msgid "Lovefilm"
@@ -816,7 +816,7 @@ msgstr "אפשר פעולת - חזור"
 
 msgctxt "#31217"
 msgid "Enables returning directly to the point of origin when shortcuts are used."
-msgstr "אפשר חזרה לנקודת התחלה כאשר משתמשים בקיצורים."
+msgstr "אפשר חזרה לנקודת ההתחלה כאשר משתמשים בקיצורים."
 
 msgctxt "#31218"
 msgid "Activate subtitles"
@@ -896,11 +896,11 @@ msgstr "הבא:"
 
 msgctxt "#31237"
 msgid "ClearArt position"
-msgstr "מיקום של 'לוגו שקוף'"
+msgstr "מיקום של אמנות שקופה"
 
 msgctxt "#31238"
 msgid "Sets the ClearArt position during playback."
-msgstr "קבע את המיקום של הלוגו השקוף במהלך ניגון."
+msgstr "קבע את המיקום של אמנות שקופה במהלך ניגון."
 
 msgctxt "#31239"
 msgid "Center"
@@ -929,7 +929,7 @@ msgstr "עמעם את מסך ההגדרות"
 msgctxt "#31245"
 msgid ""
 "Ignores the user's background settings and darkens the screens for better visibility."
-msgstr "תתעלם מהגדרות הרקע של המשתמש ותחשיך את המסכים לקבלת נראות טובה יותר."
+msgstr "תתעלם מהגדרות הרקע של המשתמש ותחשיך את המסכים לקבלת ניראות טובה יותר."
 
 msgctxt "#31246"
 msgid "Go to fullscreen on playback"
@@ -949,7 +949,7 @@ msgstr "תשתמש בתפריט תוכן אנכי במקום בתפריט האו
 
 msgctxt "#31250"
 msgid "Show DiscArt"
-msgstr "תראה גרפיקת דיסק"
+msgstr "הצג גרפיקת דיסק"
 
 msgctxt "#31251"
 msgid "RightList"
@@ -985,7 +985,7 @@ msgstr "קבוצה זו מכילה את ההגדרות לניהול היישומ
 
 msgctxt "#31259"
 msgid "Show the widget item duration"
-msgstr "תראה את משך זמן הפריט ביישומון"
+msgstr "התג את משך זמן הפריט ביישומון"
 
 msgctxt "#31260"
 msgid "Enables the duration display of the focused item within the widgets."
@@ -1021,7 +1021,7 @@ msgstr "תצוגה רוחבית"
 
 msgctxt "#31268"
 msgid "Show showcase widget on down"
-msgstr "הראה יישומון [B]עטיפות[/B] בלחיצה 'למטה'"
+msgstr "הראה יישומון [B]עטיפות[/B] בלחיצה על לחצן למטה"
 
 msgctxt "#31269"
 msgid "Miscellaneous"
@@ -1033,7 +1033,7 @@ msgstr "התקן ממאגר הרחבות או מקובץ זיפ"
 
 msgctxt "#31271"
 msgid "PVR"
-msgstr "מקליט ווידאו אישי"
+msgstr "מקליט ווידאו אישי PVR"
 
 msgctxt "#31272"
 msgid "Displays a window to setup the Showcase widgets type and layout."
@@ -1041,7 +1041,7 @@ msgstr "הצגת חלון להגדרת סוג יישומונים, תצוגת ה�
 
 msgctxt "#31273"
 msgid "Displays the showcase widget when pressing down on menu items without submenus."
-msgstr "הצגת יישומון תצוגת העטיפות בעת לחיצת 'למטה' כאשר אין תפריטי משנה."
+msgstr "הצגת יישומון תצוגת העטיפות בעת לחיצת למטה כאשר אין תת תפריטים."
 
 msgctxt "#31274"
 msgid "View system events"
@@ -1057,11 +1057,11 @@ msgstr "התאמת יישומון תצוגת עטיפות"
 
 msgctxt "#31277"
 msgid "Show widget backgrounds on focus"
-msgstr "הצג רקע היישומון כאשר הוא מסומן"
+msgstr "הצג רקע היישומון כאשר הוא ממוקד"
 
 msgctxt "#31278"
 msgid "The widget backgrounds will be shown only when the widget is focused (on up)."
-msgstr "רקעי היישומון יוצגו רק כאשר היישומון מסומן ופעיל."
+msgstr "רקעי היישומון יוצגו רק כאשר היישומון ממוקד ופעיל."
 
 msgctxt "#31500"
 msgid "None"
@@ -1113,11 +1113,11 @@ msgstr "בטל הצגת סיווג תוכן לא תואם לגיל"
 
 msgctxt "#31512"
 msgid "Show ClearArt on video info screens"
-msgstr "הצג 'לוגו שקוף' במסכי מידע לווידאו"
+msgstr "הצג  אמנות שקופה במסכי מידע לווידאו"
 
 msgctxt "#31513"
 msgid "Show movies/tv shows ClearLogo artwork"
-msgstr "הצג 'לוגו שקוף' של סרטים וסדרות"
+msgstr "הצג סמל שקוף של סרטים וסדרות"
 
 msgctxt "#31514"
 msgid "active"
@@ -1141,7 +1141,7 @@ msgstr "כתוביות"
 
 msgctxt "#31519"
 msgid "Show artist ClearLogos"
-msgstr "הראה 'לוגו שקוף' של האמן"
+msgstr "הראה סמלים שקופים של האמן"
 
 msgctxt "#31520"
 msgid "Path to musics directory"
@@ -1165,7 +1165,7 @@ msgstr "גלגל לאחור (אחזר)"
 
 msgctxt "#31525"
 msgid "Show ClearArt on video info screens"
-msgstr "הצג 'לוגו שקוף' במסכי מידע הווידאו"
+msgstr "הצג אמנות שקופה במסכי מידע הווידאו"
 
 msgctxt "#31526"
 msgid "Back to Fullscreen"
@@ -1173,7 +1173,7 @@ msgstr "חזרה למסך מלא"
 
 msgctxt "#31527"
 msgid "Show ClearArt with the NextUp Notification add-on"
-msgstr "הצג 'לוגו שקוף' בעת התרעה על השידור הבא"
+msgstr "הצג אמנות שקופה בעת התרעה על השידור הבא"
 
 msgctxt "#31528"
 msgid "Channels"
@@ -1205,7 +1205,7 @@ msgstr "הרצה אחורה"
 
 msgctxt "#31535"
 msgid "Show ClearLogo on widget tiles"
-msgstr "הצג סמל שקוף באריחי יישומון"
+msgstr "הצג סמלים שקופים באריחי יישומון"
 
 msgctxt "#31536"
 msgid "This category contains the settings for the home menu."
@@ -1226,7 +1226,7 @@ msgstr "קבוצה זו מכילה את ההגדרות עבור תצוגת מס�
 msgctxt "#31540"
 msgid ""
 "This category contains the settings for the header and a few settings for the hubs."
-msgstr "קבוצה זו מכילה את ההגדרות עבור הכותרת וכמה הגדרות עבור הרכזת."
+msgstr "קבוצה זו מכילה את ההגדרות עבור הכותרת וכמה הגדרות עבור הרכזת (Hub)."
 
 msgctxt "#31541"
 msgid ""
@@ -1267,10 +1267,10 @@ msgid ""
 "customisation dialog[/B]] Choose to display or not posters individually for each "
 "widget via customise home menu."
 msgstr ""
-"בחר איך פוסטרים מוצגים ביחד עם יישומונים. [[B]לעולם לא[/B]] הפוסטר לא יוצג עם "
-"היישומונים. [[B]תמיד[/B]] פוסטרים תמיד יוצגו עם היישומונים. [[B]בעת לחיצה 'למעלה'[/"
-"B]] פוסטרים יוצגו כאשר יילחץ לחצן ה'למעלה'. [[B]מוגדר אישית בתפריט התאמה אישית[/B]] "
-"בחר האם להציג או להסתיר פוסטרים, עבור כל יישומון בנפרד, בתפריט ההתאמה האישית."
+"בחר איך פוסטרים מוצגים ביחד עם יישומונים. [B]לעולם לא[/B] הפוסטר לא יוצג עם "
+"היישומונים. [B]תמיד[/B] פוסטרים תמיד יוצגו עם היישומונים. [B]בעת לחיצה למעלה[/B] "
+"פוסטרים יוצגו כאשר יילחץ לחצן הלמעלה. [B]מוגדר אישית בתפריט התאמה אישית[/B] בחר האם "
+"להציג או להסתיר פוסטרים, עבור כל יישומון בנפרד, בתפריט ההתאמה האישית."
 
 msgctxt "#31549"
 msgid "Shows discs with widgets."
@@ -1278,11 +1278,11 @@ msgstr "תראה דיסקים עם יישומונים."
 
 msgctxt "#31550"
 msgid "Shows ClearLogos with widgets."
-msgstr "תראה 'סמלים שקופים' עם היישומון."
+msgstr "תראה סמלים שקופים עם היישומון."
 
 msgctxt "#31551"
 msgid "Choose home tile icon."
-msgstr "בחר סמל אריח בית."
+msgstr "בחר סמליל אריח בית."
 
 msgctxt "#31552"
 msgid "Sets home tile text."
@@ -1339,8 +1339,8 @@ msgid ""
 "slideshow in background. [[B]Album wall[/B]] show a background with covers of all "
 "albums."
 msgstr ""
-"בחר את הרקע בעת תצוגת מוזיקה. [[B]ללא[/B]] הצג רקע שחור. [[B]פאנארט[/B]] הצג פאנארט "
-"של האמן. [[B]מצגת אמן[/B]] הצג את מצגת האמן כרקע. [[B]קיר אלבום[/B]] הצג רקע מלא בכל "
+"בחר את הרקע בעת תצוגת הדמית מוזיקה. [B]ללא[/B]הצג רקע שחור. [B]פאנארט[/B] הצג פאנארט "
+"של האמן. [B]מצגת אמן[/B] הצג את מצגת האמן כרקע. [B]קיר אלבום[/B] הצג רקע מלא בכל "
 "האלבומים."
 
 msgctxt "#31565"
@@ -1349,65 +1349,65 @@ msgstr "מצגת אמן"
 
 msgctxt "#31566"
 msgid "Shows visualisation effects on music visualisation."
-msgstr "הצג אפקטים חזותיים על תצוגת מוסיקה."
+msgstr "מציג אפקט הדמיה בתצוגת מוסיקה."
 
 msgctxt "#31567"
 msgid "Gives a displacement effect to artist Fanart."
-msgstr "תן אפקט תזוזה לפאנארט האמן."
+msgstr "נותן אפקט תזוזה לפאנארט האמן."
 
 msgctxt "#31568"
 msgid "Disables the header tile on music visualisation."
-msgstr "השבת את אריח הכותרת בעת תצוגת מוסיקה."
+msgstr "משבית את אריח הכותרת בעת תצוגת הדמיה במוסיקה."
 
 msgctxt "#31569"
 msgid "Shows the clock on music visualisation."
-msgstr "הצג את השעון בעת תצוגת מוסיקה."
+msgstr "מציג את השעון בעת תצוגת הדמיה במוסיקה."
 
 msgctxt "#31570"
 msgid "Shows the weather on music visualisation."
-msgstr "הצג את מזג האוויר בעת תצוגת מוסיקה."
+msgstr "מציג את מזג האוויר בעת תצוגת הדמיה במוסיקה."
 
 msgctxt "#31571"
 msgid "Shows the info panel using the [B]Info[/B] button when viewing a video."
-msgstr "הצג את פאנל המידע בעזרת כפתור [B]'מידע'[/B] בעת צפייה בווידאו."
+msgstr "מציג את פאנל המידע בעזרת כפתור [B]מידע[/B] בעת צפייה בווידאו."
 
 msgctxt "#31572"
 msgid "Shows ClearArt along with the info panel."
-msgstr "מציג את הלוגו השקוף ביחד עם לוח המידע."
+msgstr "מציג אמנות שקופה ביחד עם לוח המידע."
 
 msgctxt "#31573"
 msgid "Shows TV Shows ClearArt with the [B]NextUp Notification[/B] add-on."
 msgstr ""
-"הצג את הלוגו השקוף של שידור הבא בתוכניות טלוויזיה בעזרת הרחבת [B]NextUp "
-"Notification[/B]."
+"מציג אמנות שקופה של השידור הבא בתוכניות טלוויזיה בעזרת הרחבת [B]NextUp Notification[/"
+"B]."
 
 msgctxt "#31574"
 msgid "Shows the clock on header."
-msgstr "הראה את השעון בכותרת."
+msgstr "מציג את השעון בכותרת."
 
 msgctxt "#31575"
 msgid "Shows the clock with weather on header."
-msgstr "הראה את השעון יחד עם מזג האוויר בכותרת."
+msgstr "מציג את השעון יחד עם מזג האוויר בכותרת."
 
 msgctxt "#31576"
 msgid "Shows the text header."
-msgstr "הראה את טקסט הכותרת."
+msgstr "מציג את טקסט הכותרת."
 
 msgctxt "#31577"
 msgid "Shows the number of unwatched media rather than the total number of media."
-msgstr "הראה את מספר התכנים שלא נצפו, במקום את מספר התכנים הכולל."
+msgstr "מציג את מספר התכנים שלא נצפו, במקום את מספר התכנים הכולל."
 
 msgctxt "#31578"
 msgid "Shows the header tile in the same colour as the primary highlight colour."
-msgstr "התאם את צבע אריח הכותרת לצבע ההדגשה הראשי."
+msgstr "המציג את צבע אריח הכותרת מותאם לצבע ההדגשה הראשי."
 
 msgctxt "#31579"
 msgid ""
 "Shows media info icons such as ratio, resolution, video codec, audio codec, number "
 "of channels..."
 msgstr ""
-"הצג סמלי פרטי המדיה כגון: יחס תצוגה, רזולוציה, מקודד ווידאו, מקודד אודיו, מספר ערוצי "
-"שמע..."
+"הצג סמלילי פרטי המדיה כגון: יחס תצוגה, רזולוציה, מקודד ווידאו, מקודד אודיו, מספר "
+"ערוצי שמע..."
 
 msgctxt "#31580"
 msgid "Shows a synopsis of videos in the forefront after a few seconds."
@@ -1419,59 +1419,59 @@ msgstr "מציג נתוני מיון וקווי כותרת."
 
 msgctxt "#31582"
 msgid "Hides the display of votes and notes in the entire skin."
-msgstr "הסתר את התצוגה של ההצבעות והערות בכל המעטפת."
+msgstr "מסתיר את התצוגה של ההצבעות והערות בכל המעטפת."
 
 msgctxt "#31583"
 msgid "Hides the display of MPAA in the entire skin."
-msgstr "הסתר את סיווג [B]'התוכן לפי גיל'[/B]בכל המעטפת."
+msgstr "מסתיר את סיווג [B]התוכן לפי גיל[/B] בכל המעטפת."
 
 msgctxt "#31584"
 msgid "Hides the display of Box Office info on video info screens."
-msgstr "מסתיר את נתוני [B] 'הכנסות הסרט בקופות '[/B]במידע על הסרט."
+msgstr "מסתיר את נתוני [B]הכנסות הסרט בקופות[/B] במידע על הסרט."
 
 msgctxt "#31585"
 msgid "Shows ClearArt on video info screens."
-msgstr "הצג 'לוגו שקוף' במסך המידע של הווידאו."
+msgstr "מציג אמנות שקופה במסך המידע של הווידאו."
 
 msgctxt "#31586"
 msgid "Shows movies/tv shows ClearLogo on header."
-msgstr "הצג את גרפיקת הסמלים של הסרטים והסדרות בכותרת."
+msgstr "מציג את סמלים שקופים של הסרטים והסדרות בכותרת."
 
 msgctxt "#31587"
 msgid "Shows the current artist ClearLogo on header."
-msgstr "הצג את גרפיקת הסמל של האמן הנוכחי בכותרת."
+msgstr "מציג את סמלים שקופים של האמן הנוכחי בכותרת."
 
 msgctxt "#31588"
 msgid "Sets the folder path where music files are located."
-msgstr "הגדר את נתיב התיקייה שבה נמצאים קבצי המוסיקה."
+msgstr "מגדיר את נתיב התיקייה שבה נמצאים קבצי המוסיקה."
 
 msgctxt "#31589"
 msgid "Shows album DiscArt on album info screens."
-msgstr "הצג את גרפיקת הדיסק של האלבום במסכי מידע האלבום."
+msgstr "מציג את גרפיקת הדיסק של האלבום במסכי מידע האלבום."
 
 msgctxt "#31590"
 msgid "Sets the folder path where music files are located."
-msgstr "הגדר את נתיב התיקייה שבה נמצאים קבצי מוסיקה."
+msgstr "מגדיר את נתיב התיקייה שבה נמצאים קבצי מוסיקה."
 
 msgctxt "#31591"
 msgid "Sets the primary colour for focused items."
-msgstr "הגדר צבע ראשי לפריטים הממוקדים."
+msgstr "מגדיר צבע ראשי לפריטים הממוקדים."
 
 msgctxt "#31592"
 msgid "Sets the secondary colour used by some texts."
-msgstr "הגדר צבע משני לשימוש בטקסט."
+msgstr "מגדיר צבע משני לשימוש בחלק מהטקסט."
 
 msgctxt "#31593"
 msgid "Resets the main colour to default."
-msgstr "אפס את הצבע הראשי לברירת המחדל."
+msgstr "מאפס את הצבע הראשי לברירת המחדל."
 
 msgctxt "#31594"
 msgid "Sets a colour for each tile of the home bar menu via customisation home menu."
-msgstr "הגדר צבע עבור כל אריח של תפריט הבית, באמצעות תפריט הבית בהתאמה אישית."
+msgstr "מגדיר צבע עבור כל אריח של תפריט הבית, באמצעות תפריט הבית בהתאמה אישית."
 
 msgctxt "#31595"
 msgid "Shows unfocused tiles in colour."
-msgstr "הצג צבע על אריחים שלא מסומנים."
+msgstr "מציג צבע על אריחים שלא מסומנים."
 
 msgctxt "#31596"
 msgid "Lock settings for use Kodi in self-service."
@@ -1483,23 +1483,23 @@ msgstr "הגדר פונקציות שונות של תפריט ההפעלה."
 
 msgctxt "#31598"
 msgid "Sets the icon to be displayed when loading."
-msgstr "קבע את הסמל שיוצג בעת הטעינה."
+msgstr "קובע את הסמליל שיוצג בעת הטעינה."
 
 msgctxt "#31599"
 msgid "Shows an opaque background on skin menus and windows."
-msgstr "הראה רקע אטום על תפריטי וחלונות המעטפת."
+msgstr "מציג רקע אטום על תפריטי וחלונות המעטפת."
 
 msgctxt "#31600"
 msgid "Select the genre icons resource add-on."
-msgstr "הגדר את ההרחבה לסמלי [B] 'סגנון'[/B]."
+msgstr "הגדר את ההרחבה לסמלילי [B] סגנון[/B]."
 
 msgctxt "#31601"
 msgid "Select a photo, a video or a tune to run when Kodi starts up."
-msgstr "בחר תמונה, ווידאו או צליל, אשר יפעלו כאשר קודי עולה."
+msgstr "בחר תמונה, ווידאו או צליל שיופעלו כאשר קודי עולה."
 
 msgctxt "#31602"
 msgid "Shows debug info on the interface."
-msgstr "הצג מידע ניפוי שגיאות על הממשק."
+msgstr "מציג מידע ניפוי שגיאות על הממשק."
 
 msgctxt "#31603"
 msgid "Debug infos"
@@ -1517,7 +1517,8 @@ msgctxt "#31606"
 msgid ""
 "Resets all default skin settings. [B]CAUTION![/B] This will replace all the current "
 "settings."
-msgstr "אפס את כל הגדרות המעטפת לברירת מחדל. [B]זהירות![/B] כל ההגדרות הנוכחות יימחקו."
+msgstr ""
+"מאפס את כל הגדרות המעטפת לברירת מחדל. [B]זהירות![/B] כל ההגדרות הנוכחות יימחקו."
 
 msgctxt "#31607"
 msgid "Necessary Addons"
@@ -1537,7 +1538,7 @@ msgid ""
 "[B]Image Resource Select Addon[/B] add-on is needed to select addons (genres icons, "
 "studios icons, weather icons, etc...)."
 msgstr ""
-"[B]Image Resource Select Addon[/B] - ההרחבה נחוצה על מנת לבחור הרחבות (סמלי סגנון, "
+"[B]Image Resource Select Addon[/B] - ההרחבה נחוצה על מנת לבחור הרחבות (סמלילי סגנון, "
 "סמלי אולפנים, סמלי מזג אוויר ועוד...)."
 
 msgctxt "#31611"
@@ -1602,7 +1603,7 @@ msgid ""
 "[B]cdART Manager[/B] add-on is needed to download all ClearLogo and CDArt of Music "
 "Library."
 msgstr ""
-"[B]cdART Manager[/B] - ההרחבה נחוצה על מנת להוריד את הגרפיקה הנוספת לספריית המוזיקה."
+"[B]cdART Manager[/B] - ההרחבה נחוצה על מנת להוריד את הסמלים והגרפיקה לספריית המוזיקה."
 
 msgctxt "#31622"
 msgid "[B]YouTube[/B] add-on is needed to watch movies trailers."
@@ -1610,7 +1611,7 @@ msgstr "[B]YouTube[/B] - ההרחבה נחוצה על מנת לצפות בקדי
 
 msgctxt "#31623"
 msgid "Shows the plot on Hub Fanart."
-msgstr "הצג את העלילה על הפאנארט של הרכזת."
+msgstr "הצג את העלילה על הפאנארט של הרכזת (Hub)."
 
 msgctxt "#31624"
 msgid "Recently Played Episodes"
@@ -1630,39 +1631,39 @@ msgstr "שקיפות פאנארט"
 
 msgctxt "#31628"
 msgid "Sets fanart colour and opacity."
-msgstr "קבע שקיפות וצבע הפאנארט."
+msgstr "קובע שקיפות וצבע הפאנארט."
 
 msgctxt "#31629"
 msgid "Show media flags on Hub widgets"
-msgstr "הצג דגלי מדיה על יישומון הרכזת"
+msgstr "הצג דגלי מדיה על יישומון הרכזת (Hub)"
 
 msgctxt "#31630"
 msgid ""
 "Shows media info icons on Hub widgets such as ratio, resolution, video codec, audio "
 "codec, number of channels..."
 msgstr ""
-"הצג סמלי מידע מדיה על היישומון כגון: יחס תצוגה, רזולוציה, מקודד ווידאו, מקודד אודיו, "
-"מספר ערוצי שמע..."
+"הצגת סמלילי מידע מדיה על היישומון כגון: יחס תצוגה, רזולוציה, מקודד ווידאו, מקודד "
+"אודיו, מספר ערוצי שמע..."
 
 msgctxt "#31631"
 msgid "Show ClearLogos on Hub widgets"
-msgstr "הראה גרפיקת 'סמלים שקופים' ביישומוני רכזת"
+msgstr "הראה סמלים שקופים ביישומוני רכזת (Hub)"
 
 msgctxt "#31632"
 msgid "Show movies/tv shows ClearLogos on Hub widget"
-msgstr "הראה גרפיקת 'סמלים שקופים' של סרטים וסדרות ביישומוני רכזת"
+msgstr "הראה סמלים שקופים של סרטים וסדרות ביישומוני רכזת (Hub)"
 
 msgctxt "#31633"
 msgid "Weather icons"
-msgstr "סמלי מזג אוויר"
+msgstr "סמלילי מזג אוויר"
 
 msgctxt "#31634"
 msgid "Select the weather icons resource add-on."
-msgstr "בחר את ההרחבה עבור משאבי סמלי מזג אוויר."
+msgstr "בחר את ההרחבה עבור משאבי סמלילי מזג אוויר."
 
 msgctxt "#31635"
 msgid "Music visualisation background"
-msgstr "רקע תצוגת מוזיקה"
+msgstr "רקע תצוגת הדמיה למוזיקה"
 
 msgctxt "#31636"
 msgid "Beveled Tiles"
@@ -1674,11 +1675,11 @@ msgstr "קיר אלבום"
 
 msgctxt "#31638"
 msgid "Hide all playback info on music visualisation background."
-msgstr "הסתר את כל מידע הניגון כאשר נבחר רקע תצוגת מוזיקה."
+msgstr "הסתר את כל מידע הניגון כאשר נבחר רקע תצוגת הדמיה למוזיקה."
 
 msgctxt "#31639"
 msgid "Back to music visualisation"
-msgstr "חזור אל תצוגת מוזיקה"
+msgstr "חזור אל תצוגת הדמיה למוזיקה"
 
 msgctxt "#31640"
 msgid "Colour"
@@ -1714,7 +1715,7 @@ msgstr "תמונות ממוזערות"
 
 msgctxt "#31648"
 msgid "Hide infos"
-msgstr "הסתר מידע"
+msgstr "הסתר את כל המידע"
 
 msgctxt "#31649"
 msgid "Debug grid"
@@ -1742,14 +1743,14 @@ msgstr "אפשר צבע טקסט נפרד עבור כל אריח, בהתאמת �
 
 msgctxt "#31655"
 msgid "Sets the text colour for tiles text on home menu."
-msgstr "בחר את צבע הטקסט עבור טקסט אריחים בתפריט הבית."
+msgstr "קובע את צבע הטקסט עבור טקסט אריחים בתפריט הבית."
 
 msgctxt "#31656"
 msgid ""
 "Sets a text colour for each tile of the home bar menu via the customisation home "
 "menu."
 msgstr ""
-"בחר צבע טקסט עבור כל אריח של סרגל האריחים המרכזי, באמצעות תפריט הבית להתאמה אישית."
+"קובע צבע טקסט עבור כל אריח של סרגל האריחים המרכזי, באמצעות תפריט הבית להתאמה אישית."
 
 msgctxt "#31657"
 msgid "Background colour and opacity"
@@ -1801,19 +1802,19 @@ msgstr "אריחים משופעים ריקים"
 
 msgctxt "#31669"
 msgid "Studio icons"
-msgstr "סמלי סטודיו"
+msgstr "סמלילי סטודיו"
 
 msgctxt "#31670"
 msgid "Select the studio icons resource add-on."
-msgstr "בחר את ההרחבה לסמלי סטודיו."
+msgstr "בחר את ההרחבה לסמלילי סטודיו."
 
 msgctxt "#31671"
 msgid "Show studio icons on video info screens"
-msgstr "הצג סמלי סטודיו במסכי המידע של הווידאו"
+msgstr "הצג סמלילי סטודיו במסכי המידע של הווידאו"
 
 msgctxt "#31672"
 msgid "Shows studio icons on video info screens."
-msgstr "מציג את סמלי סטודיו במסכי המידע של הווידאו."
+msgstr "מציג את סמלילי סטודיו במסכי המידע של הווידאו."
 
 msgctxt "#31673"
 msgid "Home bar colour and opacity"
@@ -1825,7 +1826,7 @@ msgstr "אפס את הצבע והאטימות של סרגל האריחים המ�
 
 msgctxt "#31675"
 msgid "Sets the colour and opacity for the home bar menu."
-msgstr "קבע את הצבע והשקיפות לסרגל האריחים המרכזי."
+msgstr "קובע את הצבע והשקיפות לסרגל האריחים המרכזי."
 
 msgctxt "#31676"
 msgid "Resets the home bar colour and opacity."
@@ -1849,7 +1850,7 @@ msgstr "אפס את הצבע והשקיפות של יישומון האריח ה�
 
 msgctxt "#31681"
 msgid "Sets the colour and opacity of the primary widget tile."
-msgstr "קבע את הצבע והשקיפות של יישומון האריח המרכזי."
+msgstr "קובע את הצבע והשקיפות של יישומון האריח המרכזי."
 
 msgctxt "#31682"
 msgid "Resets the colour and opacity of the primary widget tile."
@@ -1857,7 +1858,7 @@ msgstr "מאפס את הצבע והשקיפות של יישומון האריח �
 
 msgctxt "#31683"
 msgid "Sets the colour and opacity of the secondary widget tile."
-msgstr "קבע את הצבע והשקיפות של יישומון האריח המשני."
+msgstr "קובע את הצבע והשקיפות של יישומון האריח המשני."
 
 msgctxt "#31684"
 msgid "Resets the colour and opacity of the secondary widget tile."
@@ -1873,15 +1874,15 @@ msgstr "החלף יישומון פאנארט עם הרקע"
 
 msgctxt "#31687"
 msgid "Replaces the widget fanart with the home background."
-msgstr "החלף יישומון פאנארט עם רקע הבית."
+msgstr "מחליף את יישומון פאנארט עם רקע הבית."
 
 msgctxt "#31688"
 msgid "Sets a protection password for menu items."
-msgstr "קבע סיסמת הגנה לפריטי התפריט."
+msgstr "קובע סיסמת הגנה לפריטי התפריט."
 
 msgctxt "#31689"
 msgid "Sets duration white menu items will be available after entering password."
-msgstr "קבע את משך הזמן שבו פריטי תפריט יהיו מאופשרים לאחר הקלדת סיסמה."
+msgstr "קובע את משך הזמן שבו פריטי תפריט יהיו מאופשרים לאחר הקלדת סיסמה."
 
 msgctxt "#31690"
 msgid "Password protection"
@@ -1909,19 +1910,19 @@ msgstr "לחץ [B]Enter[/B] והקלד את הסיסמה."
 
 msgctxt "#31696"
 msgid "Incorrect password! Please Retry."
-msgstr "סיסמה שגויה אנא נסה שנית."
+msgstr "הסיסמה שגויה! אנא נסה שנית."
 
 msgctxt "#31697"
 msgid "Correct password! This menu is now available for"
-msgstr "הסיסמה נכונה! התפריט הזה זמין למשך -"
+msgstr "הסיסמה נכונה! התפריט יהיה זמין למשך"
 
 msgctxt "#31698"
 msgid "minute(s)"
-msgstr "דקות"
+msgstr "דקה/ות"
 
 msgctxt "#31699"
 msgid "Enable day/night colour themes"
-msgstr "אפשר צבעי נושא ליום / לילה"
+msgstr "אפשר צבעי ערכת נושא ליום / לילה"
 
 msgctxt "#31700"
 msgid "Theme to use at day time"
@@ -1929,7 +1930,7 @@ msgstr "ערכת נושא לשימוש ביום"
 
 msgctxt "#31701"
 msgid "Theme to use at night time"
-msgstr "ערכת נושא להשתמש בלילה"
+msgstr "ערכת נושא לשימוש  בלילה"
 
 msgctxt "#31702"
 msgid "every day at"
@@ -1941,11 +1942,11 @@ msgstr "מחליף  את השינוי האוטומטי של ערכות הנוש�
 
 msgctxt "#31704"
 msgid "Selects the theme to use during the day."
-msgstr "בחר את ערכות הנושא להשתמש ביום."
+msgstr "בחירת ערכות הנושא לשימוש ביום."
 
 msgctxt "#31705"
 msgid "Selects the theme to use on nights."
-msgstr "בחר את ערכות הנושא להשתמש בלילה."
+msgstr "בחירת את ערכות הנושא לשימוש בלילה."
 
 msgctxt "#31706"
 msgid "Create and manage all colour themes."
@@ -1959,12 +1960,11 @@ msgctxt "#31708"
 msgid ""
 "Protect home menu items with a password. The protection of each item is performed in "
 "[B]Customise Home Menu[/B]."
-msgstr ""
-"הגן על תפריטי הבית בסיסמה. ההגנה על כל פריט מבוצעת בתפריט [B]'התאמה האישית'[/B]."
+msgstr "הגן על תפריטי הבית בסיסמה. ההגנה על כל פריט מבוצעת בתפריט [B]התאמה האישית[/B]."
 
 msgctxt "#31709"
 msgid "Icons and texts only"
-msgstr "סמלים וטקסט בלבד"
+msgstr "סמלילים וטקסט בלבד"
 
 msgctxt "#31710"
 msgid "Show the info panel when video is paused"
@@ -1976,7 +1976,7 @@ msgstr "מציג את לוח המידע כאשר הווידאו מושהה."
 
 msgctxt "#31712"
 msgid "second(s)"
-msgstr "שניות"
+msgstr "שניה/ות"
 
 msgctxt "#31713"
 msgid "Time to display"
@@ -2001,7 +2001,7 @@ msgstr "הראה מחוונים עם מידע היישומון"
 msgctxt "#31718"
 msgid ""
 "Shows indicators of watched, unwatched, in progress and new videos with widget infos."
-msgstr "הראה מחוונים של נצפה, לא נצפה, בזמן ההתקדמות ובווידאו חדש יחד עם מידע יישומון."
+msgstr "מראה מחוונים של נצפה, לא נצפה, בזמן ההתקדמות ובווידאו חדש יחד עם מידע יישומון."
 
 msgctxt "#31719"
 msgid "Info displayed for episodes"
@@ -2025,11 +2025,11 @@ msgstr "פרקים"
 
 msgctxt "#31724"
 msgid "Unwatched"
-msgstr "לא נצפו"
+msgstr "לא נצפה"
 
 msgctxt "#31725"
 msgid "Watched"
-msgstr "נצפו"
+msgstr "נצפה"
 
 msgctxt "#31726"
 msgid ""
@@ -2039,9 +2039,9 @@ msgid ""
 "Episodes[/B]] will show the number of episodes already viewed for a TV shows or a "
 "season."
 msgstr ""
-"קבע המידע שיוצג בתוכניות טלוויזיה ועונות. [[B]כל הפרקים[/B]] יציג את מספר כל הפרקים "
-"לסדרה / עונה. [[B]פרקים שלא נצפו[/B]] יציג את מספר הפרקים שלא נצפו לסדרה / עונה. "
-"[[B]פרקים שנצפו[/B]] יציג את מספר הפרקים שכבר נצפו לסדרה / עונה. "
+"קובע את המידע שיוצג בתוכניות טלוויזיה ועונות. [[B]כל הפרקים[/B]] יציג את מספר כל "
+"הפרקים לסדרה או עונה. [[B]פרקים שלא נצפו[/B]] יציג את מספר הפרקים שלא נצפו לסדרה או "
+"עונה. [[B]פרקים שנצפו[/B]] יציג את מספר הפרקים שכבר נצפו לסדרה או עונה."
 
 msgctxt "#31727"
 msgid ""
@@ -2073,7 +2073,7 @@ msgstr "שודר/ה בפעם האחרונה ב-"
 
 msgctxt "#31733"
 msgid "Hide Next Aired infos"
-msgstr "הסתר מידע שידור פרק הבא"
+msgstr "הסתר מידע על השידור של הפרק הבא"
 
 msgctxt "#31734"
 msgid "Indicators"
@@ -2085,11 +2085,11 @@ msgstr "הכל"
 
 msgctxt "#31736"
 msgid "Hide unwatched indicator only"
-msgstr "הסתר מחוונים של [B]'לא נצפו'[/B]"
+msgstr "הסתר מחוונים של לא נצפה"
 
 msgctxt "#31737"
 msgid "Hub Image"
-msgstr "תמונת רכזת"
+msgstr "תמונת רכזת (Hub)"
 
 msgctxt "#31738"
 msgid "Unwatched Movies"
@@ -2108,19 +2108,20 @@ msgid ""
 "[B]colorbox Script[/B] add-on is needed to display pixelated fanart on music "
 "visualisation background."
 msgstr ""
-"[B]colorbox Script[/B] - ההרחבה נחוצה על מנת להציג פאנארט מפוקסל כרקע תצוגת המוזיקה."
+"[B]colorbox Script[/B] - ההרחבה נחוצה על מנת להציג פאנארט מפוקסל כרקע תצוגת הדמיה "
+"למוזיקה."
 
 msgctxt "#31742"
 msgid "Logos with Fanarts/Thumbs"
-msgstr "סמלים עם פאנארט / תמונות ממוזערות"
+msgstr "סמלים עם פאנארט/תמונות ממוזערות"
 
 msgctxt "#31743"
 msgid "Big Wide with ClearArt"
-msgstr "רחב וגדול עם גרפיקת 'לוגו שקוף'"
+msgstr "רחב וגדול עם אמנות שקופה"
 
 msgctxt "#31744"
 msgid "ClearArt List"
-msgstr "רשימת גרפיקות 'לוגו שקוף'"
+msgstr "רשימת אמנות שקופה"
 
 msgctxt "#31745"
 msgid "Logos List"
@@ -2150,38 +2151,38 @@ msgstr "מציג גרפיקת דיסק במסכי מידע הווידאו."
 
 msgctxt "#31751"
 msgid "Hide submenu icons"
-msgstr "הסתר סמלי תפרטי משנה"
+msgstr "הסתר סמלילי תת התפריט"
 
 msgctxt "#31752"
 msgid "Hides the submenu icons."
-msgstr "מסתיר את אייקוני תפרטי משנה."
+msgstr "מסתיר את סמלילי תת התפרטים."
 
 msgctxt "#31753"
 msgid "Main colour of indicators"
-msgstr "צבע ראשי של המחוון"
+msgstr "צבע ראשי של המחוונים"
 
 msgctxt "#31754"
 msgid "Secondary colour of indicators"
-msgstr "צבע מישני של המחוון"
+msgstr "צבע מישני של המחוונים"
 
 msgctxt "#31755"
 msgid ""
 "Sets the main colour of watched, unwatched, recently added and ongoing indicators."
-msgstr "קובע את הצבע הראשי של מחווני 'נצפו', 'לא נצפו', 'נוספו לאחרונה' 'ומתמשכים'."
+msgstr "קובע את הצבע הראשי של מחווני נצפו, לא נצפו, נוספו לאחרונה ומתמשכים."
 
 msgctxt "#31756"
 msgid ""
 "Sets the secondary colour of watched, unwatched, recently added and ongoing "
 "indicators."
-msgstr "קובע את הצבע המשני של מחווני 'נצפו', 'לא נצפו', 'נוספו לאחרונה' 'ומתמשכים'."
+msgstr "קובע את הצבע המשני של מחווני נצפו, לא נצפו, נוספו לאחרונה ומתמשכים."
 
 msgctxt "#31757"
 msgid "Submenu style"
-msgstr "סגנון תפריט המשנה"
+msgstr "סגנון תת התפריט"
 
 msgctxt "#31758"
 msgid "Sets the submenu style."
-msgstr "הגדר את סגנון תפריט המשנה."
+msgstr "הגדר את סגנון תת התפריט."
 
 msgctxt "#31759"
 msgid "Large"
@@ -2197,15 +2198,15 @@ msgstr "אפשר טעינה מחדש של היישומון."
 
 msgctxt "#31762"
 msgid "Use compact Video OSD"
-msgstr "השתמש בתצוגת מסך ווידאו קומפקטית"
+msgstr "תשתמש בתצוגת מסך ווידאו קומפקטית"
 
 msgctxt "#31763"
 msgid "Use animated artwork"
-msgstr "השתמש בגרפיקה מונפשת"
+msgstr "תשתמש בגרפיקה מונפשת"
 
 msgctxt "#31764"
 msgid "Uses animations instead of static posters and fanart, if available."
-msgstr "השתמש בגרפיקה ופאנרט מונפשת במקום סטטית (אם זמין)."
+msgstr "משתמש בגרפיקה ופאנרט מונפשת במקום סטטית (אם זמין)."
 
 msgctxt "#31765"
 msgid "Compacts the flags into the info popup."
@@ -2213,7 +2214,7 @@ msgstr "מזער את הדגלים לתוך חלונית המידע הקופצת
 
 msgctxt "#31766"
 msgid "Use Extrafanart backgrounds"
-msgstr "השתמש בפאנארטים נוספים כרקע"
+msgstr "תשתמש בפאנארטים נוספים כרקע"
 
 msgctxt "#31767"
 msgid "Enables the auto-rotating Extrafanart, if properly configured."
@@ -2225,7 +2226,7 @@ msgstr "מנהל הקבצים"
 
 msgctxt "#31769"
 msgid "Use the alphabet scrollbar"
-msgstr "השתמש בסרגל גלילה אלפאביתי"
+msgstr "תשתמש בסרגל גלילה אלפאביתי"
 
 msgctxt "#31770"
 msgid ""
@@ -2233,7 +2234,7 @@ msgid ""
 "this setting if you experience performance issues.[/B]"
 msgstr ""
 "מאפשר את סרגל הגלילה האלפאביתי לצורך ניווט מהיר בספרייה. [B]בטל את ההגדרה הזאת אם "
-"אתה חווה בעיות ביצועים![B]"
+"אתה חווה בעיות ביצועים.[B]"
 
 msgctxt "#31771"
 msgid "Use regular scrollbars"
@@ -2251,7 +2252,7 @@ msgstr "פורמט פיקסלים של הווידאו"
 
 msgctxt "#31774"
 msgid "Video Decoder"
-msgstr "מפענח ווידאו"
+msgstr "מקודד ומפענח ווידאו"
 
 msgctxt "#31775"
 msgid "Use dark interface"
@@ -2282,7 +2283,7 @@ msgid ""
 "Uses hours and minutes for all duration flags. Provided by script.duration_axbmcuser "
 "or Skin Helper!"
 msgstr ""
-"תשתמש בשעות ודקות לכל דגלי הזמן. (עושה שימוש ב script.duration_axbmcuser  או ב-Skin "
+"משתמש בשעות ודקות לכל דגלי הזמן. (עושה שימוש ב script.duration_axbmcuser  או ב-Skin "
 "Helper!)"
 
 msgctxt "#31782"
@@ -2315,7 +2316,7 @@ msgstr "תאריך התקנה:"
 
 msgctxt "#31787"
 msgid "Use overlay labels"
-msgstr "תשתמש בתוויות עם כיסוי"
+msgstr "תשתמש בתוויות עם שכבת כיסוי"
 
 msgctxt "#31788"
 msgid "Use shadows on text"
@@ -2323,7 +2324,7 @@ msgstr "תשתמש בצללים על טקסט"
 
 msgctxt "#31789"
 msgid "Uses the selected music artwork as skin background during playback."
-msgstr "משתמש בגרפיקת המוזיקה שנבחרה כרקע המעטפת במהלך ההשמעה."
+msgstr "משתמש בגרפיקת המוזיקה שנבחרה כרקע המעטפת במהלך הניגון."
 
 msgctxt "#31790"
 msgid "Use shadows on the light interface"
@@ -2340,7 +2341,7 @@ msgstr "התאמה אישית לקיצורי הניווט המהיר"
 msgctxt "#31793"
 msgid ""
 "Configures a special shortcuts menu for quick navigation accessible from anywhere."
-msgstr "הגדרת תפריט קיצורי דרך מיוחד, לניווט מהיר ונגיש מכל מיקום."
+msgstr "מגדיר תפריט קיצור דרך מיוחד, לניווט מהיר ונגיש מכל מיקום."
 
 msgctxt "#31794"
 msgid "QuickNav"
@@ -2361,7 +2362,7 @@ msgid ""
 "[B]Animated Busy Spinners Pack[/B] add-on is needed to add extra spinner textures to "
 "the skin."
 msgstr ""
-"[B]Animated Busy Spinners Pack[/B] - הרחבה זו נחוצה על מנת להוסיף טקסטורה של 'עסוק' "
+"[B]Animated Busy Spinners Pack[/B] - הרחבה זו נחוצה על מנת להוסיף טקסטורה של עסוק "
 "נוסף למעטפת."
 
 msgctxt "#31798"
@@ -2375,15 +2376,15 @@ msgstr "מציג דיסק מזוייף מסתובב, כגיבוי במסך תצ�
 
 msgctxt "#31800"
 msgid "OSMC"
-msgstr ""
+msgstr "מרכז מדיה OSMC"
 
 msgctxt "#31801"
 msgid "OpenELEC"
-msgstr ""
+msgstr "מרכז מדיה OpenELEC"
 
 msgctxt "#31802"
 msgid "LibreELEC"
-msgstr ""
+msgstr "מרכז מדיה LibreELEC"
 
 msgctxt "#31803"
 msgid ""
@@ -2395,15 +2396,15 @@ msgstr ""
 
 msgctxt "#31804"
 msgid "Use manfeed's lyrics"
-msgstr "השתמש במילות השיר מתוך manfeed's"
+msgstr "תשתמש במילות השיר מתוך manfeeds"
 
 msgctxt "#31805"
 msgid "Enables coloured and animated lyrics from manfeed instead of the regular one."
-msgstr "אפשר מילות שיר בצבעים ובתנועה במקום הרגילות."
+msgstr "מאפשר מילות שיר בצבעים ובתנועה במקום הרגילות."
 
 msgctxt "#31806"
 msgid "Use bars in Hub menus"
-msgstr "השתמש בסרגלים בתפריטי הרכזת"
+msgstr "תשתמש בסרגלים בתפריטי הרכזת (Hub)"
 
 msgctxt "#31807"
 msgid ""
@@ -2436,7 +2437,7 @@ msgstr "‎הצג מידע יישומון"
 
 msgctxt "#31028"
 msgid "Show background visualisation"
-msgstr "‎הדמיית רקע מונפש"
+msgstr "הצג רקע הדמיה"
 
 msgctxt "#31067"
 msgid "Pages"
@@ -2448,7 +2449,7 @@ msgstr "‎מידע"
 
 msgctxt "#31074"
 msgid "Set submenu"
-msgstr "‎הגדר תפריט משנה"
+msgstr "‎הגדר תת תפריט"
 
 msgctxt "#31092"
 msgid "No information available"
@@ -2460,11 +2461,11 @@ msgstr "‎מידע נוסף"
 
 msgctxt "#31111"
 msgid "Choose primary highlight color"
-msgstr "‎בחר צבע הדגשה לכותרת הראשית"
+msgstr "‎בחר צבע הדגשה ראשי"
 
 msgctxt "#31112"
 msgid "Choose secondary highlight color"
-msgstr "‎בחר הדגשה צבע לכותרת המשנית"
+msgstr "‎בחר הדגשה צבע משני"
 
 msgctxt "#31113"
 msgid "Reset colors to defaults"
@@ -2484,7 +2485,7 @@ msgstr "‎הנפש מצגת אמן"
 
 msgctxt "#31119"
 msgid "Show visualisation behind artist slideshow"
-msgstr "‎הצג אפקטים חזותיים מאחורי מצגת אמן"
+msgstr "‎הצג אפקט הדמיה מאחורי מצגת אמן"
 
 msgctxt "#31122"
 msgid "Match header tile with highlight color"
@@ -2508,7 +2509,7 @@ msgstr "‎אפשר צבעי אריחים בודדים בהתאמת הבית א�
 
 msgctxt "#31141"
 msgid "Info icons"
-msgstr "‎סמלי מידע"
+msgstr "‎סמלילי מידע"
 
 msgctxt "#31142"
 msgid "Big list info"
@@ -2547,7 +2548,7 @@ msgstr "נהל את מסך הבית"
 
 msgctxt "#31195"
 msgid "Show movies/tv shows clearlogos\""
-msgstr "הצג 'לוגו שקוף' לסרט או סדרה"
+msgstr "הצג סמלים שקופים לסרט או סדרה"
 
 msgctxt "#31196"
 msgid "with logos"
@@ -2555,15 +2556,15 @@ msgstr "עם סמלים"
 
 msgctxt "#31197"
 msgid "Show albums CDArt on albums infos"
-msgstr "הצג CDart באלבומי המוזיקה"
+msgstr "הצג גרפיקת דיסק באלבומי המוזיקה"
 
 msgctxt "#31198"
 msgid "Path to albums CDArt directory"
-msgstr "מיקום תיקיית CDart למוזיקה"
+msgstr "מיקום תיקיית גרפיקת דיסק למוזיקה"
 
 msgctxt "#31199"
 msgid "Show artists clearlogos"
-msgstr "הצג גרפיקת סמלי אלבום מוזיקה"
+msgstr "הצג סמלים שקופים לאמנים"
 
 msgctxt "#31200"
 msgid "Path to Artists Artworks directory"
@@ -2571,11 +2572,11 @@ msgstr "מיקום תיקיית הגרפיקה לאלבומי המוזיקה"
 
 msgctxt "#31201"
 msgid "Fakecdart"
-msgstr "תצוגת cd מזוייף"
+msgstr "תצוגת גרפיקת דיסק מזויפת"
 
 msgctxt "#31202"
 msgid "Show plot for hub widgets"
-msgstr "הראה עלילה עבור יישומוני הרכזת"
+msgstr "הראה עלילה עבור יישומוני הרכזת (Hub)"
 
 msgctxt "#31203"
 msgid "Necessary Addons"
@@ -2583,11 +2584,11 @@ msgstr "הרחבות נדרשות"
 
 msgctxt "#31204"
 msgid "Show ClearLogo on widgets tile"
-msgstr "הצג 'לוגו שקוף' באריח היישומון (מסך הבית)"
+msgstr "הצג סמלים שקופים באריח היישומון (מסך הבית)"
 
 msgctxt "#31205"
 msgid "Show ClearArt on video infos"
-msgstr "הצג 'לוגו שקוף' במסך מידע הווידאו"
+msgstr "הצג אמנות שקופה במסך מידע הווידאו"
 
 msgctxt "#31206"
 msgid "Widget"
@@ -2595,7 +2596,7 @@ msgstr "יישומון"
 
 msgctxt "#31207"
 msgid "Submenu"
-msgstr "תפריט משנה"
+msgstr "תת תפריט"
 
 msgctxt "#31208"
 msgid "Color"
@@ -2611,11 +2612,11 @@ msgstr "שחזר קיצור דרך"
 
 msgctxt "#31211"
 msgid "Fanarts transparency"
-msgstr "שקיפות רקע פאנארט"
+msgstr "שקיפות פאנארט"
 
 msgctxt "#31212"
 msgid "Show media flags on Hub widget"
-msgstr "הצג דגלוני מדיה ביישומון הרכזת"
+msgstr "הצג דגלוני מדיה ביישומון הרכזת (Hub)"
 
 msgctxt "#31213"
 msgid "Download subtitles"
@@ -2705,7 +2706,7 @@ msgstr "קבוצה זו כוללת את ההגדרות עבור תפריט מס�
 
 msgctxt "#31234"
 msgid "This category contains the settings for video OSD."
-msgstr "קבוצה זו כוללת את ההגדרות עבור תצוגה של מסך הווידאו."
+msgstr "קבוצה זו כוללת את ההגדרות עבור תפריט מסך הווידאו."
 
 msgctxt "#31235"
 msgid "This category contains the settings for header."
@@ -2713,7 +2714,7 @@ msgstr "קבוצה זו כוללת את ההגדרות לכותרת."
 
 msgctxt "#31236"
 msgid "This category contains the settings for display items."
-msgstr "קבוצה זו כוללת את ההגדרות עבור פריטי תצוגה."
+msgstr "קבוצה זו כוללת את ההגדרות עבור לתצוגת פריטים."
 
 msgctxt "#31237"
 msgid "This category contains the settings for highlight colors."
@@ -2721,11 +2722,11 @@ msgstr "קבוצה זו כוללת את ההגדרות לצבעי ההדגשה."
 
 msgctxt "#31238"
 msgid "This category contains the skin extras settings."
-msgstr "קבוצה זו כוללת את ההגדרות עבור תוספת הגדרות למעטפת."
+msgstr "קבוצה זו כוללת את ההגדרות עבור הגדרות נוספות למעטפת."
 
 msgctxt "#31239"
 msgid "This category contains the settings for backup and restore skin settings."
-msgstr "קבוצה זו כוללת את ההגדרות לגיבוי ושחזור."
+msgstr "קבוצה זו כוללת את ההגדרות לגיבוי ושחזור הגדרות המעטפת."
 
 msgctxt "#31240"
 msgid "Configure home menu and widgets."
@@ -2750,9 +2751,9 @@ msgid ""
 "individually for each widget via customise home menu."
 msgstr ""
 "בחר איך פוסטרים מוצגים ביחד עם יישומונים. [[B]לעולם לא[/B]] הפוסטר לא יוצג עם "
-"היישומונים. [[B]תמיד[/B]] פוסטרים תמיד יוצגו עם היישומונים. [[B]בעת לחיצה 'למעלה'[/"
-"B]] פוסטרים יוצגו כאשר יילחץ לחצן ה'למעלה'. [[B]מוגדר אישית בתפריט התאמה אישית[/B]] "
-"בחר האם להציג או להסתיר פוסטרים ייחודית עבור כל יישומון בתפריט ההתאמה האישית."
+"היישומונים. [[B]תמיד[/B]] פוסטרים תמיד יוצגו עם היישומונים. [[B]בעת לחיצה למעלה[/B]] "
+"פוסטרים יוצגו כאשר יילחץ לחצן הלמעלה. [[B]מוגדר אישית בתפריט התאמה אישית[/B]] בחר "
+"האם להציג או להסתיר פוסטרים ייחודית עבור כל יישומון בתפריט ההתאמה האישית."
 
 msgctxt "#31244"
 msgid "Show discs with widgets."
@@ -2760,11 +2761,11 @@ msgstr "הצג דיסקים עם יישומון."
 
 msgctxt "#31245"
 msgid "Show clearlogos with widgets."
-msgstr "הצג 'סמלים שקופים' עם יישומונים."
+msgstr "הצג סמלים שקופים עם יישומונים."
 
 msgctxt "#31246"
 msgid "Choose home tile icon."
-msgstr "בחר אייקון לאריח הבית."
+msgstr "בחר סמליל לאריח הבית."
 
 msgctxt "#31247"
 msgid "Set home tile text."
@@ -2776,7 +2777,7 @@ msgstr "הגדר טקסט לכותרת המעטפת."
 
 msgctxt "#31249"
 msgid "Lets make transparente the home bar menu"
-msgstr "אפשר שקיפות של תפריט סרגל אריחי הביתי"
+msgstr "אפשר שקיפות של תפריט סרגל אריחי הבית"
 
 msgctxt "#31250"
 msgid "Shift"
@@ -2820,27 +2821,27 @@ msgstr "יישומון רקע אחורי - מרובע"
 
 msgctxt "#31261"
 msgid "Hub-2"
-msgstr "רכזת מותאמת אישית 2"
+msgstr "רכזת (Hub) מותאמת אישית 2"
 
 msgctxt "#31262"
 msgid "Hub-3"
-msgstr "רכזת מותאמת אישית 3"
+msgstr "רכזת (Hub) מותאמת אישית 3"
 
 msgctxt "#31263"
 msgid "Hub-4"
-msgstr "רכזת מותאמת אישית 4"
+msgstr "רכזת (Hub) מותאמת אישית 4"
 
 msgctxt "#31264"
 msgid "Hub-5"
-msgstr "רכזת מותאמת אישית 5"
+msgstr "רכזת (Hub) מותאמת אישית 5"
 
 msgctxt "#31265"
 msgid "Hub-6"
-msgstr "רכזת מותאמת אישית 6"
+msgstr "רכזת (Hub) מותאמת אישית 6"
 
 msgctxt "#31266"
 msgid "Hub-7"
-msgstr "רכזת מותאמת אישית 7"
+msgstr "רכזת (Hub) מותאמת אישית 7"
 
 msgctxt "#31267"
 msgid "Show background video"
@@ -2876,7 +2877,7 @@ msgstr "אריחים מעוגלים, אריחים עם פינות מעוגלות
 
 msgctxt "#31275"
 msgid "tiles icon"
-msgstr "אריחי סמלים לפי משתמש"
+msgstr "סמליל אריחים"
 
 msgctxt "#31276"
 msgid "Home bar color and opacity"
@@ -2932,7 +2933,7 @@ msgstr "תוכן מוגן בסיסמה"
 
 msgctxt "#31289"
 msgid "Press [B]Enter[/B] and insert password."
-msgstr "לחץ על[B] Enter[/B] על מנת להזין סיסמה."
+msgstr "לחץ על [B]Enter[/B] על מנת להזין סיסמה."
 
 msgctxt "#31290"
 msgid "Incorrect password ! Please Retry."
@@ -2940,51 +2941,51 @@ msgstr "הסיסמה שגויה! אנא נסה שוב."
 
 msgctxt "#31291"
 msgid "Correct password ! This menu is now available for"
-msgstr "הסיסמה נכונה! תפריט זה זמין כעת במשך כ-"
+msgstr "הסיסמה נכונה! תפריט זה זמין כעת למשך"
 
 msgctxt "#31292"
 msgid "Hub-8"
-msgstr "רכזת מותאמת אישית 8"
+msgstr "רכזת (Hub) מותאמת אישית 8"
 
 msgctxt "#31293"
 msgid "Hub-9"
-msgstr "רכזת מותאמת אישית 9"
+msgstr "רכזת (Hub) מותאמת אישית 9"
 
 msgctxt "#31294"
 msgid "Hub-10"
-msgstr "רכזת מותאמת אישית 10"
+msgstr "רכזת (Hub) מותאמת אישית 10"
 
 msgctxt "#31295"
 msgid "Hub-11"
-msgstr "רכזת מותאמת אישית 11"
+msgstr "רכזת (Hub) מותאמת אישית 11"
 
 msgctxt "#31296"
 msgid "Hub-12"
-msgstr "רכזת מותאמת אישית 12"
+msgstr "רכזת (Hub) מותאמת אישית 12"
 
 msgctxt "#31297"
 msgid "Hub-13"
-msgstr "רכזת מותאמת אישית 13"
+msgstr "רכזת (Hub) מותאמת אישית 13"
 
 msgctxt "#31298"
 msgid "Hub-14"
-msgstr "רכזת מותאמת אישית 14"
+msgstr "רכזת (Hub) מותאמת אישית 14"
 
 msgctxt "#31299"
 msgid "Hub-15"
-msgstr "רכזת מותאמת אישית 15"
+msgstr "רכזת (Hub) מותאמת אישית 15"
 
 msgctxt "#31300"
 msgid "Hub-16"
-msgstr "רכזת מותאמת אישית 16"
+msgstr "רכזת (Hub) מותאמת אישית 16"
 
 msgctxt "#31301"
 msgid "Hub-17"
-msgstr "רכזת מותאמת אישית 17"
+msgstr "רכזת (Hub) מותאמת אישית 17"
 
 msgctxt "#31302"
 msgid "Hub-18"
-msgstr "רכזת מותאמת אישית 18"
+msgstr "רכזת (Hub) מותאמת אישית 18"
 
 msgctxt "#31553"
 msgid "Sets the home header text. To hide it, input [B]N/A[/B] as your text!"
