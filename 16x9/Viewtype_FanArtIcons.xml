@@ -25,6 +25,14 @@
                 <texture background="true">common/white.png</texture>
 				<visible>String.IsEqual(Skin.CurrentColourTheme, Light)</visible>
 			</control>
+			<control type="image">
+				<height>1080</height>
+				<width>1920</width>
+				<aspectratio align="center">scale</aspectratio>
+				<texture background="true">$INFO[Window(Home).Property(ImageFilter)]</texture>
+				<fadetime>100</fadetime>
+				<visible>System.HasAddon(script.toolbox) + Skin.HasSetting(UseBlur)</visible>
+			</control>			
 			<control type="multiimage">
 				<top>0</top>
                 <left>0</left>
@@ -74,14 +82,6 @@
 				<top>0</top>
                 <right>0</right>
 				<width>571</width>
-				<control type="image">
-					<width>100%</width>
-					<height>100%</height>
-					<aspectratio align="center">scale</aspectratio>
-					<texture background="true">$INFO[Window(Home).Property(ImageFilter)]</texture>
-					<fadetime>100</fadetime>
-					<visible>System.HasAddon(script.toolbox) + Skin.HasSetting(UseBlur)</visible>
-				</control>
                 <control type="grouplist">
                     <itemgap>0</itemgap>
                     <orientation>vertical</orientation>
