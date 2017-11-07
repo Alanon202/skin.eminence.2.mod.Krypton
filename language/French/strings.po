@@ -1076,15 +1076,15 @@ msgstr "Restaurer la couleur du panneau à sa valeur par défaut (quasi transpar
 
 msgctxt "#31283"
 msgid "Colour the background"
-msgstr ""
+msgstr "Couleur de l'arrière-plan"
 
 msgctxt "#31284"
 msgid "Fanart Icons"
-msgstr ""
+msgstr "Fanart des icônes"
 
 msgctxt "#31285"
 msgid "Fanart Icons Ep."
-msgstr ""
+msgstr "Fanart des icônes des épisodes"
 
 msgctxt "#31500"
 msgid "None"
