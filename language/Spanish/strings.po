@@ -1074,6 +1074,18 @@ msgctxt "#31282"
 msgid "Resets the panel colours back to the skin default (near transparent)."
 msgstr "Restablece los colores del panel de nuevo a la piel por defecto (cerca transparente)." 
 
+msgctxt "#31283"
+msgid "Colour the background"
+msgstr "Color de fondo"
+
+msgctxt "#31284"
+msgid "Fanart Icons"
+msgstr "Iconos de Fanart"
+
+msgctxt "#31285"
+msgid "Fanart Icons Ep."
+msgstr "Fanart Iconos Ep."
+
 msgctxt "#31500"
 msgid "None"
 msgstr "Ninguno"

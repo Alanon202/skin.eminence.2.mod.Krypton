@@ -666,10 +666,6 @@ msgctxt "#31179"
 msgid "Select the record label icons resource add-on."
 msgstr "בחר את ההרחבה להורדת סמלילי חברות התקליטים."
 
-msgctxt "#31196"
-msgid "Select the music genre icons resource add-on."
-msgstr "בחר את ההרחבה להורדת סמלילי סגנונות מוזיקה."
-
 msgctxt "#31180"
 msgid "Default"
 msgstr "ברירת מחדל"
@@ -733,6 +729,10 @@ msgstr "הראה עלילה עבור יישומוני רכזת (Hub)"
 msgctxt "#31195"
 msgid "Allow widget reloading"
 msgstr "אפשר טעינה מחדש של יישומונים"
+
+msgctxt "#31196"
+msgid "Select the music genre icons resource add-on."
+msgstr "בחר את ההרחבה להורדת סמלילי סגנונות מוזיקה."
 
 msgctxt "#31197"
 msgid "Lock view"
@@ -1062,6 +1062,34 @@ msgstr "הצג רקע היישומון כאשר הוא ממוקד"
 msgctxt "#31278"
 msgid "The widget backgrounds will be shown only when the widget is focused (on up)."
 msgstr "רקעי היישומון יוצגו רק כאשר היישומון ממוקד ופעיל."
+
+msgctxt "#31279"
+msgid "Reset color and opacity of primary widget tile"
+msgstr "איפוס צבע ושקיפות של אריח היישומון הראשי"
+
+msgctxt "#31280"
+msgid "Color and opacity of secondary widget tile"
+msgstr "שינוי צבע ושקיפות של אריח היישומון המשני"
+
+msgctxt "#31281"
+msgid "Reset color and opacity of secondary widget tile"
+msgstr "איפוס צבע ושקיפות של אריח היישומון המשני"
+
+msgctxt "#31282"
+msgid "Posters list"
+msgstr "רשימת פוסטרים"
+
+msgctxt "#31283"
+msgid "Colour the background"
+msgstr "צבע הרקע"
+
+msgctxt "#31284"
+msgid "Fanart Icons"
+msgstr "אייקוני הפאנארט"
+
+msgctxt "#31285"
+msgid "Fanart Icons Ep."
+msgstr "אייקוני פרק הפאנארט"
 
 msgctxt "#31500"
 msgid "None"
@@ -2890,34 +2918,6 @@ msgstr "איפוס צבע סרגל אריחים מרכזי ושקיפות"
 msgctxt "#31278"
 msgid "Color and opacity of secondary widget tile"
 msgstr "שינוי צבע ושקיפות של אריח היישומון המשני"
-
-msgctxt "#31279"
-msgid "Reset color and opacity of primary widget tile"
-msgstr "איפוס צבע ושקיפות של אריח היישומון הראשי"
-
-msgctxt "#31280"
-msgid "Color and opacity of secondary widget tile"
-msgstr "שינוי צבע ושקיפות של אריח היישומון המשני"
-
-msgctxt "#31281"
-msgid "Reset color and opacity of secondary widget tile"
-msgstr "איפוס צבע ושקיפות של אריח היישומון המשני"
-
-msgctxt "#31282"
-msgid "Posters list"
-msgstr "רשימת פוסטרים"
-
-msgctxt "#31283"
-msgid "Replace widget fanart with background"
-msgstr "החלף יישומון פאנארט עם רקע"
-
-msgctxt "#31284"
-msgid "Password protection"
-msgstr "הגנה באמצעות סיסמה"
-
-msgctxt "#31285"
-msgid "Password protection for menu items"
-msgstr "הגנה באמצעות סיסמה לפריטי תפריט"
 
 msgctxt "#31286"
 msgid "Password has been successfully set !"
