@@ -230,11 +230,6 @@
 			<property name="background">special://profile/addon_data/script.skinshortcuts/skin.eminence.2.mod.Krypton-background-settings.jpg</property>
 			<property name="backgroundName">C:\Users\Stefan\AppData\Roaming\Kodi\Theme\settings\settings.jpg</property>
 			<property name="PosterWidget">On Up</property>
-			<property name="widget">None</property>
-			<property name="widgetName">None</property>
-			<property name="widgetType" />
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
 			<onclick condition="SubString(Container(9000).ListItem.Property(path),ActivateWindow,left) + !SubString(Container(9000).ListItem.Property(path),DialogFavourites) + !SubString(Container(9000).ListItem.Property(path),DialogButtonMenu) + !SubString(Container(9000).ListItem.Property(path),shutdownmenu) + !SubString(Container(9000).ListItem.Property(path),favourites)">SetProperty(FO9001,2,home)</onclick>
 			<onclick condition="Window.IsActive(PlayerControls.xml)">Close</onclick>
 			<onclick condition="SubString(Container(9000).ListItem.Property(ParentalControl),yes) + !StringCompare(Skin.String(mypassword),Skin.String(passcode))">Skin.SetString(dialog_action,ActivateWindow(Settings))</onclick>

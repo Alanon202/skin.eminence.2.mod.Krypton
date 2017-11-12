@@ -316,27 +316,7 @@
 			<label>$INFO[ListItem.Art(extrafanart77)]</label>
 			<label>$INFO[ListItem.Art(extrafanart78)]</label>
 			<label>$INFO[ListItem.Art(extrafanart79)]</label>
-			<label>$INFO[ListItem.Art(extrafanart80)]</label>
-			<label>$INFO[ListItem.Art(extrafanart81)]</label>
-			<label>$INFO[ListItem.Art(extrafanart82)]</label>
-			<label>$INFO[ListItem.Art(extrafanart83)]</label>
-			<label>$INFO[ListItem.Art(extrafanart84)]</label>
-			<label>$INFO[ListItem.Art(extrafanart85)]</label>
-			<label>$INFO[ListItem.Art(extrafanart86)]</label>
-			<label>$INFO[ListItem.Art(extrafanart87)]</label>
-			<label>$INFO[ListItem.Art(extrafanart88)]</label>
-			<label>$INFO[ListItem.Art(extrafanart89)]</label>
-			<label>$INFO[ListItem.Art(extrafanart90)]</label>
-			<label>$INFO[ListItem.Art(extrafanart91)]</label>
-			<label>$INFO[ListItem.Art(extrafanart92)]</label>
-			<label>$INFO[ListItem.Art(extrafanart93)]</label>
-			<label>$INFO[ListItem.Art(extrafanart94)]</label>
-			<label>$INFO[ListItem.Art(extrafanart95)]</label>
-			<label>$INFO[ListItem.Art(extrafanart96)]</label>
-			<label>$INFO[ListItem.Art(extrafanart97)]</label>
-			<label>$INFO[ListItem.Art(extrafanart98)]</label>
-			<label>$INFO[ListItem.Art(extrafanart99)]</label>
-			<label>$INFO[ListItem.Art(extrafanart100)]</label>			
+			<label>$INFO[ListItem.Art(extrafanart80)]</label>	
 		</control>
 
 		<control type="fadelabel" id="4420">
