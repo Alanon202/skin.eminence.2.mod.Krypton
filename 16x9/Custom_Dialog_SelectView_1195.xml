@@ -281,6 +281,15 @@
                         <onclick>Container.SetViewMode(550)</onclick>
                         <visible>Container.Content(countries) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)</visible>
                     </item>
+                    <!-- List 2 -->
+                    <item>
+                        <label>31813</label>
+                        <icon>special://skin/extras/viewthumbs/549.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(549)</onclick>
+                        <visible>Container.Content(countries) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(directors) | Container.Content(files) | Container.Content(actors)</visible>
+                    </item>					
                     <!-- Square List -->
                     <item>
                         <label>535</label>
@@ -346,7 +355,17 @@
                         <onclick>Container.SetViewMode(503)</onclick>
                         <visible>!Skin.HasSetting(SkinHelper.View.Disabled.503)</visible>
                         <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
-                    </item>					
+                    </item>
+                    <!-- Media Info 4 -->
+                    <item>
+                        <label>31814</label>
+                        <icon>special://skin/extras/viewthumbs/548.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(548)</onclick>
+                        <visible>!Skin.HasSetting(SkinHelper.View.Disabled.548)</visible>
+                        <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
+                    </item>							
                     <!-- Info List -->
                     <item>
                         <label>31192</label>

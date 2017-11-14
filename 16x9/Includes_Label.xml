@@ -181,14 +181,14 @@
 	</variable>
 	
 	<variable name="Label_ExtendedPremiere">,
-	    <value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Premiered]$INFO[ListItem.Rating,  •  ,]</value>
+	    <value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(548) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Premiered]$INFO[ListItem.Rating,  •  ,]</value>
 	    <value condition="!Container.Content(tvshows) + [[Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]  |  [!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating)]] + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Premiered]</value>
 	    <value condition="Container.Content(tvshows) + [[Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]  |  [!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating)]] + !Control.IsVisible(502)">$INFO[ListItem.Premiered]</value>	
 	</variable>	
 
 	<variable name="Label_ExtendedYear">
-		<value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Year]$INFO[ListItem.Rating,  •  ,]</value>        
-		<value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Rating]</value>    
+		<value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(548) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Year]$INFO[ListItem.Rating,  •  ,]</value>        
+		<value condition="!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(501) + !Control.IsVisible(503) + !Control.IsVisible(548) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Rating]</value>    
 		<value condition="[[Skin.HasSetting(disable.rating) | String.IsEmpty(ListItem.Rating)]  |  [!Skin.HasSetting(disable.rating) + !String.IsEmpty(ListItem.Rating)]] + !String.IsEmpty(ListItem.Year) + !Control.IsVisible(551) + !Control.IsVisible(54) + !Control.IsVisible(502) + !Control.IsVisible(508) + !Control.IsVisible(509)">$INFO[ListItem.Year]</value> 
 	</variable>
 	

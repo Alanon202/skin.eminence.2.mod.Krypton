@@ -2337,3 +2337,11 @@ msgstr ""
 msgctxt "#31812"
 msgid "Hide plot panel"
 msgstr ""
+
+msgctxt "#31813"
+msgid "List 2"
+msgstr ""
+
+msgctxt "#31814"
+msgid "Media Info 4"
+msgstr ""
