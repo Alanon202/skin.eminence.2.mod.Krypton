@@ -1775,7 +1775,7 @@
             <visible>!Skin.HasSetting(hide.bottombar) + !Skin.HasSetting(darkoverlay)</visible>
         </control>
 		<control type="group">
-			<visible>Skin.HasSetting(hide.moviesplots)</visible>
+			<visible>Skin.HasSetting(hide.moviesplots) + !Skin.HasSetting(hide.allmovieplots)</visible>
 			<visible>Container.Content(movies) | Container.Content(sets)</visible>
 			<control type="group">
 				<top>0</top>
@@ -1829,7 +1829,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(hide.moviesplots)</visible>
+			<visible>!Skin.HasSetting(hide.moviesplots) + !Skin.HasSetting(hide.allmovieplots)</visible>
 			<visible>Container.Content(movies) | Container.Content(sets)</visible>
 			<control type="group">
 				<control type="group">
@@ -1926,7 +1926,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(hide.tvshowsplots)</visible>
+			<visible>Skin.HasSetting(hide.tvshowsplots) + !Skin.HasSetting(hide.alltvplots)</visible>
 			<visible>Container.Content(tvshows)</visible>
 			<control type="group">
 				<control type="group">
@@ -1980,7 +1980,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(hide.tvshowsplots)</visible>
+			<visible>!Skin.HasSetting(hide.tvshowsplots) + !Skin.HasSetting(hide.alltvplots)</visible>
 			<visible>Container.Content(tvshows)</visible>
 			<control type="group">
 				<control type="group">
@@ -2199,7 +2199,7 @@
             <visible>!Skin.HasSetting(hide.bottombar) + !Skin.HasSetting(darkoverlay)</visible>
         </control>
 		<control type="group">
-			<visible>Skin.HasSetting(hide.moviesplots)</visible>
+			<visible>Skin.HasSetting(hide.moviesplots) + !Skin.HasSetting(hide.allmovieplots)</visible>
 			<visible>Container.Content(movies) | Container.Content(sets)</visible>
 			<control type="group">
 				<control type="group">
@@ -2253,7 +2253,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(hide.moviesplots)</visible>
+			<visible>!Skin.HasSetting(hide.moviesplots) + !Skin.HasSetting(hide.allmovieplots)</visible>
 			<visible>Container.Content(movies) | Container.Content(sets)</visible>
 			<control type="group">
 				<control type="group">
@@ -2350,7 +2350,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(hide.tvshowsplots)</visible>
+			<visible>Skin.HasSetting(hide.tvshowsplots) + !Skin.HasSetting(hide.alltvplots)</visible>
 			<visible>Container.Content(tvshows)</visible>
 			<control type="group">
 				<control type="group">
@@ -2404,7 +2404,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Skin.HasSetting(hide.tvshowsplots)</visible>
+			<visible>!Skin.HasSetting(hide.tvshowsplots) + !Skin.HasSetting(hide.alltvplots)</visible>
 			<visible>Container.Content(tvshows)</visible>
 			<control type="group">
 				<control type="group">

@@ -2333,3 +2333,7 @@ msgstr ""
 msgctxt "#31811"
 msgid "Budget"
 msgstr ""
+
+msgctxt "#31812"
+msgid "Hide plot panel"
+msgstr ""
