@@ -40,6 +40,7 @@
 	<view id="ShowCase" value="535" languageid="31199" type="movies,tvshows,sets,seasons,setmovies,artists,albums"/>
 	<view id="Medium Icon" value="525" languageid="31207" type="movies,tvshows,sets,seasons,setmovies,artists,albums"/>
 	<view id="Netflix" value="515" languageid="31200" type="movies,tvshows,sets,seasons,setmovies,episodes"/>
+	<view id="Widget View" value="555" languageid="31815" type="movies,tvshows,sets,seasons,setmovies"/>
 	<view id="PVR WideList" value="163" languageid="31168" type="tvchannels"/>
 	<view id="PVR Small List" value="164" languageid="535" type="tvchannels" excludefromdisable="true"/>
 	<view id="PVR Big List" value="165" languageid="537" type="tvchannels"/>

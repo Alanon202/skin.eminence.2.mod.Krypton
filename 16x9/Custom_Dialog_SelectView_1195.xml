@@ -507,6 +507,16 @@
                         <visible>!Skin.HasSetting(SkinHelper.View.Disabled.515)</visible>
                         <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
                     </item>
+                    <!-- Widget View -->
+                    <item>
+                        <label>31815</label>
+                        <icon>special://skin/extras/viewthumbs/555.jpg</icon>
+                        <onclick>Close</onclick>
+                        <onclick>Container.SetViewMode(50)</onclick>
+                        <onclick>Container.SetViewMode(555)</onclick>
+                        <visible>!Skin.HasSetting(SkinHelper.View.Disabled.555)</visible>
+                        <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+                    </item>					
                     <!-- PVR WideList -->
                     <item>
                         <label>31168</label>

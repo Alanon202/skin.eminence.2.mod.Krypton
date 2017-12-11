@@ -153,6 +153,211 @@
         </control>
     </include>
 
+    <include name="Viewtype_Widget">
+        <control type="group">
+            <visible>Control.IsVisible(555)</visible>
+            <left>side</left>
+            <right>10</right>
+            <top>625</top>
+            <height>720</height>
+			<include content="Object_Line">
+                <param name="width" value="1879" />
+                <param name="label" value="$INFO[Control.GetLabel(3),, ]$INFO[Control.GetLabel(4),[COLOR=PosterBorder]-[/COLOR] , ]" />
+            </include>			
+			<control type="image">         
+				<posx>700</posx>
+				<width>2000</width>
+				<height>340</height>             
+				<texture colordiffuse="$VAR[Widget_SecondaryColor]" border="150">common/half-tile.png</texture>
+				<animation effect="slide" start="0" end="2000" time="300" condition="!Skin.HasSetting(wv.showposters)">Conditional</animation>
+			</control> 
+			<control type="group">
+				<bottom>25</bottom>
+				<include>Object_Scrollbar_Alphabet</include>
+			</control>	
+			<control type="scrollbar" id="61">   
+				<visible>Skin.HasSetting(showscrollbars)</visible>
+                <onup>50</onup>
+				<ondown condition="Skin.HasSetting(AlphabetScrollbar)">6015</ondown>
+                <ondown condition="!Skin.HasSetting(AlphabetScrollbar) + !String.IsEqual(Window(home).Property(HubReturn),Home)">ActivateWindow($INFO[Window(home).Property(HubReturn)])</ondown>				
+                <top>330</top>
+                <orientation>horizontal</orientation>
+                <width>1150</width>
+                <height>8</height>
+				<right>0</right>
+                <animation effect="fade" condition="!Control.HasFocus(61) + !Container.Scrolling" time="200" start="100" end="0">Conditional</animation>
+            </control>
+            <control type="fixedlist" id="555">
+                <top>0</top>		
+                <right>0</right>
+                <width>1140</width>
+				<visible>[Container.Content(movies) + [String.IsEqual(Skin.String(Skin.ForcedView.movies),$LOCALIZE[31815]) | String.IsEmpty(Skin.String(Skin.ForcedView.movies)) ]] | [Container.Content(sets) + [String.IsEqual(Skin.String(Skin.ForcedView.sets),$LOCALIZE[31815]) | String.IsEmpty(Skin.String(Skin.ForcedView.sets)) ]] | [Container.Content(tvshows) + [String.IsEqual(Skin.String(Skin.ForcedView.tvshows),$LOCALIZE[31815]) | String.IsEmpty(Skin.String(Skin.ForcedView.tvshows)) ]] | [Container.Content(seasons) + [String.IsEqual(Skin.String(Skin.ForcedView.seasons),$LOCALIZE[31815]) | String.IsEmpty(Skin.String(Skin.ForcedView.seasons)) ]] | [Container.Content(albums) + [String.IsEqual(Skin.String(Skin.ForcedView.albums),$LOCALIZE[31815]) | String.IsEmpty(Skin.String(Skin.ForcedView.albums)) ]]</visible>
+                <onup condition="!Skin.HasSetting(global.kioskmode)">9000</onup>
+				<onback condition="Skin.HasSetting(backoption) + !String.IsEqual(Window(home).Property(HubReturn),Home)">ActivateWindow($INFO[Window(home).Property(HubReturn)])</onback>
+				<animation effect="slide" start="0" end="2000" time="300" condition="!Skin.HasSetting(wv.showposters)">Conditional</animation>
+				<ondown>61</ondown>
+                <onleft>555</onleft>
+                <onright>555</onright>
+                <focusposition>0</focusposition>
+                <movement>1</movement>
+                <preloaditems>0</preloaditems>
+                <pagecontrol>61</pagecontrol>
+                <orientation>horizontal</orientation>
+                <viewtype label="31815">widget</viewtype>
+                <scrolltime tween="quadratic">400</scrolltime>
+                <itemlayout width="228" height="300">
+                    <control type="group">
+                        <top>side</top>
+                        <left>10</left>
+                        <right>10</right>
+                        <height>300</height>
+                        <control type="image">
+                            <include condition="Skin.HasSetting(lightshadows) + !String.IsEqual(Skin.CurrentColourTheme,Light)">Object_Background_Shadows</include>
+                            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+                            <texture background="true">$VAR[Image_Poster]</texture>
+                        </control>
+                        <control type="image">
+                            <right>10</right>
+                            <top>10</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>						
+                        <control type="image">
+                            <right>10</right>
+                            <top>10</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="228" height="300">
+                    <control type="group">
+                        <top>side</top>
+                        <left>10</left>
+                        <right>10</right>
+                        <height>300</height>
+                        <control type="image">
+                            <include condition="Skin.HasSetting(lightshadows) + !String.IsEqual(Skin.CurrentColourTheme,Light)">Object_Background_Shadows</include>
+                            <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+                            <texture background="true">$VAR[Image_Poster]</texture>
+                        </control>
+                        <control type="image">
+                            <right>10</right>
+                            <top>10</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_SecondaryColor]">$VAR[Image_Indicator_Back]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>								
+                        <control type="image">
+                            <right>10</right>
+                            <top>10</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$VAR[Indicators_PrimaryColor]">$VAR[Image_Indicator]</texture>
+                            <visible>!String.IsEmpty(ListItem.Overlay)</visible>
+                        </control>
+                        <control type="image">
+                            <left>-10</left>
+                            <right>-10</right>
+                            <top>-10</top>
+                            <bottom>-10</bottom>
+                            <texture colordiffuse="$VAR[HighlightColor]" border="12">common/border.png</texture>
+                            <visible>Control.HasFocus(555)</visible>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+			<control type="group">       
+				<left>575</left>
+				<top>side</top>
+				<width>300</width>
+				<height>300</height>    
+				<animation effect="slide" end="0,30" time="0" tween="cubic" easing="inout">VisibleOnChange</animation>
+				<include>Animation_SpinningDisc</include>
+				<control type="image">
+					<aspectratio align="right">keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Art(discart)]</texture>
+					<fadetime>400</fadetime>
+					<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+				</control>
+				<control type="image">
+					<aspectratio align="right">keep</aspectratio>
+					<texture background="true">$INFO[Window(home).Property(SkinHelper.ListItem.Art.DiscArt)]</texture>
+					<fadetime>400</fadetime>
+					<visible>String.IsEmpty(ListItem.Art(discart))</visible>
+				</control>				
+				<control type="image">
+					<aspectratio align="right">keep</aspectratio>
+					<texture background="true">$INFO[Window(home).Property(SkinHelper.ListItem.1.Art.DiscArt)]</texture>
+					<fadetime>400</fadetime>
+					<visible>ListItem.IsCollection</visible>
+				</control>
+				<visible>Skin.HasSetting(wv.showdisc)</visible>				
+			</control>
+			<control type="image">
+				<posx>-150</posx>
+				<width>900</width>
+				<height>340</height>        
+				<texture align="left" border="150" colordiffuse="$VAR[Widget_PrimaryColor]">common/half-tile.png</texture>
+			</control>
+			<control type="image">
+				<top>5</top>
+				<left>550</left>
+				<height>70</height>
+				<width>181</width>
+				<texture>$VAR[ClearArt]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>		
+			<control type="grouplist">     
+				<posx>10</posx>
+				<posy>20</posy>
+				<width>680</width>
+				<orientation>vertical</orientation>       
+				<control type="label">
+					<width>520</width>
+					<scroll>yes</scroll>
+					<label>$INFO[Container.Content()]</label>
+					<aligny>top</aligny>
+					<height>35</height>
+					<animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+					<textcolor>HomeBarFG</textcolor>
+				</control>
+				<control type="label">        
+					<scroll>yes</scroll>
+					<label>$INFO[ListItem.Label]</label>
+					<aligny>top</aligny>
+					<font>Font-WidgetInfoTitle</font>
+					<height>70</height>
+					<textcolor>$VAR[HighlightColor2]</textcolor>
+				</control>
+				<control type="textbox">
+					<label>$VAR[Label_Plot]</label>
+					<aligny>top</aligny>
+					<align>left</align>
+					<height>120</height>
+					<animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+					<textcolor>HomeBarFG</textcolor>
+					<font>Font-ListInfo</font>
+				</control>
+				<control type="label">
+					<width>620</width>
+					<scroll>yes</scroll>
+					<label>$VAR[Label_ExtraInfo_Icons]</label>
+					<aligny>center</aligny>
+					<animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+					<font>Font-ListInfo-Small</font>
+					<height>65</height>
+					<textcolor>HomeBarFG</textcolor>
+				</control>           
+			</control>						
+		</control>	
+	</include>
+	
     <!-- BIG WIDE FANART -->
     <include name="Viewtype_Lovefilm">
         <control type="group">

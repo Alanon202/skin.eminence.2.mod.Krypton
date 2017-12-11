@@ -4,7 +4,7 @@
     <backgroundcolor>Background</backgroundcolor>
     <menucontrol>9000</menucontrol>
     <defaultcontrol always="true">50</defaultcontrol>   
-    <views>50,550,549,58,552,505,55,56,57,500,51,52,59,53,600,506,508,509,553,54,502,503,548,501,504,156,157,158,159,521,160,161,162,535,525,514,513,515,516,551</views>
+    <views>50,550,549,58,552,505,55,56,57,500,51,52,59,53,600,506,508,509,553,54,502,503,548,501,504,156,157,158,159,521,160,161,162,535,525,514,513,515,516,551,555</views>
     <onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <onunload>SetProperty(NodeReturn,videos,home)</onunload>
     <onunload>SetProperty(HubReturn,$INFO[Container.FolderPath],home)</onunload>
@@ -62,6 +62,7 @@
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.515)">Viewtype_Netflix</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.516)">Video_RightList</include>
 			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.551)">Video_LowList</include>
+			<include condition="!Skin.HasSetting(SkinHelper.View.Disabled.555)">Viewtype_Widget</include>
 		</control>		
 
         <!-- Menu -->
