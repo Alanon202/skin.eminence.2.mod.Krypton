@@ -2333,3 +2333,11 @@ msgstr "Ingresos"
 msgctxt "#31811"
 msgid "Budget"
 msgstr "Presupuesto"
+
+msgctxt "#31813"
+msgid "List 2"
+msgstr "Lista 2"
+
+msgctxt "#31814"
+msgid "Media Info 4"
+msgstr "Información de los Medios 4"

@@ -2333,3 +2333,15 @@ msgstr "Revenus"
 msgctxt "#31811"
 msgid "Budget"
 msgstr "Budget"
+
+msgctxt "#31812"
+msgid "Hide plot panel"
+msgstr "Masquer le panneau du résumé"
+
+msgctxt "#31813"
+msgid "List 2"
+msgstr "Liste 2"
+
+msgctxt "#31814"
+msgid "Media Info 4"
+msgstr "Media Info 4"

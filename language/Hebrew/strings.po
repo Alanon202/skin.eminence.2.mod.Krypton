@@ -2990,3 +2990,11 @@ msgstr "רכזת (Hub) מותאמת אישית 18"
 msgctxt "#31553"
 msgid "Sets the home header text. To hide it, input [B]N/A[/B] as your text!"
 msgstr "קבע את טקסט כותרת הבית. להסתרה הכנס [B]N/A[/B] בתור הטקסט!"
+
+msgctxt "#31813"
+msgid "List 2"
+msgstr "2 מידע"
+
+msgctxt "#31814"
+msgid "Media Info 4"
+msgstr "‎פרטי מדיה 4"
