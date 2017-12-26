@@ -2345,3 +2345,7 @@ msgstr "Liste 2"
 msgctxt "#31814"
 msgid "Media Info 4"
 msgstr "Media Info 4"
+
+msgctxt "#31815"
+msgid "Widget View"
+msgstr "Vue de Widget"

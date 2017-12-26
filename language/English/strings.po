@@ -2348,11 +2348,4 @@ msgstr ""
 
 msgctxt "#31815"
 msgid "Widget View"
-
-msgctxt "#31816"
-msgid "Show the Disc"
-msgstr ""
-
-msgctxt "#31817"
-msgid "Show the posters"
 msgstr ""

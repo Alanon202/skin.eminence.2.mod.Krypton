@@ -699,7 +699,7 @@
         <!-- Widget View Disc -->
         <control type="radiobutton" id="90985">
             <include>Defs_OptionButton2</include>
-            <label>$LOCALIZE[31816]</label>
+            <label>$LOCALIZE[31261]</label>
             <selected>Skin.HasSetting(wv.showdisc)</selected>
             <onclick>Skin.ToggleSetting(wv.showdisc)</onclick>
             <visible>Control.IsVisible(555)</visible>
@@ -708,7 +708,7 @@
         <!-- Widget View Posters-->
         <control type="radiobutton" id="90984">
             <include>Defs_OptionButton2</include>
-            <label>$LOCALIZE[31817]</label>
+            <label>$LOCALIZE[31651]</label>
             <selected>Skin.HasSetting(wv.showposters)</selected>
             <onclick>Skin.ToggleSetting(wv.showposters)</onclick>
             <visible>Control.IsVisible(555)</visible>
