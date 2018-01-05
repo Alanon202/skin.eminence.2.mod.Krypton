@@ -317,7 +317,7 @@
                     <texture fallback="DefaultVideoPlayer.png">$VAR[PVRPlayerPoster]</texture>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                 </control> 
- <!-- Plot and other Text -->               
+				<!-- Plot and other Text -->               
                 <control type="grouplist">
                     <usecontrolcoords>true</usecontrolcoords>
                     <itemgap>pad</itemgap>
@@ -450,7 +450,7 @@
 					<control type="label">
 						<left>pad</left>
 						<right>pad</right>
-                        <height>36</height>
+                        <height>30</height>
 						<aligny>bottom</aligny>
                         <font>Font-InfoBox-Title</font>
                         <label>$LOCALIZE[31235]</label>
@@ -458,7 +458,7 @@
 					<control type="label">
 						<left>pad</left>
 						<right>pad</right>
-                        <height>36</height>
+                        <height>30</height>
 						<aligny>bottom</aligny>
 						<scroll>yes</scroll>
                         <font>Font-InfoBox-Title</font>
@@ -467,7 +467,7 @@
 					<control type="label">
 						<left>pad</left>
 						<right>pad</right>
-                        <height>36</height>
+                        <height>30</height>
 						<aligny>bottom</aligny>
                         <font>Font-InfoBox-Title</font>
                         <label>$LOCALIZE[31236]</label>
@@ -475,13 +475,279 @@
 					<control type="label">
 						<left>pad</left>
 						<right>pad</right>
-                        <height>36</height>
+                        <height>30</height>
 						<aligny>bottom</aligny>
 						<scroll>yes</scroll>
                         <font>Font-InfoBox-Title</font>
                         <label>$INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime]: $INFO[VideoPlayer.NextTitle]</label>
-                    </control>					
-				</control>	
+                    </control>
+					<!-- Bottom Section -->
+					<control type="group">
+						<control type="image">
+							<top>20</top>
+							<width>1805</width>
+							<height>2</height>
+							<texture border="0" colordiffuse="white">osd/line.png</texture>
+						</control>
+						<control type="group">
+							<top>20</top>
+							<!-- Encryption -->
+							<control type="group">
+								<control type="label">
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>S</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,01) | String.Contains(PVR.ActStreamEncryptionName,9F)</visible>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>S</label>
+								</control>
+								<control type="label">
+									<left>30</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>V</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,5)</visible>
+									<left>30</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>V</label>
+								</control>
+								<control type="label">
+									<left>63</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>I</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,06)</visible>
+									<left>63</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>I</label>
+								</control>
+								<control type="label">
+									<left>85</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>ND</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,09)</visible>
+									<left>85</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>ND</label>
+								</control>
+								<control type="label">
+									<left>135</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>CO</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,0B)</visible>
+									<left>135</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>CO</label>
+								</control>
+								<control type="label">
+									<left>180</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>CW</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,0D)</visible>
+									<left>180</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>CW</label>
+								</control>
+								<control type="label">
+									<left>230</left>
+									<width>70</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>B</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,17)</visible>
+									<left>230</left>
+									<width>70</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>B</label>
+								</control>
+								<control type="label">
+									<left>258</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>N</label>
+								</control>
+								<control type="label">
+									<visible>String.Contains(PVR.ActStreamEncryptionName,18)</visible>
+									<left>258</left>
+									<width>50</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>N</label>
+								</control>
+								<control type="label">
+									<left>320</left>
+									<width>1000</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>$INFO[PVR.ActStreamEncryptionName]</label>
+								</control>
+							</control>
+							<!-- Signal -->
+							<control type="group">
+								<left>1150</left>
+								<width>250</width>
+								<visible>!String.Contains(PVR.ActStreamStatus,TIMESHIFT) </visible>
+								<control type="label">
+									<width>250</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>$INFO[PVR.ActStreamSNR,SNR: ,]</label>
+								</control>
+								<control type="label">
+									<left>130</left>
+									<width>250</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>$INFO[PVR.ActStreamSignal,AGC: ,]</label>
+								</control>
+							</control>
+							<!-- Tuner -->
+							<control type="grouplist">
+								<left>1420</left>
+								<width>300</width>
+								<orientation>horizontal</orientation>
+								<control type="label">
+									<width>150</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>$LOCALIZE[31816]</label>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>A</label>
+									<visible>!String.Contains(PVR.ActStreamDevice,#0)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>A</label>
+									<visible>String.Contains(PVR.ActStreamDevice,#0)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>B</label>
+									<visible>!String.Contains(PVR.ActStreamDevice,#1)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>B</label>
+									<visible>String.Contains(PVR.ActStreamDevice,#1)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>C</label>
+									<visible>!String.Contains(PVR.ActStreamDevice,#2)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>C</label>
+									<visible>String.Contains(PVR.ActStreamDevice,#2)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>grey</textcolor>
+									<label>D</label>
+									<visible>!String.Contains(PVR.ActStreamDevice,#3)</visible>
+								</control>
+								<control type="label">
+									<width>25</width>
+									<height>38</height>
+									<font>Font-OSD</font>
+									<textcolor>green</textcolor>
+									<label>D</label>
+									<visible>String.Contains(PVR.ActStreamDevice,#3)</visible>
+								</control>
+							</control>
+							<!-- TIMESHIFT -->
+							<control type="label">
+								<left>1495</left>
+								<width>250</width>
+								<height>38</height>
+								<font>Font-OSD</font>
+								<textcolor>$VAR[HighlightColor]</textcolor>
+								<label>[B]TIMESHIFT[/B]</label>
+								<visible>String.Contains(PVR.ActStreamStatus,TIMESHIFT)</visible>
+							</control>
+						</control>					
+					</control>
+				</control>
 			</control>
             <control type="progress" description="cache">
                 <width>100%</width>

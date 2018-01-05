@@ -2349,3 +2349,7 @@ msgstr "Media Info 4"
 msgctxt "#31815"
 msgid "Widget View"
 msgstr "Vue de Widget"
+
+msgctxt "#31816"
+msgid "Tuner:"
+msgstr "Syntoniseur:"

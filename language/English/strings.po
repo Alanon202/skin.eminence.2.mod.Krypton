@@ -2349,3 +2349,7 @@ msgstr ""
 msgctxt "#31815"
 msgid "Widget View"
 msgstr ""
+
+msgctxt "#31816"
+msgid "Tuner:"
+msgstr ""

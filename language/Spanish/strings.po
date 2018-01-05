@@ -2345,3 +2345,7 @@ msgstr "Información de los Medios 4"
 msgctxt "#31815"
 msgid "Widget View"
 msgstr "Vista de Widget"
+
+msgctxt "#31816"
+msgid "Tuner:"
+msgstr "Sintonizador:"
