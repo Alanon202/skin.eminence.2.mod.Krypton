@@ -15,38 +15,33 @@
 		<orientation>horizontal</orientation>            
 		<itemgap>pad</itemgap>                    
 		<control type="image">
-			<width>108</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_ratio.png">$INFO[Container(9500).ListItem.VideoAspect,indicator/aspectratio/,.png]</texture>
+			<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_ratio.png">$VAR[MediaFlagsPathVar]/aspectratio/$INFO[Container(9500).ListItem.VideoAspect,,.png]</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + !String.IsEmpty(Container(9500).ListItem.VideoResolution)</visible>
 		</control>
 		<control type="image">       
-			<width>130</width>                
-			<height>50</height>
-			<aspectratio>keep</aspectratio>             
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_resolution.png">$INFO[Container(9500).ListItem.VideoResolution,indicator/resolution/,.png]</texture>
+			<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>          
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_resolution.png">$VAR[MediaFlagsPathVar]/resolution/$INFO[Container(9500).ListItem.VideoResolution,,.png]</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + !String.IsEmpty(Container(9500).ListItem.VideoResolution)</visible>
 		</control>          
 		<control type="image">
-			<width>130</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_video.png">$INFO[Container(9500).ListItem.VideoCodec,indicator/video/,.png]</texture>
+			<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_video.png">$VAR[MediaFlagsPathVar]/video/$INFO[Container(9500).ListItem.VideoCodec,,.png]</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + !String.IsEmpty(Container(9500).ListItem.VideoCodec)</visible>
 		</control>
 		<control type="image">        
-			<width>130</width>             
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_channels.png">$INFO[Container(9500).ListItem.AudioChannels,indicator/channels/,.png]</texture>
+			<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_channels.png">$VAR[MediaFlagsPathVar]/channels/$INFO[Container(9500).ListItem.AudioChannels,,.png]</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + !String.IsEmpty(Container(9500).ListItem.AudioChannels)</visible>
 		</control>
 		<control type="image">
-			<width>130</width>
-			<height>50</height>
-			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[Container(9500).ListItem.AudioCodec,indicator/audio/,.png]</texture>
+			<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_audio.png">$VAR[MediaFlagsPathVar]/audio/$INFO[Container(9500).ListItem.AudioCodec,,.png]</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + !String.IsEmpty(Container(9500).ListItem.AudioCodec)</visible>
 		</control>                          
 		<control type="group">
@@ -57,7 +52,8 @@
 				<width>140</width>                 
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="LineLabel" fallback="indicator/imdb.png">indicator/top250frame.png</texture>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+				<texture fallback="$VAR[MediaFlagsPathVar]/imdb.png">$VAR[MediaFlagsPathVar]/top250frame.png</texture>
 			</control>
 			<control type="label">
 				<right>7</right>
@@ -65,43 +61,49 @@
 				<width>85</width>                 
 				<height>50</height>
 				<font>Font-Sublabel</font>
-				<label colordiffuse="LineLabel">$INFO[Container(9500).ListItem.Top250]</label>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>				
+				<label>$INFO[Container(9500).ListItem.Top250]</label>
 			</control>
 		</control>
 		<control type="image">             
-			<width>130</width>                 
-			<height>50</height>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/bluray.png</texture>
+			<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/bluray.png</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + [String.Contains(Container(9500).ListItem.FilenameAndPath,bluray) | String.Contains(Container(9500).ListItem.FilenameAndPath,bdrip) | String.Contains(Container(9500).ListItem.FilenameAndPath,bd25) | String.Contains(Container(9500).ListItem.FilenameAndPath,bd50) | String.Contains(Container(9500).ListItem.FilenameAndPath,brrip)]</visible>
 		</control>
 		<control type="image">               
 			<width>73</width>               
 			<height>50</height>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hddvd.png</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/hddvd.png</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,hddvd)</visible>
 		</control>
 		<control type="image">               
 			<width>73</width>               
 			<height>50</height>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hdtv.png</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/hdtv.png</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,hdtv)</visible>
 		</control>	
 		<control type="image">               
 			<width>73</width>               
 			<height>50</height>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/sdtv.png</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/sdtv.png</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,sdtv)</visible>
 		</control>				
 		<control type="image">               
 			<width>130</width>               
 			<height>50</height>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/web-dl.png</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/web-dl.png</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + String.Contains(Container(9500).ListItem.FilenameAndPath,web)</visible>
 		</control>					
 		<control type="image">               
 			<width>130</width>             
 			<height>50</height>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/dvd.png</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/dvd.png</texture>
 			<visible>Skin.HasSetting(furniture.showhubflags) + [String.Contains(Container(9500).ListItem.FilenameAndPath,dvd) + !String.Contains(Container(9500).ListItem.FilenameAndPath,hddvd)]</visible>
 		</control>
 		<control type="image">               
@@ -109,13 +111,15 @@
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
 			<visible>Skin.HasSetting(furniture.showhubflags) + Container(9500).ListItem.IsStereoscopic</visible>
-			<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/3D.png</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/3D.png</texture>
 		</control>   
 		<control type="image">             
 			<width>64</width>               
 			<height>50</height>
 			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="LineLabel" background="true">$VAR[RatingFlagVar,,.png]</texture>
+			<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+			<texture fallback="" background="true">$VAR[RatingFlagVar,,.png]</texture>
 			<visible>!String.IsEmpty(Container(9500).ListItem.MPAA) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(54) | Control.IsVisible(502) | Control.IsVisible(503) | Control.IsVisible(548) | Control.IsVisible(508) | Control.IsVisible(509) | Control.IsVisible(535) | Control.IsVisible(516)]</visible>
 		</control>					
 	</control>
@@ -386,89 +390,48 @@
             <orientation>horizontal</orientation> 
             <itemgap>pad</itemgap>        
             <control type="image">
-                <width>108</width>
-                <height>50</height>
-                <aspectratio>keep</aspectratio>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_ratio.png">$INFO[ListItem.VideoAspect,indicator/aspectratio/,.png]</texture>
+				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_ratio.png">$VAR[MediaFlagsPathVar]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
                 <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.VideoResolution)</visible>
             </control>
             <control type="image">          
-                <width>130</width>               
-                <height>50</height>
-                <aspectratio>keep</aspectratio>                
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_resolution.png">$INFO[ListItem.VideoResolution,indicator/resolution/,.png]</texture>
+				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>          
+                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_resolution.png">$VAR[MediaFlagsPathVar]/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
                 <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.VideoResolution)</visible>
             </control>        
             <control type="image">
-                <width>130</width>
-                <height>50</height>
-                <aspectratio>keep</aspectratio>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_video.png">$INFO[ListItem.VideoCodec,indicator/video/,.png]</texture>
+				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_video.png">$VAR[MediaFlagsPathVar]/video/$INFO[ListItem.VideoCodec,,.png]</texture>
                 <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.VideoCodec)</visible>
             </control>             
             <control type="image">
-                <width>130</width>
-                <height>50</height>
-                <aspectratio>keep</aspectratio>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[ListItem.AudioCodec,indicator/audio/,.png]</texture>
+				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_audio.png">$VAR[MediaFlagsPathVar]/audio/$INFO[ListItem.AudioCodec,,.png]</texture>
                 <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.AudioCodec)</visible>
             </control>                          
             <control type="image">           
-                <width>130</width>      
-                <height>50</height>
-                <aspectratio>keep</aspectratio>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_channels.png">$INFO[ListItem.AudioChannels,indicator/channels/,.png]</texture>
+				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_channels.png">$VAR[MediaFlagsPathVar]/channels/$INFO[ListItem.AudioChannels,,.png]</texture>
                 <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.AudioChannels)</visible>
             </control>
             <control type="image">           
-                <width>130</width>                 
-                <height>50</height>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/bluray.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + [String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50) | String.Contains(ListItem.FilenameAndPath,brrip)]</visible>
+				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
+                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/$VAR[SourceIcons]</texture>
+                <visible>Skin.HasSetting(furniture.showflags)</visible>
             </control>
-            <control type="image">              
-                <width>73</width>                 
-                <height>50</height>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hddvd.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,hddvd)</visible>
-            </control>
-            <control type="image">              
-                <width>130</width>              
-                <height>50</height>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/dvd.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,dvd) + !String.Contains(ListItem.FilenameAndPath,hddvd)</visible>
-            </control>
-            <control type="image">               
-                <width>73</width>               
-                <height>50</height>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hdtv.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,hdtv)</visible>
-            </control>
-            <control type="image">               
-                <width>73</width>               
-                <height>50</height>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/sdtv.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,sdtv)</visible>
-            </control>				
-            <control type="image">               
-                <width>130</width>               
-                <height>50</height>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/web-dl.png</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + String.Contains(ListItem.FilenameAndPath,web)</visible>
-            </control>				
-            <control type="image">              
-                <width>73</width>                 
-                <height>50</height>
-                <aspectratio>keep</aspectratio>
-                <visible>Skin.HasSetting(furniture.showflags) + ListItem.IsStereoscopic</visible>
-                <texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/3D.png</texture>
-            </control>	
             <control type="image">             
                 <width>64</width>               
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
-                <texture colordiffuse="LineLabel" background="true" fallback="">$VAR[RatingFlagVar,,.png]</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)]]</visible>
+				<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+                <texture background="true" fallback="">$VAR[RatingFlagVar,,.png]</texture>
+                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)] | Control.IsVisible(555)]</visible>
             </control>
 			<control type="group">
 				<width>140</width>                 
@@ -477,8 +440,9 @@
 				<control type="image">              
 					<width>140</width>                 
 					<height>50</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="LineLabel" fallback="indicator/imdb.png">indicator/top250frame.png</texture>
+					<aspectratio>scale</aspectratio>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+					<texture fallback="$VAR[MediaFlagsPathVar]/imdb.png">$VAR[MediaFlagsPathVar]/top250frame.png</texture>
 				</control>
 				<control type="label">
 					<right>7</right>
@@ -486,17 +450,10 @@
 					<width>85</width>                 
 					<height>50</height>
 					<font>Font-Sublabel</font>
-					<label colordiffuse="LineLabel">$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)]</label>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)]</label>
 				</control>
-			</control>			
-	<!--		<control type="image">
-				<centertop>60%</centertop>
-				<width>230</width>
-				<height>50</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="LineLabel">$VAR[Image_UserRatingStar,indicator/videorating/,.png]</texture>
-				<visible>!String.IsEmpty(ListItem.UserRating) + Skin.HasSetting(showuserratings)</visible>
-			</control>	-->	
+			</control>
 			
 	<!-- Ajout Control Groupe Duration -->  
 			<control type="grouplist">
@@ -737,14 +694,23 @@
         </control>
         <control type="image">
             <aspectratio>scale</aspectratio>
-            <texture background="true">$INFO[Window(home).Property(ImageFilterfa2)]</texture>
-            <visible>Player.HasAudio + Skin.HasSetting(background.showvisualisation) + Skin.String(MusicVisualisation, pixelated)</visible>
+			<include>FullscreenDimensions</include>
+            <texture background="true">$INFO[Player.Art(fanart)]</texture>       
+            <visible>String.IsEmpty(Skin.String(MusicVisualisation)) | Skin.String(MusicVisualisation, fanart)</visible>
+            <visible>!String.IsEmpty(Player.Art(fanart))</visible>
+            <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
+            <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
+        </control>		
+        <control type="image">
+            <aspectratio>scale</aspectratio>
+            <texture background="true">$INFO[Player.Art]</texture>
+            <visible>Player.HasAudio + Skin.HasSetting(background.showvisualisation) + Skin.String(MusicVisualisation,fanart)</visible>
             <animation effect="fade" start="100" end="65" time="0" condition="Skin.HasSetting(OSDVisualisation.ShowFanart)">Conditional</animation>
             <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
         </control>          
         <control type="group">
-            <visible>Player.HasAudio + Skin.HasSetting(background.showvisualisation) + Skin.String(MusicVisualisation, albumswall)</visible>
+            <visible>Player.HasAudio + Skin.HasSetting(background.showvisualisation) + Skin.String(MusicVisualisation,albumswall)</visible>
             <control type="panel" id="9032">
                 <left>0</left>
                 <top>0</top>
@@ -972,11 +938,13 @@
             <texture align="left" border="75">common/header.png</texture>
             <colordiffuse>$VAR[Furniture_TopBar_Tile_BGCOLOR]</colordiffuse>
             <animation effect="fade" start="100" end="90" time="200" condition="Skin.HasSetting(home.transparent) + [Window.IsVisible(home) | Window.IsVisible(weather)]">Conditional</animation>            
-            <visible>String.IsEmpty(Skin.String(HeaderStyle)) | Skin.String(HeaderStyle, beveledheadertile)</visible>
+            <animation effect="slide" end="-1000" condition="Window.IsVisible(Home) + Skin.String(HomeStyle, vertical)">Conditional</animation>
+			<visible>String.IsEmpty(Skin.String(HeaderStyle)) | Skin.String(HeaderStyle, beveledheadertile)</visible>
             <visible>![Window.IsVisible(visualisation) + Skin.HasSetting(osdmusic.disabletile)]</visible>
             <visible>String.IsEmpty(Window(home).Property(submenumouse)) + ![Control.HasFocus(9000) + Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(Custom_Password.xml)</visible>
             <visible>[VideoPlayer.IsFullscreen | !Skin.HasSetting(disable.headertile)]</visible>
 			<visible>!Control.IsVisible(515)</visible>
+			<visible></visible> 
         </control>        
         <control type="image">
             <posy>18</posy>
@@ -986,11 +954,12 @@
             <texture align="left" border="75">common/header_rounded.png</texture>
             <colordiffuse>$VAR[Furniture_TopBar_Tile_BGCOLOR]</colordiffuse>
             <animation effect="fade" start="100" end="90" time="200" condition="Skin.HasSetting(home.transparent) + [Window.IsVisible(home) | Window.IsVisible(weather)]">Conditional</animation>
-            <visible>Skin.String(HeaderStyle, roundedheadertile)</visible>
+            <animation effect="slide" end="-2010" condition="Window.IsVisible(Home) + Skin.String(HomeStyle, vertical)">Conditional</animation>
+			<visible>Skin.String(HeaderStyle, roundedheadertile)</visible>
             <visible>![Window.IsVisible(visualisation) + Skin.HasSetting(osdmusic.disabletile)]</visible>
-           <visible>String.IsEmpty(Window(home).Property(submenumouse)) + ![Control.HasFocus(9000) + Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(Custom_Password.xml)</visible>
-           <visible>[VideoPlayer.IsFullscreen | !Skin.HasSetting(disable.headertile)]</visible>
-		   <visible>!Control.IsVisible(515)</visible>
+            <visible>String.IsEmpty(Window(home).Property(submenumouse)) + ![Control.HasFocus(9000) + Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(Custom_Password.xml)</visible>
+            <visible>[VideoPlayer.IsFullscreen | !Skin.HasSetting(disable.headertile)]</visible>
+		    <visible>!Control.IsVisible(515)</visible>
         </control>         
         <control type="image">
             <posy>18</posy>
@@ -1000,7 +969,8 @@
             <texture align="left" border="75">common/header_square.png</texture>
             <colordiffuse>$VAR[Furniture_TopBar_Tile_BGCOLOR]</colordiffuse>
             <animation effect="fade" start="100" end="90" time="200" condition="Skin.HasSetting(home.transparent) + [Window.IsVisible(home) | Window.IsVisible(weather)]">Conditional</animation>
-            <visible>Skin.String(HeaderStyle, squaredheadertile)</visible>
+            <animation effect="slide" end="-2010" condition="Window.IsVisible(Home) + Skin.String(HomeStyle, vertical)">Conditional</animation>
+			<visible>Skin.String(HeaderStyle, squaredheadertile)</visible>
             <visible>![Window.IsVisible(visualisation) + Skin.HasSetting(osdmusic.disabletile)]</visible>
             <visible>String.IsEmpty(Window(home).Property(submenumouse)) + ![Control.HasFocus(9000) + Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(Custom_Password.xml)</visible>
             <visible>[VideoPlayer.IsFullscreen | !Skin.HasSetting(disable.headertile)]</visible>
@@ -1022,6 +992,7 @@
             <visible>[VideoPlayer.IsFullscreen | !Skin.HasSetting(disable.headertile)]</visible>           
             <visible>![Window.IsVisible(visualisation) + Skin.HasSetting(osdmusic.disabletile)]</visible>
 			<visible>!Control.IsVisible(515)</visible>
+			<animation effect="slide" end="-2010" condition="Window.IsVisible(Home) + Skin.String(HomeStyle, vertical)">Conditional</animation>
             <animation type="Conditional" condition="!Window.IsVisible(DuialogBusy.xml)">
                 <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" delay="2000" />
                 <effect type="slide" start="0,-10" end="0,0" time="350" tween="sine" easing="out" delay="2000" />
@@ -1085,6 +1056,7 @@
             <visible>String.IsEmpty(Window(home).Property(submenumouse)) + ![Control.HasFocus(9000) + Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(Custom_Password.xml)</visible>
             <visible>[VideoPlayer.IsFullscreen | !Skin.HasSetting(disable.headertile)]</visible>
 			<visible>!Control.IsVisible(515)</visible>
+			<animation effect="slide" end="-2010" condition="Window.IsVisible(Home) + Skin.String(HomeStyle, vertical)">Conditional</animation>
         </control>
     </include>
     <include name="Furniture_TopBar_Header">
@@ -1094,17 +1066,6 @@
             <visible>!Skin.HasSetting(disable.mainheader)</visible>
             <visible>String.IsEmpty(Window(home).Property(submenumouse)) + ![Control.HasFocus(9000) + Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(Custom_Password.xml)</visible>
             <control type="label">
-                <posx>245</posx>
-                <posy>25</posy>
-                <width>1200</width>
-                <height>100</height>
-                <font>Font-Header</font>
-                <label>$VAR[Furniture_TopBar_Header_MainLabel]</label>
-                <aligny>top</aligny>
-                <textcolor>$VAR[Furniture_TopBar_MainLabel_Color]</textcolor>
-                <visible>!Skin.HasSetting(disable.headertile)</visible>
-            </control>
-            <control type="label">
                 <posx>35</posx>
                 <posy>25</posy>
                 <width>1200</width>
@@ -1113,18 +1074,9 @@
                 <label>$VAR[Furniture_TopBar_Header_MainLabel]</label>
                 <aligny>top</aligny>
                 <textcolor>$VAR[Furniture_TopBar_MainLabel_Color]</textcolor>
-                <visible>Skin.HasSetting(disable.headertile)</visible>
-            </control>
-            <control type="label">
-                <posx>245</posx>
-                <posy>115</posy>
-                <width>1100</width>
-                <font>Font-Sublabel</font>
-                <aligny>top</aligny>
-                <textcolor>$VAR[Furniture_TopBar_SubLabel_Color]</textcolor>
-                <label>$VAR[Furniture_TopBar_Header_SubLabel]</label>
-                <visible>!Skin.HasSetting(disable.headertile)</visible>
-            </control>
+				<animation effect="slide" end="210" condition="Window.IsVisible(Home) + [!Skin.HasSetting(disable.headertile) | Skin.String(HomeStyle, vertical)]">Conditional</animation>
+				<animation effect="slide" end="210" condition="!Window.IsVisible(Home) + !Skin.HasSetting(disable.headertile)">Conditional</animation>
+			</control>
             <control type="label">
                 <posx>35</posx>
                 <posy>115</posy>
@@ -1133,7 +1085,8 @@
                 <aligny>top</aligny>
                 <textcolor>$VAR[Furniture_TopBar_SubLabel_Color]</textcolor>
                 <label>$VAR[Furniture_TopBar_Header_SubLabel]</label>
-                <visible>Skin.HasSetting(disable.headertile)</visible>
+				<animation effect="slide" end="210" condition="Window.IsVisible(Home) + [!Skin.HasSetting(disable.headertile) | Skin.String(HomeStyle, vertical)]">Conditional</animation>
+				<animation effect="slide" end="210" condition="!Window.IsVisible(Home) + !Skin.HasSetting(disable.headertile)">Conditional</animation>
             </control>
         </control>
         <!-- Something Playing -->

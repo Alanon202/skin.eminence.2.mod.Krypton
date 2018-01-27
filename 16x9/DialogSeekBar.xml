@@ -90,39 +90,34 @@
                     <itemgap>30</itemgap>   
                     <visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>            
 				<control type="image">
-                    <width>76</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="LineLabel" fallback="indicator/fallback_ratio.png">$INFO[VideoPlayer.VideoAspect,indicator/aspectratio/,.png]</texture>
+					<include condition="Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsColour</include>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsWhite</include>
+					<texture fallback="$VAR[MediaFlagsPathVar]/fallback_ratio.png">$VAR[MediaFlagsPathVar]/aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
                     <visible>!String.IsEmpty(VideoPlayer.VideoAspect)</visible>
                 </control>
                 <control type="image">
-					<width>91</width>
-                    <height>35</height>
-					<aspectratio>keep</aspectratio>
-                    <texture colordiffuse="LineLabel" fallback="indicator/fallback_resolution.png">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
+					<include condition="Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsColour</include>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsWhite</include>
+                    <texture fallback="$VAR[MediaFlagsPathVar]/fallback_resolution.png">$VAR[MediaFlagsPathVar]/resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
                      <visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
                 </control>               
                 <control type="image">
-                    <width>91</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-              	    <texture colordiffuse="LineLabel" fallback="indicator/fallback_video.png">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
+					<include condition="Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsColour</include>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsWhite</include>
+              	    <texture fallback="$VAR[MediaFlagsPathVar]/fallback_video.png">$VAR[MediaFlagsPathVar]/video/$INFO[VideoPlayer.VideoCodec,,.png]</texture>
                      <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
                 </control>                      
                 <control type="image">
-                    <width>91</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
+					<include condition="Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsColour</include>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsWhite</include>
+					<texture fallback="$VAR[MediaFlagsPathVar]/fallback_audio.png">$VAR[MediaFlagsPathVar]/audio/$INFO[VideoPlayer.AudioCodec,,.png]</texture>
                     <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                     </control>                                  
                 <control type="image">
-                    <width>91</width>
-                    <height>35</height>
-					<aspectratio>keep</aspectratio>
+					<include condition="Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsColour</include>
+					<include condition="!Skin.HasSetting(colouredflags)">Defs_CompactPlayerFlagsWhite</include>
                     <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
-                    <texture colordiffuse="LineLabel" fallback="indicator/fallback_channels.png">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
+                    <texture fallback="$VAR[MediaFlagsPathVar]/fallback_channels.png">$VAR[MediaFlagsPathVar]/channels/$INFO[VideoPlayer.AudioChannels,,.png]</texture>
                 </control>  
         </control>          
     </control> 
@@ -165,111 +160,54 @@
                     <orientation>horizontal</orientation>
                     <itemgap>side</itemgap>   
 					<control type="image">
-						<width>91</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_ratio.png">$INFO[VideoPlayer.VideoAspect,indicator/aspectratio/,.png]</texture>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
+						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_ratio.png">$VAR[MediaFlagsPathVar]/aspectratio/$INFO[VideoPlayer.VideoAspect,,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.VideoAspect) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>						
 					<control type="image">
-						<width>108</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_resolution.png">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
+						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_resolution.png">$VAR[MediaFlagsPathVar]/resolution/$INFO[VideoPlayer.VideoResolution,,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.VideoResolution) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>
 					<control type="image">
-						<width>108</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_video.png">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
+						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_video.png">$VAR[MediaFlagsPathVar]/video/$INFO[VideoPlayer.VideoCodec,,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.VideoCodec) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>   
 					<control type="image">
-						<width>108</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_audio.png">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
+						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_audio.png">$VAR[MediaFlagsPathVar]/audio/$INFO[VideoPlayer.AudioCodec,,.png]</texture>
 						<visible>!String.IsEmpty(VideoPlayer.AudioCodec) + Skin.HasSetting(videoosd.showcompact)</visible>
 					</control>						
 					<control type="image">
-						<width>108</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
 						<visible>!String.IsEmpty(VideoPlayer.AudioChannels) + Skin.HasSetting(videoosd.showcompact)</visible>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_channels.png">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
+						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_channels.png">$VAR[MediaFlagsPathVar]/channels/$INFO[VideoPlayer.AudioChannels,,.png]</texture>
 					</control>
 					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/bluray.png</texture>
-						<visible>[String.Contains(Player.FilenameAndPath,bluray) | String.Contains(Player.FilenameAndPath,bdrip) | String.Contains(Player.FilenameAndPath,brrip) | String.Contains(Player.FilenameAndPath,bd25) | String.Contains(Player.FilenameAndPath,bd50)]</visible>
-					</control>
-					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hddvd.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,dvd) + String.Contains(Player.FilenameAndPath,hddvd)</visible>
-					</control>
-					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/dvd.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,dvd) + !String.Contains(Player.FilenameAndPath,hddvd)</visible>
-					</control>
-					<control type="image">
-						<width>70</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/strm.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,strm)</visible>
-					</control>	
-					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/hdtv.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,tv) + [String.Contains(Player.FilenameAndPath,hdtv) | String.Contains(Player.FilenameAndPath,hd tv) | String.Contains(Player.FilenameAndPath,hd-tv)]</visible>
-					</control>
-					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/sdtv.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,tv) + [String.Contains(Player.FilenameAndPath,sd-tv) | String.Contains(Player.FilenameAndPath,sdtv)]</visible>
-					</control>							
-					<control type="image">
-						<width>95</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/web-dl.png</texture>
-						<visible>String.Contains(Player.FilenameAndPath,web) | String.Contains(Player.FilenameAndPath,webdl) | String.Contains(Player.FilenameAndPath,web-dl) | String.Contains(Player.FilenameAndPath,webrip)</visible>
-					</control>			
-				   <control type="image">
-						<width>70</width>
-						<height>45</height>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/strm.png</texture>
-						<visible>!Player.HasAudio + !String.Contains(Player.FilenameAndPath,web) + !String.Contains(Player.FilenameAndPath,dvd) + !String.Contains(Player.FilenameAndPath,hd) + !String.Contains(Player.FilenameAndPath,bluray) + !String.Contains(Player.FilenameAndPath,br) + !String.Contains(Player.FilenameAndPath,bd) + !String.Contains(Player.FilenameAndPath,tv)</visible>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
+						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/$VAR[PlayerSourceIcons]</texture>
 					</control>
 					<control type="image">
 						<width>45</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
 						<visible>VideoPlayer.IsStereoscopic</visible>
-						<texture colordiffuse="LineLabel" fallback="indicator/fallback_source.png">indicator/3D.png</texture>
+						<texture colordiffuse="LineLabel" fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/3D.png</texture>
 					</control>
 					<control type="image">
-						<width>95</width>
-						<height>45</height>
+						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
 						<align>right</align>
 						<centertop>50%</centertop>
 						<font>Font-ListInfo-Small</font>
-						<aspectratio>keep</aspectratio>
-						<texture colordiffuse="LineLabel" background="true" fallback="indicator/mpaa/OSD/unrated.png">$VAR[OSDRating,indicator/mpaa/OSD/,.png]</texture>
+						<texture background="true" fallback="$VAR[MediaFlagsPathVar]/mpaa/OSD/unrated.png">$VAR[MediaFlagsPathVar]/mpaa/OSD/$VAR[OSDRating,,.png]</texture>
 						<visible>!Skin.HasSetting(disable.mpaa) + [!String.IsEmpty(VideoPlayer.MPAA) | !String.IsEmpty(Window(Home).Property(SkinHelper.Player.MPAA))]</visible>
 					</control>					
 					<control type="group">
@@ -281,7 +219,7 @@
 							<width>108</width>
 							<height>45</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="LineLabel" fallback="indicator/imdb.png">indicator/top250frame.png</texture>
+							<texture colordiffuse="LineLabel" fallback="$VAR[MediaFlagsPathVar]/imdb.png">$VAR[MediaFlagsPathVar]/top250frame.png</texture>
 						</control>
 						<control type="label">
 							<right>5</right>
@@ -297,8 +235,9 @@
 						<height>45</height>
 						<align>right</align>
 						<font>Font-ListInfo-Small</font>
-						<aspectratio>keep</aspectratio>				
-						<texture colordiffuse="LineLabel">$VAR[PlayerRating,indicator/playerrating/,.png]</texture>
+						<aspectratio>keep</aspectratio>	
+						<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>						
+						<texture>$VAR[MediaFlagsPathVar]/playerrating/$VAR[PlayerRating,,.png]</texture>
 						<visible>!Skin.HasSetting(disable.rating) + !Player.HasAudio + [!String.IsEmpty(VideoPlayer.Rating) | !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Rating))]</visible>
 					</control>
 				</control>
@@ -497,7 +436,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>S</label>
 								</control>
 								<control type="label">
@@ -513,7 +452,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>V</label>
 								</control>
 								<control type="label">
@@ -530,7 +469,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>I</label>
 								</control>
 								<control type="label">
@@ -547,7 +486,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>ND</label>
 								</control>
 								<control type="label">
@@ -564,7 +503,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>CO</label>
 								</control>
 								<control type="label">
@@ -581,7 +520,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>CW</label>
 								</control>
 								<control type="label">
@@ -598,7 +537,7 @@
 									<width>70</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>B</label>
 								</control>
 								<control type="label">
@@ -615,7 +554,7 @@
 									<width>50</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>N</label>
 								</control>
 								<control type="label">
@@ -645,7 +584,7 @@
 									<width>250</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>$INFO[PVR.ActStreamSNR,SNR: ,]</label>
 								</control>
 								<control type="label">
@@ -653,7 +592,7 @@
 									<width>250</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>$INFO[PVR.ActStreamSignal,AGC: ,]</label>
 								</control>
 							</control>
@@ -666,7 +605,7 @@
 									<width>150</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>$LOCALIZE[31816]</label>
 									<align>center</align>
 								</control>
@@ -674,7 +613,7 @@
 									<width>25</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>A</label>
 									<visible>!String.Contains(PVR.ActStreamDevice,#0)</visible>
 								</control>
@@ -690,7 +629,7 @@
 									<width>25</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>B</label>
 									<visible>!String.Contains(PVR.ActStreamDevice,#1)</visible>
 								</control>
@@ -706,7 +645,7 @@
 									<width>25</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>C</label>
 									<visible>!String.Contains(PVR.ActStreamDevice,#2)</visible>
 								</control>
@@ -722,7 +661,7 @@
 									<width>25</width>
 									<height>38</height>
 									<font>Font-OSD</font>
-									<textcolor>grey</textcolor>
+									<textcolor>white</textcolor>
 									<label>D</label>
 									<visible>!String.Contains(PVR.ActStreamDevice,#3)</visible>
 								</control>

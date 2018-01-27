@@ -795,7 +795,7 @@
             <visible>Container.Content(movies) | Container.Content(sets)</visible>
         </control>
         <!-- TVShows Fanarts/Thumbs Setting -->
-        <control type="radiobutton" id="90960">
+        <control type="radiobutton" id="90977">
             <include>Defs_OptionButton2</include>
             <label>$LOCALIZE[31647] 16:9</label>
             <selected>Skin.HasSetting(show.tvshowsthumbs)</selected>
@@ -813,7 +813,7 @@
             <visible>Container.Content(tvshows)</visible>
         </control>			
         <!-- TVShows Hide Plots -->
-        <control type="radiobutton" id="90970">
+        <control type="radiobutton" id="90982">
             <include>Defs_OptionButton2</include>
             <label>31648</label>
             <selected>Skin.HasSetting(hide.tvshowsplots)</selected>
@@ -837,6 +837,22 @@
             <onclick>Skin.ToggleSetting(netflixshadow)</onclick>
             <visible>Control.IsVisible(515)</visible>
         </control>	
+        <!-- Watched Shade -->
+        <control type="radiobutton" id="90983">
+            <include>Defs_OptionButton2</include>
+            <label>Watched dim</label>
+            <selected>Skin.HasSetting(shadewatched)</selected>
+            <onclick>Skin.ToggleSetting(shadewatched)</onclick>
+            <visible>Control.IsVisible(514) | Control.IsVisible(513)</visible>
+        </control>
+        <!-- Hub Switch -->
+        <control type="radiobutton" id="90971">
+            <include>Defs_OptionButton2</include>
+            <label>Switch</label>
+            <selected>Skin.HasSetting(hub.changeplaces)</selected>
+            <onclick>Skin.ToggleSetting(hub.changeplaces)</onclick>
+            <visible>!String.IsEmpty(Window(home).Property(HubReturn))</visible>
+        </control>		
         <!-- Show label overview -->
         <control type="radiobutton" id="90991">
             <include>Defs_OptionButton2</include>
@@ -886,8 +902,19 @@
                     <width>200</width>
                     <aspectratio>keep</aspectratio>
                     <texture>$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(weather).Property($PARAM[day].FanartCode),,.png]</texture>
-                    <visible>!String.IsEmpty(Skin.String(weather.icons.path))</visible>
+                    <visible>!String.IsEmpty(Skin.String(weather.icons.path)) + !Skin.HasSetting(weather.icons.multi)</visible>
                 </control>
+                <control type="multiimage">
+                    <centertop>50%</centertop>
+                    <height>200</height>
+                    <width>200</width>
+					<timeperimage>70</timeperimage>
+					<fadetime>1</fadetime>
+					<randomize>false</randomize>					
+                    <aspectratio>keep</aspectratio>
+                    <imagepath>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property($PARAM[day].FanartCode)]$VAR[WeatherIconsExtVar]</imagepath>
+                    <visible>!String.IsEmpty(Skin.String(weather.icons.path)) + Skin.HasSetting(weather.icons.multi)</visible>
+                </control>				
                 <control type="image">
                     <centertop>50%</centertop>
                     <height>200</height>
