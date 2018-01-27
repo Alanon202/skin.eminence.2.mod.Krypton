@@ -77,8 +77,9 @@
             </control>
 			
             <control type="grouplist">
-                <left>1250</left>
+                <left>1150</left>
                 <top>20</top>
+				<right>40</right>
                 <visible>VideoPlayer.Content(livetv)</visible>
                 <usecontrolcoords>true</usecontrolcoords>
                 
@@ -123,7 +124,7 @@
                 
 				<control type="label">
                     <top>5</top>
-                    <width>1600</width>
+                    <width>1400</width>
                     <height>50</height>
                     <aligny>bottom</aligny>
                     <label>$INFO[PVR.ActStreamSNR,[COLOR Selected]$LOCALIZE[19009]:[/COLOR] ]</label>

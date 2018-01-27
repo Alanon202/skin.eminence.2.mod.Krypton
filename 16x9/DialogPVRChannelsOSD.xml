@@ -46,11 +46,13 @@
                 <label>$INFO[Container(11).NumItems,,  $LOCALIZE[19019]]</label>
             </control>
 
-            <control type="list" id="11">
+            <control type="fixedlist" id="11">
                 <left>0</left>
                 <top>120</top>
                 <height>980</height>
                 <width>670</width>
+				<movement>4</movement>
+				<focusposition>5</focusposition>				
                 <onleft>PreviousChannelGroup</onleft>
                 <onright>NextChannelGroup</onright>
                 <orientation>vertical</orientation>
@@ -74,8 +76,7 @@
                         <left>560</left>
                         <width>70</width>
                         <height>70</height>
-                        <align>left</align>
-<!-- Modification Label -->                        
+                        <align>left</align>                       
                         <label>$INFO[ListItem.ChannelNumberLabel]</label>
                         <selectedcolor>ListLabel</selectedcolor>
                     </control>
@@ -135,8 +136,7 @@
                         <left>560</left>
                         <width>70</width>
                         <height>70</height>
-                        <align>left</align>
-<!-- Modification Label -->                        
+                        <align>left</align>                       
                         <label>$INFO[ListItem.ChannelNumberLabel]</label>
                         <selectedcolor>Selected</selectedcolor>
                         <textcolor>Selected</textcolor>
@@ -172,9 +172,9 @@
                         <selectedcolor>Selected</selectedcolor>
                     </control>
                 </focusedlayout>
-            
             </control>
-        </control>
+			<include>PVR_InfoBox2</include>
+		</control>
     </controls>
 
 </window>
