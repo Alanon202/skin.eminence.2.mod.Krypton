@@ -258,8 +258,8 @@
 						<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>						
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(shadewatched)</visible>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -300,8 +300,8 @@
 						<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>						
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(shadewatched)</visible>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -477,12 +477,6 @@
 				<visible>!String.IsEmpty(ListItem.Title)</visible>
 				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
-				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
-				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
-				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 				<control type="label">
 					<height>50</height>
 					<width>1540</width>
@@ -499,12 +493,6 @@
                 <left>0</left>
 				<width>190</width>
 				<height>55</height>
-				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
-				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
-				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 				<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 				<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 				<control type="label">
@@ -583,8 +571,8 @@
 						<include condition="Skin.HasSetting(darkoverlay)">Object_Background2</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>						
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(shadewatched)</visible>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -625,7 +613,7 @@
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
 						<include condition="!Skin.HasSetting(darkoverlay)">Object_Background</include>
-						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(shadewatched)</visible>
 					</control>
 					<control type="image">
 						<right>5</right>
