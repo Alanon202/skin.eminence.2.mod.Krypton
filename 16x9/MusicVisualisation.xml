@@ -3,8 +3,6 @@
 	<!-- visualisation -->
 	<defaultcontrol>-</defaultcontrol>
 	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
-	<onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,info=firstrun)</onload>
-    <onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True,pixels=10,bits=1,radius=30)</onload> 
 	<onload>SetProperty(Music.WasFullscreen,True,home)</onload>
 	<onunload>ClearProperty(Music.WasFullscreen,home)</onunload>	
 	<controls>
@@ -37,15 +35,15 @@
             <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
         </control>
-        <control type="image">
-            <aspectratio>scale</aspectratio>
-			<include>FullscreenDimensions</include>
-            <texture background="true">$INFO[Window(home).Property(ImageFilterfa2)]</texture>
-            <visible>Skin.String(MusicVisualisation, pixelated)</visible>
-            <animation effect="fade" start="100" end="65" time="0" condition="Skin.HasSetting(OSDVisualisation.ShowFanart)">Conditional</animation>
-            <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
-            <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
-        </control>
+        <!-- <control type="image" id="7997"> -->
+            <!-- <aspectratio>scale</aspectratio> -->
+			<!-- <include>FullscreenDimensions</include> -->
+            <!-- <texture background="true">$INFO[Window(home).Property(Imagecfa2)</texture> -->
+            <!-- <visible>Skin.String(MusicVisualisation, pixelated)</visible> -->
+            <!-- <animation effect="fade" start="100" end="65" time="0" condition="Skin.HasSetting(OSDVisualisation.ShowFanart)">Conditional</animation> -->
+            <!-- <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation> -->
+            <!-- <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation> -->
+        <!-- </control> -->
 
 <!-- Ajout Control Group -->           
         <control type="group">
