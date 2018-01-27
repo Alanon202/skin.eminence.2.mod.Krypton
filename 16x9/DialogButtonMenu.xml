@@ -6,6 +6,7 @@
             <include>Dialog_Top</include>
             <include condition="String.IsEmpty(Skin.String(SubmenuStyle)) | Skin.String(SubmenuStyle, Large)">Dialog_Background_Home</include>
             <include condition="Skin.String(SubmenuStyle, Small)">Dialog_Background_Home_Small</include>
+			<include condition="Skin.String(SubmenuStyle, Touch)">Dialog_Touch_Background</include>
             <include content="Dialog_Top_IconHeader_Home" condition="String.IsEmpty(Skin.String(SubmenuStyle)) | Skin.String(SubmenuStyle, Large)">
                 <param name="label" value="$LOCALIZE[33060]" />
                 <param name="icon" value="special://skin/extras/icons/power.png" />
@@ -23,6 +24,7 @@
             <control type="list" id="9000">
                 <include condition="String.IsEmpty(Skin.String(SubmenuStyle)) | Skin.String(SubmenuStyle, Large)">Dialog_Top_PowerMenu</include>
                 <include condition="Skin.String(SubmenuStyle, Small)">Dialog_Top_PowerMenu_Small</include>
+				<include condition="Skin.String(SubmenuStyle, Touch)">Dialog_Touch_PowerMenu</include>
                 <content><include>skinshortcuts-group-powermenu</include></content>
             </control>
 
