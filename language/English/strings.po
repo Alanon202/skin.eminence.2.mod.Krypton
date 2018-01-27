@@ -2353,3 +2353,55 @@ msgstr ""
 msgctxt "#31816"
 msgid "Tuner:"
 msgstr ""
+
+msgctxt "#31817"
+msgid "Vertical"
+msgstr ""
+
+msgctxt "#31818"
+msgid "Switch places"
+msgstr ""
+
+msgctxt "#31819"
+msgid "Switches places of the list and widget panels in the hub."
+msgstr ""
+
+msgctxt "#31820"
+msgid "Choose flags"
+msgstr ""
+
+msgctxt "#31821"
+msgid "Choose between coloured or white media flags."
+msgstr ""
+
+msgctxt "#31822"
+msgid "White flags"
+msgstr ""
+
+msgctxt "#31823"
+msgid "Coloured flags"
+msgstr ""
+
+msgctxt "#31824"
+msgid "No widget"
+msgstr ""
+
+msgctxt "#31825"
+msgid "Removes Hub widgets and expands the list"
+msgstr ""
+
+msgctxt "#31826"
+msgid "Hub Widget Control"
+msgstr ""
+
+msgctxt "#31827"
+msgid "Options for hub widgets (backgrounds and layout)."
+msgstr ""
+
+msgctxt "#31828"
+msgid "Fanart"
+msgstr ""
+
+msgctxt "#31829"
+msgid "Touch submenu"
+msgstr ""

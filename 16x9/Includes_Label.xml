@@ -160,7 +160,9 @@
 	<variable name="Label_ExtraRating">
         <value condition="!Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.MPAA) + !Skin.HasSetting(disable.mpaa)">$INFO[ListItem.MPAA]</value>       
 		<value condition="!Skin.HasSetting(furniture.showflags) + String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA)) + !Skin.HasSetting(disable.mpaa)">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>
-    </variable>
+        <value condition="Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.MPAA) + !Skin.HasSetting(disable.mpaa) + [Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)] | Control.IsVisible(555)]">$INFO[ListItem.MPAA]</value>       
+		<value condition="Skin.HasSetting(furniture.showflags) + String.IsEmpty(ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA)) + !Skin.HasSetting(disable.mpaa) + [Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)] | Control.IsVisible(555)]">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>    
+	</variable>
 	
 	<variable name="Label_Duration">
 		<value condition="Skin.HasSetting(helperduration) + System.HasAddon(script.duration_axbmcuser) + !String.IsEmpty(ListItem.Duration)">$INFO[Window(Home).Property(DurationAxbmcuser.Duration)]</value>
@@ -177,7 +179,7 @@
         <value condition="Container.Content(seasons)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Episode,, $LOCALIZE[20360]]</value>   
         <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[20342]  •  ]$INFO[Window(Home).Property(SkinHelper.ListItem.Years)]</value>        
 		<value condition="!ListItem.IsCollection + Container.Content(movies)">$VAR[Label_ExtraInfo,,  •  ]$VAR[Label_ExtendedYear]</value>        
-        <value condition="!ListItem.IsCollection + !Container.Content(movies)">$VAR[Label_ExtraInfo]$VAR[Label_ExtendedPremiere,  •  ,]</value>
+        <value condition="!ListItem.IsCollection + !Container.Content(movies)">$VAR[Label_ExtraInfo,,  •  ]$VAR[Label_ExtendedPremiere]</value>
 	</variable>
 	
 	<variable name="Label_ExtendedPremiere">,
@@ -598,7 +600,13 @@
 		<!--Panel Colour-->
 		<value condition="Control.HasFocus(9955)">$LOCALIZE[31281]</value>
 		<!--Reset Panel Colour-->
-		<value condition="Control.HasFocus(9954)">$LOCALIZE[31282]</value>			
+		<value condition="Control.HasFocus(9954)">$LOCALIZE[31282]</value>
+		<!--Switch Places-->
+		<value condition="Control.HasFocus(9953)">$LOCALIZE[31819]</value>
+		<!--Coloured Flags-->
+		<value condition="Control.HasFocus(9952)">$LOCALIZE[31821]</value>
+		<!--Hub Widget Background-->
+		<value condition="Control.HasFocus(9951)">$LOCALIZE[31827]</value>		
    </variable>
 
 	<variable name="Label_PlayerStatus">
@@ -784,20 +792,47 @@
     </variable>
     <variable name="Label_SkinSetting_HeaderStyle">
         <value condition="String.IsEmpty(Skin.String(HeaderStyle))">$LOCALIZE[31505]</value>
-        <value>$INFO[Skin.String(HeaderStyle.label)]</value>
+        <value condition="Skin.String(HeaderStyle,beveledheadertile)">$LOCALIZE[31505]</value>
+		<value condition="Skin.String(HeaderStyle,roundedheadertile)">$LOCALIZE[31503]</value>
+		<value condition="Skin.String(HeaderStyle,squaredheadertile)">$LOCALIZE[31504]</value>
     </variable>
     <variable name="Label_SkinSetting_WidgetStyle">
         <value condition="String.IsEmpty(Skin.String(WidgetStyle))">$LOCALIZE[31505]</value>
-        <value>$INFO[Skin.String(WidgetStyle.label)]</value>
+        <value condition="Skin.String(WidgetStyle,beveledwidget)">$LOCALIZE[31505]</value>
+		<value condition="Skin.String(WidgetStyle,roundedwidget)">$LOCALIZE[31503]</value>
+		<value condition="Skin.String(WidgetStyle,squaredwidget)">$LOCALIZE[31504]</value>
     </variable>
     <variable name="Label_SkinSetting_HomeStyle">
         <value condition="String.IsEmpty(Skin.String(HomeStyle))">$LOCALIZE[31636]</value>
-        <value>$INFO[Skin.String(HomeStyle.label)]</value>
+        <value condition="Skin.String(HomeStyle, beveled)">$LOCALIZE[31636]</value>
+		<value condition="Skin.String(HomeStyle, emptybeveled)">$LOCALIZE[31668]</value>
+		<value condition="Skin.String(HomeStyle, rounded)">$LOCALIZE[31664]</value>
+		<value condition="Skin.String(HomeStyle, emptyrounded)">$LOCALIZE[31667]</value>
+		<value condition="Skin.String(HomeStyle, squared)">$LOCALIZE[31502]</value>
+		<value condition="Skin.String(HomeStyle, emptysquared)">$LOCALIZE[31666]</value>
+		<value condition="Skin.String(HomeStyle, circle)">$LOCALIZE[31501]</value>
+		<value condition="Skin.String(HomeStyle, emptycircle)">$LOCALIZE[31665]</value>
+		<value condition="Skin.String(HomeStyle, iconsonly)">$LOCALIZE[31709]</value>
+		<value condition="Skin.String(HomeStyle, textintile)">$LOCALIZE[31181]</value>
+		<value condition="Skin.String(HomeStyle, textonly)">$LOCALIZE[31182]</value>
+		<value condition="Skin.String(HomeStyle, vertical)">$LOCALIZE[31817]</value>
     </variable>
     <variable name="Label_SkinSetting_MusicVisualisation">
         <value condition="String.IsEmpty(Skin.String(MusicVisualisation))">Fanart</value>
-        <value>$INFO[Skin.String(MusicVisualisation.label)]</value>
+		<value condition="Skin.String(MusicVisualisation,fanart)">Fanart</value>
+		<value condition="Skin.String(MusicVisualisation,artistslideshow)">$LOCALIZE[31565]</value>
+		<value condition="Skin.String(MusicVisualisation,albumswall)">$LOCALIZE[31637]</value>
+		<value condition="Skin.String(MusicVisualisation,pixelated)">$LOCALIZE[31740]</value>
+		<value condition="Skin.String(MusicVisualisation,none)">$LOCALIZE[31189]</value>
     </variable>
+    <variable name="Label_SkinSetting_Misc">
+		<value condition="Skin.String(windowmisc,1)">$LOCALIZE[31757]</value>
+		<value condition="Skin.String(windowmisc,2)">$LOCALIZE[31507]</value>
+		<value condition="Skin.String(windowmisc,3)">$LOCALIZE[31506]</value>
+		<value condition="Skin.String(windowmisc,4)">$LOCALIZE[31635]</value>
+		<value condition="Skin.String(windowmisc,5)">$LOCALIZE[31820]</value>
+		<value condition="Skin.String(windowmisc,6)">$LOCALIZE[31826]</value>
+    </variable>	
     <variable name="Label_SkinSetting_HighlightColor">
         <value condition="!String.IsEmpty(Skin.String(HighlightColor))">$INFO[Skin.String(HighlightColor)]</value>
         <value>$LOCALIZE[31180]</value>
@@ -915,6 +950,8 @@
     </variable>
     <variable name="Label_SkinSetting_SubmenuStyle">
         <value condition="String.IsEmpty(Skin.String(SubmenuStyle))">$LOCALIZE[31759]</value>
-        <value>$INFO[Skin.String(SubmenuStyle.label)]</value>
+        <value condition="Skin.String(SubmenuStyle,Large)">$LOCALIZE[31759]</value>
+		<value condition="Skin.String(SubmenuStyle,Small)">$LOCALIZE[31760]</value>
+		<value condition="Skin.String(SubmenuStyle,Touch)">$LOCALIZE[31829]</value>
     </variable>
 </includes>
