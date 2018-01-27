@@ -186,8 +186,8 @@
                         <width>100%</width>
                         <label>31757</label>
                         <label2>$VAR[Label_SkinSetting_SubmenuStyle]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=SubmenuStyle,header=$LOCALIZE[31757])</onclick>
-                        <onclick>ReloadSkin()</onclick>
+                        <onclick>ActivateWindow(1193)</onclick>
+						<onfocus>Skin.SetString(windowmisc,1)</onfocus>
                         <include>Defs_OptionButton</include>
                     </control>
                     <!-- Hide Submenus Icons -->
@@ -241,8 +241,7 @@
                         <width>100%</width>
                         <label>31173</label>
                         <label2>$VAR[Label_SkinSetting_HomeStyle]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=HomeStyle,header=$LOCALIZE[31173])</onclick>
-                        <onclick>ReloadSkin()</onclick> 
+                        <onclick>ActivateWindow(1194)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
                     <!-- Home Bar Color -->
@@ -286,7 +285,7 @@
                         <width>100%</width>
                         <label>31147</label>
                         <label2>$VAR[Label_SkinSetting_FallbackWidget]</label2>                      
-						<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;grouping=widget&amp;skinList=home.fallbackwidget&amp;skinLabel=home.fallbackwidget.name&amp;skinType=home.fallbackwidget.type)</onclick>
+						<onclick>RunScript(script.skinshortcuts,type=widgets&amp;grouping=widget&amp;skinWidgetPath=home.fallbackwidget&amp;skinWidget=home.fallbackwidget.node&amp;skinWidgetName=home.fallbackwidget.name&amp;skinWidgetType=home.fallbackwidget.type&amp;skinWidgetTarget=home.fallbackwidget.target)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
                     <!-- Persistent Widgets -->
@@ -364,7 +363,8 @@
                         <width>100%</width>
                         <label>31507</label>
                         <label2>$VAR[Label_SkinSetting_WidgetStyle]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=WidgetStyle,header=$LOCALIZE[31507])</onclick>
+                        <onclick>ActivateWindow(1193)</onclick>
+						<onfocus>Skin.SetString(windowmisc,2)</onfocus>
                         <include>Defs_OptionButton</include>
                     </control>
                     <!-- Widget Primary Color -->
@@ -554,7 +554,8 @@
                         <include>Defs_OptionButton</include>
                         <label>31635</label>           
                         <label2>$VAR[Label_SkinSetting_MusicVisualisation]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=MusicVisualisation,header=$LOCALIZE[31635])</onclick>                     
+                        <onclick>ActivateWindow(1193)</onclick>  
+						<onfocus>Skin.SetString(windowmisc,4)</onfocus>
                     </control>
                     <control type="radiobutton" id="8303" description="Show visualisation with slideshow">
                         <width>100%</width>
@@ -779,7 +780,8 @@
                         <width>100%</width>
                         <label>31506</label>
                         <label2>$VAR[Label_SkinSetting_HeaderStyle]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=HeaderStyle,header=$LOCALIZE[31506])</onclick> 
+                        <onclick>ActivateWindow(1193)</onclick>
+						<onfocus>Skin.SetString(windowmisc,3)</onfocus>
                         <include>Defs_OptionButton</include>
                         <visible>!Skin.HasSetting(disable.headertile)</visible>
                     </control>                    
@@ -793,6 +795,20 @@
                         <include>Defs_OptionButton</include>
                         <visible>!Skin.HasSetting(disable.headertile)</visible>
                     </control>
+					<!-- Hub Widget Background -->
+					<control type="button" id="9951">
+						<width>100%</width>
+						<label>31826</label>
+						<label2>$INFO[Skin.String(hubbackground),,]</label2>
+						<onclick>ActivateWindow(1193)</onclick>
+						<onfocus>Skin.SetString(windowmisc,6)</onfocus>
+						<!-- <onclick condition="String.IsEmpty(Skin.String(hubbackground))">Skin.SetString(hubbackground,$LOCALIZE[31828])</onclick> -->
+						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31651])">Skin.SetString(hubbackground,$LOCALIZE[31647])</onclick> -->
+						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31647])">Skin.SetString(hubbackground,$LOCALIZE[31267])</onclick> -->
+						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31267])">Skin.SetString(hubbackground,$LOCALIZE[31828])</onclick> -->
+						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31828])">Skin.SetString(hubbackground,$LOCALIZE[31651])</onclick> -->
+						<include>Defs_OptionButton</include>
+					</control>						
                     <!-- Hub Flags -->
                     <control type="radiobutton" id="9015">
                         <radioposx>1350</radioposx>
@@ -828,7 +844,25 @@
                         <selected>Skin.HasSetting(hubbars)</selected>
                         <onclick>Skin.ToggleSetting(hubbars)</onclick>
                         <include>Defs_OptionButton</include>
-                    </control>					
+                    </control>
+					<!-- Hub Switch -->
+					<control type="radiobutton" id="9953">
+					    <radioposx>1350</radioposx>
+						<width>100%</width>
+						<label>31818</label>
+						<selected>Skin.HasSetting(hub.changeplaces)</selected>
+						<onclick>Skin.ToggleSetting(hub.changeplaces)</onclick>
+						<include>Defs_OptionButton</include>
+					</control>
+					<!-- <!-- Hub Switch --> -->
+					<!-- <control type="radiobutton" id="9951"> -->
+					    <!-- <radioposx>1350</radioposx> -->
+						<!-- <width>100%</width> -->
+						<!-- <label>31824</label> -->
+						<!-- <selected>Skin.HasSetting(hub.list)</selected> -->
+						<!-- <onclick>Skin.ToggleSetting(hub.list)</onclick> -->
+						<!-- <include>Defs_OptionButton</include> -->
+					<!-- </control>	 -->					
 				</control>
 				<!-- LIBRARY OPTIONS -->
 				<control type="grouplist" id="8010">                
@@ -844,6 +878,14 @@
                         <onclick>Skin.ToggleSetting(furniture.showflags)</onclick>
                         <include>Defs_OptionButton</include>
                     </control>
+                    <control type="button" id="9952">
+                        <width>100%</width>
+                        <label>   $LOCALIZE[31820]</label>
+                        <include>Defs_OptionButton</include>
+						<visible>Skin.HasSetting(furniture.showflags)</visible>
+                        <onclick>ActivateWindow(1193)</onclick>
+						<onfocus>Skin.SetString(windowmisc,5)</onfocus>
+                    </control>					
 					<!-- Show Duration Flags -->
                     <control type="radiobutton" id="9973">
                         <radioposx>1350</radioposx>
