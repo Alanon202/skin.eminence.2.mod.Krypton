@@ -17,6 +17,8 @@
 	<onload condition="String.IsEmpty(Skin.String(WidgetStyle))">Skin.SetString(WidgetStyle, beveledwidget)</onload>
     <onload condition="!String.IsEmpty(Skin.String(home.headericon))">SetProperty(Header.Icon,$INFO[Skin.String(home.headericon)])</onload>
     <onload condition="!String.IsEmpty(Skin.String(home.headertext))">SetProperty(Header.Label,$INFO[Skin.String(home.headertext)])</onload>
+	<onload condition="String.IsEmpty(Skin.String(hubbackground))">Skin.SetString(hubbackground,$LOCALIZE[31828])</onload>
+	<onload condition="String.IsEmpty(Skin.String(ClearArtPos))">Skin.SetString(ClearArtPos,$LOCALIZE[31239])</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
 	<onunload>ClearProperty(submenumouse,home)</onunload>
     <onunload>SetProperty(HubReturn,Home)</onunload>
@@ -60,28 +62,18 @@
             </focusedlayout>
             <content>$INFO[Container(9000).ListItem.Property(backgroundPlaylist)]</content>
         </control>
-		
-		<control type="button" id="9980">
-			<top>0</top>
-			<left>100</left>
-			<right>100</right>
-            <height>140</height>
-            <visible allowhiddenfocus="true">Window.IsVisible(Home.xml)</visible>
-            <onback>ClearProperty(submenumouse,home)</onback>
-			<onback>50</onback>
-			<onfocus condition="Integer.IsGreater(Container(9002).NumItems,0)">SetProperty(submenumouse,1,home)</onfocus>
-			<onfocus>9002</onfocus>
-			<onunfocus>ClearProperty(submenumouse,home)</onunfocus>
-			<hitrect x="100" y="0" w="1920" h="140" />
-        </control>		
+	
+		<include condition="!Skin.String(SubmenuStyle, Touch)">Home_Button</include>
         
         <include condition="Skin.HasSetting(home.hidewidgetbox)">Home_Widget_Hidden</include>
 
         <control type="group">
-<!-- Modification Include -->           
+          
             <include condition="Skin.String(HomeStyle, textonly)">Home_TextOnly_Animate</include>
-<!-- Modification Include -->               
-            <include condition="!Skin.String(HomeStyle, textonly)">Home_Icons_Animate</include>
+            
+            <include condition="!Skin.String(HomeStyle, textonly) + !Skin.String(HomeStyle, vertical)">Home_Icons_Animate</include>
+			
+			<include condition="Skin.String(HomeStyle, vertical)">Home_Vertical_Animate</include>			
             
             <include condition="!Skin.HasSetting(home.hidewidgetbox)">Home_Widget</include>
             
@@ -89,7 +81,8 @@
                 <animation effect="slide" tween="quadratic" easing="out" time="150" start="0,266" end="0">WindowOpen</animation>
                 <animation effect="slide" tween="quadratic" easing="in" time="150" end="0,266" start="0">WindowClose</animation>
                 <include>Home_Menu</include>
-                <include>Home_SubMenu</include>
+                <include condition="!Skin.String(HomeStyle, vertical)">Home_SubMenu</include>
+				<include condition="Skin.String(HomeStyle, vertical)">Vertical_SubMenu</include>		
                 <include>Home_NowPlaying</include>
             </control>
         </control>

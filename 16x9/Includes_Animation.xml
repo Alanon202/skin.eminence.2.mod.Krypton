@@ -354,5 +354,27 @@
 			<effect type="rotate" end="-360" center="auto" time="6400" delay="1200" loop="false" tween="cubic" easing="inout" />
 		</animation>
 	</include>
+	<include name="Animation_SubMenu">
+		<animation effect="slide" end="0,-90" time="300" tween="cubic" easing="inout" condition="!ControlGroup(9001).HasFocus() + !Control.HasFocus(99100)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="300" condition="!ControlGroup(9001).HasFocus() + !Control.HasFocus(99100)">Conditional</animation>
+	</include>
+	<include name="Animation_Touch_Submenu">
+		<animation effect="fade" end="0" start="100" time="100" condition="!Control.HasFocus(9002)" reversible="false">Conditional</animation>
+		<animation effect="slide" start="0" end="100" condition="Container(9000).Position(1)">Conditional</animation>
+		<animation effect="slide" start="0" end="290" condition="Container(9000).Position(2)">Conditional</animation>
+		<animation effect="slide" start="0" end="480" condition="Container(9000).Position(3)">Conditional</animation>
+		<animation effect="slide" start="0" end="670" condition="Container(9000).Position(4)">Conditional</animation>
+		<animation effect="slide" start="0" end="860" condition="Container(9000).Position(5)">Conditional</animation>
+		<animation effect="slide" start="0" end="1050" condition="Container(9000).Position(6)">Conditional</animation>
+		<animation effect="slide" start="0" end="1240" condition="Container(9000).Position(7)">Conditional</animation>
+		<animation effect="slide" start="0" end="1430" condition="Container(9000).Position(8)">Conditional</animation>
+		<animation effect="slide" start="0" end="1530" condition="Container(9000).Position(9)">Conditional</animation>
+		<animation effect="slide" start="0" end="1530" condition="Container(9000).Position(10)">Conditional</animation>
 
+		<animation effect="slide" end="0,69" condition="!IntegerGreaterThan(Container(9002).NumItems,5)">Conditional</animation>
+		<animation effect="slide" end="0,69" condition="!IntegerGreaterThan(Container(9002).NumItems,4)">Conditional</animation>
+		<animation effect="slide" end="0,69" condition="!IntegerGreaterThan(Container(9002).NumItems,3)">Conditional</animation>
+		<animation effect="slide" end="0,69" condition="!IntegerGreaterThan(Container(9002).NumItems,2)">Conditional</animation>
+		<animation effect="slide" end="0,69" condition="!IntegerGreaterThan(Container(9002).NumItems,1)">Conditional</animation>
+	</include>
 </includes>

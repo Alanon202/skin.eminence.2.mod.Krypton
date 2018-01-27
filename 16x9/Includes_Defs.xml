@@ -388,6 +388,49 @@
 			</control>
 		</focusedlayout>
     </include>
+	<include name="DefSubMenu_Touch">
+		<animation type="Conditional" condition="Control.HasFocus(9002)" reversible="false">
+			<effect type="fade" start="0" end="100" time="250" delay="0" tween="cubic" easing="inout"/>
+			<effect type="slide" start="0,48" end="0" center="auto" tween="back" easing="out" time="400" delay="0"/>
+		</animation>
+		<include>Animation_Touch_Submenu</include>
+		<animation effect="slide" start="0" end="0,50" time="150">WindowClose</animation>
+		<animation effect="slide" end="0" start="0,50" time="150">WindowOpen</animation>
+		<posy>500</posy>
+		<left>10</left>
+		<width>364</width>
+		<height>414</height>
+		<itemlayout width="364" height="69">
+			<control type="label">
+				<align>center</align>
+				<aligny>center</aligny>
+				<width>100%</width>
+				<centertop>50%</centertop>
+				<height>100%</height>
+				<textcolor>HomeBarFG</textcolor>
+				<font>Font-ListInfo-Small</font>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</itemlayout>
+		<focusedlayout width="364" height="69">
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+			</control>
+			<control type="label">
+				<align>center</align>
+				<aligny>center</aligny>
+				<width>100%</width>
+				<centertop>50%</centertop>
+				<height>100%</height>
+				<scroll>yes</scroll>
+				<textcolor>Selected</textcolor>
+				<font>Font-ListInfo-Small</font>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</focusedlayout>
+	</include>
     <include name="DefCdArtContainer">
         <top>45</top>
         <left>150</left>
@@ -695,10 +738,10 @@
     </include>
     <variable name="Defs_HomeWidget_Content">
         <value condition="Player.HasVideo + Skin.HasSetting(background.showvideo)">noop</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),Weather) + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),Weather) + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundTypeVar]</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath)) + !Skin.HasSetting(widgets.persistent)">$INFO[Container(9000).ListItem.Property(widgetPath)]</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(Background))">noop</value>
-        <value condition="String.IsEqual(Skin.String(home.fallbackwidget),Weather) + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
+        <value condition="String.IsEqual(Skin.String(home.fallbackwidget),Weather) + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundTypeVar]</value>
         <value condition="!String.IsEmpty(Skin.String(home.fallbackwidget))">$INFO[Skin.String(home.fallbackwidget)]</value>
         <value>special://skin/extras/playlists/RandomMovies.xsp</value>
     </variable>
@@ -748,5 +791,57 @@
 	<include name="FullscreenDimensions">
 		<width>100%</width>
 		<height>1080</height>
+	</include>
+	<include name="Defs_MediaFlagsColour">
+		<width>108</width>
+		<height>50</height>
+		<aspectratio>scale</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>white</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+	<include name="Defs_MediaFlagsWhite">
+		<width>130</width>
+		<height>50</height>
+		<aspectratio>keep</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>LineLabel</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+	<include name="Defs_PlayerFlagsColour">
+		<width>108</width>
+		<height>45</height>
+		<aspectratio>scale</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>white</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+	<include name="Defs_PlayerFlagsWhite">
+		<width>108</width>
+		<height>45</height>
+		<aspectratio>keep</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>LineLabel</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+	<include name="Defs_CompactPlayerFlagsColour">
+		<width>85</width>
+		<height>35</height>
+		<aspectratio>scale</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>white</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+	<include name="Defs_CompactPlayerFlagsWhite">
+		<width>91</width>
+		<height>35</height>
+		<aspectratio>keep</aspectratio>
+		<fadetime>250</fadetime>
+		<colordiffuse>LineLabel</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
+	</include>
+	<include name="Defs_FlagsMisc">
+		<colordiffuse>LineLabel</colordiffuse>
+		<animation effect="fade" time="200">VisibleChange</animation>
 	</include>	
 </includes>

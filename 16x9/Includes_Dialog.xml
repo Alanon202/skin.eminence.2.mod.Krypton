@@ -36,6 +36,73 @@
             <texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
         </control>
     </include>
+	
+    <include name="Dialog_Touch_Background">	
+		<control type="image">
+			<posy>380</posy>
+			<centerleft>50%</centerleft>
+			<width>400</width>
+			<height>455</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+		</control>		
+    </include>
+
+    <include name="Dialog_Background_Touch">
+		<control type="image">
+			<posy>480</posy>
+			<left>-8</left>
+			<width>400</width>
+			<height>455</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+			<visible>IntegerGreaterThan(Container(9002).NumItems,5) + Control.HasFocus(9002)</visible>
+			<include>Animation_Touch_Submenu</include>
+		</control>
+		<control type="image">
+			<posy>480</posy>
+			<left>-8</left>
+			<width>400</width>
+			<height>386</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+			<visible>IntegerGreaterThan(Container(9002).NumItems,4) + !IntegerGreaterThan(Container(9002).NumItems,5) + Control.HasFocus(9002)</visible>
+			<include>Animation_Touch_Submenu</include>			
+		</control>
+		<control type="image">
+			<posy>480</posy>
+			<left>-8</left>
+			<width>400</width>
+			<height>317</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+			<visible>IntegerGreaterThan(Container(9002).NumItems,3) + !IntegerGreaterThan(Container(9002).NumItems,4) + Control.HasFocus(9002)</visible>
+			<include>Animation_Touch_Submenu</include>				
+		</control>
+		<control type="image">
+			<posy>480</posy>
+			<left>-8</left>
+			<width>400</width>
+			<height>248</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+			<visible>IntegerGreaterThan(Container(9002).NumItems,2) + !IntegerGreaterThan(Container(9002).NumItems,3) + Control.HasFocus(9002)</visible>
+			<include>Animation_Touch_Submenu</include>		
+		</control>
+		<control type="image">
+			<posy>480</posy>
+			<left>-8</left>
+			<width>400</width>
+			<height>179</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+			<visible>IntegerGreaterThan(Container(9002).NumItems,1) + !IntegerGreaterThan(Container(9002).NumItems,2) + Control.HasFocus(9002)</visible>
+			<include>Animation_Touch_Submenu</include>		
+		</control>
+		<control type="image">
+			<posy>480</posy>
+			<left>-8</left>
+			<width>400</width>
+			<height>110</height>
+			<texture colordiffuse="$VAR[HomeBar_Color]">common/white.png</texture>
+			<visible>!IntegerGreaterThan(Container(9002).NumItems,1) + Control.HasFocus(9002)</visible>
+			<include>Animation_Touch_Submenu</include>				
+		</control>
+    </include>		
     
     <include name="Dialog_Background_Home_Small">
         <control type="image">
@@ -245,6 +312,47 @@
                     </control>
                 </focusedlayout>
     </include>
+	
+    <include name="Dialog_Touch_PowerMenu">
+		<animation type="Conditional" condition="Control.HasFocus(9000)" reversible="false">
+			<effect type="fade" start="0" end="100" time="250" delay="0" tween="cubic" easing="inout"/>
+			<effect type="slide" start="0,48" end="0" center="auto" tween="back" easing="out" time="400" delay="0"/>
+		</animation>
+		<posy>400</posy>
+		<centerleft>50%</centerleft>
+		<width>364</width>
+		<height>414</height>
+			<itemlayout width="364" height="69">
+				<control type="label">
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>100%</width>
+					<centertop>50%</centertop>
+					<height>100%</height>
+					<font>Font-ListInfo-Small</font>					
+					<textcolor>HomeBarFG</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout width="364" height="69">
+				<control type="image">
+					<width>100%</width>
+					<height>100%</height>
+					<texture colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+				</control>
+				<control type="label">
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>100%</width>
+					<centertop>50%</centertop>
+					<height>100%</height>
+					<scroll>yes</scroll>
+					<textcolor>Selected</textcolor>
+					<font>Font-ListInfo-Small</font>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>	
+	</include>	
     
     <include name="Dialog_Top_PowerMenu_Small">      
         <left>110</left>                        
