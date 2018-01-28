@@ -802,11 +802,6 @@
 						<label2>$INFO[Skin.String(hubbackground),,]</label2>
 						<onclick>ActivateWindow(1193)</onclick>
 						<onfocus>Skin.SetString(windowmisc,6)</onfocus>
-						<!-- <onclick condition="String.IsEmpty(Skin.String(hubbackground))">Skin.SetString(hubbackground,$LOCALIZE[31828])</onclick> -->
-						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31651])">Skin.SetString(hubbackground,$LOCALIZE[31647])</onclick> -->
-						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31647])">Skin.SetString(hubbackground,$LOCALIZE[31267])</onclick> -->
-						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31267])">Skin.SetString(hubbackground,$LOCALIZE[31828])</onclick> -->
-						<!-- <onclick condition="String.IsEqual(Skin.String(hubbackground),$LOCALIZE[31828])">Skin.SetString(hubbackground,$LOCALIZE[31651])</onclick> -->
 						<include>Defs_OptionButton</include>
 					</control>						
                     <!-- Hub Flags -->
