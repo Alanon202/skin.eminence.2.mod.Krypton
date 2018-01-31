@@ -18,6 +18,7 @@
     <onload condition="!String.IsEmpty(Skin.String(home.headericon))">SetProperty(Header.Icon,$INFO[Skin.String(home.headericon)])</onload>
     <onload condition="!String.IsEmpty(Skin.String(home.headertext))">SetProperty(Header.Label,$INFO[Skin.String(home.headertext)])</onload>
 	<onload condition="String.IsEmpty(Skin.String(hubbackground))">Skin.SetString(hubbackground,$LOCALIZE[31828])</onload>
+	<onload condition="String.IsEmpty(Skin.String(SubmenuStyle))">Skin.SetString(SubmenuStyle,Large)</onload>	
 	<onload condition="String.IsEmpty(Skin.String(ClearArtPos))">Skin.SetString(ClearArtPos,$LOCALIZE[31239])</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
 	<onunload>ClearProperty(submenumouse,home)</onunload>
