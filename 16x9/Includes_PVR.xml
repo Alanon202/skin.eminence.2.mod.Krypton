@@ -1002,6 +1002,7 @@
                     <left>pad</left>
                     <right>pad</right>
                     <height>36</height>
+					<scroll>yes</scroll>
                     <font>Font-InfoBox-Title</font>
                     <label>$INFO[Container(11).ListItem.Label]</label>
                 </control>
@@ -1009,6 +1010,7 @@
                     <left>pad</left>
                     <right>pad</right>
                     <height>32</height>
+					<scroll>yes</scroll>
                     <font>Font-ListInfo-Small-Bold</font>
                     <label>[UPPERCASE][COLOR=$VAR[HighlightColor2]]$INFO[Container(11).ListItem.Genre][/COLOR][/UPPERCASE]</label>
                 </control>
@@ -1018,6 +1020,7 @@
                     <height>114</height>
                     <font>Font-ListInfo</font>
                     <align>left</align>
+					<scroll>yes</scroll>					
                     <label>$INFO[Container(11).Listitem.Plot]</label>
                     <visible>!String.IsEmpty(Container(11).ListItem.Genre)</visible>
                 </control>
@@ -1027,6 +1030,7 @@
                     <height>154</height>
                     <font>Font-ListInfo</font>
                     <align>left</align>
+					<scroll>yes</scroll>
                     <label>$INFO[Container(11).Listitem.Plot]</label>
                     <visible>String.IsEmpty(Container(11).ListItem.Genre)</visible>
                 </control>
