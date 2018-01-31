@@ -423,7 +423,7 @@
 				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
 				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
                 <texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/$VAR[SourceIcons]</texture>
-                <visible>Skin.HasSetting(furniture.showflags)</visible>
+                <visible>Skin.HasSetting(furniture.showflags) + !String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
             </control>
             <control type="image">             
                 <width>64</width>               
@@ -431,7 +431,7 @@
                 <aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
                 <texture background="true" fallback="">$VAR[RatingFlagVar,,.png]</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)] | Control.IsVisible(555)]</visible>
+                <visible>!String.StartsWith(ListItem.Path,videodb://movies/sets) + Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)] | Control.IsVisible(555)]</visible>
             </control>
 			<control type="group">
 				<width>140</width>                 
