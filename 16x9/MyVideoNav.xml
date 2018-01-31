@@ -9,6 +9,7 @@
     <onunload>SetProperty(NodeReturn,videos,home)</onunload>
     <onunload>SetProperty(HubReturn,$INFO[Container.FolderPath],home)</onunload>
 	<onload>ClearProperty(quicknavsetup,home)</onload>
+	<onload condition="System.HasAddon(script.tv.show.next.aired) + !Container.Content(movies) + !Container.Content(musicvideos)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onunload>ClearProperty(quicknavsetup,home)</onunload>
     <controls>
 
