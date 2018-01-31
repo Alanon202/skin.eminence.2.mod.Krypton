@@ -796,6 +796,11 @@
 		<value condition="Skin.String(HeaderStyle,roundedheadertile)">$LOCALIZE[31503]</value>
 		<value condition="Skin.String(HeaderStyle,squaredheadertile)">$LOCALIZE[31504]</value>
     </variable>
+    <variable name="Label_SkinSetting_Flags">
+        <value condition="!Skin.HasSetting(colouredflags)">$LOCALIZE[31822]</value>
+        <value condition="Skin.HasSetting(colouredflags)">$LOCALIZE[31823]</value>
+		<value>$LOCALIZE[31189]</value>
+    </variable>	
     <variable name="Label_SkinSetting_WidgetStyle">
         <value condition="String.IsEmpty(Skin.String(WidgetStyle))">$LOCALIZE[31505]</value>
         <value condition="Skin.String(WidgetStyle,beveledwidget)">$LOCALIZE[31505]</value>

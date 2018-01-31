@@ -876,6 +876,7 @@
                     <control type="button" id="9952">
                         <width>100%</width>
                         <label>   $LOCALIZE[31820]</label>
+						<label2>$VAR[Label_SkinSetting_Flags]</label2>
                         <include>Defs_OptionButton</include>
 						<visible>Skin.HasSetting(furniture.showflags)</visible>
                         <onclick>ActivateWindow(1193)</onclick>
