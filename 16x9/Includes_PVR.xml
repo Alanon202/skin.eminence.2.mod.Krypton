@@ -990,13 +990,6 @@
                 <right>pad</right>
                 <top>pad</top>
                 <bottom>pad</bottom>
-                <control type="image">
-                    <width>100%</width>
-                    <height>405</height>
-                    <aspectratio>keep</aspectratio>
-                    <fadetime>200</fadetime>
-                    <texture background="true">$VAR[Image_PVRThumb]</texture>
-                </control>
                 <control type="label">
                     <top>pad</top>
                     <left>pad</left>
@@ -1017,7 +1010,7 @@
                 <control type="textbox">
                     <left>pad</left>
                     <right>pad</right>
-                    <height>114</height>
+                    <height>524</height>
                     <font>Font-ListInfo</font>
                     <align>left</align>
 					<scroll>yes</scroll>					
@@ -1027,7 +1020,7 @@
                 <control type="textbox">
                     <left>pad</left>
                     <right>pad</right>
-                    <height>154</height>
+                    <height>564</height>
                     <font>Font-ListInfo</font>
                     <align>left</align>
 					<scroll>yes</scroll>
