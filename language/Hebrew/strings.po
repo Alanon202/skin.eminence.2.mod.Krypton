@@ -2993,8 +2993,68 @@ msgstr "קבע את טקסט כותרת הבית. להסתרה הכנס [B]N/A[/
 
 msgctxt "#31813"
 msgid "List 2"
-msgstr "2 מידע"
+msgstr "רשימה 2"
 
 msgctxt "#31814"
 msgid "Media Info 4"
 msgstr "‎פרטי מדיה 4"
+
+msgctxt "#31815"
+msgid "Widget View"
+msgstr "תצוגת ווידג'ט"
+
+msgctxt "#31816"
+msgid "Tuner:"
+msgstr "מכון"
+
+msgctxt "#31817"
+msgid "Vertical"
+msgstr "אנכי"
+
+msgctxt "#31818"
+msgid "Switch places"
+msgstr "החלף מקומות"
+
+msgctxt "#31819"
+msgid "Switches places of the list and widget panels in the hub."
+msgstr "החלף את המיקום של הרשימות והווידג'טים ברכזת"
+
+msgctxt "#31820"
+msgid "Choose flags"
+msgstr "בחר דגלי מידע"
+
+msgctxt "#31821"
+msgid "Choose between coloured or white media flags."
+msgstr "בחר בין דגלי מידע בצבע לבן או צבעוניים"
+
+msgctxt "#31822"
+msgid "White flags"
+msgstr "דגלי מידע לבנים"
+
+msgctxt "#31823"
+msgid "Coloured flags"
+msgstr "דגלי מידע צבעוניים"
+
+msgctxt "#31824"
+msgid "No widget"
+msgstr "ללא ווידג'ט"
+
+msgctxt "#31825"
+msgid "Removes Hub widgets and expands the list"
+msgstr "הסר את הווידג'טים של הרכזת והרחב את הרשימה"
+
+msgctxt "#31826"
+msgid "Hub Widget Control"
+msgstr "בקרת ווידג'טים של הרכזת"
+
+msgctxt "#31827"
+msgid "Options for hub widgets (backgrounds and layout)."
+msgstr "הגדרות ווידג'טים לרכזת (רקע ומערך)"
+
+msgctxt "#31828"
+msgid "Fanart"
+msgstr "פאנארט"
+
+msgctxt "#31829"
+msgid "Touch submenu"
+msgstr "גע בתת תפריט"
