@@ -46,13 +46,11 @@
                 <label>$INFO[Container(11).NumItems,,  $LOCALIZE[19019]]</label>
             </control>
 
-            <control type="fixedlist" id="11">
+            <control type="list" id="11">
                 <left>0</left>
                 <top>120</top>
                 <height>980</height>
-                <width>670</width>
-				<movement>4</movement>
-				<focusposition>5</focusposition>				
+                <width>670</width>				
                 <onleft>PreviousChannelGroup</onleft>
                 <onright>NextChannelGroup</onright>
                 <orientation>vertical</orientation>
