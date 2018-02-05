@@ -381,55 +381,66 @@
 				</control>
             	<control type="grouplist">
 					<visible>Skin.HasSetting(pvr.infoepg) + VideoPlayer.Content(LiveTV)</visible>
-                    <itemgap>pad</itemgap>
+                    <itemgap>70</itemgap>
                     <orientation>vertical</orientation> 					
 					<left>196</left>
 					<right>0</right>
-					<top>30</top>
-					<control type="label">
+					<top>60</top>
+					<control type="grouplist">
+						<orientation>horizontal</orientation>
 						<left>pad</left>
-						<right>pad</right>
-                        <height>30</height>
-						<aligny>bottom</aligny>
-                        <font>Font-InfoBox-Title</font>
-                        <label>$LOCALIZE[31235]</label>
-                    </control>
-					<control type="label">
+						<top>0</top>
+						<control type="label">
+							<left>pad</left>
+							<width>1460</width>
+							<height>30</height>
+							<aligny>top</aligny>
+							<scroll>yes</scroll>
+							<font>Font-InfoBox-Title</font>
+							<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[31235][/COLOR] $INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]: [COLOR white]$INFO[VideoPlayer.Title][/COLOR]</label>
+						</control>
+						<control type="label">
+							<width>340</width>
+							<height>30</height>
+							<aligny>top</aligny>
+							<right>pad</right>
+							<scroll>yes</scroll>
+							<font>Font-InfoBox-Title</font>
+							<label>$INFO[PVR.Time]</label>
+						</control>
+					</control>
+					<control type="grouplist">
+						<orientation>horizontal</orientation>
 						<left>pad</left>
-						<right>pad</right>
-                        <height>30</height>
-						<aligny>bottom</aligny>
-						<scroll>yes</scroll>
-                        <font>Font-InfoBox-Title</font>
-                        <label>$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]: $INFO[VideoPlayer.Title]</label>
-                    </control>
-					<control type="label">
-						<left>pad</left>
-						<right>pad</right>
-                        <height>30</height>
-						<aligny>bottom</aligny>
-                        <font>Font-InfoBox-Title</font>
-                        <label>$LOCALIZE[31236]</label>
-                    </control>
-					<control type="label">
-						<left>pad</left>
-						<right>pad</right>
-                        <height>30</height>
-						<aligny>bottom</aligny>
-						<scroll>yes</scroll>
-                        <font>Font-InfoBox-Title</font>
-                        <label>$INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime]: $INFO[VideoPlayer.NextTitle]</label>
-                    </control>
+						<control type="label">
+							<left>pad</left>
+							<width>1460</width>
+							<height>30</height>
+							<aligny>top</aligny>
+							<scroll>yes</scroll>
+							<font>Font-InfoBox-Title</font>
+							<label>[COLOR=$VAR[HighlightColor2]]$LOCALIZE[31236][/COLOR] $INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime]: [COLOR white]$INFO[VideoPlayer.NextTitle][/COLOR]</label>
+						</control>
+						<control type="label">
+							<width>340</width>
+							<height>30</height>
+							<aligny>top</aligny>
+							<right>pad</right>
+							<scroll>yes</scroll>
+							<font>Font-InfoBox-Title</font>
+							<label>$INFO[VideoPlayer.NextDuration]</label>
+						</control>
+					</control>
 					<!-- Bottom Section -->
 					<control type="group">
 						<control type="image">
-							<top>20</top>
+							<top>10</top>
 							<width>1805</width>
 							<height>2</height>
 							<texture border="0" colordiffuse="white">osd/line.png</texture>
 						</control>
 						<control type="group">
-							<top>20</top>
+							<top>10</top>
 							<!-- Encryption -->
 							<control type="group">
 								<control type="label">
