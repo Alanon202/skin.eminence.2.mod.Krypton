@@ -82,12 +82,13 @@
             <include condition="Skin.String(HomeStyle, textintile)">Home_Menu_BG_Small</include>
 			<include condition="Skin.String(HomeStyle, vertical)">Home_Menu_BG_Vertical</include>
 			
-            <control type="panel" id="9000">
+            <control type="wraplist" id="9000">
                 <animation effect="slide" end="16" condition="!Integer.IsGreater(Container(9000).NumItems,0)">Conditional</animation>
                 <top>0</top>
 				<left>13</left>
                 <height>1080</height>
 				<width>200</width>
+				<focusposition>5</focusposition>
 				<visible>Skin.String(HomeStyle, vertical)</visible>
                 <onright condition="!Player.HasMedia + !Window.IsVisible(PlayerControls.xml)">SetProperty(FO9001,1,home)</onright>
                 <onleft condition="!Player.HasMedia + !Window.IsVisible(PlayerControls.xml)">90001</onleft>
