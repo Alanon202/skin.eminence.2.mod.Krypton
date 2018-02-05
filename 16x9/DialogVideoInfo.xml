@@ -69,7 +69,7 @@
                 <!-- LANGUAGE -->
                 <control type="grouplist">
                     <visible>!String.IsEqual(Control.GetLabel(5),$LOCALIZE[207]) + String.IsEmpty(Window.Property(list))</visible>
-                    <visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>
+                    <visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>
                     <usecontrolcoords>true</usecontrolcoords>
                     <itemgap>pad</itemgap>
                     <orientation>horizontal</orientation>
@@ -173,7 +173,7 @@
 					<aspectratio aligny="center">keep</aspectratio>
 					<texture>$VAR[ClearArt]</texture>
 					<visible>Skin.HasSetting(show.clearart)</visible>
-					<visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>						
+					<visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>						
 				</control>
 		
 				<!-- CDArt -->
@@ -189,7 +189,7 @@
 					</animation>
 					<visible>Skin.HasSetting(show.cdart)</visible>
 					<visible>!Container.Content(episodes)</visible>
-					<visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>
+					<visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>
 				</control>
 				
 				<control type="image">
@@ -201,7 +201,7 @@
 					<texture>$VAR[ClearArt]</texture>
 					<visible>Skin.HasSetting(show.cdart)</visible>
 					<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-					<visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>					
+					<visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>					
 				</control>
 		
 				<!-- Ajout Studio Logo -->
@@ -215,7 +215,7 @@
 						<width>100%</width>
 						<height>100%</height>
 						<texture colordiffuse="LineLabel">common/cadre_studio.png</texture>
-						<visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>
+						<visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>
 						<visible>!String.IsEmpty(ListItem.Studio,,.png)</visible>					
 					</control>	
 					   <control type="image">
@@ -225,7 +225,7 @@
 						<height>109</height>
 						<aspectratio>stretch</aspectratio>
 						<texture colordiffuse="LineLabel" fallback="common/fallback_studio.png">$INFO[Skin.String(studio.logos.path),,/]$INFO[ListItem.Studio,,.png]</texture>
-						<visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>
+						<visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>
 						<visible>Skin.String(studio.logos.name, Studio Icons - White)</visible>						
 					</control>		
 					<control type="image">
@@ -235,7 +235,7 @@
 						<height>109</height>
 						<aspectratio>keep</aspectratio>
 						<texture fallback="common/fallback_studio.png">$INFO[Skin.String(studio.logos.path),,/]$INFO[ListItem.Studio,,.png]</texture>
-						<visible>!Control.HasFocus(51) + !Control.HasFocus(9500)</visible>
+						<visible>!Control.IsVisible(50) + !Control.HasFocus(9500)</visible>
 						<visible>Skin.String(studio.logos.name, Studio Icons - Coloured)</visible>			
 					</control>	
 				</control>			                           
@@ -620,7 +620,7 @@
                         <font>-</font>
                         <texturenofocus colordiffuse="Disabled" border="5">buttons/casting.png</texturenofocus>                       
                         <texturefocus colordiffuse="$VAR[HighlightColor]" border="5">buttons/casting.png</texturefocus>                
-                        <onclick>SetFocus(51)</onclick>
+                        <onclick>SetFocus(50)</onclick>
                         <onfocus>ClearProperty(list)</onfocus>
                     </control>
                     <!-- Director Button -->
@@ -682,8 +682,8 @@
                         <font>-</font>
                         <texturenofocus colordiffuse="Disabled" border="5">buttons/extendedinfo.png</texturenofocus>
                         <texturefocus colordiffuse="$VAR[HighlightColor]" border="5">buttons/extendedinfo.png</texturefocus> 
-                        <onclick condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
-						<onclick condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
+                        <onclick condition="Container.Content(movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
+						<onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
                        <visible>[Container.Content(movies) | Container.Content(tvshows)]</visible>
 					</control>					
 					<!-- Rating Button -->
@@ -791,23 +791,23 @@
 			</control>  
 		</control>
 
-        <control type="button" id="51" description="Cast List Control">
-            <width>100%</width>
-            <height>1</height>
-            <left>-1000</left>
-            <top>-1000</top>
-            <visible allowhiddenfocus="true">false</visible>
-            <onup>Control.Move(50,-1)</onup>
-            <ondown>Control.Move(50,1)</ondown>
-            <onback>9000</onback>
-            <onback>SendClick(5)</onback>
-            <onleft>9000</onleft>
-            <onleft>SendClick(5)</onleft>
-            <onright>9000</onright>
-            <onright>SendClick(5)</onright>
-            <onclick>SetProperty(extinfo,2,home)</onclick>-->
-            <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
-        </control>
+        <!-- <control type="button" id="51" description="Cast List Control"> -->
+            <!-- <width>100%</width> -->
+            <!-- <height>1</height> -->
+            <!-- <left>-1000</left> -->
+            <!-- <top>-1000</top> -->
+            <!-- <visible allowhiddenfocus="true">false</visible> -->
+            <!-- <onup>Control.Move(50,-1)</onup> -->
+            <!-- <ondown>Control.Move(50,1)</ondown> -->
+            <!-- <onback>9000</onback> -->
+            <!-- <onback>SendClick(5)</onback> -->
+            <!-- <onleft>9000</onleft> -->
+            <!-- <onleft>SendClick(5)</onleft> -->
+            <!-- <onright>9000</onright> -->
+            <!-- <onright>SendClick(5)</onright> -->
+            <!-- <onclick>SetProperty(extinfo,2,home)</onclick> -->
+            <!-- <onclick>RunScript(script.extendedinfo,info=moviedbbrowser,search=True)</onclick> -->
+        <!-- </control> -->
 
 		<!--Ajout Control -->
 		<control type="group">
