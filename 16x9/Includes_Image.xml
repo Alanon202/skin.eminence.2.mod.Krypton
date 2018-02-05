@@ -505,7 +505,7 @@
 	
 	<variable name="SourceIcons">
 		<value condition="[String.Contains(ListItem.filename,PDTV) | String.Contains(ListItem.filename,sdtv) | String.Contains(ListItem.filename,sd-tv)]">sdtv.png</value>
-		<value condition="[String.Contains(ListItem.Filename,hdtv)">hdtv.png</value>
+		<value condition="String.Contains(ListItem.Filename,hdtv)">hdtv.png</value>
 		<value condition="[String.Contains(ListItem.Filename,hddvd) | String.Contains(ListItem.Filename,hd-dvd)]">hddvd.png</value>
 		<value condition="ListItem.IsStereoscopic">bluray3d.png</value>
 		<value condition="[String.Contains(ListItem.Filename,bluray) | String.Contains(ListItem.Filename,blu-ray) | String.Contains(ListItem.Filename,bdrip) | String.Contains(ListItem.Filename,brrip) | String.Contains(ListItem.Filename,bd25) | String.Contains(ListItem.Filename,bd50)]">bluray.png</value>
