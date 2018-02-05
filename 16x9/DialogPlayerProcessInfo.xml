@@ -194,7 +194,7 @@
                 
 				<control type="progress">
                     <top>5</top>
-                    <width>500</width>
+                    <width>450</width>
                     <height>18</height>
                     <info>PVR.ActStreamProgrSignal</info>
                 </control>
@@ -210,7 +210,7 @@
 				
                 <control type="progress">
                     <top>0</top>
-                    <width>500</width>
+                    <width>450</width>
                     <height>18</height>
                     <info>PVR.ActStreamProgrSNR</info>
                 </control>
