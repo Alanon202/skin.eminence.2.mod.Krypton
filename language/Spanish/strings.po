@@ -1555,8 +1555,8 @@ msgid "[B]Nextup Service Notification[/B] add-on is needed to popup a notificati
 msgstr "[B]Nextup Service Notification[/B] necesario para que salga una notificación emergente en un período de tiempo especificado antes del fin para ejecutar el siguiente elemento, o para cancelar la reproducción automática del siguiente episodio."
 
 msgctxt "#31617"
-msgid "[B]Artwork Downloader[/B] add-on is needed to download all available artworks for  movies/tv shows of library."
-msgstr "[B]Artwork Downloader[/B] necesario para descargar todos los artworks disponibles para las peliculas/series de la colección."
+msgid "[B]Artwork Beef[/B] add-on is needed to download all available artworks for  movies/tv shows of library."
+msgstr "[B]Artwork Beef[/B] necesario para descargar todos los artworks disponibles para las peliculas/series de la colección."
 
 msgctxt "#31618"
 msgid "[B]Artist Slideshow[/B] add-on is needed to display a artist slideshow as background for music visualisation."

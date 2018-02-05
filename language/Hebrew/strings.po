@@ -1602,10 +1602,10 @@ msgstr ""
 
 msgctxt "#31617"
 msgid ""
-"[B]Artwork Downloader[/B] add-on is needed to download all available artworks for  "
+"[B]Artwork Beef[/B] add-on is needed to download all available artworks for  "
 "movies/tv shows of library."
 msgstr ""
-"[B]Artwork Downloader[/B] - ההרחבה נחוצה על מנת להוריד את כל הגרפיקה לסרטים וסדרות "
+"[B]Artwork Beef[/B] - ההרחבה נחוצה על מנת להוריד את כל הגרפיקה לסרטים וסדרות "
 "בספרייה."
 
 msgctxt "#31618"

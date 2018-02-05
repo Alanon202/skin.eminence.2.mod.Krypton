@@ -1555,7 +1555,7 @@ msgid "[B]Nextup Service Notification[/B] add-on is needed to popup a notificati
 msgstr ""
 
 msgctxt "#31617"
-msgid "[B]Artwork Downloader[/B] add-on is needed to download all available artworks for  movies/tv shows of library."
+msgid "[B]Artwork Beef[/B] add-on is needed to download all available artworks for  movies/tv shows of library."
 msgstr ""
 
 msgctxt "#31618"

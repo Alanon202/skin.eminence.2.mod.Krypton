@@ -1671,20 +1671,35 @@
 						<include>Defs_OptionButton</include>
 					</control>
 
-					<!-- Artwork Downloader -->
+					<!-- <!-- Artwork Downloader --> -->
+					<!-- <control type="radiobutton" id="9107"> -->
+						<!-- <width>100%</width>                         -->
+						<!-- <radioposx>1350</radioposx> -->
+						<!-- <label>script.artwork.downloader $INFO[System.AddonVersion(script.artwork.downloader),(,)]</label> -->
+						<!-- <textureradioonfocus colordiffuse="ff00991f">common/radio-on.png</textureradioonfocus> -->
+						<!-- <textureradioonnofocus colordiffuse="ff00991f">common/radio-on.png</textureradioonnofocus> -->
+						<!-- <textureradioofffocus colordiffuse="fff02222">common/status_off.png</textureradioofffocus> -->
+						<!-- <textureradiooffnofocus colordiffuse="fff02222">common/status_off.png</textureradiooffnofocus> -->
+						<!-- <onclick condition="!System.HasAddon(script.artwork.downloader)">RunPlugin(plugin://script.artwork.downloader)</onclick> -->
+						<!-- <onclick condition="System.HasAddon(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick> -->
+						<!-- <selected>System.HasAddon(script.artwork.downloader)</selected> -->
+						<!-- <include>Defs_OptionButton</include> -->
+					<!-- </control> -->
+					
+					<!-- Artwork Beef -->
 					<control type="radiobutton" id="9107">
 						<width>100%</width>                        
 						<radioposx>1350</radioposx>
-						<label>script.artwork.downloader $INFO[System.AddonVersion(script.artwork.downloader),(,)]</label>
+						<label>script.artwork.beef $INFO[System.AddonVersion(script.artwork.beef),(,)]</label>
 						<textureradioonfocus colordiffuse="ff00991f">common/radio-on.png</textureradioonfocus>
 						<textureradioonnofocus colordiffuse="ff00991f">common/radio-on.png</textureradioonnofocus>
 						<textureradioofffocus colordiffuse="fff02222">common/status_off.png</textureradioofffocus>
 						<textureradiooffnofocus colordiffuse="fff02222">common/status_off.png</textureradiooffnofocus>
-						<onclick condition="!System.HasAddon(script.artwork.downloader)">RunPlugin(plugin://script.artwork.downloader)</onclick>
-						<onclick condition="System.HasAddon(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick>
-						<selected>System.HasAddon(script.artwork.downloader)</selected>
+						<onclick condition="!System.HasAddon(script.artwork.beef)">RunPlugin(plugin://script.artwork.beef)</onclick>
+						<onclick condition="System.HasAddon(script.artwork.beef)">Addon.OpenSettings(script.artwork.beef)</onclick>
+						<selected>System.HasAddon(script.artwork.beef)</selected>
 						<include>Defs_OptionButton</include>
-					</control>
+					</control>					
 
 					<!-- Artist Slideshow -->
 					<control type="radiobutton" id="9108">
