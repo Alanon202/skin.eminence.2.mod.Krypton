@@ -851,7 +851,7 @@
             <label>Switch</label>
             <selected>Skin.HasSetting(hub.changeplaces)</selected>
             <onclick>Skin.ToggleSetting(hub.changeplaces)</onclick>
-            <visible>!String.IsEmpty(Window(home).Property(HubReturn))</visible>
+            <visible>!String.IsEmpty(Window(home).Property(HubReturn)) + !Window.IsVisible(tvchannels) + !Window.IsVisible(tvguide)</visible>
         </control>		
         <!-- Show label overview -->
         <control type="radiobutton" id="90991">
