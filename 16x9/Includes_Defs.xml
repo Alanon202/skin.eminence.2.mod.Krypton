@@ -709,12 +709,14 @@
     </variable>    
 	<variable name="Defs_HomeTileColor">
         <value condition="Skin.HasSetting(home.tilecolor) + !String.IsEmpty(Container(9000).ListItem.Property(tilecolor))">$INFO[Container(9000).ListItem.Property(tilecolor)]</value>
-        <value condition="Skin.HasSetting(home.tilecolor) + !String.IsEmpty(Container(211).ListItem.Property(tilecolor))">$INFO[Container(211).ListItem.Property(tilecolor)]</value>
+        <value condition="Skin.HasSetting(home.tilecolor) + !String.IsEmpty(Container(9501).ListItem.Property(tilecolor))">$INFO[Container(9501).ListItem.Property(tilecolor)]</value>        
+		<value condition="Skin.HasSetting(home.tilecolor) + !String.IsEmpty(Container(211).ListItem.Property(tilecolor))">$INFO[Container(211).ListItem.Property(tilecolor)]</value>
         <value>$VAR[HighlightColor]</value>
     </variable>   
     <variable name="Defs_HomeTextColor">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(textcolor)) + Skin.HasSetting(home.textcolor)">$INFO[Container(9000).ListItem.Property(textcolor)]</value>
-        <value condition="String.IsEmpty(Skin.String(TextColor))">HomeBarFG</value>
+        <value condition="!String.IsEmpty(Container(9501).ListItem.Property(textcolor)) + Skin.HasSetting(home.textcolor)">$INFO[Container(9501).ListItem.Property(textcolor)]</value>
+		<value condition="String.IsEmpty(Skin.String(TextColor))">HomeBarFG</value>
         <value>$INFO[Skin.String(TextColor)]</value>
     </variable>
     <include name="Defs_Shortcuts_SetHub">
@@ -741,9 +743,9 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),Weather) + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundTypeVar]</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath)) + !Skin.HasSetting(widgets.persistent)">$INFO[Container(9000).ListItem.Property(widgetPath)]</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(Background))">noop</value>
-        <value condition="String.IsEqual(Skin.String(home.fallbackwidget),Weather) + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundTypeVar]</value>
-        <value condition="!String.IsEmpty(Skin.String(home.fallbackwidget))">$INFO[Skin.String(home.fallbackwidget)]</value>
-        <value>special://skin/extras/playlists/RandomMovies.xsp</value>
+        <value condition="[String.IsEqual(Skin.String(home.fallbackwidget.name),Weather) | String.IsEqual(Skin.String(home.fallbackwidget.node),Weather)] + !String.IsEmpty(Skin.String(weather.fanart.path))">$INFO[Skin.String(weather.fanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundTypeVar]</value>
+        <value condition="!String.IsEmpty(Skin.String(home.fallbackwidget)) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">$INFO[Skin.String(home.fallbackwidget)]</value>
+        <value condition="!String.IsEqual(Skin.String(home.fallbackwidget.name),None) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">special://skin/extras/playlists/RandomMovies.xsp</value>
     </variable>
     <variable name="Defs_HomeWidget_Target">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget))">$INFO[Container(9000).ListItem.Property(widgetTarget)]</value>

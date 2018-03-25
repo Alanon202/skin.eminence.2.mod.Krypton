@@ -233,7 +233,7 @@
                                 <width>100%</width>
                                 <top>0</top>
                                 <bottom>pad</bottom>
-                                <texture colordiffuse="PosterBorder">common/white.png</texture>
+                                <texture colordiffuse="$VAR[Defs_HomeTileColor]">common/white.png</texture>
 								<visible>Skin.HasSetting(hubbars)</visible>
                             </control>						
                             <control type="image">
@@ -257,7 +257,7 @@
                                 <width>100%</width>
                                 <top>0</top>
                                 <bottom>pad</bottom>
-                                <texture colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+                                <texture colordiffuse="$VAR[Defs_HomeTileColor]">common/white.png</texture>
                             </control>
                             <control type="image">
                                 <right>0</right>
@@ -272,7 +272,7 @@
                                 <right>80</right>
                                 <top>0</top>
                                 <bottom>pad</bottom>
-                                <textcolor>Selected</textcolor>
+                                <textcolor>$VAR[Defs_HomeTextColor]</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -436,7 +436,7 @@
                                 <width>100%</width>
                                 <top>0</top>
                                 <bottom>pad</bottom>
-                                <texture colordiffuse="$VAR[HighlightColor]">common/white.png</texture>
+                                <texture colordiffuse="$VAR[Defs_HomeTileColor]">common/white.png</texture>
                             </control>
                             <control type="image">
                                 <right>0</right>
@@ -451,7 +451,7 @@
                                 <right>80</right>
                                 <top>0</top>
                                 <bottom>pad</bottom>
-                                <textcolor>Selected</textcolor>
+                                <textcolor>$VAR[Defs_HomeTextColor]</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
