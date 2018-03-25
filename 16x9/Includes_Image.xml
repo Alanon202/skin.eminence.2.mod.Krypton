@@ -516,7 +516,7 @@
 		<value>fallback_source.png</value>
 	</variable>
 	<variable name="PlayerSourceIcons">
-		<value condition="[String.Contains(Player.Filenameandpath,PDTV) | String.Contains(Player.Filenameandpath,sdtv) | String.Contains(Player.Filenameandpath,sd tv) | String.Contains(Player.Filenameandpath,tv)]">sdtv.png</value>
+		<value condition="[String.Contains(Player.Filenameandpath,PDTV) | String.Contains(Player.Filenameandpath,sdtv) | String.Contains(Player.Filenameandpath,sd tv)]">sdtv.png</value>
 		<value condition="String.Contains(Player.Filenameandpath,hdtv)">hdtv.png</value>
 		<value condition="[String.Contains(Player.Filenameandpath,hddvd) | String.Contains(Player.Filenameandpath,hd-dvd) | String.Contains(Player.Filenameandpath,hd dvd)]">hddvd.png</value>
 		<value condition="VideoPlayer.IsStereoscopic">bluray3d.png</value>
