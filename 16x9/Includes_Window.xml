@@ -132,13 +132,11 @@
 						<visible>Skin.HasSetting(darkoverlay) + !Skin.HasSetting(hubbars)</visible>
 					</control>						
                     <control type="panel" id="9501">  
-                        <onleft condition="!Skin.HasSetting(hub.changeplaces)">9500</onleft>
-						<onleft condition="Skin.HasSetting(hub.changeplaces)">ActivateWindow($INFO[Window(home).Property(NodeReturn)],$INFO[Window(home).Property(HubReturn)],return)</onleft>
+                        <onleft>9500</onleft>
                         <onup>9501</onup>
                         <ondown>9501</ondown>
                         <height>700</height>
-                        <onright condition="!Skin.HasSetting(hub.changeplaces) + !String.IsEqual(Window(home).Property(HubReturn),Home) + !String.IsEmpty(Window(home).Property(NodeReturn))">ActivateWindow($INFO[Window(home).Property(NodeReturn)],$INFO[Window(home).Property(HubReturn)],return)</onright>
-						<onright condition="Skin.HasSetting(hub.changeplaces)">9500</onright>						
+						<onright>9500</onright>						
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
                         <orientation>vertical</orientation>
@@ -396,13 +394,11 @@
 						<visible>Skin.HasSetting(darkoverlay) + !Skin.HasSetting(hubbars)</visible>
 					</control>						
                     <control type="panel" id="9501">  
-                        <onleft condition="!Skin.HasSetting(hub.changeplaces)">9500</onleft>
-						<onleft condition="Skin.HasSetting(hub.changeplaces)">ActivateWindow($INFO[Window(home).Property(NodeReturn)],$INFO[Window(home).Property(HubReturn)],return)</onleft>
+                        <onleft>9500</onleft>
                         <onup>9501</onup>
                         <ondown>9501</ondown>
                         <height>700</height>
-                        <onright condition="!Skin.HasSetting(hub.changeplaces) + !String.IsEqual(Window(home).Property(HubReturn),Home) + !String.IsEmpty(Window(home).Property(NodeReturn))">ActivateWindow($INFO[Window(home).Property(NodeReturn)],$INFO[Window(home).Property(HubReturn)],return)</onright>
-						<onright condition="Skin.HasSetting(hub.changeplaces)">9500</onright>						
+						<onright>9500</onright>						
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
                         <orientation>vertical</orientation>
