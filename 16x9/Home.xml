@@ -20,6 +20,7 @@
 	<onload condition="String.IsEmpty(Skin.String(hubbackground))">Skin.SetString(hubbackground,$LOCALIZE[31828])</onload>
 	<onload condition="String.IsEmpty(Skin.String(SubmenuStyle))">Skin.SetString(SubmenuStyle,Large)</onload>	
 	<onload condition="String.IsEmpty(Skin.String(ClearArtPos))">Skin.SetString(ClearArtPos,$LOCALIZE[31239])</onload>
+	<onload condition="!Skin.String(HomeStyle, vertical) + Window.Previous(startup)">Control.Move(9000,$INFO[Skin.String(initialmenuitem)])</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
 	<onunload>ClearProperty(submenumouse,home)</onunload>
     <onunload>SetProperty(HubReturn,Home)</onunload>
