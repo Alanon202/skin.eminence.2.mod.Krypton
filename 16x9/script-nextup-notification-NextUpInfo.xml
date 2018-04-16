@@ -46,7 +46,7 @@
 					<height>100%</height>
 					<fadetime>350</fadetime>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.FanArt)]</texture>
+					<texture>$INFO[Player.Art(fanart)]</texture>
 				</control>
 				<control type="image" description="blackline">
 					<width>100%</width>
