@@ -1264,7 +1264,7 @@
     <!-- Line -->
     <include name="Object_Line">
         <control type="grouplist">
-            <visible>!Skin.HasSetting(furniture.hidesortinfo)</visible>
+            <visible>!Skin.HasSetting(furniture.hidesortinfo) | Skin.HasSetting(furniture.hidesortinfo) + Window.IsVisible(DialogSubtitles.xml)</visible>
             <orientation>horizontal</orientation>
             <top>-48</top>
             <height>48</height>
