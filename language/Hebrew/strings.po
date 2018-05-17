@@ -7,32 +7,31 @@ msgstr ""
 "Project-Id-Version: skin.eminence.2.mod.Krypton-master\n"
 "Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2017-09-19 13:25+0300\n"
-"Last-Translator: A/ Dembledore\n"
+"PO-Revision-Date: 2018-02-14 15:35+0200\n"
+"Last-Translator: A. Dambledore\n"
 "Language-Team: Eng2Heb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.3\n"
 
 # Misc labels
 msgctxt "#31000"
 msgid "Item"
-msgstr "‎פריט"
+msgstr "פריט"
 
 msgctxt "#31001"
 msgid "Items"
-msgstr "‎פריטים"
+msgstr "פריטים"
 
 msgctxt "#31002"
 msgid "Tag"
-msgstr "‎תג"
+msgstr "תג"
 
 msgctxt "#31003"
 msgid "Next"
-msgstr "‎הבא"
+msgstr "הבא"
 
 msgctxt "#31004"
 msgid "Opaque panels"
@@ -52,35 +51,35 @@ msgstr "הצג דגלי מידע על הסרט"
 
 msgctxt "#31008"
 msgid "Show plot overlay in video library after delay"
-msgstr "‎הצג שכבת [B]עלילה[/B] בספריית הווידאו לאחר השהייה."
+msgstr "הצג שכבת [B]עלילה[/B] בספריית הווידאו לאחר השהייה"
 
 msgctxt "#31009"
 msgid "Open playlist"
-msgstr "‎פתח רשימת השמעה"
+msgstr "פתח רשימת השמעה"
 
 msgctxt "#31010"
 msgid "Save playlist"
-msgstr "‎שמור רשימת השמעה"
+msgstr "שמור רשימת השמעה"
 
 msgctxt "#31011"
 msgid "Close playlist"
-msgstr "‎סגור רשימת השמעה"
+msgstr "סגור רשימת השמעה"
 
 msgctxt "#31012"
 msgid "Current playlist"
-msgstr "‎רשימת השמעה נוכחית"
+msgstr "רשימת השמעה נוכחית"
 
 msgctxt "#31013"
 msgid "Muted"
-msgstr "‎מושתק"
+msgstr "מושתק"
 
 msgctxt "#31014"
 msgid "Show header"
-msgstr "‎הצג כותרת"
+msgstr "הצג כותרת"
 
 msgctxt "#31015"
 msgid "Live TV"
-msgstr "‎טלוויזיה"
+msgstr "טלוויזיה"
 
 msgctxt "#31016"
 msgid "Show widget infos"
@@ -88,7 +87,7 @@ msgstr "הצג מידע יישומון"
 
 msgctxt "#31017"
 msgid "Votes"
-msgstr "‎הצבעות"
+msgstr "הצבעות"
 
 msgctxt "#31018"
 msgid "Increase"
@@ -96,11 +95,11 @@ msgstr "להגדיל"
 
 msgctxt "#31019"
 msgid "Decrease"
-msgstr "‎להפחית"
+msgstr "להפחית"
 
 msgctxt "#31020"
 msgid "Background"
-msgstr "‎תמונת רקע"
+msgstr "תמונת רקע"
 
 msgctxt "#31021"
 msgid "Show fanart"
@@ -108,7 +107,7 @@ msgstr "הצג  פאנארט"
 
 msgctxt "#31027"
 msgid "Show background video"
-msgstr "‎הצג רקע מונפש"
+msgstr "הצג רקע מונפש"
 
 msgctxt "#31028"
 msgid "Show music artwork as background"
@@ -116,31 +115,31 @@ msgstr "הצג גרפיקת מוזיקה כרקע"
 
 msgctxt "#31031"
 msgid "Recent movies"
-msgstr "‎סרטים אחרונים"
+msgstr "סרטים אחרונים"
 
 msgctxt "#31032"
 msgid "Recommended movies"
-msgstr "‎סרטים מומלצים"
+msgstr "סרטים מומלצים"
 
 msgctxt "#31034"
 msgid "Enable Artist Slideshow"
-msgstr "‎אפשר מצגת אמן"
+msgstr "אפשר מצגת אמן"
 
 msgctxt "#31035"
 msgid "Recent episodes"
-msgstr "‎פרקים אחרונים"
+msgstr "פרקים אחרונים"
 
 msgctxt "#31036"
 msgid "Recommended episodes"
-msgstr "‎פרקים מומלצים"
+msgstr "פרקים מומלצים"
 
 msgctxt "#31038"
 msgid "Recent albums"
-msgstr "‎אלבומים אחרונים"
+msgstr "אלבומים אחרונים"
 
 msgctxt "#31039"
 msgid "Recommended albums"
-msgstr "‎אלבומים מומלצים"
+msgstr "אלבומים מומלצים"
 
 msgctxt "#31043"
 msgid "Extra art"
@@ -152,23 +151,23 @@ msgstr "נמצאה כתובית מקומית!"
 
 msgctxt "#31045"
 msgid "Supplied by"
-msgstr "‎סופק על ידי"
+msgstr "סופק על ידי"
 
 msgctxt "#31046"
 msgid "Currently"
-msgstr "‎כרגע"
+msgstr "כרגע"
 
 msgctxt "#31047"
 msgid "Visualisation Presets"
-msgstr "‎הגדרות הדמייה לתצוגה"
+msgstr "הגדרות הדמייה לתצוגה"
 
 msgctxt "#31048"
 msgid "Playlist Options"
-msgstr "‎אפשרויות רשימת ניגון"
+msgstr "אפשרויות רשימת ניגון"
 
 msgctxt "#31049"
 msgid "Customise home menu"
-msgstr "‎התאמה אישית של תפריט הבית"
+msgstr "התאמה אישית של תפריט הבית"
 
 msgctxt "#31052"
 msgid "Rated"
@@ -176,31 +175,31 @@ msgstr "מדורג"
 
 msgctxt "#31054"
 msgid "Random movies"
-msgstr "‎סרטים אקראיים"
+msgstr "סרטים אקראיים"
 
 msgctxt "#31055"
 msgid "Random episodes"
-msgstr "‎פרקים אקראיים"
+msgstr "פרקים אקראיים"
 
 msgctxt "#31056"
 msgid "Random albums"
-msgstr "‎אלבומים אקראיים"
+msgstr "אלבומים אקראיים"
 
 msgctxt "#31057"
 msgid "Kiosk mode"
-msgstr "‎מצב קיוסק"
+msgstr "מצב קיוסק"
 
 msgctxt "#31059"
 msgid "Memory Used:"
-msgstr "‎זיכרון בשימוש:"
+msgstr "זיכרון בשימוש:"
 
 msgctxt "#31063"
 msgid "Addons"
-msgstr "‎הרחבות"
+msgstr "הרחבות"
 
 msgctxt "#31064"
 msgid "Custom background image"
-msgstr "‎תמונת רקע מותאמת אישית"
+msgstr "תמונת רקע מותאמת אישית"
 
 msgctxt "#31065"
 msgid "Hide 'Mouse' warning"
@@ -216,11 +215,11 @@ msgstr "דף"
 
 msgctxt "#31068"
 msgid "View Options"
-msgstr "‎הצג אפשרויות"
+msgstr "הצג אפשרויות"
 
 msgctxt "#31069"
 msgid "Context Menu"
-msgstr "‎תפריט קישור"
+msgstr "תפריט קישור"
 
 msgctxt "#31070"
 msgid "Infos"
@@ -236,7 +235,7 @@ msgstr "מנגן"
 
 msgctxt "#31073"
 msgid "Categories"
-msgstr "‎קבוצות"
+msgstr "קבוצות"
 
 msgctxt "#31074"
 msgid "Submenu"
@@ -252,23 +251,23 @@ msgstr "פאנארט מזג אוויר"
 
 msgctxt "#31077"
 msgid "Trending Movies"
-msgstr "‎סרטים טרנדיים"
+msgstr "סרטים טרנדיים"
 
 msgctxt "#31078"
 msgid "In Cinemas"
-msgstr "‎בבתי הקולנוע"
+msgstr "בבתי הקולנוע"
 
 msgctxt "#31079"
 msgid "Upcoming Films"
-msgstr "‎בקרוב בקולנוע"
+msgstr "בקרוב בקולנוע"
 
 msgctxt "#31080"
 msgid "Popular Movies"
-msgstr "‎סרטים פופולריים"
+msgstr "סרטים פופולריים"
 
 msgctxt "#31081"
 msgid "Top Rated Movies"
-msgstr "‎סרטים בדירוג גבוה"
+msgstr "סרטים בדירוג גבוה"
 
 msgctxt "#31082"
 msgid "Popular Shows"
@@ -284,27 +283,27 @@ msgstr "סדרות שמשודרות כעת"
 
 msgctxt "#31085"
 msgid "Airing Today"
-msgstr "‎משודר היום"
+msgstr "משודר היום"
 
 msgctxt "#31086"
 msgid "Custom 1"
-msgstr "‎מותאם אישית 1"
+msgstr "מותאם אישית 1"
 
 msgctxt "#31087"
 msgid "Custom 2"
-msgstr "‎מותאם אישית 2"
+msgstr "מותאם אישית 2"
 
 msgctxt "#31088"
 msgid "Custom 3"
-msgstr "‎מותאם אישית 3"
+msgstr "מותאם אישית 3"
 
 msgctxt "#31089"
 msgid "Custom 4"
-msgstr "‎מותאם אישית 4"
+msgstr "מותאם אישית 4"
 
 msgctxt "#31090"
 msgid "Content Loading"
-msgstr "‎תוכן נטען"
+msgstr "תוכן נטען"
 
 msgctxt "#31091"
 msgid "Trending Shows"
@@ -344,15 +343,15 @@ msgstr "מקודד"
 
 msgctxt "#31100"
 msgid "Recently Added"
-msgstr "‎נוספו לאחרונה"
+msgstr "נוספו לאחרונה"
 
 msgctxt "#31101"
 msgid "Recently Played"
-msgstr "‎נוגנו לאחרונה"
+msgstr "נוגנו לאחרונה"
 
 msgctxt "#31102"
 msgid "Watch Random"
-msgstr "‎צפו בצורה אקראית"
+msgstr "צפו בצורה אקראית"
 
 msgctxt "#31103"
 msgid "Delete Settings Shortcut"
@@ -1085,11 +1084,11 @@ msgstr "צבע הרקע"
 
 msgctxt "#31284"
 msgid "Fanart Icons"
-msgstr "אייקוני הפאנארט"
+msgstr "סמלילי הפאנארט"
 
 msgctxt "#31285"
 msgid "Fanart Icons Ep."
-msgstr "אייקוני פרק הפאנארט"
+msgstr "סמלילי פרק הפאנארט"
 
 msgctxt "#31500"
 msgid "None"
@@ -1602,11 +1601,10 @@ msgstr ""
 
 msgctxt "#31617"
 msgid ""
-"[B]Artwork Beef[/B] add-on is needed to download all available artworks for  "
-"movies/tv shows of library."
+"[B]Artwork Beef[/B] add-on is needed to download all available artworks for  movies/"
+"tv shows of library."
 msgstr ""
-"[B]Artwork Beef[/B] - ההרחבה נחוצה על מנת להוריד את כל הגרפיקה לסרטים וסדרות "
-"בספרייה."
+"[B]Artwork Beef[/B] - ההרחבה נחוצה על מנת להוריד את כל הגרפיקה לסרטים וסדרות בספרייה."
 
 msgctxt "#31618"
 msgid ""
@@ -3001,11 +2999,11 @@ msgstr "‎פרטי מדיה 4"
 
 msgctxt "#31815"
 msgid "Widget View"
-msgstr "תצוגת ווידג'ט"
+msgstr "תצוגת יישומון"
 
 msgctxt "#31816"
 msgid "Tuner:"
-msgstr "מכון"
+msgstr "טיונר:"
 
 msgctxt "#31817"
 msgid "Vertical"
@@ -3017,7 +3015,7 @@ msgstr "החלף מקומות"
 
 msgctxt "#31819"
 msgid "Switches places of the list and widget panels in the hub."
-msgstr "החלף את המיקום של הרשימות והווידג'טים ברכזת"
+msgstr "החלף את המיקום של הרשימות והיישומונים ברכזת."
 
 msgctxt "#31820"
 msgid "Choose flags"
@@ -3025,7 +3023,7 @@ msgstr "בחר דגלי מידע"
 
 msgctxt "#31821"
 msgid "Choose between coloured or white media flags."
-msgstr "בחר בין דגלי מידע בצבע לבן או צבעוניים"
+msgstr "בחר בין דגלי מידע בצבע לבן או צבעוניים."
 
 msgctxt "#31822"
 msgid "White flags"
@@ -3037,19 +3035,19 @@ msgstr "דגלי מידע צבעוניים"
 
 msgctxt "#31824"
 msgid "No widget"
-msgstr "ללא ווידג'ט"
+msgstr "ללא יישומון"
 
 msgctxt "#31825"
 msgid "Removes Hub widgets and expands the list"
-msgstr "הסר את הווידג'טים של הרכזת והרחב את הרשימה"
+msgstr "הסר את היישומונים של הרכזת והרחב את הרשימה"
 
 msgctxt "#31826"
 msgid "Hub Widget Control"
-msgstr "בקרת ווידג'טים של הרכזת"
+msgstr "בקרת יישומונים של הרכזת"
 
 msgctxt "#31827"
 msgid "Options for hub widgets (backgrounds and layout)."
-msgstr "הגדרות ווידג'טים לרכזת (רקע ומערך)"
+msgstr "הגדרות יישומונים לרכזת (רקע ומערך)"
 
 msgctxt "#31828"
 msgid "Fanart"
