@@ -1029,6 +1029,15 @@
         </control>
     </include>
     <!-- Poster -->
+    <include name="Object_FakeImage">
+        <control type="image" id="6699">
+            <width>1</width>
+            <height>1</height>
+            <animation effect="fade" start="0" end="0" condition="true">Conditional</animation>
+            <texture background="true">$VAR[Image_Poster]</texture>
+        </control>
+    </include>
+	
     <include name="Object_Poster">
         <param name="label" default="$LOCALIZE[31098]" />
         <definition>

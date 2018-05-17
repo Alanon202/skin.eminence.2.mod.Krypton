@@ -641,6 +641,7 @@
 
     <!-- BACKGROUND -->
     <include name="Furniture_Background">
+	    <include>Object_FakeImage</include>
         <control type="videowindow">
             <visible>Skin.HasSetting(background.showvideo)</visible>
             <visible>Player.HasVideo</visible>
