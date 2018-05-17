@@ -613,6 +613,17 @@
                         <onfocus>ClearProperty(list)</onfocus> 
                         <visible>!String.IsEmpty(ListItem.Trailer)</visible>                                                        
                     </control> 
+                    <!-- Special Features Button -->
+                    <control type="button" id="146">
+                        <width>68</width>
+                        <height>68</height>
+                        <font>-</font>
+                        <texturenofocus colordiffuse="Disabled" border="5">buttons/specialfeatures.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[HighlightColor]" border="5">buttons/specialfeatures.png</texturefocus>
+                        <onclick>Action(close)</onclick>
+                        <onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
+                        <visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
+                    </control>
                     <!-- Cast Button -->
                     <control type="button" id="5">
                         <width>68</width>
