@@ -419,12 +419,6 @@
                 <texture fallback="$VAR[MediaFlagsPathVar]/fallback_channels.png">$VAR[MediaFlagsPathVar]/channels/$INFO[ListItem.AudioChannels,,.png]</texture>
                 <visible>Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.AudioChannels)</visible>
             </control>
-            <control type="image">           
-				<include condition="Skin.HasSetting(colouredflags)">Defs_MediaFlagsColour</include>
-				<include condition="!Skin.HasSetting(colouredflags)">Defs_MediaFlagsWhite</include>
-                <texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/$VAR[SourceIcons]</texture>
-                <visible>Skin.HasSetting(furniture.showflags) + !String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>
-            </control>
             <control type="image">             
                 <width>64</width>               
                 <height>50</height>

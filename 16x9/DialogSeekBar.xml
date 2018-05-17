@@ -190,11 +190,6 @@
 						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_channels.png">$VAR[MediaFlagsPathVar]/channels/$INFO[VideoPlayer.AudioChannels,,.png]</texture>
 					</control>
 					<control type="image">
-						<include condition="Skin.HasSetting(colouredflags)">Defs_PlayerFlagsColour</include>
-						<include condition="!Skin.HasSetting(colouredflags)">Defs_PlayerFlagsWhite</include>
-						<texture fallback="$VAR[MediaFlagsPathVar]/fallback_source.png">$VAR[MediaFlagsPathVar]/$VAR[PlayerSourceIcons]</texture>
-					</control>
-					<control type="image">
 						<width>45</width>
 						<height>45</height>
 						<aspectratio>keep</aspectratio>
