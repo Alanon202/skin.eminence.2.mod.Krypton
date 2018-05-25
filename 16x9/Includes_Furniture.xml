@@ -428,20 +428,20 @@
                 <visible>!String.StartsWith(ListItem.Path,videodb://movies/sets) + Skin.HasSetting(furniture.showflags) + !String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(disable.mpaa) + ![Control.IsVisible(535) | Control.IsVisible(553) | Control.IsVisible(525) | Control.IsVisible(514) | [Container.Content(episodes) + Control.IsVisible(51)] | Control.IsVisible(555)]</visible>
             </control>
 			<control type="group">
-				<width>140</width>                 
+				<width>115</width>                 
 				<height>50</height>
 				<visible>!Skin.HasSetting(disable.mpaa) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)) + ![Container.Content(episodes) | Container.Content(seasons)]</visible>
 				<control type="image">              
-					<width>140</width>                 
+					<width>115</width>                 
 					<height>50</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio>keep</aspectratio>
 					<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
 					<texture fallback="$VAR[MediaFlagsPathVar]/imdb.png">$VAR[MediaFlagsPathVar]/top250frame.png</texture>
 				</control>
 				<control type="label">
 					<right>7</right>
 					<align>center</align>
-					<width>85</width>                 
+					<width>65</width>                 
 					<height>50</height>
 					<font>Font-Sublabel</font>
 					<include condition="!Skin.HasSetting(colouredflags)">Defs_FlagsMisc</include>
