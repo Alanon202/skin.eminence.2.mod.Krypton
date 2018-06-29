@@ -1,3 +1,7 @@
+[B]2.5.4[/B]	
+1. Fixed animated weather icons.
+2. Removed redundant setting.
+
 [B]2.5.3[/B]	
 1. Added season posters in views.
 2. Removed the source flag.
